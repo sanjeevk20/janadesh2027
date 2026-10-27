@@ -1,0 +1,14 @@
+{
+  "_meta": {
+    "description": "RSS feeds polled by scripts/news/fetch-news.mjs. Google News search feeds give broad coverage across outlets; each item keeps its original publisher as `source`."
+  },
+  "feeds": [
+    { "id": "gn-up", "url": "https://news.google.com/rss/search?q=%22Uttar+Pradesh%22+assembly+election+2027&hl=en-IN&gl=IN&ceid=IN:en" },
+    { "id": "gn-pb", "url": "https://news.google.com/rss/search?q=Punjab+assembly+election+2027&hl=en-IN&gl=IN&ceid=IN:en" },
+    { "id": "gn-uk", "url": "https://news.google.com/rss/search?q=Uttarakhand+assembly+election+2027&hl=en-IN&gl=IN&ceid=IN:en" },
+    { "id": "gn-ga", "url": "https://news.google.com/rss/search?q=Goa+assembly+election+2027&hl=en-IN&gl=IN&ceid=IN:en" },
+    { "id": "gn-mn", "url": "https://news.google.com/rss/search?q=Manipur+assembly+election+2027&hl=en-IN&gl=IN&ceid=IN:en" },
+    { "id": "gn-gj", "url": "https://news.google.com/rss/search?q=Gujarat+assembly+election+2027&hl=en-IN&gl=IN&ceid=IN:en" },
+    { "id": "gn-hp", "url": "https://news.google.com/rss/search?q=%22Himachal+Pradesh%22+assembly+election+2027&hl=en-IN&gl=IN&ceid=IN:en" }
+  ]
+}

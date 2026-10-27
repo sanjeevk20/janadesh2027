@@ -21,6 +21,42 @@ Poll windows are based on when each assembly's term ends. The Election Commissio
 - **2022 results** for every seat in the five Round 1 states (690 seats). Colour the map by **winner**, by **winning margin** (darkest = closest contests, the seats most likely to flip), or by state.
   - State view: seat tally, vote share by party, and the 5 closest contests (click one to jump to it).
   - Seat view: winner, runner-up, margin, and the top 5 candidates with votes and vote share.
+- **2024 Lok Sabha results and NDA swing** for all 7 states. Colour the map by 2024 Lok Sabha winner or by the change in NDA vote share from 2022 to 2024 (see below).
+- **News, tagged to places.** Stories are collected weekly, tagged with states, constituencies, parties and a topic, and shown on the overview, state and seat views.
+
+### 2024 Lok Sabha and swing
+
+2024 results come from [india-elections2024-results-timewise](https://github.com/answerquest/india-elections2024-results-timewise) (MIT), scraped from ECI during counting; the build keeps each candidate's final snapshot. Seat tallies match the declared results in all 7 states (e.g. UP: SP 37, BJP 33, INC 6).
+
+**How swing is measured.** The 2024 data is per Lok Sabha seat, not per assembly segment. So for each Lok Sabha seat, the build adds up 2022 assembly votes over the assembly seats inside it and compares party and NDA vote shares with 2024. Every assembly seat in that Lok Sabha seat shows the same swing.
+
+- The **NDA** is defined per state and year in [`data/alliances.json`](data/alliances.json), since its members changed (e.g. the RLD joined in UP for 2024). Compare the NDA row rather than single parties where seat-sharing changed who stood.
+- Statewide NDA share, 2022 assembly → 2024 Lok Sabha: UP 43.8% → 43.7%, Punjab 7.8% → 18.6%, Uttarakhand 44.3% → 56.9%, Goa 33.4% → 50.9%, Manipur 37.8% → 35.4%.
+- Gujarat and Himachal Pradesh show 2024 results but no swing until their 2022 assembly results are added.
+
+**Repairs.** Assembly seats are linked to Lok Sabha seats through the boundary data, which got three wrong. [`data/repairs.json`](data/repairs.json) fixes them, with reasons, and the data-quality panel reports each fix:
+
+| State | Seat | Source said | Corrected to |
+|---|---|---|---|
+| Punjab | Dhuri (#107) | Patiala | Sangrur |
+| Punjab | Sangrur (#108) | Patiala | Sangrur |
+| UP | Noorpur (#24) | Moradabad | Nagina |
+
+After the fixes every Punjab Lok Sabha seat has 9 assembly seats, and UP has 77 with 5 and 3 with 6, matching the real structure.
+
+### News tagging
+
+1. **Collect** (`npm run news:fetch`): polls the Google News RSS searches in [`data/news-feeds.json`](data/news-feeds.json) and deduplicates by URL and title into `data/news/items.json`.
+2. **Tag** (`npm run news:tag`):
+   - A **gazetteer** built from the boundary and results data finds seat and district names in each story. It's conservative: names shared by several states need the state in the text, and a seat name that is also a district (e.g. Sangrur) only counts as the seat when the story mentions a seat or constituency.
+   - **Claude** (`claude-opus-5-5`, structured output, low effort, refusal fallbacks on) reads each story with the gazetteer's candidates as hints. It returns states, constituencies, parties, a topic, a one-line summary and the key claims.
+   - **Check:** every constituency Claude names must resolve to a real seat in the gazetteer. Names that don't are rejected and recorded, never shown.
+   - Without API credentials, keyword rules stand in for Claude and stories are marked as rule-tagged.
+3. **Publish:** writes `public/data/news.json` (the last 180 days).
+
+The [weekly workflow](.github/workflows/news.yml) runs collect + tag every Monday and commits the result. **To turn on AI tagging, add an `ANTHROPIC_API_KEY` repository secret**; without it the workflow still runs using rules.
+
+The first 7 stories were added by hand from research on 27 Oct 2026 (`collectedBy: "manual"`), because the feeds couldn't be reached from the build environment.
 
 ### 2022 results coverage
 
@@ -62,8 +98,10 @@ The full report is in [`public/data/validation.json`](public/data/validation.jso
 
 ```bash
 npm install
-npm run data:fetch   # download boundaries + 2022 results into data/raw/ (gitignored)
-npm run data:build   # build per-state GeoJSON, results JSON and validation into public/data/
+npm run data:fetch   # download boundaries, 2022 and 2024 results into data/raw/ (gitignored)
+npm run data:build   # build per-state GeoJSON, results, swing and validation into public/data/
+npm run news:fetch   # collect new stories from RSS
+npm run news:tag     # tag stories (set ANTHROPIC_API_KEY for Claude tagging)
 npm run dev          # http://localhost:5173
 ```
 
@@ -76,11 +114,20 @@ The map uses the [OpenFreeMap](https://openfreemap.org) Positron basemap. If tha
 ```
 data/states.json             State metadata (seats, terms, poll windows, governing party)
 data/parties.json            Party abbreviations and map colours
+data/alliances.json          NDA membership per state and election (for swing)
+data/repairs.json            Documented fixes to source data errors
+data/news-feeds.json         RSS feeds for news collection
+data/news/items.json         Collected stories with their tags (the news archive)
 scripts/fetch-boundaries.mjs Downloads the source shapefile
 scripts/build-boundaries.mjs Filters, simplifies and validates boundaries
 scripts/fetch-results.mjs    Downloads 2022 candidate-level results (pinned commit)
 scripts/build-results.mjs    Per-seat winners, margins, party tallies + boundary join check
+scripts/fetch-ls2024.mjs     Downloads 2024 Lok Sabha results (pinned commit)
+scripts/build-ls2024.mjs     2024 results per Lok Sabha seat, AC→PC mapping, swing
+scripts/news/                News collection, gazetteer and tagging
 public/data/results/         Generated 2022 results per state
+public/data/ls2024/          Generated 2024 results and swing per state
+public/data/news.json        Published, tagged news
 public/data/boundaries/      Generated per-state GeoJSON (committed so the site works without a build step)
 public/data/validation.json  Generated data-quality report
 src/                         Web app (TypeScript + MapLibre GL, built with Vite)
@@ -90,12 +137,15 @@ src/                         Web app (TypeScript + MapLibre GL, built with Vite)
 
 1. ✅ **Foundation**: boundaries, state metadata, validation, map
 2. ✅ **2022 results** for Round 1 states; Gujarat and Himachal Pradesh still to be sourced
-3. **News intelligence**: weekly news collection, with each story tagged by an LLM to the state, constituency, parties and type of claim
-4. **Claim checking**: each claim checked against official sources and given a confidence score, with conflicts flagged
-5. **Election season**: phase-wise schedule overlays, candidates, live results, swing compared with 2022
+3. ✅ **2024 Lok Sabha results and NDA swing** (per Lok Sabha seat)
+4. ✅ **News intelligence**: weekly collection, gazetteer + Claude tagging with seat checks
+5. **Claim checking**: check each extracted claim against official sources and score its confidence, flagging conflicts
+6. **Election season**: phase-wise schedule overlays, candidates, live results, swing compared with 2022
 
 ## Data and licenses
 
 - Constituency boundaries © DataMeet, [CC BY 2.5 India](http://creativecommons.org/licenses/by/2.5/in/)
 - 2022 results: [india-votes-data](https://github.com/thecont1/india-votes-data) (MIT), from Election Commission of India result pages
+- 2024 Lok Sabha results: [india-elections2024-results-timewise](https://github.com/answerquest/india-elections2024-results-timewise) (MIT), from ECI result pages
+- News: headlines and links belong to their publishers; the site shows titles, short summaries and links only
 - Basemap © OpenFreeMap / OpenMapTiles / OpenStreetMap contributors

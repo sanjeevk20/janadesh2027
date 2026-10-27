@@ -6,6 +6,7 @@ import partiesData from '../data/parties.json';
 import type {
   ConstituencyProps,
   LsStateResults,
+  NewsItem,
   PartyInfo,
   PcResult,
   SeatResult,
@@ -79,6 +80,7 @@ type Feature = GeoJSON.Feature<GeoJSON.Geometry, ConstituencyProps>;
 let validation: ValidationReport | null = null;
 const results = new Map<string, StateResults>();
 const ls2024 = new Map<string, LsStateResults>();
+let news: NewsItem[] = [];
 let features: Feature[] = [];
 let selectedState: string | null = null;
 let colorMode: ColorMode = 'winner';
@@ -96,13 +98,15 @@ renderLegend();
 renderOverview();
 
 map.on('load', async () => {
-  const [collections, report, stateResults, lsResults] = await Promise.all([
+  const [collections, report, stateResults, lsResults, newsData] = await Promise.all([
     Promise.all(STATES.map((s) => fetchJson<GeoJSON.FeatureCollection>(`data/boundaries/${s.id}.geojson`))),
     fetchJson<ValidationReport>('data/validation.json'),
     // Results are optional per state (Gujarat and Himachal are not sourced yet).
     Promise.all(STATES.map((s) => fetchJson<StateResults>(`data/results/2022-${s.id}.json`).catch(() => null))),
     Promise.all(STATES.map((s) => fetchJson<LsStateResults>(`data/ls2024/${s.id}.json`).catch(() => null))),
+    fetchJson<{ items: NewsItem[] }>('data/news.json').catch(() => ({ items: [] })),
   ]);
+  news = newsData.items;
   validation = report;
   for (const r of stateResults) if (r) results.set(r.state, r);
   for (const r of lsResults) if (r) ls2024.set(r.state, r);
@@ -340,7 +344,8 @@ function renderOverview() {
         : ''
     }
     <p class="muted small">Poll windows are expectations based on assembly term expiry. The Election
-    Commission has not announced schedules yet.</p>`;
+    Commission has not announced schedules yet.</p>
+    ${newsHtml(news.slice(0, 5), 'Latest news', 'No news collected yet.')}`;
 }
 
 function renderStateDetail(id: string) {
@@ -360,6 +365,7 @@ function renderStateDetail(id: string) {
     ${s.notes ? `<p>${escapeHtml(s.notes)}</p>` : ''}
     ${r ? stateResultsHtml(s, r) : `<h3>2022 results</h3><p class="muted">Not available yet: no 2022 results source has been added for ${s.name}.</p>`}
     ${ls2024.has(id) ? stateLsHtml(ls2024.get(id)!) : ''}
+    ${newsHtml(news.filter((n) => n.states.includes(id)).slice(0, 6), 'News', `No news tagged to ${s.name} yet.`)}
     ${issuesHtml(s)}`;
 
   document.getElementById('back')!.addEventListener('click', resetView);
@@ -490,7 +496,8 @@ function renderConstituency(p: ConstituencyProps) {
     </dl>
     ${qualityNote}
     ${seat ? seatResultHtml(seat) : results.has(p.state) ? '' : `<p class="muted">2022 results for ${s.name} are not loaded yet.</p>`}
-    ${pcResult(p) ? pcResultHtml(pcResult(p)!) : ''}`;
+    ${pcResult(p) ? pcResultHtml(pcResult(p)!) : ''}
+    ${newsHtml(seatNews(p), 'News for this seat', 'No news tagged to this seat or its district yet.')}`;
   document.getElementById('back')!.addEventListener('click', () => selectState(p.state));
 }
 
@@ -552,6 +559,59 @@ function pcResultHtml(pc: PcResult): string {
       the NDA row rather than single parties where that happens.</p>`
     : '';
   return `<h3>2024 Lok Sabha · ${escapeHtml(pc.name)}</h3>${outcome}${swing}`;
+}
+
+// Stories tagged to this seat directly, or to the district it sits in.
+function seatNews(p: ConstituencyProps): NewsItem[] {
+  return news.filter((n) =>
+    n.places.some(
+      (pl) => pl.state === p.state && (pl.kind === 'ac' ? pl.ac === p.ac_no : pl.acs?.includes(p.ac_no)),
+    ),
+  );
+}
+
+const TOPIC_LABELS: Record<string, string> = {
+  schedule: 'Schedule',
+  alliances: 'Alliances',
+  candidates: 'Candidates',
+  campaign: 'Campaign',
+  polls: 'Opinion polls',
+  defections: 'Defections',
+  governance: 'Governance',
+  security: 'Security',
+  legal: 'Legal',
+  other: 'Other',
+};
+
+function newsHtml(items: NewsItem[], heading: string, empty: string): string {
+  if (!items.length) return `<h3>${heading}</h3><p class="muted small">${empty}</p>`;
+  const date = (n: NewsItem) =>
+    n.published
+      ? new Date(n.published).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })
+      : 'date unknown';
+  const rows = items
+    .map((n) => {
+      const places = n.places
+        .map(
+          (pl) =>
+            `<span class="tag ${pl.confidence}" title="${pl.confidence} confidence · via ${pl.via.join(' + ')}">${escapeHtml(pl.name)}${
+              pl.kind === 'district' ? ' (district)' : ''
+            }</span>`,
+        )
+        .join('');
+      return `<li>
+        <a href="${escapeHtml(n.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.title)}</a>
+        <div class="muted small">${escapeHtml(n.source ?? 'Unknown source')} · ${date(n)} ·
+          <span class="topic">${TOPIC_LABELS[n.topic] ?? escapeHtml(n.topic)}</span></div>
+        ${n.summary ? `<div class="small">${escapeHtml(n.summary)}</div>` : ''}
+        ${places ? `<div class="tags">${places}</div>` : ''}
+      </li>`;
+    })
+    .join('');
+  const tagger = items.some((n) => n.tagger === 'rules')
+    ? 'Some stories are tagged by keyword rules only; AI tagging runs when the weekly job has API credentials.'
+    : 'Tagged by Claude; constituency tags are checked against the official seat list.';
+  return `<h3>${heading}</h3><ul class="news">${rows}</ul><p class="muted small">${tagger}</p>`;
 }
 
 function signed(n: number): string {

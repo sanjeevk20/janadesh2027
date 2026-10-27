@@ -106,6 +106,33 @@ export interface LsStateResults {
   pcs: Record<string, PcResult>;
 }
 
+export interface NewsPlace {
+  kind: 'ac' | 'district';
+  state: string;
+  name: string;
+  ac?: number;
+  acs?: number[];
+  confidence: 'high' | 'medium' | 'low';
+  via: Array<'gazetteer' | 'claude'>;
+}
+
+export interface NewsItem {
+  id: string;
+  url: string;
+  title: string;
+  source: string | null;
+  published: string | null;
+  collectedAt: string;
+  collectedBy: string;
+  tagger: 'claude' | 'rules';
+  states: string[];
+  places: NewsPlace[];
+  parties: string[];
+  topic: string;
+  summary: string | null;
+  claims: Array<{ text: string; kind: string; checkable: boolean }>;
+}
+
 export interface PartyInfo {
   abbr: string;
   color: string;
