@@ -5,7 +5,9 @@ import statesData from '../data/states.json';
 import partiesData from '../data/parties.json';
 import type {
   ConstituencyProps,
+  LsStateResults,
   PartyInfo,
+  PcResult,
   SeatResult,
   StateInfo,
   StateResults,
@@ -38,6 +40,17 @@ const MARGIN_BUCKETS: Array<[number, string, string]> = [
   [10, '#fbb4b9', '10–20%'],
   [20, '#feebe2', '≥ 20%'],
 ];
+// Change in NDA vote share (percentage points), 2022 assembly → 2024 Lok Sabha.
+// Diverging: purple = NDA lost ground, orange = NDA gained.
+const SWING_BUCKETS: Array<[number, string, string]> = [
+  [-Infinity, '#542788', '≤ −10'],
+  [-10, '#998ec3', '−10 to −5'],
+  [-5, '#d8daeb', '−5 to −2'],
+  [-2, '#f7f7f7', '±2'],
+  [2, '#fee0b6', '+2 to +5'],
+  [5, '#f1a340', '+5 to +10'],
+  [10, '#b35806', '≥ +10'],
+];
 const ISSUE_COLOR = '#d7263d';
 const BASEMAP_URL = 'https://tiles.openfreemap.org/styles/positron';
 // Used when the basemap is unreachable, so the constituency layers still render.
@@ -51,7 +64,7 @@ const INDIA_BOUNDS: LngLatBoundsLike = [
   [92, 33],
 ];
 
-type ColorMode = 'winner' | 'margin' | 'state';
+type ColorMode = 'winner' | 'margin' | 'ls2024' | 'swing' | 'state';
 
 const panel = {
   list: document.getElementById('state-list')!,
@@ -65,6 +78,7 @@ type Feature = GeoJSON.Feature<GeoJSON.Geometry, ConstituencyProps>;
 
 let validation: ValidationReport | null = null;
 const results = new Map<string, StateResults>();
+const ls2024 = new Map<string, LsStateResults>();
 let features: Feature[] = [];
 let selectedState: string | null = null;
 let colorMode: ColorMode = 'winner';
@@ -82,14 +96,16 @@ renderLegend();
 renderOverview();
 
 map.on('load', async () => {
-  const [collections, report, stateResults] = await Promise.all([
+  const [collections, report, stateResults, lsResults] = await Promise.all([
     Promise.all(STATES.map((s) => fetchJson<GeoJSON.FeatureCollection>(`data/boundaries/${s.id}.geojson`))),
     fetchJson<ValidationReport>('data/validation.json'),
     // Results are optional per state (Gujarat and Himachal are not sourced yet).
     Promise.all(STATES.map((s) => fetchJson<StateResults>(`data/results/2022-${s.id}.json`).catch(() => null))),
+    Promise.all(STATES.map((s) => fetchJson<LsStateResults>(`data/ls2024/${s.id}.json`).catch(() => null))),
   ]);
   validation = report;
   for (const r of stateResults) if (r) results.set(r.state, r);
+  for (const r of lsResults) if (r) ls2024.set(r.state, r);
 
   features = collections.flatMap((c) => c.features as Feature[]);
   features.forEach((f, i) => {
@@ -99,6 +115,9 @@ map.on('load', async () => {
       f.properties.winner = seat.winner.party;
       f.properties.margin = seat.marginPct;
     }
+    const pc = pcResult(f.properties);
+    if (pc?.winner) f.properties.ls24 = pc.winner.party;
+    if (pc?.swing) f.properties.swing = pc.swing.ndaChange;
   });
 
   map.addSource('acs', {
@@ -106,7 +125,8 @@ map.on('load', async () => {
     data: { type: 'FeatureCollection', features },
     attribution:
       'Boundaries © <a href="https://github.com/datameet/maps">DataMeet</a> (CC BY 2.5 IN) · ' +
-      'Results: <a href="https://github.com/thecont1/india-votes-data">india-votes-data</a> / ECI',
+      'Results: <a href="https://github.com/thecont1/india-votes-data">india-votes-data</a>, ' +
+      '<a href="https://github.com/answerquest/india-elections2024-results-timewise">india-elections2024</a> / ECI',
   });
 
   map.addLayer({
@@ -146,6 +166,13 @@ function seatResult(p: ConstituencyProps): SeatResult | undefined {
   return results.get(p.state)?.seats[String(p.ac_no)];
 }
 
+function pcResult(p: ConstituencyProps): PcResult | undefined {
+  if (p.quality === 'unidentified') return undefined;
+  const ls = ls2024.get(p.state);
+  const pcNo = ls?.acToPc[String(p.ac_no)];
+  return pcNo === undefined ? undefined : ls!.pcs[String(pcNo)];
+}
+
 function fillColorExpression(): maplibregl.ExpressionSpecification {
   const highlight = panel.toggle.checked;
   let base: maplibregl.ExpressionSpecification;
@@ -153,9 +180,14 @@ function fillColorExpression(): maplibregl.ExpressionSpecification {
     base = ['match', ['get', 'state'], ...Object.entries(STATE_COLORS).flat(), NO_DATA_COLOR] as never;
     return highlight ? ['case', ['!=', ['get', 'quality'], 'ok'], ISSUE_COLOR, base] : base;
   }
-  if (colorMode === 'winner') {
-    base = ['match', ['get', 'winner'], ...Object.entries(PARTY_COLORS).flat(), OTHER_PARTY_COLOR] as never;
-    return ['case', ['has', 'winner'], base, NO_DATA_COLOR];
+  if (colorMode === 'winner' || colorMode === 'ls2024') {
+    const prop = colorMode === 'winner' ? 'winner' : 'ls24';
+    base = ['match', ['get', prop], ...Object.entries(PARTY_COLORS).flat(), OTHER_PARTY_COLOR] as never;
+    return ['case', ['has', prop], base, NO_DATA_COLOR];
+  }
+  if (colorMode === 'swing') {
+    base = ['step', ['get', 'swing'], SWING_BUCKETS[0][1], ...SWING_BUCKETS.slice(1).flatMap(([t, c]) => [t, c])] as never;
+    return ['case', ['has', 'swing'], base, NO_DATA_COLOR];
   }
   base = ['step', ['get', 'margin'], MARGIN_BUCKETS[0][1], ...MARGIN_BUCKETS.slice(1).flatMap(([t, c]) => [t, c])] as never;
   return ['case', ['has', 'margin'], base, NO_DATA_COLOR];
@@ -209,9 +241,11 @@ function tooltipHtml(f: MapGeoJSONFeature): string {
   const name = p.ac_name || 'Unnamed shape';
   const no = p.ac_no ? `#${p.ac_no}` : 'no number';
   const seat = seatResult(p);
-  const result = seat
-    ? `<div>2022: <strong>${escapeHtml(seat.winner.party)}</strong> by ${seat.marginPct}%</div>`
-    : '';
+  const pc = pcResult(p);
+  const result =
+    (seat ? `<div>2022: <strong>${escapeHtml(seat.winner.party)}</strong> by ${seat.marginPct}%</div>` : '') +
+    (pc?.winner ? `<div>2024 LS (${escapeHtml(pc.name)}): <strong>${escapeHtml(pc.winner.party)}</strong></div>` : '') +
+    (pc?.swing ? `<div>NDA swing: ${signed(pc.swing.ndaChange)} pts</div>` : '');
   const flag = p.quality !== 'ok' ? `<div class="tip-flag">⚠ ${qualityLabel(p.quality)}</div>` : '';
   return `<strong>${escapeHtml(name)}</strong> <span class="muted">${no}</span><br>${escapeHtml(p.district ?? '')}${result}${flag}`;
 }
@@ -243,11 +277,16 @@ function renderStateList() {
           const issues = stateIssues(s.id).length;
           const badge = issues ? `<span class="badge">${issues} data issue${issues > 1 ? 's' : ''}</span>` : '';
           const leader = results.get(s.id)?.summary[0];
-          const sub = leader
-            ? `<span class="state-sub">2022: ${escapeHtml(leader.party)} ${leader.seats}</span>`
-            : validation
-            ? `<span class="state-sub muted">2022 results pending</span>`
-            : '';
+          const ls = ls2024.get(s.id)?.summary
+            .slice(0, 2)
+            .map((p) => `${escapeHtml(p.party)} ${p.seats}`)
+            .join(', ');
+          const sub =
+            (leader
+              ? `<span class="state-sub">2022: ${escapeHtml(leader.party)} ${leader.seats}</span>`
+              : validation
+              ? `<span class="state-sub muted">2022 results pending</span>`
+              : '') + (ls ? `<span class="state-sub muted">2024 LS: ${ls}</span>` : '');
           return `
             <button class="state-card${selectedState === s.id ? ' active' : ''}" data-id="${s.id}">
               <span class="swatch" style="background:${STATE_COLORS[s.id]}"></span>
@@ -270,6 +309,7 @@ function stateIssues(id: string): ValidationIssue[] {
   return [
     ...(validation?.states.find((v) => v.id === id)?.issues ?? []),
     ...(results.get(id)?.join.issues ?? []),
+    ...(ls2024.get(id)?.join.issues ?? []),
   ];
 }
 
@@ -319,12 +359,55 @@ function renderStateDetail(id: string) {
     </dl>
     ${s.notes ? `<p>${escapeHtml(s.notes)}</p>` : ''}
     ${r ? stateResultsHtml(s, r) : `<h3>2022 results</h3><p class="muted">Not available yet: no 2022 results source has been added for ${s.name}.</p>`}
+    ${ls2024.has(id) ? stateLsHtml(ls2024.get(id)!) : ''}
     ${issuesHtml(s)}`;
 
   document.getElementById('back')!.addEventListener('click', resetView);
   panel.detail.querySelectorAll<HTMLButtonElement>('[data-seat]').forEach((btn) =>
     btn.addEventListener('click', () => selectSeat(id, Number(btn.dataset.seat))),
   );
+  panel.detail.querySelectorAll<HTMLButtonElement>('[data-pc]').forEach((btn) =>
+    btn.addEventListener('click', () => selectPc(id, Number(btn.dataset.pc))),
+  );
+}
+
+function stateLsHtml(ls: LsStateResults): string {
+  const tally = ls.summary
+    .map((p) => `<span class="chip"><i class="dot" style="background:${partyColor(p.party)}"></i>${escapeHtml(p.party)} ${p.seats}</span>`)
+    .join('');
+  if (!ls.swingAvailable || ls.nda.change === undefined) {
+    return `<h3>2024 Lok Sabha</h3><div class="chips">${tally}</div>
+      <p class="muted small">Swing needs 2022 assembly results, which aren't loaded for this state yet.</p>`;
+  }
+  const pcs = Object.values(ls.pcs).filter((pc) => pc.swing);
+  const sorted = [...pcs].sort((a, b) => a.swing!.ndaChange - b.swing!.ndaChange);
+  const list = (items: PcResult[]) =>
+    items
+      .map(
+        (pc) => `<li><button class="link" data-pc="${pc.no}">${escapeHtml(pc.name)}</button>
+          <span class="muted small">${signed(pc.swing!.ndaChange)} pts · ${escapeHtml(pc.winner?.party ?? '—')} won</span></li>`,
+      )
+      .join('');
+  const members = (y: '2022' | '2024') => ls.nda.members[y].join(' + ');
+  return `
+    <h3>2024 Lok Sabha</h3>
+    <div class="chips">${tally}</div>
+    <h3>NDA swing, 2022 → 2024</h3>
+    <p>NDA vote share went from <strong>${ls.nda.share2022}%</strong> (2022 assembly) to
+    <strong>${ls.nda.share2024}%</strong> (2024 Lok Sabha): <strong>${signed(ls.nda.change!)} pts</strong>.</p>
+    <p class="muted small">NDA = ${members('2022')} in 2022; ${members('2024')} in 2024. Measured per Lok Sabha seat,
+    because 2024 results by assembly segment aren't available here.</p>
+    ${pcs.length > 1 ? `<div class="two-col"><div><h4>Biggest NDA losses</h4><ol class="closest">${list(sorted.slice(0, 3))}</ol></div>
+    <div><h4>Biggest NDA gains</h4><ol class="closest">${list(sorted.slice(-3).reverse())}</ol></div></div>` : ''}`;
+}
+
+function selectPc(state: string, pcNo: number) {
+  const ls = ls2024.get(state);
+  const acs = new Set(ls?.pcs[String(pcNo)]?.acs ?? []);
+  const matches = features.filter((f) => f.properties.state === state && acs.has(f.properties.ac_no));
+  const bounds = boundsOf(matches);
+  if (bounds) map.fitBounds(bounds, { padding: 60, maxZoom: 9, duration: 800 });
+  if (matches[0]) renderConstituency(matches[0].properties);
 }
 
 function stateResultsHtml(s: StateInfo, r: StateResults): string {
@@ -406,7 +489,8 @@ function renderConstituency(p: ConstituencyProps) {
       <dt>Lok Sabha seat</dt><dd>${escapeHtml(p.pc_name ?? '—')}</dd>
     </dl>
     ${qualityNote}
-    ${seat ? seatResultHtml(seat) : results.has(p.state) ? '' : `<p class="muted">2022 results for ${s.name} are not loaded yet.</p>`}`;
+    ${seat ? seatResultHtml(seat) : results.has(p.state) ? '' : `<p class="muted">2022 results for ${s.name} are not loaded yet.</p>`}
+    ${pcResult(p) ? pcResultHtml(pcResult(p)!) : ''}`;
   document.getElementById('back')!.addEventListener('click', () => selectState(p.state));
 }
 
@@ -435,6 +519,45 @@ function seatResultHtml(seat: SeatResult): string {
     NOTA ${seat.nota.toLocaleString('en-IN')}</p>`;
 }
 
+function pcResultHtml(pc: PcResult): string {
+  const outcome = pc.uncontested
+    ? `<p><strong>${escapeHtml(pc.winner?.name ?? '')}</strong> (${escapeHtml(pc.winner?.party ?? '')}) was elected unopposed.</p>`
+    : `<p><strong>${escapeHtml(pc.winner!.name)}</strong> (${escapeHtml(pc.winner!.party)}) won by
+       ${pc.margin!.toLocaleString('en-IN')} votes (${pc.marginPct}%)${
+         pc.runnerUp ? ` over ${escapeHtml(pc.runnerUp.name)} (${escapeHtml(pc.runnerUp.party)})` : ''
+       }.</p>`;
+  const swing = pc.swing
+    ? `<h3>Swing, 2022 → 2024</h3>
+      <p class="muted small">Vote share across the ${pc.acs.length} assembly seats of ${escapeHtml(pc.name)}: 2022 assembly vs
+      2024 Lok Sabha.</p>
+      <table class="tally">
+        <thead><tr><th>Party</th><th class="num">2022</th><th class="num">2024</th><th class="num">Change</th></tr></thead>
+        <tbody>
+          <tr class="nda-row"><td>NDA</td><td class="num">${pc.swing.nda2022.toFixed(1)}%</td>
+            <td class="num">${pc.swing.nda2024.toFixed(1)}%</td><td class="num">${signed(pc.swing.ndaChange)}</td></tr>
+          ${pc.swing.parties
+            .map((r) => {
+              // A zero share means the party didn't contest here (often seat-sharing), so a
+              // party-level change would be meaningless; the NDA row carries the comparison.
+              const absent = r.share2022 === 0 || r.share2024 === 0;
+              const cell = (v: number) => (v === 0 ? '<span class="muted">—</span>' : `${v.toFixed(1)}%`);
+              return `<tr><td><i class="dot" style="background:${partyColor(r.party)}"></i>${escapeHtml(r.party)}</td>
+              <td class="num">${cell(r.share2022)}</td><td class="num">${cell(r.share2024)}</td>
+              <td class="num ${absent ? 'muted' : r.change >= 0 ? 'up' : 'down'}">${absent ? 'n/a' : signed(r.change)}</td></tr>`;
+            })
+            .join('')}
+        </tbody>
+      </table>
+      <p class="muted small">— = did not contest. Seat-sharing changes which party stands for an alliance, so compare
+      the NDA row rather than single parties where that happens.</p>`
+    : '';
+  return `<h3>2024 Lok Sabha · ${escapeHtml(pc.name)}</h3>${outcome}${swing}`;
+}
+
+function signed(n: number): string {
+  return `${n > 0 ? '+' : n < 0 ? '−' : '±'}${Math.abs(n).toFixed(1)}`;
+}
+
 function resetView() {
   selectedState = null;
   map.fitBounds(INDIA_BOUNDS, { duration: 800 });
@@ -449,17 +572,25 @@ function renderLegend() {
     items = [...STATES.map((s) => item(STATE_COLORS[s.id], s.id)), item(ISSUE_COLOR, 'Data issue')];
   } else if (colorMode === 'margin') {
     items = [...MARGIN_BUCKETS.map(([, c, label]) => item(c, label)), item(NO_DATA_COLOR, 'No 2022 data')];
+  } else if (colorMode === 'swing') {
+    items = [
+      `<span class="legend-title">NDA vote share change, pts</span>`,
+      ...SWING_BUCKETS.map(([, c, label]) => item(c, label)),
+      item(NO_DATA_COLOR, 'No data'),
+    ];
   } else {
     // Parties that won at least one seat anywhere, most seats first.
     const seats = new Map<string, number>();
-    for (const r of results.values()) for (const p of r.summary) seats.set(p.party, (seats.get(p.party) ?? 0) + p.seats);
+    const tallies =
+      colorMode === 'winner' ? [...results.values()].map((r) => r.summary) : [...ls2024.values()].map((r) => r.summary);
+    for (const summary of tallies) for (const p of summary) seats.set(p.party, (seats.get(p.party) ?? 0) + p.seats);
     const winners = [...seats].filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1]);
     const named = winners.filter(([p]) => p in PARTY_COLORS && p !== 'IND').slice(0, 8);
     items = [
       ...named.map(([p]) => item(PARTY_COLORS[p], p)),
       item(PARTY_COLORS.IND ?? OTHER_PARTY_COLOR, 'IND'),
       item(OTHER_PARTY_COLOR, 'Other'),
-      item(NO_DATA_COLOR, 'No 2022 data'),
+      item(NO_DATA_COLOR, colorMode === 'winner' ? 'No 2022 data' : 'No data'),
     ];
   }
   panel.legend.innerHTML = items.join('');

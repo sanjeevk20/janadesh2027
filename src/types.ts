@@ -25,10 +25,13 @@ export interface ConstituencyProps {
   // Joined client-side from the 2022 results, when available.
   winner?: string;
   margin?: number;
+  // Joined client-side from the 2024 Lok Sabha data (PC level).
+  ls24?: string;
+  swing?: number;
 }
 
 export interface ValidationIssue {
-  severity: 'error' | 'warning';
+  severity: 'error' | 'warning' | 'info';
   code: string;
   message: string;
   values?: number[];
@@ -69,6 +72,38 @@ export interface StateResults {
   summary: PartySummary[];
   join: { issues: ValidationIssue[] };
   seats: Record<string, SeatResult>;
+}
+
+export interface PartySwing {
+  party: string;
+  share2022: number;
+  share2024: number;
+  change: number;
+}
+
+export interface PcResult {
+  no: number;
+  name: string;
+  uncontested: boolean;
+  totalVotes: number;
+  winner: Candidate | null;
+  runnerUp: Candidate | null;
+  margin: number | null;
+  marginPct: number | null;
+  candidates: Candidate[];
+  acs: number[];
+  swing?: { nda2022: number; nda2024: number; ndaChange: number; parties: PartySwing[] };
+}
+
+export interface LsStateResults {
+  state: string;
+  source: { name: string; url: string; commit: string; license: string };
+  swingAvailable: boolean;
+  nda: { members: Record<'2022' | '2024', string[]>; share2022?: number; share2024?: number; change?: number };
+  summary: Array<{ party: string; seats: number }>;
+  join: { issues: ValidationIssue[] };
+  acToPc: Record<string, number>;
+  pcs: Record<string, PcResult>;
 }
 
 export interface PartyInfo {

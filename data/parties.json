@@ -29,6 +29,8 @@
     "Punjab Lok Congress Party": { "abbr": "PLC", "color": "#4fc3f7" },
     "Uttarakhand Kranti Dal": { "abbr": "UKD", "color": "#9ccc65" },
     "Republican Party of India (Athawale)": { "abbr": "RPI(A)", "color": "#3949ab" },
+    "Aazad Samaj Party (Kanshi Ram)": { "abbr": "ASP(KR)", "color": "#1565c0" },
+    "All India Majlis-E-Ittehadul Muslimeen": { "abbr": "AIMIM", "color": "#2e7d32" },
     "Independent": { "abbr": "IND", "color": "#8c8c8c" },
     "None of the Above": { "abbr": "NOTA", "color": "#dddddd" }
   }

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "description": "NDA membership used for bloc swing, by state and election. Only parties that contested as part of the NDA seat-sharing arrangement are listed; NDA members that fought against the BJP in that election are excluded. Values are party abbreviations from data/parties.json.",
+    "notes": [
+      "UP 2024: NISHAD's candidate contested on the BJP symbol, so those votes are already counted as BJP.",
+      "Punjab: the SAD left the NDA in 2020; in 2024 the BJP contested alone.",
+      "Manipur 2022: NPP and NPF were NDA members but contested against the BJP, so only the BJP is counted. In 2024 the BJP backed the NPF candidate in Outer Manipur."
+    ]
+  },
+  "nda": {
+    "UP": { "2022": ["BJP", "AD(S)", "NISHAD"], "2024": ["BJP", "AD(S)", "RLD", "SBSP"] },
+    "PB": { "2022": ["BJP", "PLC", "SAD(S)"], "2024": ["BJP"] },
+    "UK": { "2022": ["BJP"], "2024": ["BJP"] },
+    "GA": { "2022": ["BJP"], "2024": ["BJP"] },
+    "MN": { "2022": ["BJP"], "2024": ["BJP", "NPF"] },
+    "GJ": { "2022": ["BJP"], "2024": ["BJP"] },
+    "HP": { "2022": ["BJP"], "2024": ["BJP"] }
+  }
+}
