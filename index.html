@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Janadesh 2027</title>
+    <meta name="description" content="Constituency-level map of the 2027 Indian state assembly elections." />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Janadesh 2027</h1>
+      <p>Assembly elections in 7 states · ~940 constituencies</p>
+    </header>
+    <main class="layout">
+      <aside class="panel" id="panel">
+        <section id="state-list" aria-label="States"></section>
+        <section id="detail" aria-live="polite"></section>
+      </aside>
+      <div class="map-wrap">
+        <div id="map"></div>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-issues" checked />
+          Highlight data issues
+        </label>
+        <div class="legend" id="legend"></div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

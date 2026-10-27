@@ -1,0 +1,167 @@
+{
+  "generatedAt": "2026-10-27T18:17:10.792Z",
+  "source": "DataMeet India_AC (CC BY 2.5 IN)",
+  "states": [
+    {
+      "id": "UP",
+      "name": "Uttar Pradesh",
+      "expectedSeats": 403,
+      "features": 403,
+      "issues": []
+    },
+    {
+      "id": "PB",
+      "name": "Punjab",
+      "expectedSeats": 117,
+      "features": 117,
+      "issues": []
+    },
+    {
+      "id": "UK",
+      "name": "Uttarakhand",
+      "expectedSeats": 70,
+      "features": 70,
+      "issues": []
+    },
+    {
+      "id": "GA",
+      "name": "Goa",
+      "expectedSeats": 40,
+      "features": 41,
+      "issues": [
+        {
+          "severity": "error",
+          "code": "SEAT_COUNT_MISMATCH",
+          "message": "Source has 41 constituency shapes; the assembly has 40 seats."
+        },
+        {
+          "severity": "error",
+          "code": "AC_NO_OUT_OF_RANGE",
+          "message": "1 shape(s) have a constituency number outside 1–40.",
+          "values": [
+            0
+          ]
+        },
+        {
+          "severity": "warning",
+          "code": "MISSING_NAME",
+          "message": "1 shape(s) have no constituency name.",
+          "values": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MN",
+      "name": "Manipur",
+      "expectedSeats": 60,
+      "features": 68,
+      "issues": [
+        {
+          "severity": "error",
+          "code": "SEAT_COUNT_MISMATCH",
+          "message": "Source has 68 constituency shapes; the assembly has 60 seats."
+        },
+        {
+          "severity": "error",
+          "code": "DUPLICATE_AC_NO",
+          "message": "6 constituency number(s) appear more than once.",
+          "values": [
+            2,
+            6,
+            7,
+            22,
+            24,
+            32
+          ]
+        },
+        {
+          "severity": "warning",
+          "code": "PRE_DELIMITATION",
+          "message": "68 shape(s) are marked as pre-delimitation boundaries."
+        }
+      ]
+    },
+    {
+      "id": "GJ",
+      "name": "Gujarat",
+      "expectedSeats": 182,
+      "features": 172,
+      "issues": [
+        {
+          "severity": "error",
+          "code": "SEAT_COUNT_MISMATCH",
+          "message": "Source has 172 constituency shapes; the assembly has 182 seats."
+        },
+        {
+          "severity": "error",
+          "code": "DUPLICATE_AC_NO",
+          "message": "1 constituency number(s) appear more than once.",
+          "values": [
+            0
+          ]
+        },
+        {
+          "severity": "error",
+          "code": "MISSING_AC_NO",
+          "message": "20 constituency number(s) between 1 and 182 have no shape.",
+          "values": [
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167
+          ]
+        },
+        {
+          "severity": "error",
+          "code": "AC_NO_OUT_OF_RANGE",
+          "message": "1 shape(s) have a constituency number outside 1–182.",
+          "values": [
+            0
+          ]
+        },
+        {
+          "severity": "warning",
+          "code": "MISSING_NAME",
+          "message": "10 shape(s) have no constituency name.",
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HP",
+      "name": "Himachal Pradesh",
+      "expectedSeats": 68,
+      "features": 68,
+      "issues": []
+    }
+  ]
+}

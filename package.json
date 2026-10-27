@@ -1,0 +1,34 @@
+{
+  "name": "janadesh2027",
+  "version": "1.0.0",
+  "description": "Constituency-level map and election intelligence for the 2027 Indian state assembly elections",
+  "scripts": {
+    "data:fetch": "node scripts/fetch-boundaries.mjs",
+    "data:build": "node scripts/build-boundaries.mjs",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjeevk20/janadesh2027.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanjeevk20/janadesh2027/issues"
+  },
+  "homepage": "https://github.com/sanjeevk20/janadesh2027#readme",
+  "dependencies": {
+    "maplibre-gl": "^4.7.1"
+  },
+  "devDependencies": {
+    "mapshaper": "^0.6.99",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  },
+  "private": true,
+  "type": "module"
+}
