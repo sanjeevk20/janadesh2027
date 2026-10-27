@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Constituency-level map and election intelligence for the 2027 Indian state assembly elections",
   "scripts": {
-    "data:fetch": "node scripts/fetch-boundaries.mjs",
-    "data:build": "node scripts/build-boundaries.mjs",
+    "data:fetch": "node scripts/fetch-boundaries.mjs && node scripts/fetch-results.mjs",
+    "data:build": "node scripts/build-boundaries.mjs && node scripts/build-results.mjs",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",

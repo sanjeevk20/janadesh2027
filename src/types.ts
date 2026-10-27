@@ -22,6 +22,9 @@ export interface ConstituencyProps {
   pc_name: string | null;
   status: string | null;
   quality: Quality;
+  // Joined client-side from the 2022 results, when available.
+  winner?: string;
+  margin?: number;
 }
 
 export interface ValidationIssue {
@@ -29,6 +32,48 @@ export interface ValidationIssue {
   code: string;
   message: string;
   values?: number[];
+}
+
+export interface Candidate {
+  name: string;
+  party: string;
+  votes: number;
+  share: number;
+}
+
+export interface SeatResult {
+  no: number;
+  name: string;
+  totalVotes: number;
+  winner: Candidate;
+  runnerUp: Candidate | null;
+  margin: number;
+  marginPct: number;
+  nota: number;
+  candidates: Candidate[];
+  contestants: number;
+}
+
+export interface PartySummary {
+  party: string;
+  seats: number;
+  votes: number;
+  voteShare: number;
+}
+
+export interface StateResults {
+  state: string;
+  year: number;
+  source: { name: string; url: string; commit: string; license: string };
+  totalVotes: number;
+  summary: PartySummary[];
+  join: { issues: ValidationIssue[] };
+  seats: Record<string, SeatResult>;
+}
+
+export interface PartyInfo {
+  abbr: string;
+  color: string;
 }
 
 export interface StateValidation {

@@ -146,6 +146,11 @@ body {
   color: var(--muted);
 }
 
+.state-sub {
+  grid-column: 2 / 4;
+  font-size: 12px;
+}
+
 .badge {
   grid-column: 2 / 4;
   justify-self: start;
@@ -234,11 +239,24 @@ body {
   cursor: pointer;
 }
 
+.controls {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.controls > * {
+  pointer-events: auto;
+}
+
+.segmented,
 .toggle,
 .legend {
-  position: absolute;
-  left: 12px;
-  padding: 6px 10px;
   border: 1px solid var(--border);
   border-radius: 6px;
   background: var(--surface);
@@ -246,12 +264,42 @@ body {
   font-size: 12px;
 }
 
+.segmented {
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.segmented button {
+  padding: 6px 10px;
+  border: 0;
+  border-right: 1px solid var(--border);
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.segmented button:last-child {
+  border-right: 0;
+}
+
+.segmented button[aria-checked='true'] {
+  background: var(--accent);
+  color: #fff;
+}
+
 .toggle {
-  top: 12px;
   display: flex;
   align-items: center;
   gap: 6px;
+  padding: 6px 10px;
   cursor: pointer;
+}
+
+.legend {
+  position: absolute;
+  left: 12px;
+  padding: 6px 10px;
 }
 
 .legend {
@@ -272,6 +320,90 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 2px;
+}
+
+.seat-bar {
+  display: flex;
+  height: 14px;
+  border-radius: 3px;
+  overflow: hidden;
+  gap: 1px;
+}
+
+.majority-note {
+  margin: 4px 0 8px;
+}
+
+table.tally,
+table.candidates {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.tally th,
+.candidates th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--muted);
+  font-size: 12px;
+  border-bottom: 1px solid var(--border);
+  padding: 4px 4px 4px 0;
+}
+
+.tally td,
+.candidates td {
+  padding: 4px 4px 4px 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.num {
+  text-align: right;
+  white-space: nowrap;
+}
+
+th.num {
+  text-align: right;
+}
+
+.dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.candidates tr.won td:first-child div:first-child {
+  font-weight: 600;
+}
+
+.share-bar {
+  height: 4px;
+  margin-top: 3px;
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.share-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.closest {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.closest li {
+  margin-bottom: 4px;
+}
+
+code {
+  font-size: 12px;
+  word-break: break-all;
 }
 
 .maplibregl-popup-content {
