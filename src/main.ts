@@ -15,6 +15,15 @@ import type {
   ValidationIssue,
   ValidationReport,
 } from './types';
+import {
+  defaultScenario,
+  OTHERS,
+  project,
+  type BattlegroundState,
+  type Projection,
+  type Rating,
+  type Scenario,
+} from './battleground';
 
 const STATES = statesData.states as StateInfo[];
 const PARTY_COLORS: Record<string, string> = Object.fromEntries(
@@ -53,6 +62,11 @@ const SWING_BUCKETS: Array<[number, string, string]> = [
   [10, '#b35806', '≥ +10'],
 ];
 const ISSUE_COLOR = '#d7263d';
+// Battleground: projected bloc colour, faded for weaker ratings; toss-ups get their own colour.
+const TOSSUP_COLOR = '#ffd166';
+const RATING_OPACITY: Record<Rating, number> = { safe: 0.9, likely: 0.7, lean: 0.45, tossup: 0.9 };
+const RATING_LABELS: Record<Rating, string> = { safe: 'Safe', likely: 'Likely', lean: 'Lean', tossup: 'Toss-up' };
+const SWING_SLIDER_LIMIT = 15;
 const BASEMAP_URL = 'https://tiles.openfreemap.org/styles/positron';
 // Used when the basemap is unreachable, so the constituency layers still render.
 const FALLBACK_STYLE: maplibregl.StyleSpecification = {
@@ -65,7 +79,7 @@ const INDIA_BOUNDS: LngLatBoundsLike = [
   [92, 33],
 ];
 
-type ColorMode = 'winner' | 'margin' | 'ls2024' | 'swing' | 'state';
+type ColorMode = 'winner' | 'margin' | 'ls2024' | 'swing' | 'battleground' | 'state';
 
 const panel = {
   list: document.getElementById('state-list')!,
@@ -80,7 +94,11 @@ type Feature = GeoJSON.Feature<GeoJSON.Geometry, ConstituencyProps>;
 let validation: ValidationReport | null = null;
 const results = new Map<string, StateResults>();
 const ls2024 = new Map<string, LsStateResults>();
+const battleground = new Map<string, BattlegroundState>();
+const scenarios = new Map<string, Scenario>();
+const projections = new Map<string, Projection>();
 let news: NewsItem[] = [];
+let newsUpdated: string | null = null;
 let features: Feature[] = [];
 let selectedState: string | null = null;
 let colorMode: ColorMode = 'winner';
@@ -98,18 +116,26 @@ renderLegend();
 renderOverview();
 
 map.on('load', async () => {
-  const [collections, report, stateResults, lsResults, newsData] = await Promise.all([
+  const [collections, report, stateResults, lsResults, bgData, newsData] = await Promise.all([
     Promise.all(STATES.map((s) => fetchJson<GeoJSON.FeatureCollection>(`data/boundaries/${s.id}.geojson`))),
     fetchJson<ValidationReport>('data/validation.json'),
     // Results are optional per state (Gujarat and Himachal are not sourced yet).
     Promise.all(STATES.map((s) => fetchJson<StateResults>(`data/results/2022-${s.id}.json`).catch(() => null))),
     Promise.all(STATES.map((s) => fetchJson<LsStateResults>(`data/ls2024/${s.id}.json`).catch(() => null))),
-    fetchJson<{ items: NewsItem[] }>('data/news.json').catch(() => ({ items: [] })),
+    Promise.all(STATES.map((s) => fetchJson<BattlegroundState>(`data/battleground/${s.id}.json`).catch(() => null))),
+    fetchJson<{ generatedAt?: string; items: NewsItem[] }>('data/news.json').catch(() => ({ items: [] })),
   ]);
   news = newsData.items;
+  newsUpdated = 'generatedAt' in newsData ? newsData.generatedAt ?? null : null;
   validation = report;
   for (const r of stateResults) if (r) results.set(r.state, r);
   for (const r of lsResults) if (r) ls2024.set(r.state, r);
+  for (const bg of bgData) {
+    if (!bg) continue;
+    battleground.set(bg.state, bg);
+    scenarios.set(bg.state, defaultScenario(bg));
+    projections.set(bg.state, project(bg, scenarios.get(bg.state)!));
+  }
 
   features = collections.flatMap((c) => c.features as Feature[]);
   features.forEach((f, i) => {
@@ -148,6 +174,18 @@ map.on('load', async () => {
     source: 'acs',
     paint: { 'line-color': '#ffffff', 'line-width': 0.6 },
   });
+  // Seats that change hands under the battleground scenario; shown only in that mode.
+  map.addLayer({
+    id: 'ac-flip-line',
+    type: 'line',
+    source: 'acs',
+    layout: { visibility: 'none' },
+    paint: {
+      'line-color': '#1d1d1f',
+      'line-width': 1.6,
+      'line-opacity': ['case', ['boolean', ['feature-state', 'bgFlip'], false], 1, 0],
+    },
+  });
   map.addLayer({
     id: 'ac-issue-line',
     type: 'line',
@@ -156,6 +194,7 @@ map.on('load', async () => {
     paint: { 'line-color': ISSUE_COLOR, 'line-width': 1.5 },
   });
 
+  for (const id of battleground.keys()) paintBattleground(id);
   wireInteractions();
   renderStateList();
   renderLegend();
@@ -188,6 +227,9 @@ function fillColorExpression(): maplibregl.ExpressionSpecification {
     const prop = colorMode === 'winner' ? 'winner' : 'ls24';
     base = ['match', ['get', prop], ...Object.entries(PARTY_COLORS).flat(), OTHER_PARTY_COLOR] as never;
     return ['case', ['has', prop], base, NO_DATA_COLOR];
+  }
+  if (colorMode === 'battleground') {
+    return ['coalesce', ['feature-state', 'bgColor'], NO_DATA_COLOR];
   }
   if (colorMode === 'swing') {
     base = ['step', ['get', 'swing'], SWING_BUCKETS[0][1], ...SWING_BUCKETS.slice(1).flatMap(([t, c]) => [t, c])] as never;
@@ -234,10 +276,23 @@ function wireInteractions() {
       panel.modes
         .querySelectorAll('button')
         .forEach((b) => b.setAttribute('aria-checked', String(b === btn)));
-      map.setPaintProperty('ac-fill', 'fill-color', fillColorExpression());
+      applyModePaint();
       renderLegend();
+      if (selectedState) renderStateDetail(selectedState);
     }),
   );
+}
+
+function applyModePaint() {
+  const bgMode = colorMode === 'battleground';
+  map.setPaintProperty('ac-fill', 'fill-color', fillColorExpression());
+  map.setPaintProperty('ac-fill', 'fill-opacity', [
+    'case',
+    ['boolean', ['feature-state', 'hover'], false],
+    0.95,
+    bgMode ? ['coalesce', ['feature-state', 'bgOpacity'], 0.75] : 0.75,
+  ]);
+  map.setLayoutProperty('ac-flip-line', 'visibility', bgMode ? 'visible' : 'none');
 }
 
 function tooltipHtml(f: MapGeoJSONFeature): string {
@@ -249,7 +304,8 @@ function tooltipHtml(f: MapGeoJSONFeature): string {
   const result =
     (seat ? `<div>2022: <strong>${escapeHtml(seat.winner.party)}</strong> by ${seat.marginPct}%</div>` : '') +
     (pc?.winner ? `<div>2024 LS (${escapeHtml(pc.name)}): <strong>${escapeHtml(pc.winner.party)}</strong></div>` : '') +
-    (pc?.swing ? `<div>NDA swing: ${signed(pc.swing.ndaChange)} pts</div>` : '');
+    (pc?.swing ? `<div>NDA swing: ${signed(pc.swing.ndaChange)} pts</div>` : '') +
+    (colorMode === 'battleground' ? battlegroundTip(p) : '');
   const flag = p.quality !== 'ok' ? `<div class="tip-flag">⚠ ${qualityLabel(p.quality)}</div>` : '';
   return `<strong>${escapeHtml(name)}</strong> <span class="muted">${no}</span><br>${escapeHtml(p.district ?? '')}${result}${flag}`;
 }
@@ -260,6 +316,7 @@ function selectState(id: string) {
   if (bounds) map.fitBounds(bounds, { padding: 32, duration: 800 });
   renderStateList();
   renderStateDetail(id);
+  renderLegend();
 }
 
 function selectSeat(state: string, no: number) {
@@ -345,7 +402,18 @@ function renderOverview() {
     }
     <p class="muted small">Poll windows are expectations based on assembly term expiry. The Election
     Commission has not announced schedules yet.</p>
-    ${newsHtml(news.slice(0, 5), 'Latest news', 'No news collected yet.')}`;
+    ${newsHtml(news.slice(0, 5), 'Latest news', 'No news collected yet.')}
+    ${
+      newsUpdated
+        ? `<p class="muted small">News refreshed daily at 06:17 IST · last refresh ${new Date(newsUpdated).toLocaleString('en-IN', {
+            day: 'numeric',
+            month: 'short',
+            hour: '2-digit',
+            minute: '2-digit',
+            timeZone: 'Asia/Kolkata',
+          })} IST</p>`
+        : ''
+    }`;
 }
 
 function renderStateDetail(id: string) {
@@ -363,6 +431,7 @@ function renderStateDetail(id: string) {
       <dt>Expected polls</dt><dd>${s.expectedPolls}</dd>
     </dl>
     ${s.notes ? `<p>${escapeHtml(s.notes)}</p>` : ''}
+    ${battleground.has(id) ? battlegroundHtml(id) : ''}
     ${r ? stateResultsHtml(s, r) : `<h3>2022 results</h3><p class="muted">Not available yet: no 2022 results source has been added for ${s.name}.</p>`}
     ${ls2024.has(id) ? stateLsHtml(ls2024.get(id)!) : ''}
     ${newsHtml(news.filter((n) => n.states.includes(id)).slice(0, 6), 'News', `No news tagged to ${s.name} yet.`)}
@@ -375,6 +444,232 @@ function renderStateDetail(id: string) {
   panel.detail.querySelectorAll<HTMLButtonElement>('[data-pc]').forEach((btn) =>
     btn.addEventListener('click', () => selectPc(id, Number(btn.dataset.pc))),
   );
+  if (battleground.has(id)) wireBattlegroundControls(id);
+}
+
+// --- Battleground ---------------------------------------------------------------------------
+
+function blocInfo(stateId: string, blocId: string): { name: string; color: string } {
+  if (blocId === OTHERS) return { name: 'Others', color: OTHER_PARTY_COLOR };
+  const b = battleground.get(stateId)?.blocs.find((x) => x.id === blocId);
+  return b ? { name: b.name, color: b.color } : { name: blocId, color: OTHER_PARTY_COLOR };
+}
+
+// Pushes the current projection for one state onto the map through feature state, so slider
+// changes repaint without reloading the GeoJSON source.
+function paintBattleground(stateId: string) {
+  const proj = projections.get(stateId);
+  if (!proj) return;
+  for (const f of features) {
+    if (f.properties.state !== stateId || f.properties.quality === 'unidentified') continue;
+    const sp = proj.seats.get(f.properties.ac_no);
+    if (!sp) continue;
+    map.setFeatureState(
+      { source: 'acs', id: f.id! },
+      {
+        bgColor: sp.rating === 'tossup' ? TOSSUP_COLOR : blocInfo(stateId, sp.call).color,
+        bgOpacity: RATING_OPACITY[sp.rating],
+        bgFlip: sp.flip,
+      },
+    );
+  }
+}
+
+function updateBattleground(stateId: string) {
+  projections.set(stateId, project(battleground.get(stateId)!, scenarios.get(stateId)!));
+  paintBattleground(stateId);
+  const target = document.getElementById('bg-result');
+  if (target) target.innerHTML = battlegroundResultHtml(stateId);
+  wireSeatLinks(stateId, target);
+}
+
+function battlegroundHtml(stateId: string): string {
+  const bg = battleground.get(stateId)!;
+  const sc = scenarios.get(stateId)!;
+  const sliders = bg.blocs
+    .map(
+      (b) => `<label class="bg-slider">
+        <span><i class="dot" style="background:${b.color}"></i>${escapeHtml(b.name)}</span>
+        <input type="range" min="${-SWING_SLIDER_LIMIT}" max="${SWING_SLIDER_LIMIT}" step="0.5"
+          value="${sc.adjust[b.id] ?? 0}" data-bloc="${escapeHtml(b.id)}" aria-label="${escapeHtml(b.name)} swing adjustment" />
+        <output>${signed(sc.adjust[b.id] ?? 0)}</output>
+      </label>`,
+    )
+    .join('');
+  const options = bg.scenarios
+    .map((x) => `<option value="${escapeHtml(x.id)}"${sc.scenarioId === x.id ? ' selected' : ''}>${escapeHtml(x.name)}</option>`)
+    .join('');
+  return `
+    <h3>Battleground 2027</h3>
+    ${
+      bg.confirmed
+        ? ''
+        : `<p class="callout small">Alliances (blocs) are <strong>provisional defaults</strong> pending analyst review.
+           ${bg.note ? escapeHtml(bg.note) : ''}</p>`
+    }
+    ${colorMode === 'battleground' ? '' : `<p class="small"><button class="link" id="bg-show">Show on map</button></p>`}
+    <div class="bg-controls">
+      <div class="segmented small-seg" role="radiogroup" aria-label="Swing base">
+        <button role="radio" data-base="baseline" aria-checked="${sc.base === 'baseline'}">2022 notional</button>
+        <button role="radio" data-base="ls2024" aria-checked="${sc.base === 'ls2024'}">+ 2024 swing</button>
+      </div>
+      <label class="small">Analyst scenario
+        <select id="bg-scenario"><option value="">Custom</option>${options}</select>
+      </label>
+      <div class="small muted">Extra swing on top, in points:</div>
+      ${sliders}
+      <button class="link small" id="bg-reset">Reset</button>
+    </div>
+    <div id="bg-result">${battlegroundResultHtml(stateId)}</div>`;
+}
+
+function battlegroundResultHtml(stateId: string): string {
+  const s = STATES.find((x) => x.id === stateId)!;
+  const bg = battleground.get(stateId)!;
+  const proj = projections.get(stateId)!;
+  const sc = scenarios.get(stateId)!;
+  const total = Object.keys(bg.seats).length;
+  const bar = proj.tally
+    .map((t) => {
+      const info = blocInfo(stateId, t.bloc);
+      return `<span style="flex:${t.seats};background:${info.color}" title="${escapeHtml(info.name)}: ${t.seats}"></span>`;
+    })
+    .join('');
+  const chips = proj.tally
+    .map((t) => {
+      const info = blocInfo(stateId, t.bloc);
+      const won = t.seats >= s.majorityMark ? ' class="chip majority"' : ' class="chip"';
+      return `<span${won}><i class="dot" style="background:${info.color}"></i>${escapeHtml(info.name)} ${t.seats}</span>`;
+    })
+    .join('');
+  const seatRow = (no: number) => {
+    const sp = proj.seats.get(no)!;
+    const seat = bg.seats[String(no)];
+    const call = blocInfo(stateId, sp.call).name;
+    const from = blocInfo(stateId, seat.holder).name;
+    return `<li><button class="link" data-seat="${no}">${escapeHtml(seat.name)}</button>
+      <span class="muted small">${sp.flip ? `${escapeHtml(from)} → ` : ''}${escapeHtml(call)} · ${RATING_LABELS[sp.rating]}
+      (${sp.margin.toFixed(1)} pts)${sp.analyst ? ' · analyst' : ''}</span></li>`;
+  };
+  const flips = [...proj.seats.values()].filter((sp) => sp.flip).sort((a, b) => a.margin - b.margin);
+  const marginal = [...proj.seats.values()].sort((a, b) => a.margin - b.margin).slice(0, 8);
+  const baseText =
+    sc.base === 'ls2024'
+      ? `2022 result + each Lok Sabha seat's 2024 swing (${bg.pcsUsed} seats measured; the rest use the state average)`
+      : '2022 result regrouped into these blocs';
+  const adjust = Object.entries(sc.adjust).filter(([, v]) => v !== 0);
+  return `
+    <div class="seat-bar" aria-hidden="true">${bar}<span class="majority-line" style="left:${(s.majorityMark / total) * 100}%"></span></div>
+    <div class="majority-note muted small">Majority ${s.majorityMark} of ${total}</div>
+    <div class="chips">${chips}</div>
+    <p class="small"><strong>${proj.flips}</strong> seats change hands · <strong>${proj.tossups}</strong> toss-ups</p>
+    <p class="muted small">Scenario: ${baseText}${
+      adjust.length ? `, then ${adjust.map(([b, v]) => `${escapeHtml(blocInfo(stateId, b).name)} ${signed(v)}`).join(', ')}` : ''
+    }. Uniform-swing projection, not a forecast.</p>
+    ${flips.length ? `<h4>Seats that change hands (${flips.length})</h4><ol class="closest">${flips.slice(0, 10).map((x) => seatRow(x.no)).join('')}</ol>` : ''}
+    <h4>Closest seats</h4><ol class="closest">${marginal.map((x) => seatRow(x.no)).join('')}</ol>`;
+}
+
+function wireSeatLinks(stateId: string, root: HTMLElement | null) {
+  root?.querySelectorAll<HTMLButtonElement>('[data-seat]').forEach((btn) =>
+    btn.addEventListener('click', () => selectSeat(stateId, Number(btn.dataset.seat))),
+  );
+}
+
+function wireBattlegroundControls(stateId: string) {
+  const bg = battleground.get(stateId)!;
+  const sc = scenarios.get(stateId)!;
+  const select = document.getElementById('bg-scenario') as HTMLSelectElement | null;
+  const sliders = [...panel.detail.querySelectorAll<HTMLInputElement>('.bg-slider input')];
+  const syncSliders = () =>
+    sliders.forEach((el) => {
+      el.value = String(sc.adjust[el.dataset.bloc!] ?? 0);
+      el.nextElementSibling!.textContent = signed(Number(el.value));
+    });
+
+  document.getElementById('bg-show')?.addEventListener('click', () => {
+    panel.modes.querySelector<HTMLButtonElement>('[data-mode="battleground"]')?.click();
+  });
+  panel.detail.querySelectorAll<HTMLButtonElement>('[data-base]').forEach((btn) =>
+    btn.addEventListener('click', () => {
+      sc.base = btn.dataset.base as Scenario['base'];
+      panel.detail.querySelectorAll('[data-base]').forEach((b) => b.setAttribute('aria-checked', String(b === btn)));
+      updateBattleground(stateId);
+    }),
+  );
+  let frame = 0;
+  sliders.forEach((el) =>
+    el.addEventListener('input', () => {
+      sc.adjust[el.dataset.bloc!] = Number(el.value);
+      sc.scenarioId = null;
+      if (select) select.value = '';
+      el.nextElementSibling!.textContent = signed(Number(el.value));
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => updateBattleground(stateId));
+    }),
+  );
+  select?.addEventListener('change', () => {
+    const chosen = bg.scenarios.find((x) => x.id === select.value);
+    for (const b of bg.blocs) sc.adjust[b.id] = chosen?.swing[b.id] ?? 0;
+    sc.scenarioId = chosen?.id ?? null;
+    syncSliders();
+    updateBattleground(stateId);
+  });
+  document.getElementById('bg-reset')?.addEventListener('click', () => {
+    Object.assign(sc, defaultScenario(bg));
+    if (select) select.value = '';
+    panel.detail.querySelectorAll('[data-base]').forEach((b) => b.setAttribute('aria-checked', String((b as HTMLElement).dataset.base === sc.base)));
+    syncSliders();
+    updateBattleground(stateId);
+  });
+}
+
+function battlegroundTip(p: ConstituencyProps): string {
+  const sp = p.quality === 'unidentified' ? undefined : projections.get(p.state)?.seats.get(p.ac_no);
+  if (!sp) return '';
+  const call = blocInfo(p.state, sp.call).name;
+  return `<div>2027 projection: <strong>${escapeHtml(call)}</strong> · ${RATING_LABELS[sp.rating]}${sp.flip ? ' · <strong>flips</strong>' : ''}</div>`;
+}
+
+function seatBattlegroundHtml(p: ConstituencyProps): string {
+  const bg = battleground.get(p.state);
+  const sp = p.quality === 'unidentified' ? undefined : projections.get(p.state)?.seats.get(p.ac_no);
+  if (!bg || !sp) return '';
+  const seat = bg.seats[String(p.ac_no)];
+  const rows = Object.entries(sp.shares)
+    .sort((a, b) => b[1] - a[1])
+    .map(([b, now]) => {
+      const info = blocInfo(p.state, b);
+      const then = b === OTHERS ? seat.other?.share ?? 0 : seat.shares[b];
+      const label = b === OTHERS && seat.other ? `Others (best: ${seat.other.name}, ${seat.other.party})` : info.name;
+      return `<tr><td><i class="dot" style="background:${info.color}"></i>${escapeHtml(label)}</td>
+        <td class="num">${then.toFixed(1)}%</td><td class="num">${now.toFixed(1)}%</td></tr>`;
+    })
+    .join('');
+  const holder = blocInfo(p.state, seat.holder).name;
+  const call = blocInfo(p.state, sp.call).name;
+  const analyst = sp.analyst
+    ? `<p class="callout small"><strong>Analyst rating: ${RATING_LABELS[sp.analyst.rating]}${
+        sp.analyst.bloc ? ` ${escapeHtml(blocInfo(p.state, sp.analyst.bloc).name)}` : ''
+      }</strong>${sp.analyst.note ? ` — ${escapeHtml(sp.analyst.note)}` : ''}${
+        sp.analyst.analyst ? ` <span class="muted">(${escapeHtml(sp.analyst.analyst)}${sp.analyst.date ? `, ${escapeHtml(sp.analyst.date)}` : ''})</span>` : ''
+      }<br><span class="muted">Model alone: ${escapeHtml(blocInfo(p.state, sp.leader).name)}, ${RATING_LABELS[sp.modelRating]}.</span></p>`
+    : '';
+  const swingNote =
+    sp.swingSource === 'state'
+      ? '<p class="muted small">This seat has no usable Lok Sabha swing, so it uses the state average.</p>'
+      : '';
+  return `
+    <h3>Battleground 2027</h3>
+    <p><strong>${escapeHtml(call)}</strong> · ${RATING_LABELS[sp.rating]} (margin ${sp.margin.toFixed(1)} pts)${
+      sp.flip ? ` · <strong>gain from ${escapeHtml(holder)}</strong>` : ` · ${escapeHtml(holder)} hold`
+    }</p>
+    ${analyst}
+    <table class="tally">
+      <thead><tr><th>Bloc</th><th class="num">2022 notional</th><th class="num">Projected</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+    ${swingNote}`;
 }
 
 function stateLsHtml(ls: LsStateResults): string {
@@ -501,6 +796,7 @@ function renderConstituency(p: ConstituencyProps) {
       <dt>Lok Sabha seat</dt><dd>${escapeHtml(p.pc_name ?? '—')}</dd>
     </dl>
     ${qualityNote}
+    ${seatBattlegroundHtml(p)}
     ${seat ? seatResultHtml(seat) : results.has(p.state) ? '' : `<p class="muted">2022 results for ${s.name} are not loaded yet.</p>`}
     ${pcResult(p) ? pcResultHtml(pcResult(p)!) : ''}
     ${newsHtml(seatNews(p), 'News for this seat', 'No news tagged to this seat or its district yet.')}`;
@@ -619,7 +915,7 @@ function newsHtml(items: NewsItem[], heading: string, empty: string): string {
     })
     .join('');
   const tagger = items.some((n) => n.tagger === 'rules')
-    ? 'Some stories are tagged by keyword rules only; AI tagging runs when the weekly job has API credentials.'
+    ? 'Some stories are tagged by keyword rules only; AI tagging runs when the daily job has API credentials.'
     : 'Tagged by Claude; constituency tags are checked against the official seat list.';
   return `<h3>${heading}</h3><ul class="news">${rows}</ul><p class="muted small">${tagger}</p>`;
 }
@@ -633,6 +929,7 @@ function resetView() {
   map.fitBounds(INDIA_BOUNDS, { duration: 800 });
   renderStateList();
   renderOverview();
+  renderLegend();
 }
 
 function renderLegend() {
@@ -642,6 +939,17 @@ function renderLegend() {
     items = [...STATES.map((s) => item(STATE_COLORS[s.id], s.id)), item(ISSUE_COLOR, 'Data issue')];
   } else if (colorMode === 'margin') {
     items = [...MARGIN_BUCKETS.map(([, c, label]) => item(c, label)), item(NO_DATA_COLOR, 'No 2022 data')];
+  } else if (colorMode === 'battleground') {
+    // Blocs from the selected state, or from every state when none is selected.
+    const ids = selectedState ? [selectedState] : [...battleground.keys()];
+    const seen = new Map<string, string>();
+    for (const id of ids) for (const b of battleground.get(id)?.blocs ?? []) if (!seen.has(b.name)) seen.set(b.name, b.color);
+    items = [
+      `<span class="legend-title">Projected 2027 call · paler = less safe · outlined = changes hands</span>`,
+      ...[...seen].slice(0, 8).map(([name, color]) => item(color, name)),
+      item(TOSSUP_COLOR, 'Toss-up'),
+      item(NO_DATA_COLOR, 'No data'),
+    ];
   } else if (colorMode === 'swing') {
     items = [
       `<span class="legend-title">NDA vote share change, pts</span>`,

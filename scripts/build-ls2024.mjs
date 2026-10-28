@@ -264,7 +264,18 @@ function addSwing(state, pcs, acToPc, votes2022) {
     };
     pc.swing.ndaChange = round(pc.swing.nda2024 - pc.swing.nda2022, 2);
   }
-  for (const pc of pcs) delete pc.partyVotes;
+  for (const pc of pcs) {
+    // Full 2024 shares (parties >= 0.1%) for the battleground build, which regroups them into
+    // the analyst's 2027 blocs.
+    pc.shares2024 = pc.totalVotes
+      ? Object.fromEntries(
+          Object.entries(pc.partyVotes)
+            .map(([p, v]) => [p, round((v / pc.totalVotes) * 100, 2)])
+            .filter(([, sh]) => sh >= 0.1),
+        )
+      : {};
+    delete pc.partyVotes;
+  }
 
   const share2022 = ndaShare(state2022, '2022');
   const share2024 = ndaShare(state2024, '2024');

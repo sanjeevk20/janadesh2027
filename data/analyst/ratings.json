@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "description": "Analyst seat ratings that override the model's rating in the battleground view. Key each entry by assembly constituency number. `rating` is one of: safe, likely, lean, tossup. `bloc` is the bloc id the seat leans to (omit for tossup). `note` is shown on the seat. Leave a state's object empty to use the model alone.",
+    "owner": "Voting research analyst",
+    "lastReviewed": "2026-10-28",
+    "example": {
+      "UP": {
+        "20": {
+          "rating": "tossup",
+          "note": "Dhampur: won by 203 votes in 2022; local candidate factor.",
+          "analyst": "A. Analyst",
+          "date": "2026-10-28"
+        }
+      }
+    }
+  },
+  "states": {
+    "UP": {},
+    "PB": {},
+    "UK": {},
+    "GA": {},
+    "MN": {},
+    "GJ": {},
+    "HP": {}
+  }
+}

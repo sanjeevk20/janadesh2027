@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "description": "Named swing scenarios per state, shown in the battleground view's scenario picker. `swing` is percentage points of vote share added to each bloc in every seat (uniform swing), on top of the 2022 notional baseline. Bloc ids come from blocs.json. Two scenarios are always available without being listed here: '2022 baseline' (no swing) and '2024 Lok Sabha swing' (each Lok Sabha seat's measured bloc swing).",
+    "owner": "Voting research analyst",
+    "lastReviewed": "2026-10-28"
+  },
+  "states": {
+    "UP": [
+      {
+        "id": "example-india-gain",
+        "name": "Example: INDIA +3, NDA −3",
+        "swing": { "INDIA": 3, "NDA": -3 },
+        "note": "Illustrative only; replace with analyst scenarios.",
+        "author": "engineering (example)"
+      }
+    ]
+  }
+}

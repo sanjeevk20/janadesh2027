@@ -6,7 +6,7 @@ on:
   # Commits pushed by the news workflow use GITHUB_TOKEN, which doesn't trigger `push`
   # workflows, so redeploy explicitly after it finishes.
   workflow_run:
-    workflows: [Weekly news]
+    workflows: [Daily news]
     types: [completed]
   workflow_dispatch:
 

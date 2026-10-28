@@ -22,7 +22,27 @@ Poll windows are based on when each assembly's term ends. The Election Commissio
   - State view: seat tally, vote share by party, and the 5 closest contests (click one to jump to it).
   - Seat view: winner, runner-up, margin, and the top 5 candidates with votes and vote share.
 - **2024 Lok Sabha results and NDA swing** for all 7 states. Colour the map by 2024 Lok Sabha winner or by the change in NDA vote share from 2022 to 2024 (see below).
-- **News, tagged to places.** Stories are collected weekly, tagged with states, constituencies, parties and a topic, and shown on the overview, state and seat views.
+- **Battleground 2027.** Projects every seat under a swing scenario and shows who would win, how safely, and which seats change hands, with a projected tally against the majority mark. Alliances, scenarios and seat ratings are **inputs from the voting research analyst** (see below and the [analyst guide](docs/ANALYST-GUIDE.md)).
+- **News, tagged to places.** Stories are fetched **daily at 06:17 IST**, tagged with states, constituencies, parties and a topic, and shown on the overview, state and seat views.
+
+### Battleground 2027
+
+Each seat's 2022 result is regrouped into the 2027 alliances (a *notional* result: if RLD is with the NDA in 2027, its 2022 votes count for the NDA). A scenario is then applied:
+
+- **Base:** the 2022 notional result alone, or plus each Lok Sabha seat's measured 2022→2024 swing for every bloc (seats with no usable Lok Sabha swing use the state average).
+- **Adjustments:** extra points per bloc from the sliders, or loaded from an analyst scenario.
+
+Each seat's projected leader is rated by margin: **toss-up** under 2 points, **lean** under 5, **likely** under 10, **safe** otherwise. An analyst's seat rating overrides the model and is labelled as such. The strongest candidate outside the blocs keeps their 2022 share, so a strong independent can still hold a seat.
+
+This is a uniform-swing projection: it shows which seats are exposed to a given swing. It is not a forecast, and the page says so.
+
+**Analyst inputs** live in [`data/analyst/`](data/analyst/) and are validated at build time (an unknown bloc, a party in two blocs or an invalid rating fails the build):
+
+| File | What the analyst decides |
+|---|---|
+| [`blocs.json`](data/analyst/blocs.json) | Who contests together in 2027, per state. **Currently provisional defaults**; each state shows a banner until the analyst sets `confirmed: true`. |
+| [`scenarios.json`](data/analyst/scenarios.json) | Named swing scenarios that appear in the scenario picker. |
+| [`ratings.json`](data/analyst/ratings.json) | Seat-level calls with a note, overriding the model. |
 
 ### 2024 Lok Sabha and swing
 
@@ -55,7 +75,7 @@ After the fixes every Punjab Lok Sabha seat has 9 assembly seats, and UP has 77 
    - Without API credentials, keyword rules stand in for Claude and stories are marked as rule-tagged.
 3. **Publish:** writes `public/data/news.json` (the last 180 days).
 
-The [weekly workflow](.github/workflows/news.yml) runs collect + tag every Monday and commits the result. **To turn on AI tagging, add an `ANTHROPIC_API_KEY` repository secret**; without it the workflow still runs using rules.
+The [daily workflow](.github/workflows/news.yml) runs collect + tag every day at 06:17 IST (00:47 UTC), commits the result, and the site redeploys automatically. **To turn on AI tagging, add an `ANTHROPIC_API_KEY` repository secret**; without it the workflow still runs using rules.
 
 The first 7 stories were added by hand from research on 27 Oct 2026 (`collectedBy: "manual"`), because the feeds couldn't be reached from the build environment.
 
@@ -93,7 +113,7 @@ The boundaries come from [DataMeet](https://github.com/datameet/maps/tree/master
 | Manipur | 68 / 60 | All boundaries are pre-delimitation; 6 seat numbers duplicated |
 | Gujarat | 172 / 182 | 20 seat numbers have no shape (most of Ahmedabad, 45–56, and Surat, 160–167); 10 unnamed shapes with no seat number |
 
-These need repairing against official ECI delimitation data before results can be attached to them. That repair is the next step for this data.
+Repairing these boundaries is out of scope: affected shapes are flagged on the map, results stay attached to every seat in the data, and the battleground tally counts all seats even where a shape is missing.
 
 The full report is in [`public/data/validation.json`](public/data/validation.json).
 
@@ -110,7 +130,7 @@ npm run dev          # http://localhost:5173
 
 `npm run build` type-checks and produces a static site in `dist/`.
 
-**Live site:** https://sanjeevk20.github.io/janadesh2027/ — deployed by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on every push to `main` and after each weekly news run. One-time setup: **Settings → Pages → Source: GitHub Actions**.
+**Live site:** https://sanjeevk20.github.io/janadesh2027/ — deployed by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on every push to `main` and after each daily news run. One-time setup: **Settings → Pages → Source: GitHub Actions**.
 
 The map uses the [OpenFreeMap](https://openfreemap.org) Positron basemap. If that can't be reached, it falls back to a plain background so the constituency layers still render.
 
@@ -141,11 +161,12 @@ src/                         Web app (TypeScript + MapLibre GL, built with Vite)
 ## Roadmap
 
 1. ✅ **Foundation**: boundaries, state metadata, validation, map
-2. ✅ **2022 results** for Round 1 states; Gujarat and Himachal Pradesh still to be sourced
+2. ✅ **2022 results** for all 7 states
 3. ✅ **2024 Lok Sabha results and NDA swing** (per Lok Sabha seat)
-4. ✅ **News intelligence**: weekly collection, gazetteer + Claude tagging with seat checks
-5. **Claim checking**: check each extracted claim against official sources and score its confidence, flagging conflicts
-6. **Election season**: phase-wise schedule overlays, candidates, live results, swing compared with 2022
+4. ✅ **News intelligence**: daily collection, gazetteer + Claude tagging with seat checks
+5. ✅ **Battleground 2027**: notional results, swing scenarios, analyst-owned alliances, scenarios and ratings
+6. **Claim checking**: check each extracted claim against official sources and score its confidence, flagging conflicts
+7. **Election season**: phase-wise schedule overlays, candidates, live results, swing compared with 2022
 
 ## Data and licenses
 

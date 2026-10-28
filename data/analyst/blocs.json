@@ -1,0 +1,72 @@
+{
+  "_meta": {
+    "description": "Who contests together in 2027, per state. The battleground projection regroups 2022 and 2024 votes into these blocs (a 'notional' result), so changing a bloc changes every baseline and swing. Parties are abbreviations from data/parties.json. Any party not listed counts as 'Others' and cannot gain or lose swing.",
+    "owner": "Voting research analyst",
+    "status": "PROVISIONAL defaults set by engineering on 2026-10-28 from 2024 alignments. Analyst to confirm or edit each state and set `confirmed: true`.",
+    "lastReviewed": "2026-10-28"
+  },
+  "states": {
+    "UP": {
+      "confirmed": false,
+      "blocs": [
+        { "id": "NDA", "name": "NDA", "color": "#f47c20", "parties": ["BJP", "AD(S)", "RLD", "SBSP", "NISHAD"] },
+        { "id": "INDIA", "name": "INDIA (SP+INC)", "color": "#d7191c", "parties": ["SP", "INC"] },
+        { "id": "BSP", "name": "BSP", "color": "#5b3fa8", "parties": ["BSP"] }
+      ],
+      "note": "Assumes RLD and SBSP stay with the NDA as in 2024, and SP–INC contest together."
+    },
+    "PB": {
+      "confirmed": false,
+      "blocs": [
+        { "id": "AAP", "name": "AAP", "color": "#1f4e8c", "parties": ["AAP"] },
+        { "id": "INC", "name": "Congress", "color": "#19aaed", "parties": ["INC"] },
+        { "id": "SAD", "name": "SAD", "color": "#8a6d00", "parties": ["SAD"] },
+        { "id": "BJP", "name": "BJP", "color": "#f47c20", "parties": ["BJP", "PLC", "SAD(S)"] }
+      ],
+      "note": "Four-cornered contest as in 2024; BSP counted with Others."
+    },
+    "UK": {
+      "confirmed": false,
+      "blocs": [
+        { "id": "BJP", "name": "BJP", "color": "#f47c20", "parties": ["BJP"] },
+        { "id": "INC", "name": "Congress", "color": "#19aaed", "parties": ["INC"] }
+      ]
+    },
+    "GA": {
+      "confirmed": false,
+      "blocs": [
+        { "id": "NDA", "name": "BJP + MGP", "color": "#f47c20", "parties": ["BJP", "MGP"] },
+        { "id": "INC", "name": "Congress + GFP", "color": "#19aaed", "parties": ["INC", "GFP"] },
+        { "id": "AAP", "name": "AAP", "color": "#1f4e8c", "parties": ["AAP"] },
+        { "id": "RGP", "name": "RGP", "color": "#ffb74d", "parties": ["RGP"] }
+      ],
+      "note": "Assumes MGP stays with the BJP-led government and Congress–GFP repeat their 2022 tie-up."
+    },
+    "MN": {
+      "confirmed": false,
+      "blocs": [
+        { "id": "BJP", "name": "BJP", "color": "#f47c20", "parties": ["BJP"] },
+        { "id": "INC", "name": "Congress", "color": "#19aaed", "parties": ["INC"] },
+        { "id": "NPP", "name": "NPP", "color": "#d16ba5", "parties": ["NPP"] },
+        { "id": "NPF", "name": "NPF", "color": "#455a64", "parties": ["NPF"] },
+        { "id": "JDU", "name": "JD(U)", "color": "#7cb342", "parties": ["JD(U)"] }
+      ],
+      "note": "Parties kept separate: alignments after President's Rule are unclear. Boundary data for Manipur is unreliable (see data quality)."
+    },
+    "GJ": {
+      "confirmed": false,
+      "blocs": [
+        { "id": "BJP", "name": "BJP", "color": "#f47c20", "parties": ["BJP"] },
+        { "id": "INC", "name": "Congress", "color": "#19aaed", "parties": ["INC"] },
+        { "id": "AAP", "name": "AAP", "color": "#1f4e8c", "parties": ["AAP"] }
+      ]
+    },
+    "HP": {
+      "confirmed": false,
+      "blocs": [
+        { "id": "INC", "name": "Congress", "color": "#19aaed", "parties": ["INC"] },
+        { "id": "BJP", "name": "BJP", "color": "#f47c20", "parties": ["BJP"] }
+      ]
+    }
+  }
+}
