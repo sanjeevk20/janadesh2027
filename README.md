@@ -105,7 +105,9 @@ npm run news:tag     # tag stories (set ANTHROPIC_API_KEY for Claude tagging)
 npm run dev          # http://localhost:5173
 ```
 
-`npm run build` type-checks and produces a static site in `dist/`. It can be hosted on GitHub Pages, Vercel or Cloudflare Pages.
+`npm run build` type-checks and produces a static site in `dist/`.
+
+**Live site:** https://sanjeevk20.github.io/janadesh2027/ — deployed by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on every push to `main` and after each weekly news run. One-time setup: **Settings → Pages → Source: GitHub Actions**.
 
 The map uses the [OpenFreeMap](https://openfreemap.org) Positron basemap. If that can't be reached, it falls back to a plain background so the constituency layers still render.
 
