@@ -18,7 +18,7 @@ Poll windows are based on when each assembly's term ends. The Election Commissio
 - **Interactive map** of every constituency in the 7 states, built with MapLibre GL. Hover to see the name and district, click for details.
 - **State panel** listing seats, majority mark, governing party, term end and expected poll window.
 - **Validation of the boundary data.** Each state's boundaries are checked against its known seat count, and shapes that fail are highlighted in red on the map.
-- **2022 results** for every seat in six states (872 seats; Himachal Pradesh pending). Colour the map by **winner**, by **winning margin** (darkest = closest contests, the seats most likely to flip), or by state.
+- **2022 results** for every seat in all 7 states (940 seats). Colour the map by **winner**, by **winning margin** (darkest = closest contests, the seats most likely to flip), or by state.
   - State view: seat tally, vote share by party, and the 5 closest contests (click one to jump to it).
   - Seat view: winner, runner-up, margin, and the top 5 candidates with votes and vote share.
 - **2024 Lok Sabha results and NDA swing** for all 7 states. Colour the map by 2024 Lok Sabha winner or by the change in NDA vote share from 2022 to 2024 (see below).
@@ -33,7 +33,7 @@ Poll windows are based on when each assembly's term ends. The Election Commissio
 - The **NDA** is defined per state and year in [`data/alliances.json`](data/alliances.json), since its members changed (e.g. the RLD joined in UP for 2024). Compare the NDA row rather than single parties where seat-sharing changed who stood.
 - Statewide NDA share, 2022 assembly → 2024 Lok Sabha: UP 43.8% → 43.7%, Punjab 7.8% → 18.6%, Uttarakhand 44.3% → 56.9%, Goa 33.4% → 50.9%, Manipur 37.8% → 35.4%.
 - Gujarat: 50.3% → 59.8% across 21 of 26 Lok Sabha seats. Gandhinagar, Ahmedabad East, Ahmedabad West, Surat and Navsari are left out because some of their assembly seats have no boundary shape, which would make the 2022 side partial. Surat was also uncontested in 2024.
-- Himachal Pradesh shows 2024 results but no swing until its 2022 assembly results are added.
+- Himachal Pradesh: 43.0% → 56.4% across all 4 Lok Sabha seats.
 
 **Repairs.** Assembly seats are linked to Lok Sabha seats through the boundary data, which got three wrong. [`data/repairs.json`](data/repairs.json) fixes them, with reasons, and the data-quality panel reports each fix:
 
@@ -69,13 +69,13 @@ The first 7 stories were added by hand from research on 27 Oct 2026 (`collectedB
 | Goa | 40 / 40 | BJP 20, INC 11, IND 3, MGP 2, AAP 2, GFP 1, RGP 1 |
 | Manipur | 60 / 60 | BJP 32, NPP 7, JD(U) 6, INC 5, NPF 5, IND 3, KPA 2 |
 | Gujarat | 182 / 182 | BJP 156, INC 17, AAP 5, IND 3, SP 1 |
-| Himachal Pradesh | pending | No open source added yet |
+| Himachal Pradesh | 68 / 68 | INC 40, BJP 25, IND 3 |
 
-All six derived tallies match the officially declared 2022 results. Round 1 results come from [india-votes-data](https://github.com/thecont1/india-votes-data) (MIT), which is scraped from ECI result pages and pinned to a fixed commit.
+All seven derived tallies match the officially declared 2022 results. Round 1 results come from [india-votes-data](https://github.com/thecont1/india-votes-data) (MIT), which is scraped from ECI result pages and pinned to a fixed commit.
 
-Gujarat was imported with the [Import election results](.github/workflows/import-results.yml) workflow, which runs the same scraper on archive.org copies of ECI's December 2022 result pages and retries any seat whose nearest capture was empty (Deesa, Gandhinagar South and Petlad needed later snapshots). The CSV and its provenance are committed under `data/sources/results/`. Vote shares also match: BJP 52.50%, INC 27.28%, AAP 12.92%.
+Gujarat and Himachal Pradesh were imported with the [Import election results](.github/workflows/import-results.yml) workflow, which runs the same scraper on archive.org copies of ECI's December 2022 result pages and retries any seat whose nearest capture was empty (Deesa, Gandhinagar South and Petlad needed later snapshots). The CSVs and their provenance are committed under `data/sources/results/`. Vote shares also match: Gujarat BJP 52.50%, INC 27.28%, AAP 12.92%; Himachal INC 43.90%, BJP 43.00%.
 
-**Adding Himachal Pradesh:** run the Import election results workflow with `state: HP` and the archive.org URL of its constituency-1 results page (`…/ResultAcGenDec2022/ConstituencywiseS081.htm?ac=1`). It pushes an `import/...` branch for review.
+**Importing other elections:** run the Import election results workflow with the state code and the archive.org URL of the ECI constituency-1 results page (e.g. Himachal used `…/ResultAcGenDec2022/ConstituencywiseS081.htm?ac=1`). It pushes an `import/...` branch for review.
 
 **Join check:** each result is joined to its boundary shape by seat number. The build then compares the two names and flags pairs that don't match, since that's where a shape may have been attached to the wrong seat. Today it flags one seat: UP #154, "Sawayazpur" in the results against "Sawaijpur" in the boundaries (a spelling variant). Shapes with no valid seat number get no result rather than a guessed one.
 
