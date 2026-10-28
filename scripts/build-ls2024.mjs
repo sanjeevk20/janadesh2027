@@ -43,6 +43,13 @@ for (const state of states) {
   if (await exists(assemblyCsv)) {
     const votes2022 = assemblyVotesByAc(parseCsv(await readFile(assemblyCsv, 'utf8')));
     ndaState = addSwing(state, pcs, acToPc, votes2022);
+    if (ndaState.excluded.length) {
+      issues.push({
+        severity: 'warning',
+        code: 'SWING_PARTIAL',
+        message: `Swing left out for ${ndaState.excluded.length} Lok Sabha seat(s) whose assembly seats are missing from the boundary data: ${ndaState.excluded.join(', ')}. Statewide NDA shares cover the other ${ndaState.pcsCompared}.`,
+      });
+    }
   }
 
   const output = {
@@ -58,7 +65,9 @@ for (const state of states) {
   await writeFile(path.join(OUT, `${state.id}.json`), JSON.stringify(output));
 
   const tally = output.summary.map((s) => `${s.party} ${s.seats}`).join(', ');
-  const swing = ndaState ? ` · NDA ${ndaState.share2022}% → ${ndaState.share2024}%` : ' · no 2022 assembly data for swing';
+  const swing = ndaState
+    ? ` · NDA ${ndaState.share2022}% → ${ndaState.share2024}% (${ndaState.pcsCompared}/${pcs.length} PCs)`
+    : ' · no 2022 assembly data for swing';
   console.log(`OK   ${state.id} ${state.name}: ${pcs.length}/${EXPECTED_PCS[state.id]} PCs · ${tally}${swing} · ${issues.length} join issue(s)`);
 }
 
@@ -202,7 +211,13 @@ function assemblyVotesByAc(rows) {
   return byAc;
 }
 
-// Adds party and NDA swing to each PC; returns statewide NDA shares.
+// Adds party and NDA swing to each PC; returns statewide NDA shares over the PCs that can be
+// compared like for like.
+//
+// When some 2022 seats have no boundary shape, they can't be linked to a PC, so the PCs they
+// belong to would compare a partial 2022 electorate with a full 2024 one. Those PCs are the
+// ones with fewer ACs than the state's typical PC (seats / PCs); they get no swing and are
+// left out of the statewide totals. Uncontested PCs (no 2024 votes) are left out too.
 function addSwing(state, pcs, acToPc, votes2022) {
   const members = nda[state.id];
   const ndaShare = (partyVotes, year) => {
@@ -211,16 +226,27 @@ function addSwing(state, pcs, acToPc, votes2022) {
     return total ? round((v / total) * 100, 2) : null;
   };
 
+  const unlinked = [...votes2022.keys()].filter((ac) => acToPc[ac] === undefined).length;
+  const typicalSize = Math.round(state.seats / pcs.length);
+
   const state2022 = {};
   const state2024 = {};
+  const excluded = [];
+  let pcsCompared = 0;
   for (const pc of pcs) {
+    if (unlinked && pc.acs.length < typicalSize) {
+      pc.swingIncomplete = true;
+      excluded.push(`${pc.name} (${pc.acs.length}/${typicalSize})`);
+      continue;
+    }
     const agg = {};
     for (const ac of pc.acs) {
       for (const [party, v] of Object.entries(votes2022.get(ac) ?? {})) agg[party] = (agg[party] ?? 0) + v;
     }
+    if (pc.uncontested || !Object.keys(agg).length) continue;
     for (const [p, v] of Object.entries(agg)) state2022[p] = (state2022[p] ?? 0) + v;
     for (const [p, v] of Object.entries(pc.partyVotes)) state2024[p] = (state2024[p] ?? 0) + v;
-    if (pc.uncontested || !Object.keys(agg).length) continue;
+    pcsCompared++;
 
     const total22 = Object.values(agg).reduce((a, b) => a + b, 0);
     const share22 = (p) => round(((agg[p] ?? 0) / total22) * 100, 2);
@@ -242,7 +268,7 @@ function addSwing(state, pcs, acToPc, votes2022) {
 
   const share2022 = ndaShare(state2022, '2022');
   const share2024 = ndaShare(state2024, '2024');
-  return { share2022, share2024, change: round(share2024 - share2022, 2) };
+  return { share2022, share2024, change: round(share2024 - share2022, 2), pcsCompared, excluded };
 }
 
 function summarise(pcs) {

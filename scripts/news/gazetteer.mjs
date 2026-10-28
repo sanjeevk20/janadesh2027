@@ -5,7 +5,7 @@
 // than a missing one, so ambiguous names are only accepted with supporting context.
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { exists, titleCase } from '../lib.mjs';
+import { exists, titleCase, RESERVATION_TAG } from '../lib.mjs';
 
 // Words that appear in constituency names but are too generic to identify a place alone.
 const GENERIC = new Set([
@@ -70,7 +70,8 @@ export function cleanName(name) {
   if (!name) return '';
   return String(name)
     .toUpperCase()
-    .replace(/\(.*?\)|\*/g, ' ')
+    .replace(RESERVATION_TAG, ' ')
+    .replace(/\*/g, ' ')
     .replace(/[^A-Z ]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
