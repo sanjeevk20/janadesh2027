@@ -18,6 +18,10 @@ const NAME_SIMILARITY_THRESHOLD = 0.75;
 
 const { states } = JSON.parse(await readFile('data/states.json', 'utf8'));
 const { parties } = JSON.parse(await readFile('data/parties.json', 'utf8'));
+// Per-state provenance for CSVs committed under data/sources/results/ (e.g. scraped imports).
+const localSources = (await exists('data/sources/results/sources.json'))
+  ? JSON.parse(await readFile('data/sources/results/sources.json', 'utf8'))
+  : {};
 await mkdir(OUT, { recursive: true });
 
 for (const state of states) {
@@ -79,7 +83,7 @@ for (const state of states) {
   const output = {
     state: state.id,
     year: 2022,
-    source: RESULTS_SOURCE,
+    source: localSources[state.id] ?? RESULTS_SOURCE,
     totalVotes: stateVotes,
     summary,
     join,
