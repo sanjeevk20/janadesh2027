@@ -1,0 +1,1594 @@
+{
+  "_meta": {
+    "description": "Hand-labelled news stories for measuring the tagger. relevant=false marks reference/evergreen pages and stories that cannot be placed in a state; `states` lists the states a correct tagger should give (for non-relevant items it is informational); `topics` lists acceptable topics.",
+    "labelledFrom": "Daily news run of 2026-10-28, random sample of 70 (seed 7); plus 45 from seed 2027 (former holdout, used for tuning on 2026-10-28)",
+    "labeller": "engineering; analyst to review"
+  },
+  "items": [
+    {
+      "id": "d804c6d28660",
+      "title": "BJP Sounds 2027 Poll Bugle in Goa, Nitin Nabin Sets 50% Vote Share Target",
+      "summary": "BJP Sounds 2027 Poll Bugle in Goa, Nitin Nabin Sets 50% Vote Share Target News On AIR",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GA"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "0150724f0c31",
+      "title": "AAP rejigs top panel ahead of Punjab 2027 polls, Mann gets permanent PAC role",
+      "summary": "AAP rejigs top panel ahead of Punjab 2027 polls, Mann gets permanent PAC role The New Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "bf60baa3465a",
+      "title": "Jiribam Election 2027: Jiribam Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Jiribam Election 2027: Jiribam Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "370cbc1588da",
+      "title": "Ahead of 2027 Assembly Polls, Congress Relies on Balanced Social Formula in UP Organisational Revamp",
+      "summary": "Ahead of 2027 Assembly Polls, Congress Relies on Balanced Social Formula in UP Organisational Revamp TheWire.in",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "bc7a8cadcb3e",
+      "title": "Congress Seeks Respectable Seat Sharing Deal From SP For 2027 Uttar Pradesh Assembly Election",
+      "summary": "Congress Seeks Respectable Seat Sharing Deal From SP For 2027 Uttar Pradesh Assembly Election ETV Bharat",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "alliances"
+        ]
+      }
+    },
+    {
+      "id": "379295f91be7",
+      "title": "CM Sukhvinder Sukhu Challenges BJP Claims Over 2027 Assembly Victory",
+      "summary": "CM Sukhvinder Sukhu Challenges BJP Claims Over 2027 Assembly Victory Asianet Newsable",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "0eaa1a050ff1",
+      "title": "BJP dominates UP voter preference on 256 of 403 seats: Samajwadi Party at 135; NDA allies may face maximum ...",
+      "summary": "BJP dominates UP voter preference on 256 of 403 seats: Samajwadi Party at 135; NDA allies may face maximum ... Bhaskar English",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "polls"
+        ]
+      }
+    },
+    {
+      "id": "47340e2fc84e",
+      "title": "Henglep Election 2027: Henglep Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Henglep Election 2027: Henglep Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "449683f4f401",
+      "title": "Politics Gets Playable In Uttar Pradesh Ahead of 2027 Polls",
+      "summary": "Politics Gets Playable In Uttar Pradesh Ahead of 2027 Polls India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "analysis",
+          "other"
+        ]
+      }
+    },
+    {
+      "id": "ea38088f32c2",
+      "title": "Himachal former minister Ram Lal Markandey announces formation of 'Third Front' ahead of 2027 polls",
+      "summary": "Himachal former minister Ram Lal Markandey announces formation of 'Third Front' ahead of 2027 polls ANI News",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "alliances"
+        ]
+      }
+    },
+    {
+      "id": "c2632788d13e",
+      "title": "Jageshwar Assembly election results",
+      "summary": "Jageshwar Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "e5b26e7ba7db",
+      "title": "Amit Shah heads to Lucknow to counter Rahul-Akhilesh: Seat-sharing with allies a major challenge; what is B...",
+      "summary": "Amit Shah heads to Lucknow to counter Rahul-Akhilesh: Seat-sharing with allies a major challenge; what is B... Bhaskar English",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "alliances"
+        ]
+      }
+    },
+    {
+      "id": "e744c4b332e5",
+      "title": "Upcoming Elections in India 2027: Check the Full States-Wise List and Schedule Here",
+      "summary": "Upcoming Elections in India 2027: Check the Full States-Wise List and Schedule Here Jagran Josh",
+      "expected": {
+        "relevant": false,
+        "states": [],
+        "topics": []
+      }
+    },
+    {
+      "id": "5bae4bc53a19",
+      "title": "Bypoll victories were semifinals for 2027 Assembly polls in Punjab, Gujarat: Arvind Kejriwal",
+      "summary": "Bypoll victories were semifinals for 2027 Assembly polls in Punjab, Gujarat: Arvind Kejriwal The Hindu",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GJ",
+          "PB"
+        ],
+        "topics": [
+          "other_polls"
+        ]
+      }
+    },
+    {
+      "id": "9e5d5b8b7764",
+      "title": "Election campaign in Gujarat starts early: Koli leaders back Divyesh Solanki for 2027 bid; say BJP has no o...",
+      "summary": "Election campaign in Gujarat starts early: Koli leaders back Divyesh Solanki for 2027 bid; say BJP has no o... Bhaskar English",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GJ"
+        ],
+        "topics": [
+          "candidates"
+        ]
+      }
+    },
+    {
+      "id": "c18851d39949",
+      "title": "Will BJP Lose Uttar Pradesh? Akhilesh Yadav on INDIA Alliance, Modi's Foreign Policy, and SIR",
+      "summary": "Will BJP Lose Uttar Pradesh? Akhilesh Yadav on INDIA Alliance, Modi's Foreign Policy, and SIR Frontline Magazine",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "alliances",
+          "analysis",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "ff96fe9556b4",
+      "title": "Pirankaliyar Assembly election results",
+      "summary": "Pirankaliyar Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "15fce69405cc",
+      "title": "Next epic election will be UP 2027. Akhilesh Yadav is hardly ready for Yogi Adityanath",
+      "summary": "Next epic election will be UP 2027. Akhilesh Yadav is hardly ready for Yogi Adityanath ThePrint",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "analysis",
+          "other"
+        ]
+      }
+    },
+    {
+      "id": "6b0e3f0a08c5",
+      "title": "3-day JPC meeting on One Nation, One Election concludes: Gujarat Assembly polls in 2027; term may extend ti...",
+      "summary": "3-day JPC meeting on One Nation, One Election concludes: Gujarat Assembly polls in 2027; term may extend ti... Bhaskar English",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GJ"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    },
+    {
+      "id": "9058c7510902",
+      "title": "Uttar Pradesh Assembly Election 2027 Schedule",
+      "summary": "Uttar Pradesh Assembly Election 2027 Schedule India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UP"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "bc541dce3d8b",
+      "title": "68% fall in donations: AAP looks towards its MLAs, MPs as Punjab goes to polls in 2027",
+      "summary": "68% fall in donations: AAP looks towards its MLAs, MPs as Punjab goes to polls in 2027 The Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "37e1d796f82b",
+      "title": "Jhabrera Assembly election results",
+      "summary": "Jhabrera Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "15420a7b3e96",
+      "title": "The UP election is still months away. But its political migration has already begun",
+      "summary": "The UP election is still months away. But its political migration has already begun Deccan Herald",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "defections"
+        ]
+      }
+    },
+    {
+      "id": "9e42c05b6b52",
+      "title": "Sagolband Election 2027: Sagolband Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Sagolband Election 2027: Sagolband Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "8de439dad291",
+      "title": "For Mainpuri voters, a 'vicious' cycle in Samajwadi Party's 2027 election battle",
+      "summary": "For Mainpuri voters, a 'vicious' cycle in Samajwadi Party's 2027 election battle Telegraph India",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "e13a1f8409ee",
+      "title": "Dharchula Assembly election results",
+      "summary": "Dharchula Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "01ae70da7a07",
+      "title": "2027 Assembly polls will see an interesting contest, says former MP",
+      "summary": "2027 Assembly polls will see an interesting contest, says former MP The Times of India",
+      "expected": {
+        "relevant": false,
+        "states": [],
+        "topics": []
+      }
+    },
+    {
+      "id": "4683b44268b8",
+      "title": "2027 Punjab polls: AAP, BJP, SAD step up political activities as Congress plays catch-up",
+      "summary": "2027 Punjab polls: AAP, BJP, SAD step up political activities as Congress plays catch-up The Times of India",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "29a491b875b2",
+      "title": "Goa BJP aims to win 30 of 40 seats in 2027 Assembly elections, eyes 4th term",
+      "summary": "Goa BJP aims to win 30 of 40 seats in 2027 Assembly elections, eyes 4th term India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GA"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "779019a6d33d",
+      "title": "SDPI to contest majority of seats in 2027 Gujarat polls; open to alliances, says chief Faizy",
+      "summary": "SDPI to contest majority of seats in 2027 Gujarat polls; open to alliances, says chief Faizy The Economic Times",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GJ"
+        ],
+        "topics": [
+          "alliances",
+          "candidates"
+        ]
+      }
+    },
+    {
+      "id": "0517fc6e3284",
+      "title": "Old allies, new equation? Why SAD and BJP may join hands for 2027 Punjab assembly elections",
+      "summary": "Old allies, new equation? Why SAD and BJP may join hands for 2027 Punjab assembly elections The Times of India",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "alliances"
+        ]
+      }
+    },
+    {
+      "id": "237ff65d8da1",
+      "title": "Rahul Gandhi to visit Sangrur on Nov 4, says PPCC chief Pargat Singh; Mission 2027 in focus",
+      "summary": "Rahul Gandhi to visit Sangrur on Nov 4, says PPCC chief Pargat Singh; Mission 2027 in focus The Tribune",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "7a1f1712b783",
+      "title": "Nuvem Election 2027: Nuvem Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Nuvem Election 2027: Nuvem Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "GA"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "1decc346a359",
+      "title": "Ghanaur Election 2027: Ghanaur Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Ghanaur Election 2027: Ghanaur Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "PB"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "5ab7c1dbc511",
+      "title": "Punjab Assembly Elections 2027: Confronting a political and leadership vacuum",
+      "summary": "Punjab Assembly Elections 2027: Confronting a political and leadership vacuum Organiser Weekly",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "4054a6e5797a",
+      "title": "Bhimtal Assembly election results",
+      "summary": "Bhimtal Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "71cd1975c117",
+      "title": "2027 polls will decide Manipur's future, law and order has 'totally collapsed': Ibobi Singh",
+      "summary": "2027 polls will decide Manipur's future, law and order has 'totally collapsed': Ibobi Singh India Today NE",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "MN"
+        ],
+        "topics": [
+          "security",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "696a02e79c6f",
+      "title": "Punjab elections 2027: EC team reaches Chandigarh; officers with 3 years in a district to be shifted before polls",
+      "summary": "Punjab elections 2027: EC team reaches Chandigarh; officers with 3 years in a district to be shifted before polls PTC News",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    },
+    {
+      "id": "161d76a38b0a",
+      "title": "G for ganna to hurt Akhilesh in UP's Jatland? NDA partner has a warning",
+      "summary": "G for ganna to hurt Akhilesh in UP's Jatland? NDA partner has a warning India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "alliances",
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "dba00ad463f0",
+      "title": "Yogi Adityanath predicts BJP win with grand majority in 2027",
+      "summary": "Yogi Adityanath predicts BJP win with grand majority in 2027 Telangana Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "54c493add56c",
+      "title": "Someshwar Assembly election results",
+      "summary": "Someshwar Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "9ad387467d10",
+      "title": "CM Sukhu faces test: How Himachal local body polls can shape Congress vs BJP battle in 2027",
+      "summary": "CM Sukhu faces test: How Himachal local body polls can shape Congress vs BJP battle in 2027 The Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "other_polls"
+        ]
+      }
+    },
+    {
+      "id": "1f008e1e0d9a",
+      "title": "Gujarat assembly election dates likely to be announced after Diwali",
+      "summary": "Gujarat assembly election dates likely to be announced after Diwali India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GJ"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    },
+    {
+      "id": "a2f148d9a1f9",
+      "title": "BJP's win in Gujarat civic polls signal 2027 outlook: Party's victory seen as key to assembly elections; ta...",
+      "summary": "BJP's win in Gujarat civic polls signal 2027 outlook: Party's victory seen as key to assembly elections; ta... Bhaskar English",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GJ"
+        ],
+        "topics": [
+          "other_polls"
+        ]
+      }
+    },
+    {
+      "id": "f258f3acbd6f",
+      "title": "Maem Election 2027: Maem Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Maem Election 2027: Maem Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "GA"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "a2ae591fcc28",
+      "title": "BJP strengthens Himachal Pradesh organisation ahead of 2027 polls",
+      "summary": "BJP strengthens Himachal Pradesh organisation ahead of 2027 polls The News Mill",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "61c37e97244b",
+      "title": "Sukhu's New Districts Gamble Before 2027 Assembly Polls, Who Will Gain?",
+      "summary": "Sukhu's New Districts Gamble Before 2027 Assembly Polls, Who Will Gain? Outlook India",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "governance"
+        ]
+      }
+    },
+    {
+      "id": "327b61b1c402",
+      "title": "Manipur Assembly Election 2027: Manipur Election News, Parties, Candidates, Date",
+      "summary": "Manipur Assembly Election 2027: Manipur Election News, Parties, Candidates, Date India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "4db74b2c8290",
+      "title": "Curchorem Election 2027: Curchorem Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Curchorem Election 2027: Curchorem Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "GA"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "b1df13d28180",
+      "title": "Dhanolti Assembly election results",
+      "summary": "Dhanolti Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "de12f5a2f97a",
+      "title": "Rajpura Election 2027: Rajpura Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Rajpura Election 2027: Rajpura Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "PB"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "6ac2419e369d",
+      "title": "Almora Assembly election results",
+      "summary": "Almora Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "04b5e312dac1",
+      "title": "Census May Advance 2027 Assembly Polls In 5 States By Few Months: Sources",
+      "summary": "Census May Advance 2027 Assembly Polls In 5 States By Few Months: Sources NDTV",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GA",
+          "MN",
+          "PB",
+          "UK",
+          "UP"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    },
+    {
+      "id": "0ab77d34ec14",
+      "title": "Goa Assembly Elections By 2026 End?",
+      "summary": "Goa Assembly Elections By 2026 End? Prudent Media Goa",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GA"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    },
+    {
+      "id": "0d2819c3dd59",
+      "title": "BJP's Himachal Pradesh mission in doldrums as party rebels predict Congress win",
+      "summary": "BJP's Himachal Pradesh mission in doldrums as party rebels predict Congress win India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "defections",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "b8ad002e10ed",
+      "title": "BJP wins three of four municipal corporations in Himachal, Congress retains only Palampur",
+      "summary": "BJP wins three of four municipal corporations in Himachal, Congress retains only Palampur The New Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "other_polls"
+        ]
+      }
+    },
+    {
+      "id": "dce36eb1f875",
+      "title": "Nambol Assembly election results",
+      "summary": "Nambol Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "a72f93148403",
+      "title": "Gujarat assembly election results 2017: Watch live coverage on Aaj Tak",
+      "summary": "Gujarat assembly election results 2017: Watch live coverage on Aaj Tak India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "GJ"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "01f63382276a",
+      "title": "Goa Poll Countdown: CM Says Assembly Elections Likely in February 2027 | Goa News",
+      "summary": "Goa Poll Countdown: CM Says Assembly Elections Likely in February 2027 | Goa News Prudent Media Goa",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GA"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    },
+    {
+      "id": "38e4c1e5dc36",
+      "title": "Mayawati to engage youth by putting nephew at frontline: BSP gears up for mission 2027; Akash to hold roads...",
+      "summary": "Mayawati to engage youth by putting nephew at frontline: BSP gears up for mission 2027; Akash to hold roads... Bhaskar English",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "4e576af50d2a",
+      "title": "Punjab AAP hits reset in seats before 2027 elections, sparks ticket struggle",
+      "summary": "Punjab AAP hits reset in seats before 2027 elections, sparks ticket struggle The Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "candidates"
+        ]
+      }
+    },
+    {
+      "id": "61753d67d3f8",
+      "title": "Singjamei Assembly election results",
+      "summary": "Singjamei Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "911e12f6277b",
+      "title": "Analysis: Why Radical Elements Could Play Spoiler In 2027 Punjab Elections",
+      "summary": "Analysis: Why Radical Elements Could Play Spoiler In 2027 Punjab Elections NDTV",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "9c256d0fc51e",
+      "title": "Former BJP leader Brij Lal joins Congress in Himachal; party launches statewide induction drive ahead of 2027 polls",
+      "summary": "Former BJP leader Brij Lal joins Congress in Himachal; party launches statewide induction drive ahead of 2027 polls ANI News",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "defections"
+        ]
+      }
+    },
+    {
+      "id": "e941931b8234",
+      "title": "BJP’s next big test: After Bengal sweep, focus shifts to 2027 showdown in UP, Gujarat, Punjab,...",
+      "summary": "BJP’s next big test: After Bengal sweep, focus shifts to 2027 showdown in UP, Gujarat, Punjab,... Moneycontrol.com",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GJ",
+          "PB",
+          "UP"
+        ],
+        "topics": [
+          "analysis",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "c8583c728575",
+      "title": "EC Orders Transfer of Officers in Five States Ahead of 2027 Assembly Polls",
+      "summary": "EC Orders Transfer of Officers in Five States Ahead of 2027 Assembly Polls The CSR Journal",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GA",
+          "MN",
+          "PB",
+          "UK",
+          "UP"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    },
+    {
+      "id": "4364de7bec42",
+      "title": "Uttar Pradesh Govt Plans a Rs 50,000 Cash Transfer Scheme to Woo Women Ahead of Polls: Report",
+      "summary": "Uttar Pradesh Govt Plans a Rs 50,000 Cash Transfer Scheme to Woo Women Ahead of Polls: Report TheWire.in",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "governance"
+        ]
+      }
+    },
+    {
+      "id": "d3b67b465cad",
+      "title": "ECI begins preparations for 2027 Manipur Assembly elections",
+      "summary": "ECI begins preparations for 2027 Manipur Assembly elections tennews.in",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "MN"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    },
+    {
+      "id": "ded08f6b6773",
+      "title": "ANTA Assembly Calls for Consensus Voice on 2027 MLA Election",
+      "summary": "ANTA Assembly Calls for Consensus Voice on 2027 MLA Election Ukhrul Times",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "MN"
+        ],
+        "topics": [
+          "campaign",
+          "other"
+        ]
+      }
+    },
+    {
+      "id": "4661814a02ed",
+      "title": "Fight Over Virbhadra Singh Legacy: Wife Objects To New Party Using His Name",
+      "summary": "Fight Over Virbhadra Singh Legacy: Wife Objects To New Party Using His Name NDTV",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "alliances",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "3d90a6cd54a3",
+      "title": "Congress-SP Alliance Faces Key Test Ahead of UP Election 2027",
+      "summary": "Congress-SP Alliance Faces Key Test Ahead of UP Election 2027 Frontline Magazine",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "alliances"
+        ]
+      }
+    },
+    {
+      "id": "e208ed52c068",
+      "title": "Mallikarjun Kharge, Rahul Gandhi among Congress's 40 star campaigners for poll-bound Himachal",
+      "summary": "Mallikarjun Kharge, Rahul Gandhi among Congress's 40 star campaigners for poll-bound Himachal India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "campaign",
+          "candidates"
+        ]
+      }
+    },
+    {
+      "id": "fa34931077da",
+      "title": "Sitarganj Election 2027: Sitarganj Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Sitarganj Election 2027: Sitarganj Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "5461da4cf93e",
+      "title": "Former Mayawati Aide Joins Samajwadi Party Ahead of 2027 UP Elections",
+      "summary": "Former Mayawati Aide Joins Samajwadi Party Ahead of 2027 UP Elections NorthBlockSouthBlock",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "defections"
+        ]
+      }
+    },
+    {
+      "id": "8eac70093ea1",
+      "title": "Akhilesh Yadav accuses BJP of UP MLC poll malpractice, vows 2027 defeat",
+      "summary": "Akhilesh Yadav accuses BJP of UP MLC poll malpractice, vows 2027 defeat The News Mill",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "other_polls",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "452dcf71ccd8",
+      "title": "Khangabo Election 2027: Khangabo Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Khangabo Election 2027: Khangabo Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "66f1564605a8",
+      "title": "Congress takes SIR fight to the streets ahead of 2027 Uttarakhand polls",
+      "summary": "Congress takes SIR fight to the streets ahead of 2027 Uttarakhand polls The New Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UK"
+        ],
+        "topics": [
+          "schedule",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "5c4993504729",
+      "title": "BJP honours elected representatives in Himachal, forecasts two-thirds majority in 2027",
+      "summary": "BJP honours elected representatives in Himachal, forecasts two-thirds majority in 2027 The News Mill",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "eaa400ba4b57",
+      "title": "Congress appoints social media coordinators for Uttarakhand ahead of 2027 polls",
+      "summary": "Congress appoints social media coordinators for Uttarakhand ahead of 2027 polls ANI News",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UK"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "0ec8303e35ec",
+      "title": "People’s Reformation Party launched in Manipur ahead of 2027 polls, plans to contest 40 seats",
+      "summary": "People’s Reformation Party launched in Manipur ahead of 2027 polls, plans to contest 40 seats Hub News",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "MN"
+        ],
+        "topics": [
+          "alliances",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "9de54e2a76c9",
+      "title": "BJP election body likely to meet today to finalise candidates for Himachal assembly elections",
+      "summary": "BJP election body likely to meet today to finalise candidates for Himachal assembly elections India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "candidates"
+        ]
+      }
+    },
+    {
+      "id": "4d969f6bb88d",
+      "title": "AAP will contest 2027 Himachal polls; Kejriwal to visit Shimla around November 15: Rituraj Jha",
+      "summary": "AAP will contest 2027 Himachal polls; Kejriwal to visit Shimla around November 15: Rituraj Jha ANI News",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "campaign",
+          "candidates"
+        ]
+      }
+    },
+    {
+      "id": "cbc6a3ecf700",
+      "title": "Punjab Assembly passes resolution seeking probe into electoral 'irregularities', EC's functioning",
+      "summary": "Punjab Assembly passes resolution seeking probe into electoral 'irregularities', EC's functioning The New Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "schedule",
+          "legal",
+          "governance"
+        ]
+      }
+    },
+    {
+      "id": "6769d2a4f165",
+      "title": "Congress gears up for 2027 Uttarakhand elections: AICC assigns tasks to new office-bearers",
+      "summary": "Congress gears up for 2027 Uttarakhand elections: AICC assigns tasks to new office-bearers The New Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UK"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "926b742478fe",
+      "title": "Punjab 2027 polls: BJP-Akali Dal reunion buzz grows ahead of Assembly elections - India Today",
+      "summary": "Punjab 2027 polls: BJP-Akali Dal reunion buzz grows ahead of Assembly elections - India Today India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "alliances"
+        ]
+      }
+    },
+    {
+      "id": "cccfd2e9c57d",
+      "title": "Breaking: ECI orders transfer of election-related officers ahead of 2027 Assembly Polls in Punjab, 4 other states",
+      "summary": "Breaking: ECI orders transfer of election-related officers ahead of 2027 Assembly Polls in Punjab, 4 other states Babushahi.com",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GA",
+          "MN",
+          "PB",
+          "UK",
+          "UP"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    },
+    {
+      "id": "334d15f8f630",
+      "title": "Langthabal Assembly election results",
+      "summary": "Langthabal Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "1a352cf61776",
+      "title": "Strengths And Weakness Of Punjab Congress With Pargat Singh At Helm",
+      "summary": "Strengths And Weakness Of Punjab Congress With Pargat Singh At Helm NDTV",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "67dcb593a9f5",
+      "title": "Congress ramps up 2027 poll preparations; Bhupesh Baghel says party \"only option\" for Punjab",
+      "summary": "Congress ramps up 2027 poll preparations; Bhupesh Baghel says party \"only option\" for Punjab ANI News",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "24b762484c8c",
+      "title": "Waris Punjab De fields Indira Gandhi assassination convict's son for 2027 polls",
+      "summary": "Waris Punjab De fields Indira Gandhi assassination convict's son for 2027 polls India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "candidates"
+        ]
+      }
+    },
+    {
+      "id": "f71cbe9ac002",
+      "title": "Andro Election 2027: Andro Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Andro Election 2027: Andro Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "1989ea686d0a",
+      "title": "Kakching Assembly election results",
+      "summary": "Kakching Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "2d5ffb6bcc87",
+      "title": "EC orders transfer of some categories of officers linked to polls in five states",
+      "summary": "EC orders transfer of some categories of officers linked to polls in five states The Economic Times",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GA",
+          "MN",
+          "PB",
+          "UK",
+          "UP"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    },
+    {
+      "id": "f2744c503e75",
+      "title": "Khundrakpam Election 2027: Khundrakpam Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Khundrakpam Election 2027: Khundrakpam Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "92eef0f8b079",
+      "title": "NPP to contest 2027 Manipur Assembly elections independently: Conrad Sangma",
+      "summary": "NPP to contest 2027 Manipur Assembly elections independently: Conrad Sangma India Today NE",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "MN"
+        ],
+        "topics": [
+          "alliances",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "ba91ffc18b6f",
+      "title": "Jaspur Assembly election results",
+      "summary": "Jaspur Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "4f41f9ff5a20",
+      "title": "Congress bets on Sachin Pilot to unite Punjab unit and take on BJP ahead of 2027 polls",
+      "summary": "Congress bets on Sachin Pilot to unite Punjab unit and take on BJP ahead of 2027 polls The New Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "campaign",
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "98ae66dc2391",
+      "title": "Brand Yogi: Hindutva, governance, and the 2027 UP election",
+      "summary": "Brand Yogi: Hindutva, governance, and the 2027 UP election Frontline Magazine",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "f991b6d21868",
+      "title": "Punjab Election Schedule 2027: Voting, Result Date, Polling Full Schedule, Punjab Assembly Election Schedule",
+      "summary": "Punjab Election Schedule 2027: Voting, Result Date, Polling Full Schedule, Punjab Assembly Election Schedule India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "PB"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "bbe55c34e7a1",
+      "title": "Kejriwal hails bypoll wins as 'semi-final to 2027'; says Gujarat fight between AAP, BJP",
+      "summary": "Kejriwal hails bypoll wins as 'semi-final to 2027'; says Gujarat fight between AAP, BJP The Hindu",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GJ"
+        ],
+        "topics": [
+          "other_polls",
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "0ab792d48faa",
+      "title": "Himachal CM Sukhu claims BJP to face major setback in 2027; LoP Jai Ram Thakur counters with majority claim",
+      "summary": "Himachal CM Sukhu claims BJP to face major setback in 2027; LoP Jai Ram Thakur counters with majority claim ANI News",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "85074f818f95",
+      "title": "BJP Leaders Predict Two-Thirds Majority in Himachal Pradesh by 2027",
+      "summary": "BJP Leaders Predict Two-Thirds Majority in Himachal Pradesh by 2027 Asianet Newsable",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "e16a68f20e67",
+      "title": "Saitu Election 2027: Saitu Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Saitu Election 2027: Saitu Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "55811d2cc45f",
+      "title": "After Shaping 2022 Elections, Pension Issue Set to Test Political Parties Again",
+      "summary": "After Shaping 2022 Elections, Pension Issue Set to Test Political Parties Again The News Himachal",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "governance",
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "139daa652138",
+      "title": "Pithoragarh Assembly election results",
+      "summary": "Pithoragarh Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "63b799fae789",
+      "title": "St. Cruz Election 2027: St. Cruz Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "St. Cruz Election 2027: St. Cruz Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "GA"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "178287ad61f5",
+      "title": "Punjab Assembly Elections 2027: Rahul Gandhi Steps In To Quell Factionalism With Unity Bus Yatra",
+      "summary": "Punjab Assembly Elections 2027: Rahul Gandhi Steps In To Quell Factionalism With Unity Bus Yatra ETV Bharat",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "campaign",
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "d75452d5ead1",
+      "title": "UP polls likely in January 2027: BJP eyes third term as SP, BSP and Congress look to stage comeback",
+      "summary": "UP polls likely in January 2027: BJP eyes third term as SP, BSP and Congress look to stage comeback Bhaskar English",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "schedule",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "3eb1b249c52c",
+      "title": "Former Gujarat CM Shankersinh Vaghela eyes Congress return ahead of polls",
+      "summary": "Former Gujarat CM Shankersinh Vaghela eyes Congress return ahead of polls The New Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GJ"
+        ],
+        "topics": [
+          "defections"
+        ]
+      }
+    },
+    {
+      "id": "e0191dcb84d0",
+      "title": "Congress claims strong mandate in Himachal Urban Local Body polls, says BJP 'rejected' by people",
+      "summary": "Congress claims strong mandate in Himachal Urban Local Body polls, says BJP 'rejected' by people ANI News",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "other_polls"
+        ]
+      }
+    },
+    {
+      "id": "021e6fa01a20",
+      "title": "Lansdowne Assembly election results",
+      "summary": "Lansdowne Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "73f825827b04",
+      "title": "'Grassroots outreach, youth connect': BJP sharpens poll strategy for 7 states",
+      "summary": "'Grassroots outreach, youth connect': BJP sharpens poll strategy for 7 states The Times of India",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GA",
+          "GJ",
+          "HP",
+          "MN",
+          "PB",
+          "UK",
+          "UP"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "901cd3c905a5",
+      "title": "Uttarakhand tops SIR states with 13.4% voter roll decline, report says",
+      "summary": "Uttarakhand tops SIR states with 13.4% voter roll decline, report says The New Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UK"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    },
+    {
+      "id": "c170fcc93b72",
+      "title": "BJP wants big brother role as Akali Dal hints at tie-up ahead of 2027 Punjab polls",
+      "summary": "BJP wants big brother role as Akali Dal hints at tie-up ahead of 2027 Punjab polls India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "alliances"
+        ]
+      }
+    },
+    {
+      "id": "20c78835d35b",
+      "title": "Manipur Assembly polls: Election Commission team reviews preparedness ahead of 2027 elections",
+      "summary": "Manipur Assembly polls: Election Commission team reviews preparedness ahead of 2027 elections India Today NE",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "MN"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    }
+  ]
+}

@@ -72,6 +72,18 @@ Your call on a specific seat. It overrides the model in the seat view, the map c
 - **`bloc`** is required unless the rating is `tossup`.
 - Date your calls. Ratings go stale, and the date is shown on the page.
 
+## 4. News cues: `news-cues.json`
+
+The daily news tagger runs on keyword rules (no AI key is configured). The domain knowledge behind it is yours to maintain:
+
+- **`stateCues`**: names that place a story in a state, such as leaders ("Akhilesh", "Bhagwant Mann"), nicknames ("UP", matched case-sensitively so the word "up" doesn't count) and regions ("Saurashtra"). Add new leaders as they emerge.
+- **`multiStateCues`**: phrases like "five states" that mean the Round 1 states.
+- **`ambiguousPlaceNames`**: seat names that are also common personal names ("Anand"). They only count when the story is already about that state.
+- **`referencePatterns`**: headline patterns for seat-profile pages and old results, which are archived but not published.
+- **`topicRules`**: keywords for each topic, checked in order; the first match wins.
+
+Patterns are regular expressions. After a change, run `npm run news:eval` or ask engineering to. It reports accuracy on a held-out set of labelled stories, which shouldn't drop. If you notice a mis-tagged story on the site, add it to `data/news/eval.json` with the correct labels. That's the most useful feedback for improving the rules.
+
 ---
 
 ## How the model works

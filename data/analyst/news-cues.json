@@ -1,0 +1,238 @@
+{
+  "_meta": {
+    "description": "Domain cues for the keyword news tagger (used when no AI tagger is configured). Patterns are JavaScript regular expressions, matched case-insensitively unless listed under `caseSensitive`. The tagger is measured against data/news/eval.json; run `npm run news:eval` after editing.",
+    "owner": "Voting research analyst",
+    "lastReviewed": "2026-10-28"
+  },
+  "stateCues": {
+    "UP": {
+      "patterns": [
+        "Uttar Pradesh",
+        "\\bU\\.P\\.",
+        "Yogi Adityanath",
+        "\\bYogi\\b",
+        "Akhilesh",
+        "Mayawati",
+        "Akash Anand",
+        "Keshav (Prasad )?Maurya",
+        "Brajesh Pathak",
+        "Samajwadi",
+        "Apna Dal",
+        "Suheldev",
+        "Nishad Party",
+        "Jayant Chaudhary",
+        "Chandrashekhar Azad",
+        "Purvanchal",
+        "Bundelkhand"
+      ],
+      "caseSensitive": [
+        "\\bUP\\b"
+      ]
+    },
+    "PB": {
+      "patterns": [
+        "Punjab",
+        "Bhagwant Mann",
+        "Sukhbir (Singh )?Badal",
+        "Akali",
+        "Partap (Singh )?Bajwa",
+        "Raja Warring",
+        "Pargat Singh",
+        "\\bPPCC\\b",
+        "Majha",
+        "Malwa",
+        "Doaba"
+      ],
+      "caseSensitive": [
+        "\\bSAD\\b"
+      ]
+    },
+    "UK": {
+      "patterns": [
+        "Uttarakhand",
+        "Uttaranchal",
+        "Pushkar (Singh )?Dhami",
+        "\\bDhami\\b",
+        "Garhwal",
+        "Kumaon"
+      ]
+    },
+    "GA": {
+      "patterns": [
+        "\\bGoa\\b",
+        "\\bGoan",
+        "Pramod Sawant",
+        "Gomantak",
+        "\\bMGP\\b",
+        "Goa Forward",
+        "Revolutionary Goans"
+      ]
+    },
+    "MN": {
+      "patterns": [
+        "Manipur",
+        "Biren Singh",
+        "Ibobi",
+        "Imphal",
+        "Meitei",
+        "\\bKuki",
+        "Jiribam"
+      ]
+    },
+    "GJ": {
+      "patterns": [
+        "Gujarat",
+        "Bhupendra Patel",
+        "Harsh Sanghavi",
+        "Saurashtra",
+        "\\bKutch",
+        "Ahmedabad",
+        "Surat\\b"
+      ]
+    },
+    "HP": {
+      "patterns": [
+        "Himachal",
+        "Sukhu",
+        "Sukhvinder",
+        "Jai Ram Thakur",
+        "Virbhadra",
+        "Pratibha Singh",
+        "Shimla"
+      ]
+    }
+  },
+  "multiStateCues": [
+    {
+      "pattern": "\\b(five|5) states\\b",
+      "requires": "2027|polls?|elections?",
+      "states": [
+        "UP",
+        "PB",
+        "UK",
+        "GA",
+        "MN"
+      ],
+      "note": "The five states voting in early 2027."
+    },
+    {
+      "pattern": "\\b(seven|7) states\\b",
+      "requires": "2027|polls?|elections?",
+      "states": [
+        "UP",
+        "PB",
+        "UK",
+        "GA",
+        "MN",
+        "GJ",
+        "HP"
+      ]
+    },
+    {
+      "pattern": "\\b(4|four) other states\\b",
+      "requires": "2027",
+      "states": [
+        "UP",
+        "PB",
+        "UK",
+        "GA",
+        "MN"
+      ],
+      "note": "\"Punjab, 4 other states\" and similar."
+    }
+  ],
+  "ambiguousPlaceNames": {
+    "note": "Seat or district names that are also common personal names or words. They only count as places when the story is already about that state.",
+    "names": [
+      "Anand",
+      "Mohan",
+      "Kishan",
+      "Rajpur",
+      "Sahib",
+      "Amar",
+      "Kalyan",
+      "Ajay"
+    ]
+  },
+  "referencePatterns": {
+    "note": "Evergreen or reference pages (seat profiles, old results, listicles) that crowd out news. Matched against the headline; such items are kept in the archive but not published.",
+    "patterns": [
+      "^.+ Election 20\\d\\d: .+ Assembly Election Date",
+      "^[\\w .'()-]+ Assembly election results$",
+      "election results 20(0\\d|1\\d|2[0-2])\\b",
+      "^Upcoming Elections in India",
+      "Election News, Parties, Candidates",
+      "^[\\w ]+ Assembly Election 20\\d\\d Schedule$",
+      "Election Schedule 20\\d\\d: .*(Result Date|Full Schedule)"
+    ]
+  },
+  "topicRules": {
+    "note": "Checked in order; the first match wins. Topic ids must match the tagger's topic list.",
+    "rules": [
+      [
+        "other_polls",
+        "\\b(MLC|bypolls?|by-polls?|by-elections?|bye-elections?|civic polls?|municipal|local body|panchayat|zila parishad|corporations?)\\b"
+      ],
+      [
+        "polls",
+        "opinion polls?|exit polls?|pre-poll survey|voter preference|survey (shows|finds|predicts)"
+      ],
+      [
+        "schedule",
+        "schedule|poll dates?|election dates?|dates? likely|election commission|\\bECI\\b|\\bEC\\b|poll body|chief electoral|nodal officers?|transfer of officers|officers .*(shifted|transferred)|census|delimitation|one nation,? one election|term (ends|expires|may extend)|likely in (january|february|march|april|november|december)|by 20\\d\\d end|(ECI|\\bEC\\b|election commission|poll body)[^.]{0,60}(preparations|preparedness|reviews?)|preparedness|\\bSIR\\b|voter list|electoral rolls?"
+      ],
+      [
+        "alliances",
+        "alliances?|seat[- ]sharing|\\bNDA\\b|INDIA bloc|\\ballies\\b|\\bally\\b|join hands|tie-up|third front|new party|merger|reunion|independently|go(es)? it alone|solo"
+      ],
+      [
+        "defections",
+        "\\bjoins?\\b|\\bjoined\\b|defect|\\bquits?\\b|switch(es|ed)? (sides|party)|induction|migration|rebels?|turncoat|eyes [^.]{0,40}return|returns? to"
+      ],
+      [
+        "candidates",
+        "candidates?|tickets?|nominat|contest(s|ing)? from|\\bbid\\b|probables|\\bfields?\\b|star campaigners"
+      ],
+      [
+        "security",
+        "terror|unrest|violence|security|clash|\\bISI\\b|law and order|curfew"
+      ],
+      [
+        "legal",
+        "court|petition|\\bFIR\\b|case filed|disqualif"
+      ],
+      [
+        "governance",
+        "scheme|welfare|cash transfer|new districts?|budget|govt plans|government plans|subsid|pension|freebies?"
+      ],
+      [
+        "analysis",
+        "^(why|how|what|will|is|can|analysis|opinion|explained)\\b|\\banalysis\\b|semifinal|vacuum|spoiler|\\btest\\b|battle|showdown|decode|strengths? and weakness|\\bbrand\\b"
+      ],
+      [
+        "campaign",
+        "rall(y|ies)|campaign|yatra|roadshow|mission 20\\d\\d|strategy|targets?|aims to win|vote share|organi[sz]ation|revamp|rejig|panel|launch|predicts?|claims?|vows?|challenges?|meeting|visit|steps? up|bugle|gears up|strengthens|donations|funds|appoints|coordinators|office-bearers|ramps up|preparations|honours|forecasts|unite|bets on|sharpens|outreach"
+      ]
+    ]
+  },
+  "partyCues": {
+    "BJP": "\\bBJP\\b|Bharatiya Janata",
+    "INC": "\\bCongress\\b|\\bINC\\b",
+    "SP": "Samajwadi|Akhilesh",
+    "AAP": "\\bAAP\\b|Aam Aadmi",
+    "BSP": "\\bBSP\\b|Bahujan Samaj|Mayawati",
+    "SAD": "Akali|Sukhbir",
+    "RLD": "\\bRLD\\b|Rashtriya Lok Dal",
+    "NISHAD": "Nishad Party",
+    "NPP": "\\bNPP\\b|National People's Party",
+    "NPF": "\\bNPF\\b|Naga People",
+    "MGP": "\\bMGP\\b|Gomantak",
+    "AD(S)": "Apna Dal",
+    "SBSP": "Suheldev|\\bSBSP\\b",
+    "SDPI": "\\bSDPI\\b"
+  },
+  "partyCuesCaseSensitive": {
+    "SAD": "\\bSAD\\b",
+    "SP": "\\bSP\\b"
+  }
+}

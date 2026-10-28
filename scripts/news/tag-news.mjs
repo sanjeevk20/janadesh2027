@@ -6,51 +6,25 @@
 //   2. Claude (only when credentials are available): reads the story, returns structured
 //      tags, and its constituency names are checked against the gazetteer. Names that
 //      don't resolve to a real seat are rejected and recorded, never shown as tags.
-// Without credentials, stage 2 is replaced by keyword rules and items are marked
-// `tagger: "rules"`, so the site always has something to show.
+// Without credentials, stage 2 is replaced by the keyword rules in rules.mjs (cues in the
+// analyst-owned data/analyst/news-cues.json) and items are marked `tagger: "rules"`.
+// Either way, places are only kept for states the story is about, and reference pages
+// (seat profiles, old results) are archived but not published.
 import { readFile, writeFile } from 'node:fs/promises';
 import Anthropic from '@anthropic-ai/sdk';
 import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod';
 import { z } from 'zod';
-import { loadGazetteer, matchPlaces, cleanName } from './gazetteer.mjs';
+import { loadGazetteer, cleanName } from './gazetteer.mjs';
+import { loadRules, tagByRules, STATE_IDS, TOPICS } from './rules.mjs';
 import { similarity } from '../lib.mjs';
 
 const STORE = 'data/news/items.json';
 const OUT = 'public/data/news.json';
 // Bump when tagging logic changes so existing items are re-tagged.
-const TAGGER_VERSION = 3;
+const TAGGER_VERSION = 4;
 const MODEL = 'claude-opus-5-5';
 const PUBLISH_DAYS = 180;
 const RESOLVE_THRESHOLD = 0.85;
-
-const STATE_IDS = ['UP', 'PB', 'UK', 'GA', 'MN', 'GJ', 'HP'];
-const TOPICS = ['schedule', 'alliances', 'candidates', 'campaign', 'polls', 'defections', 'governance', 'security', 'legal', 'other'];
-
-// Fallback tagging when Claude isn't available.
-const PARTY_PATTERNS = [
-  ['BJP', /\bBJP\b|Bharatiya Janata/i],
-  ['INC', /\bCongress\b|\bINC\b/i],
-  ['SP', /\bSP\b|Samajwadi/i],
-  ['AAP', /\bAAP\b|Aam Aadmi/i],
-  ['BSP', /\bBSP\b|Bahujan Samaj/i],
-  ['SAD', /\bSAD\b|Akali/i],
-  ['RLD', /\bRLD\b|Rashtriya Lok Dal/i],
-  ['NISHAD', /Nishad Party/i],
-  ['NPP', /\bNPP\b|National People's Party/i],
-  ['NPF', /\bNPF\b|Naga People/i],
-  ['MGP', /\bMGP\b|Gomantak/i],
-];
-
-const TOPIC_RULES = [
-  ['alliances', /alliance|seat[- ]sharing|\bNDA\b|\bINDIA bloc\b|ally|allies/i],
-  ['schedule', /schedule|poll dates?|phase|election commission|\bECI\b|term (ends|expires)/i],
-  ['polls', /opinion polls?|exit polls?|pre-poll survey/i],
-  ['defections', /joins?|defect|quits?|switch(es|ed)? (sides|party)/i],
-  ['candidates', /candidate|ticket|nominat/i],
-  ['security', /terror|unrest|violence|security|clash|ISI\b/i],
-  ['legal', /court|petition|\bFIR\b|case filed/i],
-  ['campaign', /rally|campaign|yatra|roadshow|launch(es|ed)? (a )?(new )?party|claims?/i],
-];
 
 const TagSchema = z.object({
   relevant: z.boolean().describe('True if the story is about politics or elections in one of the listed states.'),
@@ -78,6 +52,7 @@ Work only from the story text you are given; you only see a headline and a short
 
 const client = await makeClient();
 const gazetteer = await loadGazetteer();
+const rules = await loadRules();
 const items = JSON.parse(await readFile(STORE, 'utf8'));
 
 let tagged = 0;
@@ -86,18 +61,18 @@ let rejected = 0;
 for (const item of items) {
   if (item.tags?.version === TAGGER_VERSION && (item.tags.tagger === 'claude' || !client)) continue;
   const text = [item.title, item.summary].filter(Boolean).join('. ');
-  const gaz = matchPlaces(gazetteer, text);
+  const ruleTags = tagByRules(rules, gazetteer, item.title, text);
 
   let llm = null;
-  if (client) {
+  if (client && !ruleTags.reason?.startsWith('reference')) {
     try {
-      llm = await tagWithClaude(item, gaz);
+      llm = await tagWithClaude(item, ruleTags);
       llmCalls++;
     } catch (err) {
       console.warn(`WARN ${item.id}: Claude tagging failed (${err.message}); using rules`);
     }
   }
-  item.tags = merge(text, gaz, llm);
+  item.tags = merge(ruleTags, llm);
   rejected += item.tags.rejected.length;
   tagged++;
 }
@@ -117,9 +92,9 @@ async function makeClient() {
   return new Anthropic();
 }
 
-async function tagWithClaude(item, gaz) {
-  const hints = gaz.places.length
-    ? gaz.places.map((p) => `- ${p.kind} "${p.display}" in ${p.state} (${p.confidence}: ${p.reason})`).join('\n')
+async function tagWithClaude(item, ruleTags) {
+  const hints = ruleTags.places.length
+    ? ruleTags.places.map((p) => `- ${p.kind} "${p.display}" in ${p.state} (${p.confidence}: ${p.reason})`).join('\n')
     : '- none';
   const response = await client.beta.messages.parse({
     model: MODEL,
@@ -153,7 +128,7 @@ function resolveAc(state, name) {
   return bestScore >= RESOLVE_THRESHOLD ? best : null;
 }
 
-function merge(text, gaz, llm) {
+function merge(ruleTags, llm) {
   const places = new Map();
   const add = (e, confidence, via) => {
     const key = `${e.state}|${e.kind}|${e.ac ?? e.name}`;
@@ -166,8 +141,8 @@ function merge(text, gaz, llm) {
     }
   };
 
-  // Low-confidence gazetteer hits are kept only if Claude independently names the seat.
-  for (const p of gaz.places) if (p.confidence !== 'low') add(p, p.confidence, 'gazetteer');
+  // Rule places are already limited to the story's states and exclude low-confidence hits.
+  for (const p of ruleTags.places) add(p, p.confidence, 'gazetteer');
 
   const rejectedNames = [];
   if (llm) {
@@ -178,27 +153,21 @@ function merge(text, gaz, llm) {
     }
   }
 
-  const states = new Set([...gaz.states, ...(llm?.states ?? []), ...[...places.values()].map((p) => p.state)]);
+  const states = new Set([...ruleTags.states, ...(llm?.states ?? []), ...[...places.values()].map((p) => p.state)]);
+  const reference = ruleTags.reason === 'reference page';
   return {
     version: TAGGER_VERSION,
     tagger: llm ? 'claude' : 'rules',
-    relevant: llm ? llm.relevant : states.size > 0,
-    states: [...states].filter((s) => STATE_IDS.includes(s)),
+    relevant: !reference && (llm ? llm.relevant : ruleTags.relevant),
+    reason: reference ? 'reference page' : llm ? null : ruleTags.reason,
+    states: STATE_IDS.filter((s) => states.has(s)),
     places: [...places.values()],
-    parties: llm ? llm.parties : partiesByRule(text),
-    topic: llm ? llm.topic : topicByRule(text),
+    parties: llm ? llm.parties : ruleTags.parties,
+    topic: llm ? llm.topic : ruleTags.topic,
     summary: llm?.summary ?? null,
     claims: llm?.claims ?? [],
     rejected: rejectedNames,
   };
-}
-
-function partiesByRule(text) {
-  return PARTY_PATTERNS.filter(([, re]) => re.test(text)).map(([p]) => p);
-}
-
-function topicByRule(text) {
-  return TOPIC_RULES.find(([, re]) => re.test(text))?.[0] ?? 'other';
 }
 
 async function publish(all) {
