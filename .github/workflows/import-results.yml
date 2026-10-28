@@ -18,6 +18,10 @@ on:
         description: Election ID in AC-YYYY-MM format (the count date)
         required: true
         default: AC-2022-12
+      fallback_snapshots:
+        description: Space-separated archive.org timestamps (after the final count) to retry seats whose nearest snapshot had no results
+        required: false
+        default: 20221215 20221220 20230101 20230601 2024 20221210
 
 permissions:
   contents: write
@@ -47,10 +51,37 @@ jobs:
 
       - name: Scrape results
         working-directory: ${{ runner.temp }}/scraper
+        env:
+          STATE: ${{ inputs.state }}
+          ARCHIVE_URL: ${{ inputs.archive_url }}
+          ELECTION_ID: ${{ inputs.election_id }}
+          FALLBACKS: ${{ inputs.fallback_snapshots }}
+          STATES_JSON: ${{ github.workspace }}/data/states.json
         run: |
-          rm -f data/csv/*Assembly-${{ inputs.state }}.csv data/json/*Assembly-${{ inputs.state }}.json
-          python3 scripts/eci-archive-scraper.py "${{ inputs.archive_url }}" \
-            --state-code "${{ inputs.state }}" --election-id "${{ inputs.election_id }}"
+          rm -f data/csv/*Assembly-$STATE.csv data/json/*Assembly-$STATE.json
+          python3 scripts/eci-archive-scraper.py "$ARCHIVE_URL" --state-code "$STATE" --election-id "$ELECTION_ID"
+
+          # Some archived pages are empty captures (the scraper logs "0 candidates" and skips
+          # them). The scraper resumes from its CSV, so re-run it against other snapshot dates;
+          # only the missing seats are fetched again.
+          missing() {
+            python3 - <<'EOF'
+          import csv, glob, json, os
+          state = os.environ['STATE']
+          seats = next(s['seats'] for s in json.load(open(os.environ['STATES_JSON']))['states'] if s['id'] == state)
+          files = glob.glob(f'data/csv/*Assembly-{state}.csv')
+          have = {int(r['constituency_no']) for r in csv.DictReader(open(files[0]))} if files else set()
+          print(' '.join(str(n) for n in range(1, seats + 1) if n not in have))
+          EOF
+          }
+          for ts in $FALLBACKS; do
+            gaps=$(missing)
+            [ -z "$gaps" ] && break
+            echo "::group::Retrying seats $gaps with snapshot $ts"
+            url=$(echo "$ARCHIVE_URL" | sed -E "s#web\.archive\.org/web/[0-9]+/#web.archive.org/web/$ts/#")
+            python3 scripts/eci-archive-scraper.py "$url" --state-code "$STATE" --election-id "$ELECTION_ID" || true
+            echo "::endgroup::"
+          done
 
       - name: Check every seat was scraped
         id: check
