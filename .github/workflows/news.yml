@@ -1,0 +1,43 @@
+name: Weekly news
+
+on:
+  schedule:
+    # Mondays 02:23 UTC (07:53 IST)
+    - cron: '23 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Collect stories from RSS feeds
+        run: npm run news:fetch
+
+      - name: Tag stories (Claude when ANTHROPIC_API_KEY is set, keyword rules otherwise)
+        run: npm run news:tag
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit updated news
+        run: |
+          if git diff --quiet -- data/news public/data/news.json; then
+            echo "No news changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/news public/data/news.json
+          git commit -m "Update election news ($(date -u +%Y-%m-%d))"
+          git push

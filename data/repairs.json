@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "description": "Manual corrections to the boundary source data, each with the reason. Applied at build time and reported in the data-quality output, never silently.",
+    "lastReviewed": "2026-10-27"
+  },
+  "acToPc": {
+    "PB": {
+      "107": { "pc": "Sangrur", "reason": "Dhuri is an assembly segment of Sangrur Lok Sabha; the source tags it as Patiala." },
+      "108": { "pc": "Sangrur", "reason": "Sangrur assembly is a segment of Sangrur Lok Sabha; the source tags it as Patiala." }
+    },
+    "UP": {
+      "24": { "pc": "Nagina", "reason": "Noorpur is an assembly segment of Nagina Lok Sabha; the source tags it as Moradabad." }
+    }
+  }
+}

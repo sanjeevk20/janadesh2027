@@ -1,0 +1,99 @@
+{
+  "_meta": {
+    "description": "States with Legislative Assembly elections due in 2027. Poll windows are expectations derived from assembly term expiry; the Election Commission of India has not announced schedules yet.",
+    "lastReviewed": "2026-10-27"
+  },
+  "states": [
+    {
+      "id": "UP",
+      "name": "Uttar Pradesh",
+      "sourceName": "UTTAR PRADESH",
+      "seats": 403,
+      "majorityMark": 202,
+      "termEnds": "2027-05",
+      "termEndsConfidence": "approximate",
+      "expectedPolls": "Feb–Mar 2027",
+      "round": 1,
+      "governing": "BJP (NDA)",
+      "notes": "Largest contest of the cycle. NDA won 255 seats in 2022."
+    },
+    {
+      "id": "PB",
+      "name": "Punjab",
+      "sourceName": "PUNJAB",
+      "seats": 117,
+      "majorityMark": 59,
+      "termEnds": "2027-03-16",
+      "termEndsConfidence": "reported",
+      "expectedPolls": "Feb–Mar 2027",
+      "round": 1,
+      "governing": "AAP",
+      "notes": ""
+    },
+    {
+      "id": "UK",
+      "name": "Uttarakhand",
+      "sourceName": "UTTARKHAND",
+      "seats": 70,
+      "majorityMark": 36,
+      "termEnds": "2027-03-28",
+      "termEndsConfidence": "reported",
+      "expectedPolls": "Feb–Mar 2027",
+      "round": 1,
+      "governing": "BJP",
+      "notes": ""
+    },
+    {
+      "id": "GA",
+      "name": "Goa",
+      "sourceName": "GOA",
+      "seats": 40,
+      "majorityMark": 21,
+      "termEnds": "2027-03-14",
+      "termEndsConfidence": "reported",
+      "expectedPolls": "Feb–Mar 2027",
+      "round": 1,
+      "governing": "BJP",
+      "notes": ""
+    },
+    {
+      "id": "MN",
+      "name": "Manipur",
+      "sourceName": "MANIPUR",
+      "seats": 60,
+      "majorityMark": 31,
+      "termEnds": "2027-03-13",
+      "termEndsConfidence": "reported",
+      "expectedPolls": "Feb–Mar 2027",
+      "round": 1,
+      "governing": "President's Rule (since Feb 2025)",
+      "notes": "Census postponed in the state; poll timing depends on the security situation."
+    },
+    {
+      "id": "GJ",
+      "name": "Gujarat",
+      "sourceName": "GUJARAT",
+      "seats": 182,
+      "majorityMark": 92,
+      "termEnds": "2027-12",
+      "termEndsConfidence": "approximate",
+      "expectedPolls": "Nov–Dec 2027",
+      "round": 2,
+      "governing": "BJP",
+      "notes": "BJP will have governed for 32 consecutive years by 2027."
+    },
+    {
+      "id": "HP",
+      "name": "Himachal Pradesh",
+      "sourceName": "HIMACHAL PRADESH",
+      "seats": 68,
+      "majorityMark": 35,
+      "termEnds": "2027-12",
+      "termEndsConfidence": "approximate",
+      "expectedPolls": "Nov–Dec 2027",
+      "round": 2,
+      "governing": "INC",
+      "notes": "Congress holds 40 of 68 seats."
+    }
+  ]
+}

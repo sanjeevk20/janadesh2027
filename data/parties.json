@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "description": "Display names and map colours for parties. Keys are party names exactly as they appear in ECI results. Parties not listed here are shown with the 'other' colour.",
+    "otherColor": "#b8b8b8"
+  },
+  "parties": {
+    "Bharatiya Janata Party": { "abbr": "BJP", "color": "#f47c20" },
+    "Samajwadi Party": { "abbr": "SP", "color": "#d7191c" },
+    "Indian National Congress": { "abbr": "INC", "color": "#19aaed" },
+    "Aam Aadmi Party": { "abbr": "AAP", "color": "#1f4e8c" },
+    "Bahujan Samaj Party": { "abbr": "BSP", "color": "#5b3fa8" },
+    "Shiromani Akali Dal": { "abbr": "SAD", "color": "#8a6d00" },
+    "Shiromani Akali Dal (Amritsar)(Simranjit Singh Mann)": { "abbr": "SAD(A)", "color": "#b39b4d" },
+    "Shiromani Akali Dal (Sanyukt)": { "abbr": "SAD(S)", "color": "#c9b77a" },
+    "Rashtriya Lok Dal": { "abbr": "RLD", "color": "#0b7a3b" },
+    "Apna Dal (Soneylal)": { "abbr": "AD(S)", "color": "#8b4a2b" },
+    "Apna Dal (Kamerawadi)": { "abbr": "AD(K)", "color": "#b07a5a" },
+    "Suheldev Bharatiya Samaj Party": { "abbr": "SBSP", "color": "#f2b705" },
+    "Nirbal Indian Shoshit Hamara Aam Dal": { "abbr": "NISHAD", "color": "#00897b" },
+    "Jansatta Dal Loktantrik": { "abbr": "JDL", "color": "#6d6875" },
+    "National People's Party": { "abbr": "NPP", "color": "#d16ba5" },
+    "Janata Dal  (United)": { "abbr": "JD(U)", "color": "#7cb342" },
+    "Naga Peoples Front": { "abbr": "NPF", "color": "#455a64" },
+    "Kuki People’s Alliance": { "abbr": "KPA", "color": "#26a69a" },
+    "Maharashtrawadi Gomantak": { "abbr": "MGP", "color": "#c2185b" },
+    "Goa Forward Party": { "abbr": "GFP", "color": "#e57373" },
+    "Revolutionary Goans Party": { "abbr": "RGP", "color": "#ffb74d" },
+    "All India Trinamool Congress": { "abbr": "AITC", "color": "#20c997" },
+    "Punjab Lok Congress Party": { "abbr": "PLC", "color": "#4fc3f7" },
+    "Uttarakhand Kranti Dal": { "abbr": "UKD", "color": "#9ccc65" },
+    "Republican Party of India (Athawale)": { "abbr": "RPI(A)", "color": "#3949ab" },
+    "Aazad Samaj Party (Kanshi Ram)": { "abbr": "ASP(KR)", "color": "#1565c0" },
+    "All India Majlis-E-Ittehadul Muslimeen": { "abbr": "AIMIM", "color": "#2e7d32" },
+    "Independent": { "abbr": "IND", "color": "#8c8c8c" },
+    "None of the Above": { "abbr": "NOTA", "color": "#dddddd" }
+  }
+}
