@@ -5,5 +5,12 @@
     "commit": "7d8cf637f83d223b178d11659103a1f52647367a",
     "license": "ECI public results; scraper MIT",
     "scrapedAt": "2026-10-28T02:07:08.562Z"
+  },
+  "HP": {
+    "name": "ECI results via archive.org (india-votes-data scraper)",
+    "url": "https://web.archive.org/web/2023/https://results.eci.gov.in/ResultAcGenDec2022/ConstituencywiseS081.htm?ac=1",
+    "commit": "7d8cf637f83d223b178d11659103a1f52647367a",
+    "license": "ECI public results; scraper MIT",
+    "scrapedAt": "2026-10-28T06:03:19.307Z"
   }
 }
