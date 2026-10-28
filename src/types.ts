@@ -93,13 +93,22 @@ export interface PcResult {
   candidates: Candidate[];
   acs: number[];
   swing?: { nda2022: number; nda2024: number; ndaChange: number; parties: PartySwing[] };
+  // Set when some of this PC's assembly seats have no boundary shape, so no fair swing exists.
+  swingIncomplete?: boolean;
 }
 
 export interface LsStateResults {
   state: string;
   source: { name: string; url: string; commit: string; license: string };
   swingAvailable: boolean;
-  nda: { members: Record<'2022' | '2024', string[]>; share2022?: number; share2024?: number; change?: number };
+  nda: {
+    members: Record<'2022' | '2024', string[]>;
+    share2022?: number;
+    share2024?: number;
+    change?: number;
+    pcsCompared?: number;
+    excluded?: string[];
+  };
   summary: Array<{ party: string; seats: number }>;
   join: { issues: ValidationIssue[] };
   acToPc: Record<string, number>;

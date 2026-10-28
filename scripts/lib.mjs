@@ -4,9 +4,13 @@ import { access } from 'node:fs/promises';
 export function normalise(name) {
   return String(name ?? '')
     .toUpperCase()
-    .replace(/\(.*?\)/g, '')
+    .replace(RESERVATION_TAG, '')
     .replace(/[^A-Z]/g, '');
 }
+
+// Reservation suffixes such as "(SC)" / "(ST)", including ones the boundary source truncated
+// ("Sri Hargobindpur (S"). Other bracketed text is part of the name: "Gandhinagar(South)".
+export const RESERVATION_TAG = /\s*\((SC|ST)\)|\s*\((S|SC|ST)?$/g;
 
 // Levenshtein-based similarity in [0, 1].
 export function similarity(a, b) {

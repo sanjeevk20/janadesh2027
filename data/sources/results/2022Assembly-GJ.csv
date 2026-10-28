@@ -1,0 +1,1804 @@
+election_year,election_type,election_state,constituency,constituency_no,serial_no,candidate,party,evm_votes,postal_votes
+2022,Assembly,GJ,ABDASA,1,1,JAT MAMAD JUNG,Indian National Congress,70423,341
+2022,Assembly,GJ,ABDASA,1,2,JADEJA PRADHYUMANSINH MAHIPATSINH,Bharatiya Janata Party,79298,897
+2022,Assembly,GJ,ABDASA,1,3,MEGHWAL NAGSHI KHAMUBHAI,Bahujan Samaj Party,1022,20
+2022,Assembly,GJ,ABDASA,1,4,K. D. JADEJA,Praja Vijay Paksh,299,5
+2022,Assembly,GJ,ABDASA,1,5,JOSHI JAGDISHCHANDRA KAKULAL,Samajwadi Party,195,2
+2022,Assembly,GJ,ABDASA,1,6,VASANTBHAI VALJI KHETANI,Aam Aadmi Party,1606,98
+2022,Assembly,GJ,ABDASA,1,7,MAMUBHAI MANDABHAI RABARI,Independent,1722,13
+2022,Assembly,GJ,ABDASA,1,8,UTHAR RAZAK ALIMAMAD,Independent,437,13
+2022,Assembly,GJ,ABDASA,1,9,BHANUSHALI SURESH MANJI MANGE,Independent,337,0
+2022,Assembly,GJ,ABDASA,1,10,HAKUMATSINH JUVANSINH JADEJA,Independent,3474,28
+2022,Assembly,GJ,ABDASA,1,11,NOTA,None of the Above,2925,17
+2022,Assembly,GJ,MANDVI,2,1,Aniruddha Bhailal Dave,Bharatiya Janata Party,89747,556
+2022,Assembly,GJ,MANDVI,2,2,Kishorbhai Dheda,Bahujan Samaj Party,1817,29
+2022,Assembly,GJ,MANDVI,2,3,Rajendrasinh A. Jadeja,Indian National Congress,41768,238
+2022,Assembly,GJ,MANDVI,2,4,Kailasdan K. Gadhvi,Aam Aadmi Party,22501,290
+2022,Assembly,GJ,MANDVI,2,5,Advocate Mahamadiqbal Manjaliya,All India Majlis-E-Ittehadul Muslimeen,8477,17
+2022,Assembly,GJ,MANDVI,2,6,Vachhiya Lakhmir Rabari,Praja Vijay Paksh,373,6
+2022,Assembly,GJ,MANDVI,2,7,Sameja Abdulkarim Amad,Independent,660,3
+2022,Assembly,GJ,MANDVI,2,8,Sangar  Shivji Budhiya,Independent,517,0
+2022,Assembly,GJ,MANDVI,2,9,NOTA,None of the Above,2411,16
+2022,Assembly,GJ,BHUJ,3,1,ARJAN BHUDIA,Indian National Congress,36495,273
+2022,Assembly,GJ,BHUJ,3,2,KESHUBHAI SHIVDAS PATEL,Bharatiya Janata Party,95746,836
+2022,Assembly,GJ,BHUJ,3,3,SAIYAD JUSABSHA MAMADSHA,Bahujan Samaj Party,1032,11
+2022,Assembly,GJ,BHUJ,3,4,NODE KASAM MOHAMAD,Right to Recall Party,445,3
+2022,Assembly,GJ,BHUJ,3,5,MEHULRAJ BHARATSINH RATHOD,Praja Vijay Paksh,435,4
+2022,Assembly,GJ,BHUJ,3,6,RAJESH KESARA PINDORIA,Aam Aadmi Party,7840,220
+2022,Assembly,GJ,BHUJ,3,7,SAKIL MAHAMAD SAMA,All India Majlis-E-Ittehadul Muslimeen,31249,46
+2022,Assembly,GJ,BHUJ,3,8,OSMAN ISHABHAI KUMBHAR,Independent,541,4
+2022,Assembly,GJ,BHUJ,3,9,THEBA HUSEN MAMAD,Independent,467,0
+2022,Assembly,GJ,BHUJ,3,10,BHUPENDRA BABULAL JOSHI,Independent,1113,3
+2022,Assembly,GJ,BHUJ,3,11,NOTA,None of the Above,3425,37
+2022,Assembly,GJ,ANJAR,4,1,CHAVDA SUDHA BAKUL,Bahujan Samaj Party,2349,10
+2022,Assembly,GJ,ANJAR,4,2,CHHANGA TRIKAM BIJAL,Bharatiya Janata Party,98606,470
+2022,Assembly,GJ,ANJAR,4,3,DANGAR RAMESHBHAI SHAMJIBHAI,Indian National Congress,61084,283
+2022,Assembly,GJ,ANJAR,4,4,ARJANBHAI CHANABHAI RABARI,Aam Aadmi Party,7220,115
+2022,Assembly,GJ,ANJAR,4,5,KAKAL GANIBHAI ADAMBHAI,Gujarat Sarva Samaj Party,638,0
+2022,Assembly,GJ,ANJAR,4,6,ROSHANALI IBRAHIM SANDHANI,SOCIAL DEMOCRATIC PARTY OF INDIA,955,2
+2022,Assembly,GJ,ANJAR,4,7,RAMESH JAKHARABHAI KODECHA,Independent,1061,1
+2022,Assembly,GJ,ANJAR,4,8,NOTA,None of the Above,2467,18
+2022,Assembly,GJ,GANDHIDHAM,5,1,BHARATBHAI VELJIBHAI SOLANKI,Indian National Congress,45729,200
+2022,Assembly,GJ,GANDHIDHAM,5,2,MALTI KISHOR MAHESHWARI,Bharatiya Janata Party,83382,378
+2022,Assembly,GJ,GANDHIDHAM,5,3,MAURYA K. D.,Bahujan Samaj Party,1002,8
+2022,Assembly,GJ,GANDHIDHAM,5,4,ARVIND ASHOK SANGHELA,Gujarat Sarva Samaj Party,428,1
+2022,Assembly,GJ,GANDHIDHAM,5,5,BUDHABHAI THAVAR MAHESHWARI,Aam Aadmi Party,14655,172
+2022,Assembly,GJ,GANDHIDHAM,5,6,MAHESHWARI VANITA DAHYALAL,Sanyukt Vikas Party,285,0
+2022,Assembly,GJ,GANDHIDHAM,5,7,LALJIBHAI KARABHAI BALIYA,Samajwadi Party,968,0
+2022,Assembly,GJ,GANDHIDHAM,5,8,SAMIRBHAI JUMABHAI MAHESHWARI,Independent,558,1
+2022,Assembly,GJ,GANDHIDHAM,5,9,SONDARVA JIGNASHA MAHESHBHAI,Independent,787,6
+2022,Assembly,GJ,GANDHIDHAM,5,10,NOTA,None of the Above,3087,18
+2022,Assembly,GJ,RAPAR,6,1,BHACHUBHAI DHARAMSHI AARETHIYA,Indian National Congress,66106,278
+2022,Assembly,GJ,RAPAR,6,2,VIRENDRASINH BAHADURSINH JADEJA,Bharatiya Janata Party,66589,372
+2022,Assembly,GJ,RAPAR,6,3,AMBA PARAVANT PATEL,Aam Aadmi Party,2387,47
+2022,Assembly,GJ,RAPAR,6,4,MANSUKH VAJERAM MAKVANA,Gujarat Sarva Samaj Party,588,1
+2022,Assembly,GJ,RAPAR,6,5,GOSHWAMI SANJAYGIRI RAMESHGIRI,Independent,278,1
+2022,Assembly,GJ,RAPAR,6,6,NAVINCHANDRA MANJI JOSARFAL,Independent,225,1
+2022,Assembly,GJ,RAPAR,6,7,RAMESHBHAI PUNJABHAI PATNI,Independent,350,4
+2022,Assembly,GJ,RAPAR,6,8,RAJESHBHAI BABUBHAI DUDASNA,Independent,489,6
+2022,Assembly,GJ,RAPAR,6,9,RATHOD AMBABHAI MAYAJAR,Independent,694,3
+2022,Assembly,GJ,RAPAR,6,10,VANIYA TEJABHAI GELABHAI,Independent,939,2
+2022,Assembly,GJ,RAPAR,6,11,SAIYAD HASAMSHA UMARSHA,Independent,1731,1
+2022,Assembly,GJ,RAPAR,6,12,NOTA,None of the Above,3938,4
+2022,Assembly,GJ,VAV,7,1,THAKOR GENIBEN NAGAJI,Indian National Congress,101782,731
+2022,Assembly,GJ,VAV,7,2,THAKOR SWARUPJI SARDARJI,Bharatiya Janata Party,86224,688
+2022,Assembly,GJ,VAV,7,3,PARMAR NAYANABEN RANABHAI,Bahujan Samaj Party,1844,5
+2022,Assembly,GJ,VAV,7,4,BHEMAJIBHAI PATEL,Aam Aadmi Party,1503,93
+2022,Assembly,GJ,VAV,7,5,AMIRAMBHAI SHANKARLAL ASHAL,Independent,27088,258
+2022,Assembly,GJ,VAV,7,6,SHANTIBHAI HAJABHAI RATHOD,Independent,2267,22
+2022,Assembly,GJ,VAV,7,7,NOTA,None of the Above,3994,3
+2022,Assembly,GJ,THARAD,8,1,GULABSINH PIRABHAI RAJPUT,Indian National Congress,90977,408
+2022,Assembly,GJ,THARAD,8,2,SHANKARBHAI LAGDHIRBHAI CHAUDHARY,Bharatiya Janata Party,116842,1049
+2022,Assembly,GJ,THARAD,8,3,HADIYAL MAHESHKUMAR RANCHHODBHAI,Bahujan Samaj Party,717,3
+2022,Assembly,GJ,THARAD,8,4,PRAKASHBHAI MANJIBHAI DARAJI,Sardar Vallabhbhai Patel Party,136,1
+2022,Assembly,GJ,THARAD,8,5,BHARATKUMAR KHEMABHAI CHARAMTA,Praja Vijay Paksh,74,0
+2022,Assembly,GJ,THARAD,8,6,RAMESHJI VANAJI MAKVANA,Garvi Gujarat Party,68,0
+2022,Assembly,GJ,THARAD,8,7,VIRCHANDBHAI CHELABHAI CHAVDA,Aam Aadmi Party,256,22
+2022,Assembly,GJ,THARAD,8,8,KAMLESHBHAI KALUBHAI DESAI,Independent,91,0
+2022,Assembly,GJ,THARAD,8,9,THAKOR LAXMIBEN SHURESHBHAI,Independent,164,2
+2022,Assembly,GJ,THARAD,8,10,PARMAR SEDHABHAI VAGHABHAI,Independent,206,1
+2022,Assembly,GJ,THARAD,8,11,BOCHIYA MOHANBHAI ISHVARBHAI,Independent,211,0
+2022,Assembly,GJ,THARAD,8,12,BRAHMKSHATRIYA BHAGAVTIBEN KHETSINHBHAI,Independent,190,0
+2022,Assembly,GJ,THARAD,8,13,VARAN MANUBHAI VALABHAI,Independent,476,0
+2022,Assembly,GJ,THARAD,8,14,SARTANBHAI VAKHATABHAI HADIYAL,Independent,1878,0
+2022,Assembly,GJ,THARAD,8,15,NOTA,None of the Above,3460,6
+2022,Assembly,GJ,DHANERA,9,1,PATEL NATHABHAI HEGOLABHAI,Indian National Congress,37922,338
+2022,Assembly,GJ,DHANERA,9,2,PATEL BHAGVANBHAI HAJABHAI,Bharatiya Janata Party,59943,414
+2022,Assembly,GJ,DHANERA,9,3,PRAKASHBHAI REVABHAI SOLANKI,Bahujan Samaj Party,2137,17
+2022,Assembly,GJ,DHANERA,9,4,DEVDA SURESHKUMAR TRIKAMAJI,Aam Aadmi Party,1083,47
+2022,Assembly,GJ,DHANERA,9,5,LASHABHAI LAVAJIBHAI BAJAG,Janata Dal  (Secular),426,1
+2022,Assembly,GJ,DHANERA,9,6,DALPATJI KESARJI CHAUHAN,Independent,966,8
+2022,Assembly,GJ,DHANERA,9,7,DINESHBHAI PATAJI CHAUHAN,Independent,1395,0
+2022,Assembly,GJ,DHANERA,9,8,MAVJIBHAI MAGANBHAI DESAI,Independent,95600,453
+2022,Assembly,GJ,DHANERA,9,9,NOTA,None of the Above,3809,2
+2022,Assembly,GJ,DANTA,10,1,KANTIBHAI KALABHAI KHARADI,Indian National Congress,84691,443
+2022,Assembly,GJ,DANTA,10,2,PARGHI LATUBHAI CHANDABHAI,Bharatiya Janata Party,78251,556
+2022,Assembly,GJ,DANTA,10,3,BUMBADIYA MAHENDRABHAI KESHARABHAI,Aam Aadmi Party,11861,320
+2022,Assembly,GJ,DANTA,10,4,DHRANGI KALABHAI MAVABHAI,Independent,2073,9
+2022,Assembly,GJ,DANTA,10,5,NOTA,None of the Above,5201,12
+2022,Assembly,GJ,VADGAM,11,1,JIGNESH MEVANI,Indian National Congress,93848,917
+2022,Assembly,GJ,VADGAM,11,2,MANIBHAI JETHABHAI VAGHELA,Bharatiya Janata Party,89052,785
+2022,Assembly,GJ,VADGAM,11,3,SOLANKI RAJANIKANT HIRABHAI,Bahujan Samaj Party,644,4
+2022,Assembly,GJ,VADGAM,11,4,JAYSHRIBEN DAHYABHAI PARMAR,Pachchasi Parivartan Samaj Party,218,2
+2022,Assembly,GJ,VADGAM,11,5,DABHI SHARMISHTABEN LALJIBHAI,Janata Dal  (Secular),176,2
+2022,Assembly,GJ,VADGAM,11,6,DALPATBHAI DAHYABHAI BHATIYA,Aam Aadmi Party,4322,171
+2022,Assembly,GJ,VADGAM,11,7,SUNDHIYA KALPESHKUMAR RAMESHBHAI,All India Majlis-E-Ittehadul Muslimeen,2233,1
+2022,Assembly,GJ,VADGAM,11,8,DATTULBHAI SOMALAL JOSHI,Independent,287,3
+2022,Assembly,GJ,VADGAM,11,9,DINESHKUMAR ALJIBHAI  SOLANKI,Independent,224,0
+2022,Assembly,GJ,VADGAM,11,10,BHATIYA PIYUSHBHAI BHIKHABHAI,Independent,458,1
+2022,Assembly,GJ,VADGAM,11,11,MAHESWARI MANJULABEN VANRAJBHAI,Independent,1194,1
+2022,Assembly,GJ,VADGAM,11,12,NOTA,None of the Above,2857,20
+2022,Assembly,GJ,PALANPUR,12,1,ANIKET GIRISHBHAI THAKER,Bharatiya Janata Party,94692,896
+2022,Assembly,GJ,PALANPUR,12,2,MAHESHKUMAR AMRUTLAL PATEL,Indian National Congress,67648,960
+2022,Assembly,GJ,PALANPUR,12,3,SHAILESHBHAI KARSHANBHAI PARMAR,Bahujan Samaj Party,1259,8
+2022,Assembly,GJ,PALANPUR,12,4,RAMESHKUMAR KHEMRAJBHAI NABHANI,Aam Aadmi Party,9138,468
+2022,Assembly,GJ,PALANPUR,12,5,CHUNARA GULSHANBEN AHEMADBHAI,Independent,331,2
+2022,Assembly,GJ,PALANPUR,12,6,JAVIDKHAN JAFARKHAN PARMAR,Independent,307,3
+2022,Assembly,GJ,PALANPUR,12,7,PARMAR CHHAGANCHANDARAJ DHANABHAI,Independent,344,2
+2022,Assembly,GJ,PALANPUR,12,8,MANISH BRAHMBHATT (KRANTIKARI),Independent,952,12
+2022,Assembly,GJ,PALANPUR,12,9,SHRIMALI ASHOKBHAI BALCHANDBHAI,Independent,874,5
+2022,Assembly,GJ,PALANPUR,12,10,NOTA,None of the Above,2679,23
+2022,Assembly,GJ,DEODAR,14,1,KESHAJI SHIVAJI CHAUHAN,Bharatiya Janata Party,108560,563
+2022,Assembly,GJ,DEODAR,14,2,MANSUNGBHAI MASHRUBHAI PARMAR,Bahujan Samaj Party,2463,3
+2022,Assembly,GJ,DEODAR,14,3,SHIVABHAI AMARABHAI BHURIYA,Indian National Congress,70007,702
+2022,Assembly,GJ,DEODAR,14,4,NAYANSINH NARSINHBHAI PADHAR,Praja Vijay Paksh,2149,20
+2022,Assembly,GJ,DEODAR,14,5,BHEMABHAI RAGNATHBHAI CHAUDHARY,Aam Aadmi Party,4863,202
+2022,Assembly,GJ,DEODAR,14,6,NOTA,None of the Above,3065,6
+2022,Assembly,GJ,KANKREJ,15,1,AMRUTJI MOTIJI THAKOR,Indian National Congress,96137,487
+2022,Assembly,GJ,KANKREJ,15,2,MAHESHBHAI VERSHIBHAI MAKAVANA,Bahujan Samaj Party,2136,3
+2022,Assembly,GJ,KANKREJ,15,3,VAGHELA KIRTISINH PRABHATSINH,Bharatiya Janata Party,90788,541
+2022,Assembly,GJ,KANKREJ,15,4,MUKESHKUMAR SOMALAL THAKKAR,Aam Aadmi Party,4965,96
+2022,Assembly,GJ,KANKREJ,15,5,RATHOD MAVJI BHEMAJI,Jan Sewa Driver Party,829,2
+2022,Assembly,GJ,KANKREJ,15,6,CHAUDHARI BABUBHAI MAHDEVBHAI,Independent,1240,2
+2022,Assembly,GJ,KANKREJ,15,7,THAKOR GANDAJI MANAJI,Independent,1050,1
+2022,Assembly,GJ,KANKREJ,15,8,NOTA,None of the Above,3805,6
+2022,Assembly,GJ,RADHANPUR,16,1,Raghubhai Merajbhai Desai,Indian National Congress,81405,640
+2022,Assembly,GJ,RADHANPUR,16,2,Lavingji Muljiji Solanki,Bharatiya Janata Party,103925,587
+2022,Assembly,GJ,RADHANPUR,16,3,Sadhu Devendarkumar Sitaramdas,Gujarat Nav Nirman Sena,1150,2
+2022,Assembly,GJ,RADHANPUR,16,4,Dolsangji D Thakor,Jan Sewa Driver Party,348,0
+2022,Assembly,GJ,RADHANPUR,16,5,Raval Bhurabhai Motibhai,Samajwadi Party,272,0
+2022,Assembly,GJ,RADHANPUR,16,6,Thakor Lalabhai Raghubhai,Aam Aadmi Party,2560,79
+2022,Assembly,GJ,RADHANPUR,16,7,Kishan Kalubhai Thakor,Independent,300,1
+2022,Assembly,GJ,RADHANPUR,16,8,Thakor Versiji Dhamaji,Independent,783,2
+2022,Assembly,GJ,RADHANPUR,16,9,Tanna Girdharibhai Chunilal,Independent,453,0
+2022,Assembly,GJ,RADHANPUR,16,10,Patel Pankajkumar Atmaram,Independent,669,2
+2022,Assembly,GJ,RADHANPUR,16,11,Sadhu Mayaram Karsandas,Independent,1559,0
+2022,Assembly,GJ,RADHANPUR,16,12,NOTA,None of the Above,3561,10
+2022,Assembly,GJ,CHANASMA,17,1,Thakor Dineshbhai Ataji,Indian National Congress,85479,927
+2022,Assembly,GJ,CHANASMA,17,2,Dilipkumar Virajibhai Thakor,Bharatiya Janata Party,84383,619
+2022,Assembly,GJ,CHANASMA,17,3,Thakor Diwanji Hemaji,Garvi Gujarat Party,1455,3
+2022,Assembly,GJ,CHANASMA,17,4,Vishnubhai Jorabhai Patel,Aam Aadmi Party,7324,262
+2022,Assembly,GJ,CHANASMA,17,5,Shivanandji Sarswati Gurushree Madhvanandji,Gujarat Nav Nirman Sena,572,4
+2022,Assembly,GJ,CHANASMA,17,6,Shankarbhai Sagarambhai Rabari,Jan Sewa Driver Party,741,4
+2022,Assembly,GJ,CHANASMA,17,7,Baloch Jalamkhan Kayamkhan,Independent,1052,0
+2022,Assembly,GJ,CHANASMA,17,8,NOTA,None of the Above,3278,15
+2022,Assembly,GJ,PATAN,18,1,KIRITKUMAR CHIMANLAL PATEL,Indian National Congress,102166,1339
+2022,Assembly,GJ,PATAN,18,2,DR. RAJULBEN DESAI,Bharatiya Janata Party,85765,563
+2022,Assembly,GJ,PATAN,18,3,SARVAKAR HASUMATIBEN PARASHOTTAMBHAI,Bahujan Samaj Party,904,9
+2022,Assembly,GJ,PATAN,18,4,THAKOR JAYNTIJI HIRAJI,Garvi Gujarat Party,230,1
+2022,Assembly,GJ,PATAN,18,5,THAKOR PRAHLADSANG DHUDAJI,Jan Sewa Driver Party,145,1
+2022,Assembly,GJ,PATAN,18,6,BHARTJI KANTIJI THAKOR,National Maha Sabha Party,279,0
+2022,Assembly,GJ,PATAN,18,7,LALESHBHAI THAKKAR,Aam Aadmi Party,6598,210
+2022,Assembly,GJ,PATAN,18,8,THAKOR SARJIJI KANJIJI,Independent,142,0
+2022,Assembly,GJ,PATAN,18,9,PATEL JAYESHKUMAR GORDHANBHAI,Independent,201,1
+2022,Assembly,GJ,PATAN,18,10,PARMAR HITENDRAKUMAR GANESHBHAI,Independent,272,2
+2022,Assembly,GJ,PATAN,18,11,PRATAPJI PUNJAJI THAKOR,Independent,212,0
+2022,Assembly,GJ,PATAN,18,12,PRAVINBHAI DAHYALAL JADAV,Independent,310,13
+2022,Assembly,GJ,PATAN,18,13,PRHLADJI PRADHANJI THAKOR,Independent,487,0
+2022,Assembly,GJ,PATAN,18,14,MANSURI TOFIKBHAI UMARBHAI,Independent,646,1
+2022,Assembly,GJ,PATAN,18,15,ROHIT SENMA ALIAS NAGJI,Independent,1040,1
+2022,Assembly,GJ,PATAN,18,16,SHABBIRHUSEN AAJAMBHAI MALEK,Independent,2332,1
+2022,Assembly,GJ,PATAN,18,17,NOTA,None of the Above,2474,7
+2022,Assembly,GJ,SIDHPUR,19,1,Govindbhai Rathod,Bahujan Samaj Party,2037,3
+2022,Assembly,GJ,SIDHPUR,19,2,Chandanji Talaji Thakor,Indian National Congress,88112,261
+2022,Assembly,GJ,SIDHPUR,19,3,Balvantsinh Chandansinh Rajput,Bharatiya Janata Party,90871,316
+2022,Assembly,GJ,SIDHPUR,19,4,Abbasbhai Mohammadsharif Nodsola,All India Majlis-E-Ittehadul Muslimeen,1136,1
+2022,Assembly,GJ,SIDHPUR,19,5,Thakor Sanjayji,Pachchasi Parivartan Samaj Party,252,1
+2022,Assembly,GJ,SIDHPUR,19,6,Rajput Mahendrasinh Dalpatsinh,Aam Aadmi Party,2023,59
+2022,Assembly,GJ,SIDHPUR,19,7,Kaji Sohil Hanifbhai,Independent,357,1
+2022,Assembly,GJ,SIDHPUR,19,8,Patel Dilipkumar,Independent,936,2
+2022,Assembly,GJ,SIDHPUR,19,9,Baloch Hasankhan Dayamkhan,Independent,990,1
+2022,Assembly,GJ,SIDHPUR,19,10,NOTA,None of the Above,1850,7
+2022,Assembly,GJ,KHERALU,20,1,Desai Mukeshkumar Monghjibhai,Indian National Congress,50680,816
+2022,Assembly,GJ,KHERALU,20,2,Sardarbhai Shamalbhai Chaudhary,Bharatiya Janata Party,55101,359
+2022,Assembly,GJ,KHERALU,20,3,Chauhan Mukeshsinh Dhirusinh,Garvi Gujarat Party,956,7
+2022,Assembly,GJ,KHERALU,20,4,Thakor Dineshji Hajurji,Aam Aadmi Party,2421,179
+2022,Assembly,GJ,KHERALU,20,5,Valjibhai Savjibhai Parmar,Log Party,348,3
+2022,Assembly,GJ,KHERALU,20,6,Alok Hiralal Rai,Independent,2055,6
+2022,Assembly,GJ,KHERALU,20,7,Rameshji Jivanji Thakor,Independent,823,1
+2022,Assembly,GJ,KHERALU,20,8,Ramsinhji Shankarji Thakor,Independent,36112,272
+2022,Assembly,GJ,KHERALU,20,9,NOTA,None of the Above,2636,12
+2022,Assembly,GJ,VISNAGAR,22,1,Rushikesh Ganeshbhai Patel,Bharatiya Janata Party,87803,553
+2022,Assembly,GJ,VISNAGAR,22,2,Kiritbhai Ishvarbhai Patel,Indian National Congress,53231,720
+2022,Assembly,GJ,VISNAGAR,22,3,Jayantilal Mohanlal Patel (Advocate),Aam Aadmi Party,12450,381
+2022,Assembly,GJ,VISNAGAR,22,4,Thakor Vishnuji Nenaji (Master),Right to Recall Party,577,3
+2022,Assembly,GJ,VISNAGAR,22,5,Prajapati Jagdish kumar Bhikhabhai,Bhartiya Jan Parishad,417,4
+2022,Assembly,GJ,VISNAGAR,22,6,Thakor Sanjayji Amratji,Rashtriya Hind Ekta Dal,153,1
+2022,Assembly,GJ,VISNAGAR,22,7,Khokhar Abdulrashid Shermohmad,Independent,209,1
+2022,Assembly,GJ,VISNAGAR,22,8,Thakor Shankarji Mafaji,Independent,249,4
+2022,Assembly,GJ,VISNAGAR,22,9,Patel Upendrakumar Shankarlal,Independent,478,0
+2022,Assembly,GJ,VISNAGAR,22,10,Parmar Vijaykumar Kodarbhai,Independent,775,1
+2022,Assembly,GJ,VISNAGAR,22,11,NOTA,None of the Above,2305,20
+2022,Assembly,GJ,BECHARAJI,23,1,THAKOR AMRUTJI(BHOPAJI) BABUJI,Indian National Congress,58261,325
+2022,Assembly,GJ,BECHARAJI,23,2,THAKOR SUKHAJI SOMAJI,Bharatiya Janata Party,69474,398
+2022,Assembly,GJ,BECHARAJI,23,3,DINESHKUMAR REVABHAI RATHOD,Bahujan Samaj Party,724,8
+2022,Assembly,GJ,BECHARAJI,23,4,AMITKUMAR PUSKARRAY PATEL(NETAJI),Rashtrawadi Janlok Dal,506,10
+2022,Assembly,GJ,BECHARAJI,23,5,ZALA NARENDRASINH VAJESINH,Garvi Gujarat Party,875,2
+2022,Assembly,GJ,BECHARAJI,23,6,DR. P. C. PATEL,Bharatiya Rashtravadi Paksha,453,5
+2022,Assembly,GJ,BECHARAJI,23,7,SAGARBHAI HARJIBHAI RABARI,Aam Aadmi Party,10350,413
+2022,Assembly,GJ,BECHARAJI,23,8,SIDDHARAJSINH VAJUBHA ZALA,Jan Sewa Driver Party,447,2
+2022,Assembly,GJ,BECHARAJI,23,9,THAKOR SHAILESHSINH KIRTISINH,Independent,757,2
+2022,Assembly,GJ,BECHARAJI,23,10,BHAVESHKUMAR NAROTAMBHAI PATEL,Independent,17079,99
+2022,Assembly,GJ,BECHARAJI,23,11,NOTA,None of the Above,2441,25
+2022,Assembly,GJ,KADI,24,1,Karsanbhai Punjabhai Solanki,Bharatiya Janata Party,106699,353
+2022,Assembly,GJ,KADI,24,2,Pravinbhai Ganapatbhai Parmar,Indian National Congress,78528,330
+2022,Assembly,GJ,KADI,24,3,Bhupendrakumar Bhikhabhai Ravat,Rashtriya Hind Ekta Dal,1078,0
+2022,Assembly,GJ,KADI,24,4,Hargovan Karsandas Dabhi,Aam Aadmi Party,7061,192
+2022,Assembly,GJ,KADI,24,5,Kusumben Sureshkumar Rathod,Independent,333,2
+2022,Assembly,GJ,KADI,24,6,Mangalbhai Kacharabhai Makwana,Independent,1497,2
+2022,Assembly,GJ,KADI,24,7,Laxmichand Pujabhai Chavada,Independent,861,2
+2022,Assembly,GJ,KADI,24,8,Senama Mahendrabhai Somabhai,Independent,836,0
+2022,Assembly,GJ,KADI,24,9,NOTA,None of the Above,2496,9
+2022,Assembly,GJ,MAHESANA,25,1,Patel Mukeshkumar D.,Bharatiya Janata Party,98127,689
+2022,Assembly,GJ,MAHESANA,25,2,Vasudev Tribhovandas Parmar,Bahujan Samaj Party,816,3
+2022,Assembly,GJ,MAHESANA,25,3,P.K.  Patel,Indian National Congress,52403,619
+2022,Assembly,GJ,MAHESANA,25,4,Patel Dishantbhai Dhanjibhai(Bhagat),Aam Aadmi Party,14609,602
+2022,Assembly,GJ,MAHESANA,25,5,Nimesh Atmaram Patel,Gunj Satya Ni Janata Party,817,0
+2022,Assembly,GJ,MAHESANA,25,6,Thakor Arjanji Mohanji,Independent,467,3
+2022,Assembly,GJ,MAHESANA,25,7,Thakor Kamleshbhai Nenaji,Independent,222,8
+2022,Assembly,GJ,MAHESANA,25,8,Thakor Pratapji Kadavaji,Independent,198,2
+2022,Assembly,GJ,MAHESANA,25,9,Taraben Rameshbhai Makwana,Independent,218,0
+2022,Assembly,GJ,MAHESANA,25,10,Parmar Devangkumar Prabhudas,Independent,232,3
+2022,Assembly,GJ,MAHESANA,25,11,Raval Anandkumar Manilal,Independent,2711,11
+2022,Assembly,GJ,MAHESANA,25,12,Seta Mahomadjubed Ayubbhai (Jakhami),Independent,448,1
+2022,Assembly,GJ,MAHESANA,25,13,Snehal Ganpatbhai Vaghela,Independent,560,4
+2022,Assembly,GJ,MAHESANA,25,14,NOTA,None of the Above,2422,27
+2022,Assembly,GJ,VIJAPUR,26,1,Dr. C. J. CHAVDA,Indian National Congress,77806,943
+2022,Assembly,GJ,VIJAPUR,26,2,RAMANBHAI D. PATEL(STARLINE),Bharatiya Janata Party,70954,742
+2022,Assembly,GJ,VIJAPUR,26,3,URVASHIBEN DIPAKBHAI PATEL,Rashtriya Hind Ekta Dal,552,0
+2022,Assembly,GJ,VIJAPUR,26,4,CHIRAGBHAI PATEL(K.K.GROUP),Aam Aadmi Party,4760,259
+2022,Assembly,GJ,VIJAPUR,26,5,UJASKUMAR RAMESHBHAI PATEL,Independent,183,0
+2022,Assembly,GJ,VIJAPUR,26,6,CHAUDHARI SHANKARBHAI DEVJIBHAI,Independent,265,2
+2022,Assembly,GJ,VIJAPUR,26,7,PARMAR AJITKUMAR HAMIRJI,Independent,511,0
+2022,Assembly,GJ,VIJAPUR,26,8,NOTA,None of the Above,2048,11
+2022,Assembly,GJ,HIMATNAGAR,27,1,Kamleshkumar Jayantibhai Patel,Indian National Congress,88033,1899
+2022,Assembly,GJ,HIMATNAGAR,27,2,Parmar Anilkumar Ramanlal,Bahujan Samaj Party,1173,8
+2022,Assembly,GJ,HIMATNAGAR,27,3,Vinendrasinh Dilipsinh Zala,Bharatiya Janata Party,97879,913
+2022,Assembly,GJ,HIMATNAGAR,27,4,Nirmalsinh Ajabsinh Parmar,Aam Aadmi Party,9513,498
+2022,Assembly,GJ,HIMATNAGAR,27,5,Pathan Usmangani Mahmdkhan,Independent,315,1
+2022,Assembly,GJ,HIMATNAGAR,27,6,Sanghani Salmankhan Mustakbhai,Independent,326,1
+2022,Assembly,GJ,HIMATNAGAR,27,7,Sanghani Sikandarbhai Mustakbhai,Independent,736,0
+2022,Assembly,GJ,HIMATNAGAR,27,8,Solanki Maganbhai Lakhabhai,Independent,578,1
+2022,Assembly,GJ,HIMATNAGAR,27,9,NOTA,None of the Above,2436,20
+2022,Assembly,GJ,IDAR,28,1,RAMANLAL ISHWARLAL VORA,Bharatiya Janata Party,113137,784
+2022,Assembly,GJ,IDAR,28,2,RAMABHAI VIRCHANDBHAI SOLANKI,Indian National Congress,73801,680
+2022,Assembly,GJ,IDAR,28,3,JAYANTIBHAI PRANAMI,Aam Aadmi Party,14166,402
+2022,Assembly,GJ,IDAR,28,4,NOTA,None of the Above,3556,12
+2022,Assembly,GJ,KHEDBRAHMA,29,1,Ashvin Kotval,Bharatiya Janata Party,65256,429
+2022,Assembly,GJ,KHEDBRAHMA,29,2,Dr.Tushar Amarsinh Chaudhary,Indian National Congress,67050,299
+2022,Assembly,GJ,KHEDBRAHMA,29,3,Gameti Bipinchandra Rupasibhai,Aam Aadmi Party,54630,960
+2022,Assembly,GJ,KHEDBRAHMA,29,4,Dabhi Savjibhai Lakhmabhai,Bhartiya Jan Parishad,2183,5
+2022,Assembly,GJ,KHEDBRAHMA,29,5,Pandor Ravajibhai Veljibhai,Bhartiya Tribal Party,1531,8
+2022,Assembly,GJ,KHEDBRAHMA,29,6,Robinsonbhai Simonbhai Chauhan,Loktantrik Rashrtavadi Party,692,1
+2022,Assembly,GJ,KHEDBRAHMA,29,7,Parmar Rakeshkumar Babubhai,Independent,1317,4
+2022,Assembly,GJ,KHEDBRAHMA,29,8,Rameshkumar Ramjibhai Modiya,Independent,1883,3
+2022,Assembly,GJ,KHEDBRAHMA,29,9,Shantilal Asari,Independent,2591,1
+2022,Assembly,GJ,KHEDBRAHMA,29,10,NOTA,None of the Above,7320,11
+2022,Assembly,GJ,BHILODA,30,1,Parghi Rajendrakumar Kantibhai,Indian National Congress,42351,480
+2022,Assembly,GJ,BHILODA,30,2,P.C.Baranda,Bharatiya Janata Party,89626,770
+2022,Assembly,GJ,BHILODA,30,3,Asari Amrutbhai Dharmabhai,Gujarat Nav Nirman Sena,3527,19
+2022,Assembly,GJ,BHILODA,30,4,Rupsibhai Babubhai Bhagora,Aam Aadmi Party,60148,1480
+2022,Assembly,GJ,BHILODA,30,5,Dr.Mark Katara,Bhartiya Tribal Party,2586,25
+2022,Assembly,GJ,BHILODA,30,6,Varunkumar Kalyansinh Katara,Gunj Satya Ni Janata Party,1892,1
+2022,Assembly,GJ,BHILODA,30,7,Pandor Kaushikkumar Shankarbhai,Independent,1401,1
+2022,Assembly,GJ,BHILODA,30,8,NOTA,None of the Above,2908,8
+2022,Assembly,GJ,MODASA,31,1,THAKOR RAJENDRASINH SHIVSINH,Indian National Congress,62982,705
+2022,Assembly,GJ,MODASA,31,2,DAHYABHAI RAMABHAI JADAV,Communist Party of India  (Marxist),1043,1
+2022,Assembly,GJ,MODASA,31,3,BHIKHUSINHJI CHATURSINHJI PARMAR,Bharatiya Janata Party,97523,952
+2022,Assembly,GJ,MODASA,31,4,PATALA ASHOKBHAI SUKHABHAI,Insaniyat Party,993,0
+2022,Assembly,GJ,MODASA,31,5,PATEL PRAVINBHAI KARSANBHAI,Rashtriya Jankranti Party,561,3
+2022,Assembly,GJ,MODASA,31,6,"PROFESSOR, RAJENDRASINH HIMMATSINH PARMAR",Aam Aadmi Party,14102,669
+2022,Assembly,GJ,MODASA,31,7,NATVARBHAI MAGANBHAI PARMAR,Independent,256,1
+2022,Assembly,GJ,MODASA,31,8,NINAMA HARDIKKUMAR VIRJIBHAI,Independent,176,2
+2022,Assembly,GJ,MODASA,31,9,BAKROLIYA MOHAMADADNAN ABDULMAJIDBHAI,Independent,180,0
+2022,Assembly,GJ,MODASA,31,10,MAHAMAD HANIFBHAI AHEMADBHAI PATEL,Independent,461,4
+2022,Assembly,GJ,MODASA,31,11,RAHULKUMAR KACHARABHAI SOLANKI,Independent,1834,9
+2022,Assembly,GJ,MODASA,31,12,VAGHELA DHANJIBHAI HIRABHAI,Independent,703,0
+2022,Assembly,GJ,MODASA,31,13,NOTA,None of the Above,2576,9
+2022,Assembly,GJ,BAYAD,32,1,BHIKHIBEN GIRVATSINH PARMAR,Bharatiya Janata Party,60928,332
+2022,Assembly,GJ,BAYAD,32,2,MAHENDRASINH SHANKERSINH VAGHELA,Indian National Congress,29579,295
+2022,Assembly,GJ,BAYAD,32,3,KANTIBHAI NATHABHAI KHANT,Rashtriya Hind Ekta Dal,1664,0
+2022,Assembly,GJ,BAYAD,32,4,KHANT BHUPATBHAI DANLABHAI,Gujarat Nav Nirman Sena,560,1
+2022,Assembly,GJ,BAYAD,32,5,CHUNIBHAI BABABHAI PATEL,Aam Aadmi Party,5743,204
+2022,Assembly,GJ,BAYAD,32,6,THAKOR POKARSINH PRATAPSINH,Log Party,376,1
+2022,Assembly,GJ,BAYAD,32,7,PAGI LAXMANBHAI REVABHAI,Insaniyat Party,324,2
+2022,Assembly,GJ,BAYAD,32,8,MANGALSINH RAMANBHAI KHANT,Garvi Gujarat Party,764,1
+2022,Assembly,GJ,BAYAD,32,9,DHAVALSINH NARENDRASINH ZALA,Independent,66759,319
+2022,Assembly,GJ,BAYAD,32,10,RAMSIBHAI LAKHABHAI BHARVAD,Independent,761,1
+2022,Assembly,GJ,BAYAD,32,11,HASMUKH M SAXENA (JANNAYAK),Independent,1646,16
+2022,Assembly,GJ,BAYAD,32,12,NOTA,None of the Above,2302,2
+2022,Assembly,GJ,PRANTIJ,33,1,GAJENDRASINH UDESINH PARMAR,Bharatiya Janata Party,104484,840
+2022,Assembly,GJ,PRANTIJ,33,2,BAHECHARSINH HARISINH RATHOD,Indian National Congress,40363,339
+2022,Assembly,GJ,PRANTIJ,33,3,ALPESHKUMAR NARESHBHAI PATEL,Aam Aadmi Party,31231,908
+2022,Assembly,GJ,PRANTIJ,33,4,JYOTIBEN ASHOKBHAI RATHOD,Right to Recall Party,619,2
+2022,Assembly,GJ,PRANTIJ,33,5,CHAUHAN VIJAYSINH KARANSINH,Independent,1016,2
+2022,Assembly,GJ,PRANTIJ,33,6,NADIYA CHANDUBHAI MOTIBHAI,Independent,1110,0
+2022,Assembly,GJ,PRANTIJ,33,7,NOTA,None of the Above,3105,9
+2022,Assembly,GJ,DAHEGAM,34,1,CHAUHAN BALRAJSINH KALYANSINH,Bharatiya Janata Party,74721,412
+2022,Assembly,GJ,DAHEGAM,34,2,CHAUHAN VAKHATSINH AMARASINH,Indian National Congress,58687,273
+2022,Assembly,GJ,DAHEGAM,34,3,ASHOKBHAI NATUBHAI RATHOD,Right to Recall Party,890,1
+2022,Assembly,GJ,DAHEGAM,34,4,JAYENDRA K. RATHOD,Vyavastha Parivartan Party,386,4
+2022,Assembly,GJ,DAHEGAM,34,5,RUPALBA MOHABATSINH CHAUHAN,Garvi Gujarat Party,982,3
+2022,Assembly,GJ,DAHEGAM,34,6,SUHAG PANCHAL,Aam Aadmi Party,12180,214
+2022,Assembly,GJ,DAHEGAM,34,7,AMRUTBHAI PURSHOTTAMBHAI PATEL,Independent,1092,0
+2022,Assembly,GJ,DAHEGAM,34,8,NOTA,None of the Above,2681,8
+2022,Assembly,GJ,GANDHINAGAR NORTH,36,1,RITABEN KETANKUMAR PATEL,Bharatiya Janata Party,79635,988
+2022,Assembly,GJ,GANDHINAGAR NORTH,36,2,VIRENDRASINH MAFAJI VAGHELA (AJITSINH-VASAN),Indian National Congress,53355,1157
+2022,Assembly,GJ,GANDHINAGAR NORTH,36,3,THAKOR DHARMESH (DHAMBHA THAKOR),Garvi Gujarat Party,1024,27
+2022,Assembly,GJ,GANDHINAGAR NORTH,36,4,PATEL MUKESHBHAI KARSHANBHAI,Aam Aadmi Party,15697,923
+2022,Assembly,GJ,GANDHINAGAR NORTH,36,5,ALKESHBHAI BALDEVBHAI PARMAR,Independent,514,5
+2022,Assembly,GJ,GANDHINAGAR NORTH,36,6,PATNI MAHENDRABHAI SOMABHAI,Independent,275,4
+2022,Assembly,GJ,GANDHINAGAR NORTH,36,7,PATHAN MOHAMMAD IZHARKHAN ALDADKHAN,Independent,127,3
+2022,Assembly,GJ,GANDHINAGAR NORTH,36,8,MAHAMDFARUKH BISMILLAKHAN PATHAN,Independent,155,3
+2022,Assembly,GJ,GANDHINAGAR NORTH,36,9,RAJ PRAJAPATI,Independent,318,2
+2022,Assembly,GJ,GANDHINAGAR NORTH,36,10,SHRIMALI MRUGESHKUMAR AMRUTBHAI,Independent,500,2
+2022,Assembly,GJ,GANDHINAGAR NORTH,36,11,NOTA,None of the Above,2561,52
+2022,Assembly,GJ,MANSA,37,1,JAYANTIBHAI SOMABHAI PATEL (J.S. PATEL),Bharatiya Janata Party,97708,436
+2022,Assembly,GJ,MANSA,37,2,NARESHBHAI MULJIBHAI PARMAR,Bahujan Samaj Party,987,3
+2022,Assembly,GJ,MANSA,37,3,BABUSINHJI MOHANSINHJI THAKOR,Indian National Congress,58460,418
+2022,Assembly,GJ,MANSA,37,4,CHAVDA RAJENDRAKUMAR GANDAJI,Rashtriya Hind Ekta Dal,510,0
+2022,Assembly,GJ,MANSA,37,5,BHASKARBHAI BABUBHAI PATEL,Aam Aadmi Party,2778,187
+2022,Assembly,GJ,MANSA,37,6,RAHUL RAMAANIWAS MISHRA,National Youth Party,125,0
+2022,Assembly,GJ,MANSA,37,7,ARVINDJI JIVANJI THAKOR,Independent,164,4
+2022,Assembly,GJ,MANSA,37,8,THAKOR ASWINBHAI TALAJI,Independent,331,0
+2022,Assembly,GJ,MANSA,37,9,BHARATKUMAR AMARAJI THAKOR,Independent,669,0
+2022,Assembly,GJ,MANSA,37,10,MAHIPALSINH RAJENDRASINH VAGHELA,Independent,523,2
+2022,Assembly,GJ,MANSA,37,11,NOTA,None of the Above,2225,7
+2022,Assembly,GJ,KALOL,38,1,THAKOR  LAXMANJI PUNJAJI (BAKAJI),Bharatiya Janata Party,85981,121
+2022,Assembly,GJ,KALOL,38,2,BALDEVJI CHANDUJI THAKOR,Indian National Congress,80275,94
+2022,Assembly,GJ,KALOL,38,3,MAHENDRABHAI VALJIBHAI  SOLANKI,Bahujan Samaj Party,938,2
+2022,Assembly,GJ,KALOL,38,4,KANTIJI ATMARAM THAKOR (JAGIRDAR),Aam Aadmi Party,2051,18
+2022,Assembly,GJ,KALOL,38,5,THAKOR BHUPATSINH KHODAJI,Garvi Gujarat Party,177,0
+2022,Assembly,GJ,KALOL,38,6,HITENDRABHAI  PAREJIYA (PATEL),Aadi Bharat Party,108,0
+2022,Assembly,GJ,KALOL,38,7,UPASAK MAHENDRASHEEL SOMABHAI (B.R.P.),Independent,233,0
+2022,Assembly,GJ,KALOL,38,8,THAKOR POPATJI AMAJI,Independent,173,0
+2022,Assembly,GJ,KALOL,38,9,THAKOR RAMSANGJI KANTIJI,Independent,170,0
+2022,Assembly,GJ,KALOL,38,10,PATEL RAJNIKANT AMBALAL  (BACHUKAKA),Independent,286,0
+2022,Assembly,GJ,KALOL,38,11,PRAJAPATI KANAIYALAL KESHAVLAL  (KANUBHAI),Independent,321,1
+2022,Assembly,GJ,KALOL,38,12,VAGHELA  RAMESHBHAI  DEVJIBHAI,Independent,905,0
+2022,Assembly,GJ,KALOL,38,13,NOTA,None of the Above,2391,3
+2022,Assembly,GJ,VIRAMGAM,39,1,PATEL HARDIK BHARATBHAI,Bharatiya Janata Party,98627,528
+2022,Assembly,GJ,VIRAMGAM,39,2,BHARWAD LAKHABHAI BHIKHABHAI,Indian National Congress,42412,312
+2022,Assembly,GJ,VIRAMGAM,39,3,AMARSINH ANADAJI THAKOR,Aam Aadmi Party,47072,376
+2022,Assembly,GJ,VIRAMGAM,39,4,ASHOK MAHENDRAPRASAD NIMBARK (MAHARAJ),Gujarat Nav Nirman Sena,732,2
+2022,Assembly,GJ,VIRAMGAM,39,5,CHETANJI MERUJI THAKOR,Garvi Gujarat Party,963,1
+2022,Assembly,GJ,VIRAMGAM,39,6,TRENTIYA RAKESHKUMAR ARVINDBHAI,Pachchasi Parivartan Samaj Party,210,0
+2022,Assembly,GJ,VIRAMGAM,39,7,NARESHBHAI RAJABHAI BHAMANI,Vyavastha Parivartan Party,371,0
+2022,Assembly,GJ,VIRAMGAM,39,8,KIRIT RATHOD,Independent,957,20
+2022,Assembly,GJ,VIRAMGAM,39,9,DEVIPUJAK RAJESHBHAI LAGHRABHAI,Independent,407,0
+2022,Assembly,GJ,VIRAMGAM,39,10,MAHENDRA K CHAUHAN (MAMA),Independent,387,8
+2022,Assembly,GJ,VIRAMGAM,39,11,MIRZA ABID ALIBHAI,Independent,451,5
+2022,Assembly,GJ,VIRAMGAM,39,12,VIRAMBHAI TALPADAKOLI,Independent,479,0
+2022,Assembly,GJ,VIRAMGAM,39,13,KO.PA.SUKHABHAI KARMANBHAI,Independent,963,0
+2022,Assembly,GJ,VIRAMGAM,39,14,HARDIKKUMAR JAGDISHCHANDRA PATEL,Independent,1217,1
+2022,Assembly,GJ,VIRAMGAM,39,15,NOTA,None of the Above,3240,13
+2022,Assembly,GJ,SANAND,40,1,KANUBHAI KARAMSHIBHAI PATEL,Bharatiya Janata Party,99689,394
+2022,Assembly,GJ,SANAND,40,2,CHAUHAN KALUBHAI MAPABHAI,Bahujan Samaj Party,1883,5
+2022,Assembly,GJ,SANAND,40,3,PATEL RAMESHBHAI BALABHAI,Indian National Congress,64521,193
+2022,Assembly,GJ,SANAND,40,4,ANSOYABEN PATEL,Aadi Bharat Party,688,1
+2022,Assembly,GJ,SANAND,40,5,KULDIPSINH DILIPSINH VAGHELA,Aam Aadmi Party,15599,272
+2022,Assembly,GJ,SANAND,40,6,PAGI GANAPATBHAI MAVJIBHAI,Praja Vijay Paksh,405,1
+2022,Assembly,GJ,SANAND,40,7,PRAJAPATI VIJAYKUMAR AMRUTBHAI,Garvi Gujarat Party,406,2
+2022,Assembly,GJ,SANAND,40,8,MAHANT DEVENDRA MOHANDAS,Gunj Satya Ni Janata Party,745,1
+2022,Assembly,GJ,SANAND,40,9,CHUNARA PRAKASHBHAI BHAILALBHAI,Independent,563,1
+2022,Assembly,GJ,SANAND,40,10,PATEL NAVGHANBHAI MANGABHAI,Independent,292,0
+2022,Assembly,GJ,SANAND,40,11,MILIND BAUDDH (MANUBHAI),Independent,3583,13
+2022,Assembly,GJ,SANAND,40,12,VAGHARI KANUBHAI GOVINDBHAI,Independent,465,1
+2022,Assembly,GJ,SANAND,40,13,VAGHELA ALPESHSINH SURUBHA,Independent,389,0
+2022,Assembly,GJ,SANAND,40,14,VAGHELA BHAILALBHAI CHHELABHAI,Independent,1303,0
+2022,Assembly,GJ,SANAND,40,15,SOLANKI MAHESHBHAI RAMANBHAI,Independent,789,0
+2022,Assembly,GJ,SANAND,40,16,NOTA,None of the Above,2523,5
+2022,Assembly,GJ,GHATLODIA,41,1,Dr.AMEE YAJNIK,Indian National Congress,21120,147
+2022,Assembly,GJ,GHATLODIA,41,2,PATEL BHUPENDRABHAI RAJNIKANT,Bharatiya Janata Party,212480,1050
+2022,Assembly,GJ,GHATLODIA,41,3,JAYENDRA K. RATHOD,Vyavastha Parivartan Party,524,1
+2022,Assembly,GJ,GHATLODIA,41,4,NIMESH ATMARAM PATEL,Gunj Satya Ni Janata Party,776,3
+2022,Assembly,GJ,GHATLODIA,41,5,RAHUL CHIMANBHAI MEHTA,Right to Recall Party,181,0
+2022,Assembly,GJ,GHATLODIA,41,6,VIJAY PATEL,Aam Aadmi Party,15902,292
+2022,Assembly,GJ,GHATLODIA,41,7,SANJUBEN SOHANLAL REGAR,Jan Sewa Driver Party,284,7
+2022,Assembly,GJ,GHATLODIA,41,8,HITENDRA PATEL,Aadi Bharat Party,275,1
+2022,Assembly,GJ,GHATLODIA,41,9,NARESH NARAYANBHAI PRIYDARSHI,Independent,374,1
+2022,Assembly,GJ,GHATLODIA,41,10,NOTA,None of the Above,3967,26
+2022,Assembly,GJ,VATVA,43,1,Balvantsinh Hemantsang Gadhavi,Indian National Congress,51493,171
+2022,Assembly,GJ,VATVA,43,2,Babusinh Sarabhai Jadav,Bharatiya Janata Party,151231,479
+2022,Assembly,GJ,VATVA,43,3,Kalpeshbhai Narayanbhai Shete,Gunj Satya Ni Janata Party,1609,3
+2022,Assembly,GJ,VATVA,43,4,Kartik  Pandey,Praja Vijay Paksh,535,2
+2022,Assembly,GJ,VATVA,43,5,Chaudhari Jagbirsingh,Jan Sewa Driver Party,195,2
+2022,Assembly,GJ,VATVA,43,6,Jignaba Omkarsinh Zala,Pachchasi Parivartan Samaj Party,377,5
+2022,Assembly,GJ,VATVA,43,7,Patel Nikhil Bhikhabhai,Bharatiya National Janta Dal,474,4
+2022,Assembly,GJ,VATVA,43,8,Bipin Patel,Aam Aadmi Party,24595,352
+2022,Assembly,GJ,VATVA,43,9,Mahendra Kunjadvala,Jan Man Party,208,0
+2022,Assembly,GJ,VATVA,43,10,Mundra Anilkumar Niranjankumar,Log Party,169,0
+2022,Assembly,GJ,VATVA,43,11,Rakesh Ramdev Yadav,Samajwadi Party,557,1
+2022,Assembly,GJ,VATVA,43,12,Vishal Motilal Saroj,Jan Sangharsh Virat Party,321,1
+2022,Assembly,GJ,VATVA,43,13,Sharma Deepakkumar Vasudev,National Maha Sabha Party,384,0
+2022,Assembly,GJ,VATVA,43,14,Sujith Diwakar Pandey,Independent,801,4
+2022,Assembly,GJ,VATVA,43,15,NOTA,None of the Above,2721,21
+2022,Assembly,GJ,ELLISBRIDGE,44,1,Amit Shah,Bharatiya Janata Party,118803,520
+2022,Assembly,GJ,ELLISBRIDGE,44,2,Bhikhubhai Hargovindbhai Dave (Bhikhu Dave -108),Indian National Congress,14440,87
+2022,Assembly,GJ,ELLISBRIDGE,44,3,Moradiya Pravinbhai Mavjibhai,Bahujan Samaj Party,1074,3
+2022,Assembly,GJ,ELLISBRIDGE,44,4,Meenakshi Joshi,SOCIALIST UNITY CENTRE OF INDIA (COMMUNIST),306,2
+2022,Assembly,GJ,ELLISBRIDGE,44,5,Paras Rupeshkumar Shah,Aam Aadmi Party,9333,134
+2022,Assembly,GJ,ELLISBRIDGE,44,6,Mehta Ushabh Kaushikkumar (Rushabh),Bharatiya National Janta Dal,145,0
+2022,Assembly,GJ,ELLISBRIDGE,44,7,Surendrabhai Keshavlal Shah,Right to Recall Party,123,0
+2022,Assembly,GJ,ELLISBRIDGE,44,8,Amiraj,Independent,187,1
+2022,Assembly,GJ,ELLISBRIDGE,44,9,Gajjar Miteshkumar Narendrabhai,Independent,217,2
+2022,Assembly,GJ,ELLISBRIDGE,44,10,NOTA,None of the Above,3041,15
+2022,Assembly,GJ,NARANPURA,45,1,JITENDRAKUMAR RAMANLAL PATEL (JITU BHAGAT),Bharatiya Janata Party,107874,286
+2022,Assembly,GJ,NARANPURA,45,2,SENMA SHAILESHKUMAR BHIKHALAL (GIRISH RAVAT),Bahujan Samaj Party,1029,3
+2022,Assembly,GJ,NARANPURA,45,3,SONAL RAMANBHAI PATEL,Indian National Congress,15290,70
+2022,Assembly,GJ,NARANPURA,45,4,PUJABHAI VIRABHAI SALAT,Bhartiya Jan Parishad,613,2
+2022,Assembly,GJ,NARANPURA,45,5,PANKAJBHAI JAYANTILAL PATEL (BHEMABHAI),Aam Aadmi Party,11661,124
+2022,Assembly,GJ,NARANPURA,45,6,NOTA,None of the Above,2619,18
+2022,Assembly,GJ,NIKOL,46,1,JAGDISH VISHWAKARMA,Bharatiya Janata Party,93400,314
+2022,Assembly,GJ,NIKOL,46,2,RANJITSINH BARAD,Indian National Congress,38354,162
+2022,Assembly,GJ,NIKOL,46,3,ASHOKBHAI GAJERA,Aam Aadmi Party,14540,271
+2022,Assembly,GJ,NIKOL,46,4,KALPESH N. SHETE (ADVOCATE),Gunj Satya Ni Janata Party,716,0
+2022,Assembly,GJ,NIKOL,46,5,KALPESHBHAI KHAMAR,Rashtra Mangal Mission Party,192,1
+2022,Assembly,GJ,NIKOL,46,6,KAZI MOHMMED SALIM,Samajwadi Party,445,0
+2022,Assembly,GJ,NIKOL,46,7,DHARMENDRA KUMAR PANDEY,Jan Sangharsh Virat Party,124,0
+2022,Assembly,GJ,NIKOL,46,8,SAMIR RAJESHKUMAR UPADHYAY,Saurashtra Janta Paksha,140,0
+2022,Assembly,GJ,NIKOL,46,9,AMJADHUSSAIN SHAIKH,Independent,235,0
+2022,Assembly,GJ,NIKOL,46,10,GEETABEN PATEL,Independent,198,1
+2022,Assembly,GJ,NIKOL,46,11,MAHERIYA ALPESHBHAI (LALABHAI),Independent,390,3
+2022,Assembly,GJ,NIKOL,46,12,HAFIZ ANSARI,Independent,392,0
+2022,Assembly,GJ,NIKOL,46,13,NOTA,None of the Above,1927,12
+2022,Assembly,GJ,NARODA,47,1,KUKRANI PAYAL MANOJKUMAR,Bharatiya Janata Party,112194,573
+2022,Assembly,GJ,NARODA,47,2,MEGHRAJ DODWANI,Nationalist Congress Party,7967,60
+2022,Assembly,GJ,NARODA,47,3,OMPRAKASH DAROGAPRASAD TIWARI,Aam Aadmi Party,28603,651
+2022,Assembly,GJ,NARODA,47,4,GAUTAMBHAI B TRIVEDI,Bhartiya Nagrik Suraksha Party,538,3
+2022,Assembly,GJ,NARODA,47,5,TATAD ARCHANABEN GAUTAMBHAI,Jan Sewa Driver Party,193,1
+2022,Assembly,GJ,NARODA,47,6,PATEL MITTAL KANUBHAI,Bhartiya Jan Parishad,256,5
+2022,Assembly,GJ,NARODA,47,7,PATEL SATYAMKUMAR K,Sardar Vallabhbhai Patel Party,186,2
+2022,Assembly,GJ,NARODA,47,8,PANDEY JYOTIBEN MANOJBHAI,Swatantrata Abhivyakti Party,265,0
+2022,Assembly,GJ,NARODA,47,9,PRAKASHSINGH SUNDERSINGH RAJPUT,Jan Man Party,271,1
+2022,Assembly,GJ,NARODA,47,10,PRAJAPATI NITABEN MUKESHKUMAR,Garvi Gujarat Party,520,6
+2022,Assembly,GJ,NARODA,47,11,VISHRAM DHRUVSINH SIKARVAR,Pachchasi Parivartan Samaj Party,204,1
+2022,Assembly,GJ,NARODA,47,12,SELUKAR RAKESH SURESHBHAI,Jan Sangharsh Virat Party,202,1
+2022,Assembly,GJ,NARODA,47,13,GULWANI RAMKUMAR BALIRAMJI,Independent,254,2
+2022,Assembly,GJ,NARODA,47,14,GOHIL MAHENDRASINH LAXMANSINH,Independent,694,12
+2022,Assembly,GJ,NARODA,47,15,DIPABEN NILESHBHAI SANTWANI,Independent,376,2
+2022,Assembly,GJ,NARODA,47,16,SHARMA BRIJESHKUMAR UJAGARLAL,Independent,1316,0
+2022,Assembly,GJ,NARODA,47,17,SUTHAR AMIT,Independent,901,4
+2022,Assembly,GJ,NARODA,47,18,NOTA,None of the Above,1461,24
+2022,Assembly,GJ,THAKKARBAPA NAGAR,48,1,Kanchanben Vinubhai Radadiya,Bharatiya Janata Party,89050,359
+2022,Assembly,GJ,THAKKARBAPA NAGAR,48,2,Vijaykumar C. Brahmabhatt (Vijay Barot),Indian National Congress,25403,207
+2022,Assembly,GJ,THAKKARBAPA NAGAR,48,3,Radhna Vinaysinh,Sardar Vallabhbhai Patel Party,273,4
+2022,Assembly,GJ,THAKKARBAPA NAGAR,48,4,Sanjay Mori,Aam Aadmi Party,17010,446
+2022,Assembly,GJ,THAKKARBAPA NAGAR,48,5,Hitendrakumar Madhabhai Patel,Swatantrata Abhivyakti Party,289,1
+2022,Assembly,GJ,THAKKARBAPA NAGAR,48,6,Kshatriya Ranjitsinh Ramanandsinh,Garvi Gujarat Party,258,3
+2022,Assembly,GJ,THAKKARBAPA NAGAR,48,7,Desai Parth Raghunath,Independent,246,1
+2022,Assembly,GJ,THAKKARBAPA NAGAR,48,8,Parmar Arvindkumar Babubhai,Independent,238,6
+2022,Assembly,GJ,THAKKARBAPA NAGAR,48,9,Shaikh Usmanbhai Ibrahimbhai,Independent,460,0
+2022,Assembly,GJ,THAKKARBAPA NAGAR,48,10,NOTA,None of the Above,1891,19
+2022,Assembly,GJ,BAPUNAGAR,49,1,Dineshsinh Rajendrasinh Kushwaha,Bharatiya Janata Party,59133,332
+2022,Assembly,GJ,BAPUNAGAR,49,2,Naginkumar Chimanlal Solanki,Bahujan Samaj Party,521,3
+2022,Assembly,GJ,BAPUNAGAR,49,3,Himmatsinh Patel,Indian National Congress,47066,329
+2022,Assembly,GJ,BAPUNAGAR,49,4,Altafkhan Jabbarkhan Pathan,Samajwadi Party,3669,2
+2022,Assembly,GJ,BAPUNAGAR,49,5,Istiyakahmed Siddiqui,Jan Sewa Driver Party,67,0
+2022,Assembly,GJ,BAPUNAGAR,49,6,Kiritbhai Govindbhai Chauhan,Right to Recall Party,66,0
+2022,Assembly,GJ,BAPUNAGAR,49,7,Chavada Jyotsanaben Somabhai,Sardar Vallabhbhai Patel Party,57,1
+2022,Assembly,GJ,BAPUNAGAR,49,8,Tiwari Akash Rammilan,Jan Sangharsh Virat Party,58,1
+2022,Assembly,GJ,BAPUNAGAR,49,9,Pathan Emtiazkhan Sidkhan,Janata Dal  (United),29,1
+2022,Assembly,GJ,BAPUNAGAR,49,10,Mohammadhusain Liyakatahusain Ansari,Loktantrik Rashrtavadi Party,119,2
+2022,Assembly,GJ,BAPUNAGAR,49,11,Rajeshbhai Dixit,Aam Aadmi Party,6135,249
+2022,Assembly,GJ,BAPUNAGAR,49,12,Vijay Naranbhai Sengal,Bahujan Suraksha Dal,81,1
+2022,Assembly,GJ,BAPUNAGAR,49,13,Shaikh Mohammedjaved Ilyas,Loktantrik Samajwadi Party,74,0
+2022,Assembly,GJ,BAPUNAGAR,49,14,Ansari Almasjaha Nisharahmed,Independent,145,0
+2022,Assembly,GJ,BAPUNAGAR,49,15,Gafurkhan Pathan,Independent,105,0
+2022,Assembly,GJ,BAPUNAGAR,49,16,Jayesh Ganpatbhai Makwana,Independent,615,0
+2022,Assembly,GJ,BAPUNAGAR,49,17,Nandoliya Harshad Babubhai,Independent,637,0
+2022,Assembly,GJ,BAPUNAGAR,49,18,Parmar Vipulbhai Mansukhbhai,Independent,109,0
+2022,Assembly,GJ,BAPUNAGAR,49,19,Parmar Saurabh Bharatbhai,Independent,245,0
+2022,Assembly,GJ,BAPUNAGAR,49,20,Prahladbhai Shakrabhai Parmar,Independent,140,0
+2022,Assembly,GJ,BAPUNAGAR,49,21,Mahendrabhai Chavda,Independent,56,0
+2022,Assembly,GJ,BAPUNAGAR,49,22,Manjulaben Ranchhodbhai Parmar,Independent,129,0
+2022,Assembly,GJ,BAPUNAGAR,49,23,Rasulbhai Dolubhai Rathod,Independent,48,1
+2022,Assembly,GJ,BAPUNAGAR,49,24,Rakesh Kanubhai Mahida,Independent,46,1
+2022,Assembly,GJ,BAPUNAGAR,49,25,Laxmiben Kanubhai Vaghela,Independent,101,1
+2022,Assembly,GJ,BAPUNAGAR,49,26,Vinodbhai Muljibhai Parmar,Independent,170,3
+2022,Assembly,GJ,BAPUNAGAR,49,27,Vishal Dineshbhai Makwana,Independent,126,0
+2022,Assembly,GJ,BAPUNAGAR,49,28,Shakilabanu Moyusuf Ansari,Independent,102,0
+2022,Assembly,GJ,BAPUNAGAR,49,29,Salmankhan Samikhan Pathan,Independent,77,0
+2022,Assembly,GJ,BAPUNAGAR,49,30,NOTA,None of the Above,856,15
+2022,Assembly,GJ,AMRAIWADI,50,1,DHARMENDRABHAI SHANTILAL PATEL (DHAMBHAI),Indian National Congress,50392,330
+2022,Assembly,GJ,AMRAIWADI,50,2,PARMAR RAMESHBHAI KISHORBHAI,Communist Party of India,687,0
+2022,Assembly,GJ,AMRAIWADI,50,3,RATHOD YALPESHKUMAR PRAVINBHAI,Bahujan Samaj Party,1519,10
+2022,Assembly,GJ,AMRAIWADI,50,4,DR. HASMUKH PATEL,Bharatiya Janata Party,93670,324
+2022,Assembly,GJ,AMRAIWADI,50,5,GAUTAMBHAI SADABHAI PARMAR,Garvi Gujarat Party,469,1
+2022,Assembly,GJ,AMRAIWADI,50,6,NEERAJ SHIVSAGAR SHUKLA,Jan Sangharsh Virat Party,102,1
+2022,Assembly,GJ,AMRAIWADI,50,7,PATEL MAHESHKUMAR SOMABHAI,Pachchasi Parivartan Samaj Party,71,0
+2022,Assembly,GJ,AMRAIWADI,50,8,PARMAR BAKULABEN UKABHAI,Rashtra Nirman Party,126,1
+2022,Assembly,GJ,AMRAIWADI,50,9,BAGHEL RAJESH VISHVANATHSINGH,Vikas India Party,200,0
+2022,Assembly,GJ,AMRAIWADI,50,10,BHATT SUNILKUMAR NARENDRABHAI,Right to Recall Party,68,0
+2022,Assembly,GJ,AMRAIWADI,50,11,BHARAT JAIN,Jan Sewa Driver Party,130,0
+2022,Assembly,GJ,AMRAIWADI,50,12,BHARWAD ANILKUMAR JITUBHAI (ANIL AMDAVADI),Bahujan Republican  Socialist Party,457,4
+2022,Assembly,GJ,AMRAIWADI,50,13,VINAY NANDLAL GUPTA,Aam Aadmi Party,7552,235
+2022,Assembly,GJ,AMRAIWADI,50,14,SATISH HIRALAL SONI,Apni Janta Party,162,1
+2022,Assembly,GJ,AMRAIWADI,50,15,GYANENDRA DAYANAND VISHWAKARMA,Samajwadi Party,327,1
+2022,Assembly,GJ,AMRAIWADI,50,16,SOLANKI VINODBHAI BODHABHAI,Independent,629,1
+2022,Assembly,GJ,AMRAIWADI,50,17,SANJAYBHAI DAHYABHAI PATEL,Independent,666,1
+2022,Assembly,GJ,AMRAIWADI,50,18,NOTA,None of the Above,1203,21
+2022,Assembly,GJ,DARIAPUR,51,1,Kaushikbhai Sukhlal Jain (Kaushik Jain),Bharatiya Janata Party,61090,400
+2022,Assembly,GJ,DARIAPUR,51,2,Gyasuddin Habibuddeen Shaikh,Indian National Congress,55847,158
+2022,Assembly,GJ,DARIAPUR,51,3,Tajmohammed Habibbhai Kureshi,Aam Aadmi Party,4164,195
+2022,Assembly,GJ,DARIAPUR,51,4,Mo. Tahir Alimiya,Dhanwan Bharat Party,140,2
+2022,Assembly,GJ,DARIAPUR,51,5,Hasankhan Samsherkhan Pathan (Hasanlala),All India Majlis-E-Ittehadul Muslimeen,1771,1
+2022,Assembly,GJ,DARIAPUR,51,6,Gulamrashul Gulamnabi Bagban (Bataka wala),Independent,96,0
+2022,Assembly,GJ,DARIAPUR,51,7,Solanki Dipeshbhai Parmanandbhai,Independent,204,8
+2022,Assembly,GJ,DARIAPUR,51,8,NOTA,None of the Above,1276,14
+2022,Assembly,GJ,JAMALPUR - KHADIA,52,1,IMRAN KHEDAWALA,Indian National Congress,58235,252
+2022,Assembly,GJ,JAMALPUR - KHADIA,52,2,BHUSHAN ASHOK BHATT,Bharatiya Janata Party,44649,180
+2022,Assembly,GJ,JAMALPUR - KHADIA,52,3,BUKELIYA HITESHBHAI SANJAYBHAI,Rashtriya Power Party,430,2
+2022,Assembly,GJ,JAMALPUR - KHADIA,52,4,SABIRBHAI KABLIWALA,All India Majlis-E-Ittehadul Muslimeen,15655,22
+2022,Assembly,GJ,JAMALPUR - KHADIA,52,5,SANJUBEN SOHANLAL REGAR,Jan Sewa Driver Party,192,1
+2022,Assembly,GJ,JAMALPUR - KHADIA,52,6,HARUNBHAI. F. NAGORI,Aam Aadmi Party,5785,102
+2022,Assembly,GJ,JAMALPUR - KHADIA,52,7,MEHBUB MOHAMADBHAI RANGREJ,Independent,194,0
+2022,Assembly,GJ,JAMALPUR - KHADIA,52,8,SARFRAJHUSEN SABIRHUSEN ANSARI,Independent,243,0
+2022,Assembly,GJ,JAMALPUR - KHADIA,52,9,NOTA,None of the Above,1527,7
+2022,Assembly,GJ,MANINAGAR,53,1,Amul Bhatt,Bharatiya Janata Party,112527,556
+2022,Assembly,GJ,MANINAGAR,53,2,C.M. Rajput,Indian National Congress,22226,129
+2022,Assembly,GJ,MANINAGAR,53,3,Solanki Hareshkumar Hiralal,Bahujan Samaj Party,715,8
+2022,Assembly,GJ,MANINAGAR,53,4,Ajay Rameshbhai Koshti,Jan Sangharsh Virat Party,202,4
+2022,Assembly,GJ,MANINAGAR,53,5,Jigar Laxmanbhai Patel,Gunj Satya Ni Janata Party,605,0
+2022,Assembly,GJ,MANINAGAR,53,6,Bhatt Sunilkumar Narendrabhai,Right to Recall Party,119,9
+2022,Assembly,GJ,MANINAGAR,53,7,Mevada Dhaval Maheshbhai,All India Hindustan Congress Party,118,1
+2022,Assembly,GJ,MANINAGAR,53,8,Rajendrakumar Patel,Jan Sewa Driver Party,241,2
+2022,Assembly,GJ,MANINAGAR,53,9,Vipulbhai Patel,Aam Aadmi Party,13980,204
+2022,Assembly,GJ,MANINAGAR,53,10,NOTA,None of the Above,2638,22
+2022,Assembly,GJ,DANILIMDA,54,1,Nareshbhai Shankarbhai Vyas( Satish Vyas),Bharatiya Janata Party,55381,262
+2022,Assembly,GJ,DANILIMDA,54,2,Shailesh Manubhai Parmar,Indian National Congress,68906,224
+2022,Assembly,GJ,DANILIMDA,54,3,Kapadiya Dineshbhai Somabhai,Aam Aadmi Party,22934,317
+2022,Assembly,GJ,DANILIMDA,54,4,Kaushikabahen Dilipbhai Parmar,All India Majlis-E-Ittehadul Muslimeen,2464,6
+2022,Assembly,GJ,DANILIMDA,54,5,Chhanabhai Pashabhai Parmar,Garvi Gujarat Party,243,0
+2022,Assembly,GJ,DANILIMDA,54,6,Nileshkumar Keshavbhai Parmar,Jan Sewa Driver Party,513,4
+2022,Assembly,GJ,DANILIMDA,54,7,Parmar Kasturbhai Ranchhodbhai,Praja Vijay Paksh,95,0
+2022,Assembly,GJ,DANILIMDA,54,8,Rathod Kankuben Muljibhai,SOCIAL DEMOCRATIC PARTY OF INDIA,192,1
+2022,Assembly,GJ,DANILIMDA,54,9,Vaghela Vasantbhai Khodidas,Swatantrata Abhivyakti Party,415,1
+2022,Assembly,GJ,DANILIMDA,54,10,Vaghela Vikrambhai Mangalbhai,Rashtriya Power Party,269,2
+2022,Assembly,GJ,DANILIMDA,54,11,Jamnaben Sureshbhai Vegda,Independent,1492,9
+2022,Assembly,GJ,DANILIMDA,54,12,Sindhav Parsotambhai Gorabhai,Independent,731,7
+2022,Assembly,GJ,DANILIMDA,54,13,NOTA,None of the Above,2163,18
+2022,Assembly,GJ,SABARMATI,55,1,DINESHSINH GANPATSINH MAHIDA,Indian National Congress,21230,288
+2022,Assembly,GJ,SABARMATI,55,2,PATEL HARSHADBHAI RANCHHODBHAI (HARSHAD PATEL),Bharatiya Janata Party,119779,423
+2022,Assembly,GJ,SABARMATI,55,3,SOLANKI DIPAKBHAI MULAJIBHAI,Bahujan Samaj Party,664,1
+2022,Assembly,GJ,SABARMATI,55,4,GANPATBHAI ZINABHAI SHAH,Janata Dal  (Secular),295,0
+2022,Assembly,GJ,SABARMATI,55,5,GITA DAHYAJI THAKOR,Garvi Gujarat Party,236,3
+2022,Assembly,GJ,SABARMATI,55,6,JASHWANTSINH VISAJI THAKOR,Aam Aadmi Party,10208,382
+2022,Assembly,GJ,SABARMATI,55,7,JIWANBHAI RAMABHAI PARMAR,Democratic Bharatiya Samaj Party,291,4
+2022,Assembly,GJ,SABARMATI,55,8,NIKHILKUMAR THAKKAR,Sainik Samaj Party,162,1
+2022,Assembly,GJ,SABARMATI,55,9,SHIVABHAI BABABHAI VAGHELA,Independent,363,1
+2022,Assembly,GJ,SABARMATI,55,10,NOTA,None of the Above,2257,18
+2022,Assembly,GJ,ASARWA,56,1,Darshna M. Vaghela,Bharatiya Janata Party,79550,605
+2022,Assembly,GJ,ASARWA,56,2,Vipul Parmar,Indian National Congress,25697,285
+2022,Assembly,GJ,ASARWA,56,3,Falguni R. Hadiyel,New India United Party,484,3
+2022,Assembly,GJ,ASARWA,56,4,Mevada Jayantibhai Jethalal (J. J. Mevada),Aam Aadmi Party,14774,691
+2022,Assembly,GJ,ASARWA,56,5,Ravat Harishbhai Shakrabhai,Garvi Gujarat Party,536,1
+2022,Assembly,GJ,ASARWA,56,6,Vankar Vasantkumar Nagjibhai (Upesh),Bhartiya Jan Parishad,283,3
+2022,Assembly,GJ,ASARWA,56,7,Jagdish Shankarlal Koitiya,Independent,351,1
+2022,Assembly,GJ,ASARWA,56,8,NOTA,None of the Above,1714,12
+2022,Assembly,GJ,DASKROI,57,1,UMEDJI BUDHAJI ZALA,Indian National Congress,67135,335
+2022,Assembly,GJ,DASKROI,57,2,BABUBHAI JAMNADAS PATEL (B.J.P.),Bharatiya Janata Party,158485,622
+2022,Assembly,GJ,DASKROI,57,3,KIRANKUMAR SURESHCHANDRA PATEL,Aam Aadmi Party,19085,559
+2022,Assembly,GJ,DASKROI,57,4,GOSWAMI VISHNUGIRI SOMGIRI,Praja Vijay Paksh,555,3
+2022,Assembly,GJ,DASKROI,57,5,PARIHAR RAJESHSING JESINGBHAI,Garvi Gujarat Party,740,2
+2022,Assembly,GJ,DASKROI,57,6,KANANI DHRUVINBHAI NARSINHBHAI,Independent,1108,3
+2022,Assembly,GJ,DASKROI,57,7,NOTA,None of the Above,4160,29
+2022,Assembly,GJ,DHOLKA,58,1,ASHVINBHAI KAMSHUBHAI RATHOD,Indian National Congress,70826,542
+2022,Assembly,GJ,DHOLKA,58,2,KIRITSINH SARDARSANG DABHI,Bharatiya Janata Party,84213,560
+2022,Assembly,GJ,DHOLKA,58,3,VIDHYABEN BHAILALBHAI PANDAV,Bahujan Samaj Party,1217,12
+2022,Assembly,GJ,DHOLKA,58,4,JATUBHA BHURUBHA GOL,Aam Aadmi Party,4431,201
+2022,Assembly,GJ,DHOLKA,58,5,JADAV VIJAYKUMAR GOVINDBHAI,Log Party,139,0
+2022,Assembly,GJ,DHOLKA,58,6,JOGADIA VINODBHAI MAVDAS,Praja Vijay Paksh,154,1
+2022,Assembly,GJ,DHOLKA,58,7,THAKOR ARVINDKUMAR RANCHHODBHAI,Garvi Gujarat Party,2074,2
+2022,Assembly,GJ,DHOLKA,58,8,PATEL YOGESHKUMAR NABHUBHAI,Independent,196,0
+2022,Assembly,GJ,DHOLKA,58,9,PARMAR VIJAYKUMAR VAJUBHAI,Independent,301,2
+2022,Assembly,GJ,DHOLKA,58,10,RATHOD BHARATBHAI RAVJIBHAI,Independent,234,0
+2022,Assembly,GJ,DHOLKA,58,11,RATHOD MANUBHAI KANJIBHAI,Independent,377,1
+2022,Assembly,GJ,DHOLKA,58,12,RATHOD HASMUKHBHAI KANUBHAI,Independent,376,0
+2022,Assembly,GJ,DHOLKA,58,13,VAGHELA RAMANBHAI KALJIBHAI,Independent,292,3
+2022,Assembly,GJ,DHOLKA,58,14,VHORA IKRAMUDINBHAI BACHUBHAI,Independent,579,0
+2022,Assembly,GJ,DHOLKA,58,15,VHORA SALIMBHAI ISMAILBHAI,Independent,1273,0
+2022,Assembly,GJ,DHOLKA,58,16,NOTA,None of the Above,2319,6
+2022,Assembly,GJ,DHANDHUKA,59,1,Kalubhai Rupabhai Dabhi,Bharatiya Janata Party,90982,546
+2022,Assembly,GJ,DHANDHUKA,59,2,Jiniya Pravinbhai Mohanbhai,Bahujan Samaj Party,991,2
+2022,Assembly,GJ,DHANDHUKA,59,3,Gorahawa Roshaniben Prithviraj,Communist Party of India  (Marxist),489,0
+2022,Assembly,GJ,DHANDHUKA,59,4,Harpalsinh Jagdevsinh Chudasama,Indian National Congress,56746,456
+2022,Assembly,GJ,DHANDHUKA,59,5,Ashokbhai V. Patel,Jan Sewa Driver Party,631,3
+2022,Assembly,GJ,DHANDHUKA,59,6,Ravjibhai Vallabhbhai Kaliya,Vyavastha Parivartan Party,380,2
+2022,Assembly,GJ,DHANDHUKA,59,7,Chandubhai Mansangbhai Bamroliya,Aam Aadmi Party,9605,261
+2022,Assembly,GJ,DHANDHUKA,59,8,Tulashibhai Puranbhai Solanki,Right to Recall Party,370,0
+2022,Assembly,GJ,DHANDHUKA,59,9,Gohel Hareshkumar Arvindbhai,Bhartiya Tribal Party,643,5
+2022,Assembly,GJ,DHANDHUKA,59,10,Ghoghari Gullammayudin Latifbhai,Independent,464,3
+2022,Assembly,GJ,DHANDHUKA,59,11,Vaghela Rameshbhai Virsangbhai,Independent,626,0
+2022,Assembly,GJ,DHANDHUKA,59,12,NOTA,None of the Above,2886,7
+2022,Assembly,GJ,DASADA,60,1,Naushad Solanki,Indian National Congress,73607,558
+2022,Assembly,GJ,DASADA,60,2,P.K.Parmar,Bharatiya Janata Party,75743,601
+2022,Assembly,GJ,DASADA,60,3,Solanki Kisanbhai Vajubhai,Bahujan Samaj Party,1039,2
+2022,Assembly,GJ,DASADA,60,4,Arvindbhai Kalubhai Solanki,Aam Aadmi Party,10060,264
+2022,Assembly,GJ,DASADA,60,5,Maheshbhai Virjibhai Rathod,Aadi Bharat Party,433,3
+2022,Assembly,GJ,DASADA,60,6,Anand P Rathod,Independent,308,4
+2022,Assembly,GJ,DASADA,60,7,Makwana Ukabhai Amarabhai,Independent,260,0
+2022,Assembly,GJ,DASADA,60,8,Maurya Mitvardhan  Naranbhai,Independent,501,0
+2022,Assembly,GJ,DASADA,60,9,R.B.Vaghela,Independent,1051,3
+2022,Assembly,GJ,DASADA,60,10,NOTA,None of the Above,3126,21
+2022,Assembly,GJ,LIMBDI,61,1,KIRITSINH JITUBHA RANA,Bharatiya Janata Party,80665,1100
+2022,Assembly,GJ,LIMBDI,61,2,KALPANABEN BIJALBHAI DHORIYA,Indian National Congress,32443,486
+2022,Assembly,GJ,LIMBDI,61,3,GABU NAGJIBHAI MOHANBHAI,Rashtra Nirman Party,839,9
+2022,Assembly,GJ,LIMBDI,61,4,MAYURBHAI MERABHAI SAKARIYA,Aam Aadmi Party,57529,1090
+2022,Assembly,GJ,LIMBDI,61,5,RAJESH DALAL,Garvi Gujarat Party,1604,9
+2022,Assembly,GJ,LIMBDI,61,6,CHAVDA MAHENDRAKUMAR MAGANBHAI,Independent,264,5
+2022,Assembly,GJ,LIMBDI,61,7,JAYESH HANSRAJBHAI THAKOR (TAMBOLIYA),Independent,1596,6
+2022,Assembly,GJ,LIMBDI,61,8,DHORIYA RAMESHBHAI BHAVABHAI,Independent,136,1
+2022,Assembly,GJ,LIMBDI,61,9,PARMAR DILIPBHAI MOHANBHAI,Independent,236,7
+2022,Assembly,GJ,LIMBDI,61,10,MAKWANA PRAKASHBHAI PITAMBARBHAI,Independent,597,1
+2022,Assembly,GJ,LIMBDI,61,11,MAKVANA MAHESHBHAI MERABHAI,Independent,239,0
+2022,Assembly,GJ,LIMBDI,61,12,MAVJIBHAI VITHTHALBHAI PANCHALA,Independent,282,7
+2022,Assembly,GJ,LIMBDI,61,13,RATHOD YOGESHBHAI JETHABHAI,Independent,498,2
+2022,Assembly,GJ,LIMBDI,61,14,RAHULBHAI MADHABHAI ZARMARIYA,Independent,747,4
+2022,Assembly,GJ,LIMBDI,61,15,LAKHMANBHAI CHATURBHAI VELANI,Independent,714,1
+2022,Assembly,GJ,LIMBDI,61,16,NOTA,None of the Above,2602,43
+2022,Assembly,GJ,WADHWAN,62,1,GADHVI TARUNBHAI BIHARIDAN,Indian National Congress,22009,376
+2022,Assembly,GJ,WADHWAN,62,2,JAGDISHBHAI PRABHUBHAI MAKWANA,Bharatiya Janata Party,104451,1452
+2022,Assembly,GJ,WADHWAN,62,3,SOLANKI PRAVINBHAI MOTIBHAI,Bahujan Samaj Party,969,36
+2022,Assembly,GJ,WADHWAN,62,4,CHAVDA NILESHBHAI MANSUKHBHAI,Rashtra Nirman Party,213,8
+2022,Assembly,GJ,WADHWAN,62,5,SATVARA CHOHAN JAYESH LALJIBHAI PATRAKAR,Vyavastha Parivartan Party,302,4
+2022,Assembly,GJ,WADHWAN,62,6,"""BAJRANG"" HITENDRAKUMAR BHAGVANAJIBHAI PATEL",Aam Aadmi Party,39262,1152
+2022,Assembly,GJ,WADHWAN,62,7,PARMAR BALVANTRAY LAGHARBHAI,Independent,750,2
+2022,Assembly,GJ,WADHWAN,62,8,VAGHELA TULSHIBHAI SHIVABHAI,Independent,411,14
+2022,Assembly,GJ,WADHWAN,62,9,BHAVANBHAI DEVJIBHAI VORA,Independent,517,7
+2022,Assembly,GJ,WADHWAN,62,10,SATROTIYA VINODBHAI BABUBHAI,Independent,477,5
+2022,Assembly,GJ,WADHWAN,62,11,KATIYA SALIMBHAI HARUNBHAI,Independent,871,5
+2022,Assembly,GJ,WADHWAN,62,12,NOTA,None of the Above,2795,80
+2022,Assembly,GJ,DHRANGADHRA,64,1,Gunjariya Chhatrasinh Shankarbhai,Indian National Congress,69561,310
+2022,Assembly,GJ,DHRANGADHRA,64,2,Prakashbhai Parsotambhai  Varmora,Bharatiya Janata Party,101956,888
+2022,Assembly,GJ,DHRANGADHRA,64,3,Samrat Jayraj Prabhubhai,Bahujan Samaj Party,1511,13
+2022,Assembly,GJ,DHRANGADHRA,64,4,Vaghjibhai Karshanbhai  Kaila,Aam Aadmi Party,27586,541
+2022,Assembly,GJ,DHRANGADHRA,64,5,Chauhan Jerambhai Govindbhai,Independent,331,2
+2022,Assembly,GJ,DHRANGADHRA,64,6,Parmar Kanjibhai Govindbhai,Independent,627,4
+2022,Assembly,GJ,DHRANGADHRA,64,7,Parmar Rajuben Ravindrabhai,Independent,194,0
+2022,Assembly,GJ,DHRANGADHRA,64,8,Bobda Nazirhusen Gulabbhai,Independent,185,1
+2022,Assembly,GJ,DHRANGADHRA,64,9,Makwana Ukabhai Amrabhai,Independent,254,2
+2022,Assembly,GJ,DHRANGADHRA,64,10,Makwana Govindbhai Lalabhai,Independent,316,0
+2022,Assembly,GJ,DHRANGADHRA,64,11,Makwana Shantilal Pamabhai,Independent,338,0
+2022,Assembly,GJ,DHRANGADHRA,64,12,Vijaykumar Dilipbhai Chavda,Independent,667,0
+2022,Assembly,GJ,DHRANGADHRA,64,13,Surela Laljibhai Khodabhai,Independent,1479,1
+2022,Assembly,GJ,DHRANGADHRA,64,14,NOTA,None of the Above,3592,21
+2022,Assembly,GJ,MORBI,65,1,AMRUTIYA KANTILAL SHIVLAL,Bharatiya Janata Party,113701,837
+2022,Assembly,GJ,MORBI,65,2,KASAMBHAI HAJIBHAI SUMARA,Bahujan Samaj Party,1035,8
+2022,Assembly,GJ,MORBI,65,3,PATEL JAYANTILAL JERAJBHAI,Indian National Congress,52121,338
+2022,Assembly,GJ,MORBI,65,4,PANKAJ KANTILAL RANSARIYA,Aam Aadmi Party,17261,283
+2022,Assembly,GJ,MORBI,65,5,ASHVINKUMAR HARIBHAI TUNDIYA,Independent,274,6
+2022,Assembly,GJ,MORBI,65,6,ARIFKHAN MAHMADHUSEN KHORAM,Independent,192,3
+2022,Assembly,GJ,MORBI,65,7,EKBALBHAI HUSHENBHAI KATIYA,Independent,459,0
+2022,Assembly,GJ,MORBI,65,8,GULAM HANIFBHAI MOVAR,Independent,235,0
+2022,Assembly,GJ,MORBI,65,9,GOPAL VINUBHAI SITAPARA,Independent,113,1
+2022,Assembly,GJ,MORBI,65,10,JADAV MAHESHBHAI DHANJIBHAI,Independent,164,2
+2022,Assembly,GJ,MORBI,65,11,JEDA AKBAR HUSEN,Independent,174,4
+2022,Assembly,GJ,MORBI,65,12,BALVANTBHAI NATHUBHAI SHEKHVA,Independent,164,2
+2022,Assembly,GJ,MORBI,65,13,MADHU NIRUPABEN NATAVARLAL,Independent,277,2
+2022,Assembly,GJ,MORBI,65,14,VIVEK JAYANTILAL MIRANI ALIAS(BABLUBHAI),Independent,510,0
+2022,Assembly,GJ,MORBI,65,15,SHAHMADAR DAUDSHA RAHEMANSHA,Independent,425,0
+2022,Assembly,GJ,MORBI,65,16,SIRAJ AMIRALI POPATIYA,Independent,2243,1
+2022,Assembly,GJ,MORBI,65,17,HASAN ALUBHAI MOVAR,Independent,1439,0
+2022,Assembly,GJ,MORBI,65,18,NOTA,None of the Above,1155,21
+2022,Assembly,GJ,TANKARA,66,1,KAGATHARA LALITBHAI,Indian National Congress,72599,419
+2022,Assembly,GJ,TANKARA,66,2,CHANANI MUSHABHAI ABHARAMBHAI,Bahujan Samaj Party,1666,4
+2022,Assembly,GJ,TANKARA,66,3,DURLABHJIBHAI HARAKHJIBHAI DETHARIYA,Bharatiya Janata Party,82845,429
+2022,Assembly,GJ,TANKARA,66,4,PARMAR SHAILESH MANUBHAI,Vyavastha Parivartan Party,906,4
+2022,Assembly,GJ,TANKARA,66,5,SANJAY BHATASANA (PATEL),Aam Aadmi Party,17617,217
+2022,Assembly,GJ,TANKARA,66,6,NOTA,None of the Above,1979,14
+2022,Assembly,GJ,WANKANER,67,1,JITENDRA KANTILAL SOMANI,Bharatiya Janata Party,80226,451
+2022,Assembly,GJ,WANKANER,67,2,BHUPENDRA KANUBHAI SAGTHIYA,Bahujan Samaj Party,932,7
+2022,Assembly,GJ,WANKANER,67,3,MAHMADJAVID ABDULMUTLIB PIRZADA,Indian National Congress,60383,339
+2022,Assembly,GJ,WANKANER,67,4,AJADIA PRAKASH NARANBHAI,Rashtriya Jankranti Party,1755,2
+2022,Assembly,GJ,WANKANER,67,5,VIKRAM SORANI,Aam Aadmi Party,53110,375
+2022,Assembly,GJ,WANKANER,67,6,JEETESHBHAI RUPABHAI SANTOLA,Independent,287,0
+2022,Assembly,GJ,WANKANER,67,7,NARENDRA VIRABHAI DENGADA,Independent,193,0
+2022,Assembly,GJ,WANKANER,67,8,NAVINBHAI AMRUTBHAI VORA,Independent,338,4
+2022,Assembly,GJ,WANKANER,67,9,MAHEBUBBHAI JAMALBHAI PIPARAVAIYA,Independent,194,0
+2022,Assembly,GJ,WANKANER,67,10,MERAMBHAI KARMANBHAI  VARU,Independent,414,0
+2022,Assembly,GJ,WANKANER,67,11,RAMESHBHAI LAVAJIBHAI  DABHI,Independent,524,0
+2022,Assembly,GJ,WANKANER,67,12,VALLABHBHAI KARSANBHAI  VAGHELA,Independent,426,1
+2022,Assembly,GJ,WANKANER,67,13,HINABEN PRAVINBHAI RAIYANI,Independent,537,1
+2022,Assembly,GJ,WANKANER,67,14,NOTA,None of the Above,2446,27
+2022,Assembly,GJ,RAJKOT EAST,68,1,Indranil Rajguru,Indian National Congress,57397,162
+2022,Assembly,GJ,RAJKOT EAST,68,2,Uday Kangad,Bharatiya Janata Party,85933,261
+2022,Assembly,GJ,RAJKOT EAST,68,3,SAGTHIYA SURESHKUMAR GOVINDBHAI,Communist Party of India,1538,2
+2022,Assembly,GJ,RAJKOT EAST,68,4,Rahul Bhuva,Aam Aadmi Party,35146,300
+2022,Assembly,GJ,RAJKOT EAST,68,5,Parghi Surajbhai Nanjibhai,Independent,263,0
+2022,Assembly,GJ,RAJKOT EAST,68,6,Ranchhodbhai Maganbhai Ughreja,Independent,552,1
+2022,Assembly,GJ,RAJKOT EAST,68,7,RAJESH SAMSUDDIN  GILANI,Independent,425,0
+2022,Assembly,GJ,RAJKOT EAST,68,8,LUNAGARIYA BABULAL PARSHOTAMBHAI,Independent,1074,0
+2022,Assembly,GJ,RAJKOT EAST,68,9,NOTA,None of the Above,2774,20
+2022,Assembly,GJ,RAJKOT WEST,69,1,KALARIYA MANSUKHBHAI JADAVBHAI,Indian National Congress,32332,380
+2022,Assembly,GJ,RAJKOT WEST,69,2,CHAMANBHAI SAVSANI,Bahujan Samaj Party,803,2
+2022,Assembly,GJ,RAJKOT WEST,69,3,DR. DARSHITA SHAH,Bharatiya Janata Party,137814,873
+2022,Assembly,GJ,RAJKOT WEST,69,4,DINESHKUMAR MOHANBHAI JOSHI,Aam Aadmi Party,25769,550
+2022,Assembly,GJ,RAJKOT WEST,69,5,PRAFULABEN R. SHIYALIYA,Log Party,224,2
+2022,Assembly,GJ,RAJKOT WEST,69,6,KIRTIKUMAR BAVANJIBHAI MARVANIYA,Independent,123,0
+2022,Assembly,GJ,RAJKOT WEST,69,7,DENGADA PRAVINBHAI MEGHJIBHAI,Independent,218,0
+2022,Assembly,GJ,RAJKOT WEST,69,8,PRASHANT CHIMANBHAI MARU,Independent,195,1
+2022,Assembly,GJ,RAJKOT WEST,69,9,BELIM SIKANDAR HUSENBHAI,Independent,115,1
+2022,Assembly,GJ,RAJKOT WEST,69,10,BHUPENDRA BHAVANBHAI PATOLIYA,Independent,169,0
+2022,Assembly,GJ,RAJKOT WEST,69,11,MAHAJAN NARENDRABHAI,Independent,160,0
+2022,Assembly,GJ,RAJKOT WEST,69,12,MEHUL NATHWANI,Independent,613,4
+2022,Assembly,GJ,RAJKOT WEST,69,13,VEGADA RAMJIBHAI GOVINDBHAI,Independent,245,0
+2022,Assembly,GJ,RAJKOT WEST,69,14,NOTA,None of the Above,3389,30
+2022,Assembly,GJ,RAJKOT SOUTH,70,1,RAMESHBHAI VIRJIBHAI TILALA,Bharatiya Janata Party,101467,267
+2022,Assembly,GJ,RAJKOT SOUTH,70,2,HITESH MAGANBHAI VORA,Indian National Congress,22411,96
+2022,Assembly,GJ,RAJKOT SOUTH,70,3,SHIVLAL BARASIA,Aam Aadmi Party,22642,228
+2022,Assembly,GJ,RAJKOT SOUTH,70,4,AMARDAS DESANI,Independent,167,1
+2022,Assembly,GJ,RAJKOT SOUTH,70,5,PAREKH PUNITABEN HASMUKHBHAI,Independent,2840,2
+2022,Assembly,GJ,RAJKOT SOUTH,70,6,PRAVINBHAI MEGHAJIBHAI DENGADA,Independent,273,1
+2022,Assembly,GJ,RAJKOT SOUTH,70,7,BHUMIKA PARESHBHAI PATEL,Independent,232,0
+2022,Assembly,GJ,RAJKOT SOUTH,70,8,RAKESH PATEL,Independent,294,1
+2022,Assembly,GJ,RAJKOT SOUTH,70,9,NOTA,None of the Above,2339,14
+2022,Assembly,GJ,RAJKOT RURAL,71,1,Bathwar Sureshkumar Karshanbhai,Indian National Congress,29052,123
+2022,Assembly,GJ,RAJKOT RURAL,71,2,Bhanuben Manoharbhai Babariya,Bharatiya Janata Party,119353,342
+2022,Assembly,GJ,RAJKOT RURAL,71,3,Rahul Chavda,Bahujan Samaj Party,1619,7
+2022,Assembly,GJ,RAJKOT RURAL,71,4,Makwana Ranjitbhai Girdharbhai,Vyavastha Parivartan Party,453,0
+2022,Assembly,GJ,RAJKOT RURAL,71,5,Vashrambhai Sagathiya,Aam Aadmi Party,70749,452
+2022,Assembly,GJ,RAJKOT RURAL,71,6,Dengada Sanjay Pravinbhai,Independent,378,0
+2022,Assembly,GJ,RAJKOT RURAL,71,7,Babubhai Virabhai Parmar,Independent,251,0
+2022,Assembly,GJ,RAJKOT RURAL,71,8,Babubhai Bhalabhai Babariya,Independent,514,1
+2022,Assembly,GJ,RAJKOT RURAL,71,9,Bharatbhai Mavjibhai Chavda,Independent,397,0
+2022,Assembly,GJ,RAJKOT RURAL,71,10,Rathod Sukhdevbhai Mohanbhai,Independent,391,0
+2022,Assembly,GJ,RAJKOT RURAL,71,11,Solanki Ramjibhai Khimabhai,Independent,709,0
+2022,Assembly,GJ,RAJKOT RURAL,71,12,NOTA,None of the Above,3022,16
+2022,Assembly,GJ,JASDAN,72,1,KUNVARJIBHAI MOHANBHAI BAVALIYA,Bharatiya Janata Party,63347,461
+2022,Assembly,GJ,JASDAN,72,2,BHOLABHAI BHIKHABHAI GOHEL,Indian National Congress,45460,335
+2022,Assembly,GJ,JASDAN,72,3,TEJASBHAI BHIKHABHAI GAJIPARA,Aam Aadmi Party,47277,359
+2022,Assembly,GJ,JASDAN,72,4,SHAMJIBHAI AMBABHAI DANGAR (KOLI),Rashtriya Hind Ekta Dal,701,6
+2022,Assembly,GJ,JASDAN,72,5,DEVRAJBHAI MASHRUBHAI MAKVANA,Independent,542,6
+2022,Assembly,GJ,JASDAN,72,6,RAMABEN PRAKASHBHAI GORASVA,Independent,789,2
+2022,Assembly,GJ,JASDAN,72,7,NOTA,None of the Above,2057,16
+2022,Assembly,GJ,GONDAL,73,1,Geetaba Jayrajsinh Jadeja,Bharatiya Janata Party,85359,703
+2022,Assembly,GJ,GONDAL,73,2,Desai Yatish Govindlal,Indian National Congress,42585,164
+2022,Assembly,GJ,GONDAL,73,3,Nimishaben Khunt,Aam Aadmi Party,12825,250
+2022,Assembly,GJ,GONDAL,73,4,Mukesh Dholumal Vardhani,Independent,612,4
+2022,Assembly,GJ,GONDAL,73,5,NOTA,None of the Above,2148,16
+2022,Assembly,GJ,JETPUR,74,1,Jayeshbhai Vitthalbhai Radadiya,Bharatiya Janata Party,106135,336
+2022,Assembly,GJ,JETPUR,74,2,Deepakbhai Keshavlal Vekariya (D.K. Vekariya),Indian National Congress,12200,44
+2022,Assembly,GJ,JETPUR,74,3,Boricha Devshibhai Kumbhabhai,Bahujan Samaj Party,1054,11
+2022,Assembly,GJ,JETPUR,74,4,Alpeshkumar V. Vadoliya (108),Right to Recall Party,386,0
+2022,Assembly,GJ,JETPUR,74,5,Rajubhai Arjanbhai Sarvaiya,Samajwadi Party,20743,45
+2022,Assembly,GJ,JETPUR,74,6,Rohitbhai Vinubhai Bhuva,Aam Aadmi Party,29287,258
+2022,Assembly,GJ,JETPUR,74,7,Chavda Bharatkumar Nanjibhai,Independent,433,1
+2022,Assembly,GJ,JETPUR,74,8,Jayendrasinh Govubha Chauhan,Independent,1920,3
+2022,Assembly,GJ,JETPUR,74,9,NOTA,None of the Above,2282,5
+2022,Assembly,GJ,DHORAJI,75,1,Prabhat Govind Solanki,Bahujan Samaj Party,1561,16
+2022,Assembly,GJ,DHORAJI,75,2,Dr. Mahendrabhai Padalia,Bharatiya Janata Party,65871,559
+2022,Assembly,GJ,DHORAJI,75,3,Lalit Vasoya,Indian National Congress,53780,402
+2022,Assembly,GJ,DHORAJI,75,4,Vipul Sakhiya,Aam Aadmi Party,29353,441
+2022,Assembly,GJ,DHORAJI,75,5,Jafar Gani Pinjara,Independent,448,2
+2022,Assembly,GJ,DHORAJI,75,6,Parmar Sahid (Hedli),Independent,466,1
+2022,Assembly,GJ,DHORAJI,75,7,SIRAJBHAI ABABHAI KHEBHAR,Independent,529,0
+2022,Assembly,GJ,DHORAJI,75,8,NOTA,None of the Above,1603,17
+2022,Assembly,GJ,KALAVAD,76,1,CHAVDA MEGHJIBHAI AMARABHAI,Bharatiya Janata Party,58788,504
+2022,Assembly,GJ,KALAVAD,76,2,CHOUHAN MAHENDRA DINESHBHAI,Bahujan Samaj Party,1248,8
+2022,Assembly,GJ,KALAVAD,76,3,PRAVIN NARASHIBHAI MUSADIYA,Indian National Congress,24159,178
+2022,Assembly,GJ,KALAVAD,76,4,DR. JIGNESH SOLANKI,Aam Aadmi Party,42991,451
+2022,Assembly,GJ,KALAVAD,76,5,CHAUHAN PRAVINBHAI DANABHAI,Independent,664,1
+2022,Assembly,GJ,KALAVAD,76,6,NOTA,None of the Above,2108,19
+2022,Assembly,GJ,JAMNAGAR RURAL,77,1,KASAM NURMAMAD KHAFI,Bahujan Samaj Party,29133,29
+2022,Assembly,GJ,JAMNAGAR RURAL,77,2,AHIR JIVANBHAI K. KUMBHARVADIYA,Indian National Congress,18675,62
+2022,Assembly,GJ,JAMNAGAR RURAL,77,3,PATEL RAGHAVJIBHAI HANSRAJBHAI,Bharatiya Janata Party,79056,383
+2022,Assembly,GJ,JAMNAGAR RURAL,77,4,PRAKASH DHIRUBHAI DONGA,Aam Aadmi Party,31656,283
+2022,Assembly,GJ,JAMNAGAR RURAL,77,5,CHANDRA DHARMENDRA DHIRAJLAL,Independent,659,1
+2022,Assembly,GJ,JAMNAGAR RURAL,77,6,BHURALAL MEGHAJIBHAI PARMAR,Independent,550,8
+2022,Assembly,GJ,JAMNAGAR RURAL,77,7,NOTA,None of the Above,2275,10
+2022,Assembly,GJ,JAMNAGAR NORTH,78,1,ADVOCATE JAGDISH MANSHIBHAI GADHAVI,Bahujan Samaj Party,2077,11
+2022,Assembly,GJ,JAMNAGAR NORTH,78,2,BIPENDRASINH CHATURSINH JADEJA,Indian National Congress,23088,186
+2022,Assembly,GJ,JAMNAGAR NORTH,78,3,RIVASINH HARDEVSINH SOLANKI (RIVABA RAVINDRASINH JADEJA),Bharatiya Janata Party,88119,716
+2022,Assembly,GJ,JAMNAGAR NORTH,78,4,KARSHANBHAI KARMUR (AHIR KARSHANBHAI PARBATBHAI KARMUR),Aam Aadmi Party,34818,447
+2022,Assembly,GJ,JAMNAGAR NORTH,78,5,ANVAR DAUD KAKAL,Independent,292,1
+2022,Assembly,GJ,JAMNAGAR NORTH,78,6,KER RAHIM OSMANBHAI,Independent,113,1
+2022,Assembly,GJ,JAMNAGAR NORTH,78,7,CHAVDA ASHOK NATHABHAI,Independent,130,1
+2022,Assembly,GJ,JAMNAGAR NORTH,78,8,JAHID AAVADBHAI JAMI,Independent,179,0
+2022,Assembly,GJ,JAMNAGAR NORTH,78,9,MALEK AADIL RASIDBHAI,Independent,396,2
+2022,Assembly,GJ,JAMNAGAR NORTH,78,10,MIYA AAMIN RAHIMBHAI,Independent,328,0
+2022,Assembly,GJ,JAMNAGAR NORTH,78,11,HINABEN DEPABHAI MAKWANA,Independent,375,2
+2022,Assembly,GJ,JAMNAGAR NORTH,78,12,NOTA,None of the Above,2419,25
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,1,Akbari Divyeshbhai Ranchhodbhai,Bharatiya Janata Party,86045,447
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,2,Kathiriya Manojbhai  Gordhanbhai,Indian National Congress,23730,65
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,3,Makuben Kishorbhai Rathod (Meenaben),Bahujan Samaj Party,859,7
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,4,Kamleshkumar Jentilal Hirpara,Bharatiya National Janta Dal,200,0
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,5,Gohel Mukesh Vajubhai,Gujarat Nav Nirman Sena,260,0
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,6,Vishal Rajbal Tyagi,Aam Aadmi Party,16455,130
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,7,Abjal Mamadbhai Bhaya,Independent,276,1
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,8,Alimamad Ishak Palani,Independent,83,0
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,9,Kadari Mahmad Hushen Aarifmiya,Independent,90,1
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,10,Chauhan Juned Abdul Rajak,Independent,1109,0
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,11,Chauhan Bharatbhai Mohanbhai,Independent,164,2
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,12,JITESH BABUBHAI RATHOD,Independent,121,0
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,13,Pattani Chandrakant Mohanlal,Independent,205,0
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,14,Parmar Arjunbhai Karshanbhai,Independent,383,0
+2022,Assembly,GJ,JAMNAGAR SOUTH,79,15,NOTA,None of the Above,2164,18
+2022,Assembly,GJ,JAMJODHPUR,80,1,Kalaria Chiragbhai Rameshbhai,Indian National Congress,13366,148
+2022,Assembly,GJ,JAMJODHPUR,80,2,Chimanbhai Sapariya,Bharatiya Janata Party,60336,658
+2022,Assembly,GJ,JAMJODHPUR,80,3,Ahir Hemantbhai Hardasbhai,Aam Aadmi Party,70659,738
+2022,Assembly,GJ,JAMJODHPUR,80,4,Juneja Sabbirbhai Ibrahimbhai,Samajwadi Party,473,0
+2022,Assembly,GJ,JAMJODHPUR,80,5,Abu Umar Shida,Independent,196,1
+2022,Assembly,GJ,JAMJODHPUR,80,6,Ambalal Manjibhai Vavecha,Independent,260,0
+2022,Assembly,GJ,JAMJODHPUR,80,7,Joshi Amit Babubhai,Independent,385,1
+2022,Assembly,GJ,JAMJODHPUR,80,8,Pravinbhai Vallabhbhai Patel,Independent,885,2
+2022,Assembly,GJ,JAMJODHPUR,80,9,Basirbhai Sidikbhai Sama,Independent,801,1
+2022,Assembly,GJ,JAMJODHPUR,80,10,NOTA,None of the Above,1515,28
+2022,Assembly,GJ,KHAMBHALIA,81,1,Ayar Mulubhai Hardasbhai Bera,Bharatiya Janata Party,77305,529
+2022,Assembly,GJ,KHAMBHALIA,81,2,Ahir Vikrambhai Arjanbhai Maadam,Indian National Congress,44526,189
+2022,Assembly,GJ,KHAMBHALIA,81,3,Solanki Govind Hamirbhai,Bahujan Samaj Party,994,6
+2022,Assembly,GJ,KHAMBHALIA,81,4,Isudan Gadhvi,Aam Aadmi Party,58467,622
+2022,Assembly,GJ,KHAMBHALIA,81,5,Chetariya Lakhubhai Lagdhirbhai,Gujarat Nav Nirman Sena,916,7
+2022,Assembly,GJ,KHAMBHALIA,81,6,Bukhari Yakub Mohammad Hushen,All India Majlis-E-Ittehadul Muslimeen,733,4
+2022,Assembly,GJ,KHAMBHALIA,81,7,Ibrahimbhai Amadbhai Ghavda,Independent,229,0
+2022,Assembly,GJ,KHAMBHALIA,81,8,Nangesh Karsan Jeshabhai,Independent,248,0
+2022,Assembly,GJ,KHAMBHALIA,81,9,Nurmamad Jusab Pariyani,Independent,612,1
+2022,Assembly,GJ,KHAMBHALIA,81,10,Manjuben Karabhai Pingal,Independent,1249,1
+2022,Assembly,GJ,KHAMBHALIA,81,11,Vala Hamir Makvana,Independent,796,1
+2022,Assembly,GJ,KHAMBHALIA,81,12,NOTA,None of the Above,2569,13
+2022,Assembly,GJ,DWARKA,82,1,Ahir Mulubhai Ranmalbhai Kandoriya,Indian National Congress,68275,416
+2022,Assembly,GJ,DWARKA,82,2,Pabubha Virambha Manek,Bharatiya Janata Party,73350,668
+2022,Assembly,GJ,DWARKA,82,3,Hathal Chandrasinh Sadurbha,Bahujan Samaj Party,820,1
+2022,Assembly,GJ,DWARKA,82,4,Parmani Kishankumar Himantlal,Garvi Gujarat Party,1382,9
+2022,Assembly,GJ,DWARKA,82,5,Madam Nathabhai Fogabhai,Gujarat Nav Nirman Sena,595,3
+2022,Assembly,GJ,DWARKA,82,6,Lakhmanbhai Boghabhai Nakum,Aam Aadmi Party,28023,358
+2022,Assembly,GJ,DWARKA,82,7,Hamir Dadu Der,Samajwadi Party,391,3
+2022,Assembly,GJ,DWARKA,82,8,Asharafmiya Sidikmiya Kadri,Independent,486,0
+2022,Assembly,GJ,DWARKA,82,9,Kishor Khimabhai Chavada,Independent,201,5
+2022,Assembly,GJ,DWARKA,82,10,Ghediya Amit Jagdishbhai,Independent,286,3
+2022,Assembly,GJ,DWARKA,82,11,Devendra Fogabha Manek,Independent,330,0
+2022,Assembly,GJ,DWARKA,82,12,Nagash Karashanbhai Jeshabhai,Independent,521,5
+2022,Assembly,GJ,DWARKA,82,13,Bhagvanji H. Thobhani,Independent,1149,2
+2022,Assembly,GJ,DWARKA,82,14,NOTA,None of the Above,2897,22
+2022,Assembly,GJ,PORBANDAR,83,1,Arjunbhai Devabhai Modhwadia,Indian National Congress,81395,661
+2022,Assembly,GJ,PORBANDAR,83,2,Babubhai Bhimabhai Bokhiriya,Bharatiya Janata Party,73388,487
+2022,Assembly,GJ,PORBANDAR,83,3,Jivan Jungi,Aam Aadmi Party,5189,130
+2022,Assembly,GJ,PORBANDAR,83,4,Jethabhai Bhanabhai Chavda,Bahujan Republican  Socialist Party,219,0
+2022,Assembly,GJ,PORBANDAR,83,5,Rameshbhai Rajabhai Daki,Samajwadi Party,227,4
+2022,Assembly,GJ,PORBANDAR,83,6,Rajesh Gaurishankar Pandya,Right to Recall Party,128,0
+2022,Assembly,GJ,PORBANDAR,83,7,Odedara Ranmalbhai Rambhai,Independent,80,1
+2022,Assembly,GJ,PORBANDAR,83,8,Odedara Lakhanshi Deva,Independent,307,2
+2022,Assembly,GJ,PORBANDAR,83,9,Prakashbhai Vallabhdas Unadkat,Independent,223,2
+2022,Assembly,GJ,PORBANDAR,83,10,Manoj Babu Buddhecha,Independent,347,0
+2022,Assembly,GJ,PORBANDAR,83,11,Mukesh Ramji Panjari,Independent,674,0
+2022,Assembly,GJ,PORBANDAR,83,12,NOTA,None of the Above,2738,31
+2022,Assembly,GJ,KUTIYANA,84,1,Dheliben Maldebhai Odedara,Bharatiya Janata Party,33532,500
+2022,Assembly,GJ,KUTIYANA,84,2,Nathabhai Bhurabhai Odedara,Indian National Congress,8672,169
+2022,Assembly,GJ,KUTIYANA,84,3,Kandhalbhai Sarmanbhai Jadeja,Samajwadi Party,60163,581
+2022,Assembly,GJ,KUTIYANA,84,4,Butani Rajeshbhai Maganbhai,Rashtriya Hind Ekta Dal,1119,7
+2022,Assembly,GJ,KUTIYANA,84,5,Bhimabhai Danabhai Makvana,Aam Aadmi Party,19273,284
+2022,Assembly,GJ,KUTIYANA,84,6,Ajay Karabhai  Odedara,Independent,237,5
+2022,Assembly,GJ,KUTIYANA,84,7,Anand Krashnakant Buch,Independent,154,1
+2022,Assembly,GJ,KUTIYANA,84,8,Chandulal  Mohanbhai Rathod,Independent,344,3
+2022,Assembly,GJ,KUTIYANA,84,9,Nimeshbhai Mansukhbhai Bhundiya,Independent,427,3
+2022,Assembly,GJ,KUTIYANA,84,10,Prakashbhai Madhavjibhai Jungi,Independent,352,4
+2022,Assembly,GJ,KUTIYANA,84,11,Milankumar Madhavji Chauhan,Independent,333,3
+2022,Assembly,GJ,KUTIYANA,84,12,Mukeshbhai  Lakhaman Vaghasiya,Independent,786,2
+2022,Assembly,GJ,KUTIYANA,84,13,Rajeshbhai Laxmidas Madlani,Independent,484,0
+2022,Assembly,GJ,KUTIYANA,84,14,NOTA,None of the Above,1933,30
+2022,Assembly,GJ,MANAVADAR,85,1,ARVINDBHAI JINABHAI LADANI,Indian National Congress,64253,437
+2022,Assembly,GJ,MANAVADAR,85,2,JAWAHARBHAI PETHALJIBHAI CHAVDA,Bharatiya Janata Party,60675,562
+2022,Assembly,GJ,MANAVADAR,85,3,MUCHHADIYA DEVDANBHAI KANABHAI,Bahujan Samaj Party,1343,27
+2022,Assembly,GJ,MANAVADAR,85,4,KARSHAN PARBAT BHADARKA (BAPU),Aam Aadmi Party,22859,438
+2022,Assembly,GJ,MANAVADAR,85,5,KARANGIYA PARBATBHAI BHAYABHAI,Independent,333,3
+2022,Assembly,GJ,MANAVADAR,85,6,MAHESH PARMAR,Independent,267,1
+2022,Assembly,GJ,MANAVADAR,85,7,RATHOD BHAVINKUMAR SHANTILAL,Independent,714,17
+2022,Assembly,GJ,MANAVADAR,85,8,NOTA,None of the Above,1557,11
+2022,Assembly,GJ,JUNAGADH,86,1,JOSHI BHIKHABHAI GALABHAI,Indian National Congress,43792,568
+2022,Assembly,GJ,JUNAGADH,86,2,MAYURBHAI HARILAL RANVA,Bahujan Samaj Party,889,11
+2022,Assembly,GJ,JUNAGADH,86,3,SANJAY SUKHABHAI KORADIA,Bharatiya Janata Party,83767,849
+2022,Assembly,GJ,JUNAGADH,86,4,GORFAD DILIPKUMAR RANCHHODBHAI,Bhartiya Jan Parishad,840,5
+2022,Assembly,GJ,JUNAGADH,86,5,CHETANKUMAR HARSUKHBHAI GAJERA,Aam Aadmi Party,27705,601
+2022,Assembly,GJ,JUNAGADH,86,6,GHANSHYAMKUMAR HIMANTBHAI MASHRU,Independent,751,9
+2022,Assembly,GJ,JUNAGADH,86,7,MAMTABEN JAYANTILAL BOTVADIYA,Independent,186,4
+2022,Assembly,GJ,JUNAGADH,86,8,SHASHIKANT KARSHANBHAI RAVAT,Independent,343,4
+2022,Assembly,GJ,JUNAGADH,86,9,HARESH MANUBHAI SARDHARA,Independent,378,3
+2022,Assembly,GJ,JUNAGADH,86,10,NOTA,None of the Above,1959,43
+2022,Assembly,GJ,VISAVADAR,87,1,KARASHANBHAI NARANBHAI VADADORIYA,Indian National Congress,16781,182
+2022,Assembly,GJ,VISAVADAR,87,2,VAGHELA MANSUKHBHAI NATHABHAI,Bahujan Samaj Party,1807,35
+2022,Assembly,GJ,VISAVADAR,87,3,HARSHADKUMAR MADHAVJIBHAI RIBADIYA,Bharatiya Janata Party,58771,376
+2022,Assembly,GJ,VISAVADAR,87,4,BHUPENDRABHAI GANDUBHAI BHAYANI,Aam Aadmi Party,65675,535
+2022,Assembly,GJ,VISAVADAR,87,5,IKBALBHAI HABIBBHAI SAMA,Independent,630,5
+2022,Assembly,GJ,VISAVADAR,87,6,NOTA,None of the Above,1754,11
+2022,Assembly,GJ,KESHOD,88,1,DEVABHAI PUNJABHAI MALAM,Bharatiya Janata Party,55407,395
+2022,Assembly,GJ,KESHOD,88,2,HIRABHAI ARJANBHAI JOTVA,Indian National Congress,50962,632
+2022,Assembly,GJ,KESHOD,88,3,ANTROLIYA DHANABHAI MUNABHAI,Vyavastha Parivartan Party,762,0
+2022,Assembly,GJ,KESHOD,88,4,CHUDASAMA  RAMAJIBHAI BABUBHAI,Aam Aadmi Party,23985,512
+2022,Assembly,GJ,KESHOD,88,5,ARVINDBHAI KESHAVBHAI LADANI,Independent,19086,188
+2022,Assembly,GJ,KESHOD,88,6,ALPESHKUMAR CHANDULAL TRAMBADIYA,Independent,376,2
+2022,Assembly,GJ,KESHOD,88,7,LALITKUMAR L. DEDANIYA,Independent,609,2
+2022,Assembly,GJ,KESHOD,88,8,NOTA,None of the Above,1706,13
+2022,Assembly,GJ,MANGROL,89,1,KARGATIYA BHAGVANJIBHAI LAKHABHAI,Bharatiya Janata Party,60518,378
+2022,Assembly,GJ,MANGROL,89,2,BABUBHAI KALABHAI VAJA,Indian National Congress,38227,168
+2022,Assembly,GJ,MANGROL,89,3,HANSABEN VIJAY MAKADIYA,Bahujan Samaj Party,941,6
+2022,Assembly,GJ,MANGROL,89,4,PIYUSH PARMAR,Aam Aadmi Party,33727,587
+2022,Assembly,GJ,MANGROL,89,5,SULEMANBHAI MOHMADBHAI PATEL,All India Majlis-E-Ittehadul Muslimeen,10754,35
+2022,Assembly,GJ,MANGROL,89,6,HAMIRBHAI LAKHMANBHAI DHAMA,Independent,658,7
+2022,Assembly,GJ,MANGROL,89,7,NOTA,None of the Above,1751,9
+2022,Assembly,GJ,SOMNATH,90,1,AMBECHADA HAMIRBHAI KARASANBHAI,Bahujan Samaj Party,1463,6
+2022,Assembly,GJ,SOMNATH,90,2,CHUDASAMA VIMALBHAI KANABHAI,Indian National Congress,73536,283
+2022,Assembly,GJ,SOMNATH,90,3,MANSINGHBHAI MERAMANBHAI PARMAR,Bharatiya Janata Party,72235,662
+2022,Assembly,GJ,SOMNATH,90,4,JAGMALBHAI JADAVBHAI VALA,Aam Aadmi Party,32828,407
+2022,Assembly,GJ,SOMNATH,90,5,ASATARBHAI AGANIBHAI PANJA,Independent,495,1
+2022,Assembly,GJ,SOMNATH,90,6,IRFANBHAI ARAHEMANBHAI MUGAL,Independent,361,0
+2022,Assembly,GJ,SOMNATH,90,7,ISHWARLAL KANJIBHAI SONERI,Independent,7368,13
+2022,Assembly,GJ,SOMNATH,90,8,MOTIVARASH DEVENDRABHAI DHANJIBHAI,Independent,877,1
+2022,Assembly,GJ,SOMNATH,90,9,SHAH UDAY NAVINBHAI,Independent,1185,12
+2022,Assembly,GJ,SOMNATH,90,10,NOTA,None of the Above,1518,12
+2022,Assembly,GJ,TALALA,91,1,Dodiya Mansingbhai Jesingbhai,Indian National Congress,34110,303
+2022,Assembly,GJ,TALALA,91,2,Parmar Faridaben Muradbhai,Bahujan Samaj Party,1058,10
+2022,Assembly,GJ,TALALA,91,3,Bhagabhai Dhanabhai Barad,Bharatiya Janata Party,64330,458
+2022,Assembly,GJ,TALALA,91,4,Solanki Devendrabhai Kanjibhai,Aam Aadmi Party,44337,396
+2022,Assembly,GJ,TALALA,91,5,Abdulbhai Ismailbhai Majgul,Independent,353,1
+2022,Assembly,GJ,TALALA,91,6,Chandpa Karshanbhai Govindbhai,Independent,183,1
+2022,Assembly,GJ,TALALA,91,7,Jayeshbhai Bhagvanbhai Kamaliya,Independent,403,1
+2022,Assembly,GJ,TALALA,91,8,Daki Jaysukhlal Jadavbhai,Independent,1629,1
+2022,Assembly,GJ,TALALA,91,9,Faijal Ibrahimbhai Dhamlot,Independent,580,1
+2022,Assembly,GJ,TALALA,91,10,Rafai Mahmadsha Ikbalsha,Independent,435,0
+2022,Assembly,GJ,TALALA,91,11,NOTA,None of the Above,1478,8
+2022,Assembly,GJ,KODINAR,92,1,PRADYUMAN GANUBHAI VAJA,Bharatiya Janata Party,76734,1060
+2022,Assembly,GJ,KODINAR,92,2,MAKVANA MAHESHBHAI JETHABHAI,Indian National Congress,57968,440
+2022,Assembly,GJ,KODINAR,92,3,SOSA BALUBHAI PITHABHAI,Bahujan Samaj Party,1089,6
+2022,Assembly,GJ,KODINAR,92,4,VALJIBHAI KARSHANBHAI MAKVANA,Aam Aadmi Party,10451,287
+2022,Assembly,GJ,KODINAR,92,5,VADHEL DIPSINH GOVINDBHAI,Independent,1345,8
+2022,Assembly,GJ,KODINAR,92,6,NOTA,None of the Above,2013,12
+2022,Assembly,GJ,UNA,93,1,KALUBHAI CHANABHAI RATHOD,Bharatiya Janata Party,95356,504
+2022,Assembly,GJ,UNA,93,2,VANSH PUNJABHAI BHIMABHAI,Indian National Congress,52015,319
+2022,Assembly,GJ,UNA,93,3,ISHWAR RAMBHAI SOLANKI,Right to Recall Party,1074,4
+2022,Assembly,GJ,UNA,93,4,PANCHABHAI BHAYABHAI DAMANIYA,Bharatiya Hitrakshak Party,1122,5
+2022,Assembly,GJ,UNA,93,5,SHANTILAL DANABHAI KIDECHA,Rashtriya Samaj Dal (R),355,1
+2022,Assembly,GJ,UNA,93,6,SEJALBEN MANSUKHBHAI KHUNT,Aam Aadmi Party,12727,195
+2022,Assembly,GJ,UNA,93,7,GOHIL MANSINH BALUBHAI,Independent,680,7
+2022,Assembly,GJ,UNA,93,8,NILESH ANILBHAI KHORASEE,Independent,367,2
+2022,Assembly,GJ,UNA,93,9,VALA BHANAJIBHAI KHETABHAI,Independent,803,3
+2022,Assembly,GJ,UNA,93,10,VANSH BALUBHAI KARSHANBHAI,Independent,1142,0
+2022,Assembly,GJ,UNA,93,11,NOTA,None of the Above,3085,7
+2022,Assembly,GJ,DHARI,94,1,KAKADIYA JAYSUKHBHAI VALLABHBHAI (KAKADIYA J.V.),Bharatiya Janata Party,45954,512
+2022,Assembly,GJ,DHARI,94,2,KIRTIKUMAR KANUBHAI BORISAGAR,Indian National Congress,17708,270
+2022,Assembly,GJ,DHARI,94,3,PAYAL BHAVIN PATEL,Janata Dal  (Secular),2233,9
+2022,Assembly,GJ,DHARI,94,4,BHUPATBHAI CHHAGANBHAI UNAVA,Vyavastha Parivartan Party,876,5
+2022,Assembly,GJ,DHARI,94,5,VIJAYBHAI AMRUTBHAI CHAVDA,Log Party,372,2
+2022,Assembly,GJ,DHARI,94,6,SATASIYA KANTIBHAI SHAMBHUBHAI,Aam Aadmi Party,37341,408
+2022,Assembly,GJ,DHARI,94,7,SURESHBHAI DILUBHAI PARMAR,Rashtriya Power Party,375,2
+2022,Assembly,GJ,DHARI,94,8,SOJITRA HITESHBHAI GOBARBHAI,Rashtriya Hind Ekta Dal,259,1
+2022,Assembly,GJ,DHARI,94,9,CHATURBHAI PARSHOTAMBHAI RUDANI,Independent,666,2
+2022,Assembly,GJ,DHARI,94,10,PARMAR IMRANBHAI VALIBHAI,Independent,681,1
+2022,Assembly,GJ,DHARI,94,11,VALA UPENDRABHAI VALKUBHAI,Independent,9530,95
+2022,Assembly,GJ,DHARI,94,12,NOTA,None of the Above,1830,15
+2022,Assembly,GJ,AMRELI,95,1,KAUSHIK KANTIBHAI VEKARIYA,Bharatiya Janata Party,88004,1030
+2022,Assembly,GJ,AMRELI,95,2,DHANANI PARESHKUMAR DHIRAJLAL,Indian National Congress,41859,518
+2022,Assembly,GJ,AMRELI,95,3,GOHIL MUKESHBHAI KHIMAJIBHAI,Vyavastha Parivartan Party,834,2
+2022,Assembly,GJ,AMRELI,95,4,RAVI DHANANI,Aam Aadmi Party,26106,339
+2022,Assembly,GJ,AMRELI,95,5,VINUBHAI CHAVADA,Independent,1382,3
+2022,Assembly,GJ,AMRELI,95,6,NOTA,None of the Above,2112,26
+2022,Assembly,GJ,LATHI,96,1,JANAKBHAI TALAVIYA,Bharatiya Janata Party,64465,401
+2022,Assembly,GJ,LATHI,96,2,VIRJIBHAI THUMMAR,Indian National Congress,35390,202
+2022,Assembly,GJ,LATHI,96,3,JAGDISHCHANDRA MAYANI,Vyavastha Parivartan Party,935,4
+2022,Assembly,GJ,LATHI,96,4,J.R.PARMAR,Right to Recall Party,399,3
+2022,Assembly,GJ,LATHI,96,5,JAYSHUKHBHAI RAVAJIBHAI DETROJA (DOLI),Aam Aadmi Party,26431,212
+2022,Assembly,GJ,LATHI,96,6,DILABHAI KOREJA,Independent,776,3
+2022,Assembly,GJ,LATHI,96,7,MUNABHAI NAKUBHAI BAVALIYA,Independent,799,0
+2022,Assembly,GJ,LATHI,96,8,NOTA,None of the Above,2028,12
+2022,Assembly,GJ,SAVARKUNDLA,97,1,KASWALA MAHESH,Bharatiya Janata Party,63447,310
+2022,Assembly,GJ,SAVARKUNDLA,97,2,GEETABEN NAJABHAI MARU,Bahujan Samaj Party,955,3
+2022,Assembly,GJ,SAVARKUNDLA,97,3,PRATAP DUDHAT,Indian National Congress,59945,320
+2022,Assembly,GJ,SAVARKUNDLA,97,4,NANALAL KALIDAS MAHETA,Rashtriya Samaj Dal (R),537,2
+2022,Assembly,GJ,SAVARKUNDLA,97,5,BHARAT NAKARANI,Aam Aadmi Party,7754,141
+2022,Assembly,GJ,SAVARKUNDLA,97,6,MAKVANA BHARATBHAI KALUBHAI,Vyavastha Parivartan Party,225,0
+2022,Assembly,GJ,SAVARKUNDLA,97,7,KISHOR BAGADA,Independent,267,1
+2022,Assembly,GJ,SAVARKUNDLA,97,8,YUNUSBHAI DOLABHAI JADAV,Independent,235,0
+2022,Assembly,GJ,SAVARKUNDLA,97,9,SHABBIRBHAI ALARAKHBHAI MALEK (PINTUBHAI MALEK),Independent,379,0
+2022,Assembly,GJ,SAVARKUNDLA,97,10,SAIYAD NAUSHAD RAHIMMIYA KADRI,Independent,883,3
+2022,Assembly,GJ,SAVARKUNDLA,97,11,HAKU VALA,Independent,651,4
+2022,Assembly,GJ,SAVARKUNDLA,97,12,NOTA,None of the Above,2506,14
+2022,Assembly,GJ,RAJULA,98,1,AMBARISHKUMAR JIVABHAI DER,Indian National Congress,67536,483
+2022,Assembly,GJ,RAJULA,98,2,HIRABHAI ODHAVJIBHAI SOLANKI,Bharatiya Janata Party,77933,549
+2022,Assembly,GJ,RAJULA,98,3,GAHA MAJIDBHAI,SOCIAL DEMOCRATIC PARTY OF INDIA,961,17
+2022,Assembly,GJ,RAJULA,98,4,CHAMPUBHAI DHAKHADA,Gujarat Nav Nirman Sena,594,4
+2022,Assembly,GJ,RAJULA,98,5,BHARATKUMAR BALDANIYA,Aam Aadmi Party,5202,92
+2022,Assembly,GJ,RAJULA,98,6,KARANBHAI BARAIYA,Independent,19083,103
+2022,Assembly,GJ,RAJULA,98,7,GITABEN BHARATKUMAR PARMAR,Independent,210,2
+2022,Assembly,GJ,RAJULA,98,8,CHAMPABEN NARSHIBHAI RATHOD,Independent,166,0
+2022,Assembly,GJ,RAJULA,98,9,PUSPABEN  KAMLESHBHAI PARMAR,Independent,225,2
+2022,Assembly,GJ,RAJULA,98,10,MUKTABEN NARENDRABHAI PARMAR,Independent,227,2
+2022,Assembly,GJ,RAJULA,98,11,RAJESHBHAI NATUBHAI JOSHI,Independent,352,2
+2022,Assembly,GJ,RAJULA,98,12,VAGH SHIVABHAI BHANABHAI,Independent,363,1
+2022,Assembly,GJ,RAJULA,98,13,VAGH HARSURBHAI VALERABHAI,Independent,622,2
+2022,Assembly,GJ,RAJULA,98,14,VIJYABEN GIRISHBHAI PARMAR,Independent,563,0
+2022,Assembly,GJ,RAJULA,98,15,SHWETABEN BUDHABHAI VAGHELA,Independent,1493,3
+2022,Assembly,GJ,RAJULA,98,16,NOTA,None of the Above,2820,9
+2022,Assembly,GJ,MAHUVA,99,1,DR. KANUBHAI V. KALSARIA,Indian National Congress,55469,522
+2022,Assembly,GJ,MAHUVA,99,2,GOHIL SHIVABHAI JERAMBHAI,Bharatiya Janata Party,85977,486
+2022,Assembly,GJ,MAHUVA,99,3,ASHOKBHAI MANGALBHAI JOLIYA,Aam Aadmi Party,5983,94
+2022,Assembly,GJ,MAHUVA,99,4,SOLANKI ARVINDBHAI NATHABHAI,Rashtriya Hind Ekta Dal,366,2
+2022,Assembly,GJ,MAHUVA,99,5,SANKHAT SAVJIBHAI BHAGVANBHAI (KOLI SAVARAM SANKHAT),Vyavastha Parivartan Party,510,6
+2022,Assembly,GJ,MAHUVA,99,6,ALIMAHAMAD HANIFBHAI HALARI,Independent,243,1
+2022,Assembly,GJ,MAHUVA,99,7,GOPALBHAI GABHABHAI JOLIYA,Independent,358,0
+2022,Assembly,GJ,MAHUVA,99,8,NANJIBHAI HARASURBHAI BARAIYA (NANJIBHAI BARAIYA),Independent,404,2
+2022,Assembly,GJ,MAHUVA,99,9,MAHEBUBBHAI ALARAKHBHAI SHEKH,Independent,539,1
+2022,Assembly,GJ,MAHUVA,99,10,HOJEFA IKBALBHAI HINGORA,Independent,1025,0
+2022,Assembly,GJ,MAHUVA,99,11,NOTA,None of the Above,2612,7
+2022,Assembly,GJ,TALAJA,100,1,KANUBHAI MATHURAMBHAI BARAIYA (KANUBHAI BARAIYA),Indian National Congress,45893,1056
+2022,Assembly,GJ,TALAJA,100,2,GAUTAMBHAI GOPABHAI CHAUHAN,Bharatiya Janata Party,89575,680
+2022,Assembly,GJ,TALAJA,100,3,LALUBEN NARASHIBHAI CHAUHAN,Aam Aadmi Party,12397,330
+2022,Assembly,GJ,TALAJA,100,4,ANOPSINH GULABSINH GOHIL,Independent,353,11
+2022,Assembly,GJ,TALAJA,100,5,KARMASHI MAVJIBHAI JABUCHA,Independent,421,3
+2022,Assembly,GJ,TALAJA,100,6,KACHALIA NAZIRBHAI IBRAHIMBHAI,Independent,343,0
+2022,Assembly,GJ,TALAJA,100,7,CHAUHAN SUNILBHAI KHODABHAI,Independent,365,4
+2022,Assembly,GJ,TALAJA,100,8,JAYANTIBHAI RAJABHAI MAKVANA,Independent,488,10
+2022,Assembly,GJ,TALAJA,100,9,JILUBHAI GIGABHAI BHAMMAR (AHIR),Independent,534,11
+2022,Assembly,GJ,TALAJA,100,10,HARIBHAI BHIMABHAI RATHOD,Independent,1684,0
+2022,Assembly,GJ,TALAJA,100,11,NOTA,None of the Above,2452,30
+2022,Assembly,GJ,GARIADHAR,101,1,KANTARIYA KISHORBHAI PALJIBHAI,Bahujan Samaj Party,914,2
+2022,Assembly,GJ,GARIADHAR,101,2,CHAVADA DIVYESHBHAI MANUBHAI,Indian National Congress,14967,132
+2022,Assembly,GJ,GARIADHAR,101,3,NAKRANI KESHUBHAI HIRJIBHAI,Bharatiya Janata Party,55773,352
+2022,Assembly,GJ,GARIADHAR,101,4,CHAVADA GHANSHYAMBHAI ASHOKBHAI,Rashtriya Hind Ekta Dal,2311,5
+2022,Assembly,GJ,GARIADHAR,101,5,BHUPATBHAI MOHANBHAI VALA,Right to Recall Party,558,6
+2022,Assembly,GJ,GARIADHAR,101,6,SUDHIRBHAI VAGHANI (SUDHIR VAGHANI),Aam Aadmi Party,60463,481
+2022,Assembly,GJ,GARIADHAR,101,7,SONRAT LAKHUBHAI JETHSURBHAI,Rashtriya Power Party,483,0
+2022,Assembly,GJ,GARIADHAR,101,8,GAUSWAMI PIYUSHGIRI HASMUKHGIRI,Independent,757,6
+2022,Assembly,GJ,GARIADHAR,101,9,BAMBHANIYA VALLABHBHAI RATNABHAI,Independent,860,4
+2022,Assembly,GJ,GARIADHAR,101,10,RAHULBHAI VITHTHALBHAI RAVAL,Independent,655,1
+2022,Assembly,GJ,GARIADHAR,101,11,NOTA,None of the Above,1482,9
+2022,Assembly,GJ,PALITANA,102,1,PARMAR NARESHBHAI RAVJIBHAI,Bahujan Samaj Party,1388,7
+2022,Assembly,GJ,PALITANA,102,2,BHIKHABHAI RAVAJIBHAI BARAIYA,Bharatiya Janata Party,80759,809
+2022,Assembly,GJ,PALITANA,102,3,RATHOD PRAVINBHAI JINABHAI,Indian National Congress,53359,632
+2022,Assembly,GJ,PALITANA,102,4,KHENI JINABHAI PARSHOTTAMBHAI (Dr.Z.P. KHENI),Aam Aadmi Party,24569,450
+2022,Assembly,GJ,PALITANA,102,5,GOHIL SANJAYBHAI VALAJIBHAI,Vyavastha Parivartan Party,881,5
+2022,Assembly,GJ,PALITANA,102,6,IBRAHIMBHAI HASANALI SAIYAD,Independent,905,4
+2022,Assembly,GJ,PALITANA,102,7,NARSHIBHAI UKABHAI CHAUHAN,Independent,1547,10
+2022,Assembly,GJ,PALITANA,102,8,NOTA,None of the Above,1901,29
+2022,Assembly,GJ,BHAVNAGAR RURAL,103,1,GOHIL REVATSINH BATUKBHA(HOIDAD),Indian National Congress,42096,454
+2022,Assembly,GJ,BHAVNAGAR RURAL,103,2,PARSHOTTAMBHAI O. SOLANKI,Bharatiya Janata Party,114974,1060
+2022,Assembly,GJ,BHAVNAGAR RURAL,103,3,MAKWANA ASHOKBHAI GOBARBHAI,Bahujan Samaj Party,1239,16
+2022,Assembly,GJ,BHAVNAGAR RURAL,103,4,GOHIL KHUMANSINH NATUBHA,Aam Aadmi Party,16824,412
+2022,Assembly,GJ,BHAVNAGAR RURAL,103,5,PARMAR RAJESHKUMAR P.,Rashtriya Hind Ekta Dal,1418,3
+2022,Assembly,GJ,BHAVNAGAR RURAL,103,6,HEMANTSINH KARANSINH GOHIL(HEMBHA),Independent,991,3
+2022,Assembly,GJ,BHAVNAGAR RURAL,103,7,NOTA,None of the Above,2882,35
+2022,Assembly,GJ,BHAVNAGAR EAST,104,1,ARUN MEHTA,Communist Party of India  (Marxist),1791,8
+2022,Assembly,GJ,BHAVNAGAR EAST,104,2,KISHORSINH BHARATSINH GOHIL,Bahujan Samaj Party,534,7
+2022,Assembly,GJ,BHAVNAGAR EAST,104,3,BALDEV MAVJIBHAI SOLANKI,Indian National Congress,35909,244
+2022,Assembly,GJ,BHAVNAGAR EAST,104,4,SEJALBEN RAJIVKUMAR PANDYA,Bharatiya Janata Party,98223,484
+2022,Assembly,GJ,BHAVNAGAR EAST,104,5,DHARAMSHIBHAI RAMJIBHAI DHAPA,Vyavastha Parivartan Party,1769,12
+2022,Assembly,GJ,BHAVNAGAR EAST,104,6,MRUDANGRAJSINH MULRAJSINH CHUDASAMA,Right to Recall Party,511,4
+2022,Assembly,GJ,BHAVNAGAR EAST,104,7,HAMIR RATHOD (MASTER),Aam Aadmi Party,19546,265
+2022,Assembly,GJ,BHAVNAGAR EAST,104,8,HARSH JAGDISHBHAI GOKLANI,Independent,493,0
+2022,Assembly,GJ,BHAVNAGAR EAST,104,9,NOTA,None of the Above,2769,27
+2022,Assembly,GJ,BHAVNAGAR WEST,105,1,KISHORSINH KUMBHAJIBHAI GOHIL (K. K. GOHIL),Indian National Congress,42791,475
+2022,Assembly,GJ,BHAVNAGAR WEST,105,2,JITENDRABHAI SAVAJIBHAI VAGHANI (JITU VAGHANI),Bharatiya Janata Party,84713,475
+2022,Assembly,GJ,BHAVNAGAR WEST,105,3,DINESHBHAI LAKHABHAI RATHOD,Bahujan Samaj Party,667,7
+2022,Assembly,GJ,BHAVNAGAR WEST,105,4,MANHARBHAI KANJIBHAI RATHOD,Communist Party of India  (Marxist),250,1
+2022,Assembly,GJ,BHAVNAGAR WEST,105,5,SHEKH YUNUSBHAI MOHAMED ZAKARIYA,Communist Party of India,461,0
+2022,Assembly,GJ,BHAVNAGAR WEST,105,6,BARAIYA GOBARBHAI KANJIBHAI,Vyavastha Parivartan Party,286,0
+2022,Assembly,GJ,BHAVNAGAR WEST,105,7,RAJENBHAI SHANKARBHAI SOLANKI (RAJU SOLANKI),Aam Aadmi Party,26036,372
+2022,Assembly,GJ,BHAVNAGAR WEST,105,8,GOPAL NAJABHAI BOLIYA,Independent,204,0
+2022,Assembly,GJ,BHAVNAGAR WEST,105,9,JAYABEN MEHULBHAI BORICHA,Independent,184,1
+2022,Assembly,GJ,BHAVNAGAR WEST,105,10,MANSUKHBHAI MALUBHAI SOLANKI (MANALAL),Independent,511,1
+2022,Assembly,GJ,BHAVNAGAR WEST,105,11,YASMINBEN DILAVRBHAI MALEK,Independent,301,0
+2022,Assembly,GJ,BHAVNAGAR WEST,105,12,RATHOD  ASHOKBHAI GAMBHIRBHAI,Independent,224,0
+2022,Assembly,GJ,BHAVNAGAR WEST,105,13,SARFRAJ RUSTAMBHAI KURESHI,Independent,216,0
+2022,Assembly,GJ,BHAVNAGAR WEST,105,14,SOLANKI RAJESHBHAI SHANTILAL (RAJUBHAI SOLANKI),Independent,370,1
+2022,Assembly,GJ,BHAVNAGAR WEST,105,15,SOLANKI SAVITABEN RAMESHBHAI,Independent,686,0
+2022,Assembly,GJ,BHAVNAGAR WEST,105,16,NOTA,None of the Above,2374,43
+2022,Assembly,GJ,GADHADA,106,1,Jagdishkumar Motilal Chavda,Indian National Congress,29631,268
+2022,Assembly,GJ,GADHADA,106,2,Mahant Shambhunath Tundiya,Bharatiya Janata Party,63616,770
+2022,Assembly,GJ,GADHADA,106,3,Solanki Babubhai Khimjibhai,Bahujan Samaj Party,1373,15
+2022,Assembly,GJ,GADHADA,106,4,Parmar Rameshbhai Parbhubhai,Aam Aadmi Party,37090,602
+2022,Assembly,GJ,GADHADA,106,5,Rajeshbhai Polabhai Parmar,Bhartiya Tribal Party,955,2
+2022,Assembly,GJ,GADHADA,106,6,NOTA,None of the Above,1997,34
+2022,Assembly,GJ,BOTAD,107,1,GHANSHYAMBHAI PRAGJIBHAI VIRANI,Bharatiya Janata Party,77049,753
+2022,Assembly,GJ,BOTAD,107,2,CHAUHAN MULSHANKARBHAI RAGHURAMBHAI,Bahujan Samaj Party,1049,8
+2022,Assembly,GJ,BOTAD,107,3,MANHARBHAI NAGAJIBHAI PATEL,Indian National Congress,18775,283
+2022,Assembly,GJ,BOTAD,107,4,CHAUHAN KAMLESHBHAI ARJANBHAI,Vyavastha Parivartan Party,453,4
+2022,Assembly,GJ,BOTAD,107,5,DHADHAL AMIRAJSINH JAGUBHAI,Praja Vijay Paksh,476,1
+2022,Assembly,GJ,BOTAD,107,6,MAKWANA UMESHBHAI NARANBHAI,Aam Aadmi Party,79524,1057
+2022,Assembly,GJ,BOTAD,107,7,MORADIYA NITESHBHAI PURUSHOTAMBHAI,Right to Recall Party,369,0
+2022,Assembly,GJ,BOTAD,107,8,ALPABALA DILIPKUMAR SABVA,Independent,348,14
+2022,Assembly,GJ,BOTAD,107,9,KHAMBHALIYA KISHORBHAI RAMNIKBHAI,Independent,260,9
+2022,Assembly,GJ,BOTAD,107,10,CHAUHAN CHAMPABEN ZAVERBHAI,Independent,2031,2
+2022,Assembly,GJ,BOTAD,107,11,PATEL SANJAYBHAI JADAVBHAI,Independent,387,4
+2022,Assembly,GJ,BOTAD,107,12,BAVALIYA JAYESHBHAI BHAGVANBHAI,Independent,556,2
+2022,Assembly,GJ,BOTAD,107,13,MITHAPARA MUKESHKUMAR BABUBHAI,Independent,584,2
+2022,Assembly,GJ,BOTAD,107,14,MEGHJIBHAI VITHALBHAI TALSANIYA,Independent,770,12
+2022,Assembly,GJ,BOTAD,107,15,NOTA,None of the Above,2405,28
+2022,Assembly,GJ,KHAMBHAT,108,1,CHIRAGKUMAR ARVINDBHAI PATEL,Indian National Congress,68642,427
+2022,Assembly,GJ,KHAMBHAT,108,2,BHAILALBHAI KALUBHAI PANDAV,Bahujan Samaj Party,1020,2
+2022,Assembly,GJ,KHAMBHAT,108,3,MAHESHKUMAR KANAIYALAL RAVAL (MAYUR RAVAL),Bharatiya Janata Party,65073,285
+2022,Assembly,GJ,KHAMBHAT,108,4,ARUNKUMAR KABHAIBHAI GOHIL,Aam Aadmi Party,2468,46
+2022,Assembly,GJ,KHAMBHAT,108,5,PATEL  KRUNALKUMAR JASVANTBHAI,Rashtriya Hind Ekta Dal,181,1
+2022,Assembly,GJ,KHAMBHAT,108,6,PATEL RONITKUMAR ASHOKBHAI,Pachchasi Parivartan Samaj Party,196,0
+2022,Assembly,GJ,KHAMBHAT,108,7,AMARSINH RAMSINH ZALA (NOTARY ADVOCATE),Independent,3953,15
+2022,Assembly,GJ,KHAMBHAT,108,8,AMBALIYA RANJITBHAI KEHUBHAI,Independent,2574,5
+2022,Assembly,GJ,KHAMBHAT,108,9,CHAUHAN MAHIPATSINH KESARISINH,Independent,9454,60
+2022,Assembly,GJ,KHAMBHAT,108,10,VISHNUBHAI RATILAL CHUNARA,Independent,1039,1
+2022,Assembly,GJ,KHAMBHAT,108,11,SINDHA RAJENDRASINH MAHOBATSINH (BAPU),Independent,623,4
+2022,Assembly,GJ,KHAMBHAT,108,12,NOTA,None of the Above,2585,5
+2022,Assembly,GJ,BORSAD,109,1,Ahir Ankurbhai Kanubhai,Bahujan Samaj Party,2027,4
+2022,Assembly,GJ,BORSAD,109,2,Parmar Rajendrasinh Dhirsinh,Indian National Congress,80061,546
+2022,Assembly,GJ,BORSAD,109,3,Solanki Ramanbhai Bhikhabhai,Bharatiya Janata Party,91320,452
+2022,Assembly,GJ,BORSAD,109,4,Sureshbhai Ravjibhai Thakor,Log Party,746,0
+2022,Assembly,GJ,BORSAD,109,5,Patel Manishbhai Ramanbhai,Aam Aadmi Party,1964,39
+2022,Assembly,GJ,BORSAD,109,6,Patel Dipenkumar Niranjanbhai,Independent,358,0
+2022,Assembly,GJ,BORSAD,109,7,Parmar Kesharisinh Bharatsinh,Independent,883,1
+2022,Assembly,GJ,BORSAD,109,8,Bhoi Ashishkumar Thakorbhai,Independent,1760,0
+2022,Assembly,GJ,BORSAD,109,9,NOTA,None of the Above,2090,3
+2022,Assembly,GJ,ANKLAV,110,1,AMIT CHAVDA,Indian National Congress,81289,223
+2022,Assembly,GJ,ANKLAV,110,2,GULABSINH RATANSINH PADHIYAR,Bharatiya Janata Party,78586,197
+2022,Assembly,GJ,ANKLAV,110,3,BIPINBHAI MANILAL BHETASIYA,Bahujan Samaj Party,788,0
+2022,Assembly,GJ,ANKLAV,110,4,GAJENDRASINH HARISINH RAJ,Aam Aadmi Party,1582,21
+2022,Assembly,GJ,ANKLAV,110,5,RAJ YUSUFBHAI ABHESANG (GARASIYA),Rashtriya Hind Ekta Dal,228,1
+2022,Assembly,GJ,ANKLAV,110,6,KEYUR PRAVINBHAI PATEL,Independent,398,0
+2022,Assembly,GJ,ANKLAV,110,7,RAJ AJITSINH CHANDRASINH,Independent,1352,1
+2022,Assembly,GJ,ANKLAV,110,8,NOTA,None of the Above,2689,3
+2022,Assembly,GJ,UMRETH,111,1,Govindbhai Raijibhai Parmar,Bharatiya Janata Party,95335,304
+2022,Assembly,GJ,UMRETH,111,2,Jayant Patel(Boskey),Nationalist Congress Party,68538,384
+2022,Assembly,GJ,UMRETH,111,3,Amrishbhai Hemendrabhai Patel(Thamna),Aam Aadmi Party,3854,94
+2022,Assembly,GJ,UMRETH,111,4,Vipulkumar A. Zala,Log Party,485,2
+2022,Assembly,GJ,UMRETH,111,5,Jagdishbhai Ravjibhai Thakor,Independent,5402,13
+2022,Assembly,GJ,UMRETH,111,6,Zala Rameshbhai Ramabhai (Lalabhai),Independent,2417,6
+2022,Assembly,GJ,UMRETH,111,7,Darji Ghanshyambhai Natvarbhai,Independent,197,0
+2022,Assembly,GJ,UMRETH,111,8,Najimkhan Fakirmahmnad Pathan,Independent,201,2
+2022,Assembly,GJ,UMRETH,111,9,Baldevsinh Udesinh Parmar (B.U.),Independent,2127,8
+2022,Assembly,GJ,UMRETH,111,10,Sadru U. Belim,Independent,320,0
+2022,Assembly,GJ,UMRETH,111,11,Harshitkumar Ghanshyambhai Patel (Bhurabhai),Independent,1053,1
+2022,Assembly,GJ,UMRETH,111,12,Hidayatullakhan Fakirmahamadkhan Pathan,Independent,1740,1
+2022,Assembly,GJ,UMRETH,111,13,NOTA,None of the Above,3848,9
+2022,Assembly,GJ,ANAND,112,1,ALPESHKUMAR JAYANTIBHAI MAKWANA (APPU),Bahujan Samaj Party,1331,13
+2022,Assembly,GJ,ANAND,112,2,KANTIBHAI SODHA PARMAR (BHAGAT),Indian National Congress,69656,580
+2022,Assembly,GJ,ANAND,112,3,YOGESH R. PATEL (BAPJI),Bharatiya Janata Party,111226,633
+2022,Assembly,GJ,ANAND,112,4,ARVINDKUMAR AMARSHIBHAI GOL,Rashtriya Hind Ekta Dal,581,0
+2022,Assembly,GJ,ANAND,112,5,MAULIK VINUBHAI SHAH,Bharatiya National Janta Dal,209,1
+2022,Assembly,GJ,ANAND,112,6,VAGHARI GANPATBHAI JESANGBHAI,Log Party,98,0
+2022,Assembly,GJ,ANAND,112,7,SEDALIYA  GIRISHKUMAR HIMMATLAL,Aam Aadmi Party,4852,219
+2022,Assembly,GJ,ANAND,112,8,JANKIBEN DINESHBHAI PATEL,Independent,119,3
+2022,Assembly,GJ,ANAND,112,9,TOFIKMIYA FAKRUMIYA MALEK,Independent,212,1
+2022,Assembly,GJ,ANAND,112,10,TOSIFBHAI MUSTUFABHAI VHORA (HAFEJI),Independent,309,0
+2022,Assembly,GJ,ANAND,112,11,DAVE JATINKUMAR DINESHCHANDRA,Independent,128,1
+2022,Assembly,GJ,ANAND,112,12,PARMAR PRATIMABEN SHAILESHBHAI,Independent,187,0
+2022,Assembly,GJ,ANAND,112,13,VIJAYBHAI SHANTILAL JADAV,Independent,236,0
+2022,Assembly,GJ,ANAND,112,14,VIPULKUMAR BIPINBHAI MACWAN,Independent,616,8
+2022,Assembly,GJ,ANAND,112,15,SARFARAJ HUSENKHAN PATHAN (S.K),Independent,547,1
+2022,Assembly,GJ,ANAND,112,16,NOTA,None of the Above,2126,31
+2022,Assembly,GJ,SOJITRA,114,1,PATEL VIPULKUMAR VINUBHAI,Bharatiya Janata Party,86977,323
+2022,Assembly,GJ,SOJITRA,114,2,POONAMBHAI MADHABHAI PARMAR,Indian National Congress,57513,268
+2022,Assembly,GJ,SOJITRA,114,3,MUKESHBHAI RANCHHODBHAI JADAVA,Bahujan Samaj Party,1286,2
+2022,Assembly,GJ,SOJITRA,114,4,MANUBHAI RANCHHODBHAI THAKOR,Aam Aadmi Party,3375,85
+2022,Assembly,GJ,SOJITRA,114,5,GOHIL YUVRAJSINH MAHIPATSINH,Independent,210,2
+2022,Assembly,GJ,SOJITRA,114,6,JAVEDBHAI  RAJAKBHAI VAHORA (MUKHI GASVALA),Independent,313,1
+2022,Assembly,GJ,SOJITRA,114,7,DEVANGKUMAR NARHARILAL SHELAT (DEVO),Independent,571,4
+2022,Assembly,GJ,SOJITRA,114,8,MANUBHAI JETHABHAI VANKAR,Independent,908,0
+2022,Assembly,GJ,SOJITRA,114,9,NOTA,None of the Above,2756,10
+2022,Assembly,GJ,MATAR,115,1,Kalpeshbhai Ashabhai Parmar,Bharatiya Janata Party,83851,444
+2022,Assembly,GJ,MATAR,115,2,Sanjaybhai Haribhai Patel,Indian National Congress,67827,617
+2022,Assembly,GJ,MATAR,115,3,Bamba Togabhai Punambhai,Gujarat Nav Nirman Sena,1382,9
+2022,Assembly,GJ,MATAR,115,4,Laljibhai Melabhai Parmar,Aam Aadmi Party,1470,84
+2022,Assembly,GJ,MATAR,115,5,Aayshabanu Aabidhusen Malek,Independent,464,3
+2022,Assembly,GJ,MATAR,115,6,Chauhan Mahipatsinh Kesarisinh,Independent,17552,122
+2022,Assembly,GJ,MATAR,115,7,Rajeshbhai Dashrathbhai Raval,Independent,1043,2
+2022,Assembly,GJ,MATAR,115,8,NOTA,None of the Above,2773,4
+2022,Assembly,GJ,NADIAD,116,1,DESAI PANKAJBHAI VINUBHAI (GOTIYO),Bharatiya Janata Party,103699,670
+2022,Assembly,GJ,NADIAD,116,2,DHRUVAL PATEL,Indian National Congress,50002,496
+2022,Assembly,GJ,NADIAD,116,3,MUZFFARBEG HARUNBEG MIRZA,Log Party,390,3
+2022,Assembly,GJ,NADIAD,116,4,VANKAWALA IMRANBHAI BILALBHAI,Right to Recall Party,163,0
+2022,Assembly,GJ,NADIAD,116,5,HARSHADKUMAR SURESHBHAI VAGHELA,Aam Aadmi Party,4450,196
+2022,Assembly,GJ,NADIAD,116,6,ANVARBHAI GULAMRASUL KASAI,Independent,128,0
+2022,Assembly,GJ,NADIAD,116,7,MALHOTRA DIPAKKUMAR JONBHAI,Independent,220,6
+2022,Assembly,GJ,NADIAD,116,8,RAFIKBHAI FARIDBHAI CHHIPA,Independent,149,3
+2022,Assembly,GJ,NADIAD,116,9,VAHORA AIYUBBHAI HAJIBHAI,Independent,202,2
+2022,Assembly,GJ,NADIAD,116,10,SAJIDHUSEN SABBIRMIYA MALEK,Independent,346,0
+2022,Assembly,GJ,NADIAD,116,11,SIDDHARTH  JOSEPH MACWAN,Independent,762,9
+2022,Assembly,GJ,NADIAD,116,12,NOTA,None of the Above,3649,23
+2022,Assembly,GJ,MEHMEDABAD,117,1,Arjunsinh Udesinh Chauhan,Bharatiya Janata Party,108185,356
+2022,Assembly,GJ,MEHMEDABAD,117,2,Juvansinh Gandabhai Chauhan,Indian National Congress,62666,271
+2022,Assembly,GJ,MEHMEDABAD,117,3,Pramodbhai Somabhai Chauhan,Aam Aadmi Party,4257,106
+2022,Assembly,GJ,MEHMEDABAD,117,4,Patel Bhavikkumar Vajendrakumar,Independent,1210,6
+2022,Assembly,GJ,MEHMEDABAD,117,5,Punambhai Mohanbhai Chauhan,Independent,473,2
+2022,Assembly,GJ,MEHMEDABAD,117,6,Pravinsinh Ratansinh Chauhan,Independent,1232,1
+2022,Assembly,GJ,MEHMEDABAD,117,7,NOTA,None of the Above,3529,6
+2022,Assembly,GJ,MAHUDHA,118,1,INDRAJITSINH NATVARSINH PARMAR,Indian National Congress,65824,387
+2022,Assembly,GJ,MAHUDHA,118,2,SANJAYSINH VIJAYSINH MAHIDA,Bharatiya Janata Party,91453,447
+2022,Assembly,GJ,MAHUDHA,118,3,RAVJIBHAI SOMABHAI VAGHELA,Aam Aadmi Party,11960,145
+2022,Assembly,GJ,MAHUDHA,118,4,ARIFBHAI GULAMNABI VAHORA,Independent,382,2
+2022,Assembly,GJ,MAHUDHA,118,5,PUJAMIYA FAKIRMIYA MALEK,Independent,334,0
+2022,Assembly,GJ,MAHUDHA,118,6,VAJIDHUSEN ABBASMIYA MALEK,Independent,800,0
+2022,Assembly,GJ,MAHUDHA,118,7,SHEKH IRSHADMAHAMMAD NAJIRMOHAMMAD,Independent,1145,2
+2022,Assembly,GJ,MAHUDHA,118,8,NOTA,None of the Above,2533,0
+2022,Assembly,GJ,THASRA,119,1,Parmar Kantibhai Shabhaibhai,Indian National Congress,59185,244
+2022,Assembly,GJ,THASRA,119,2,Yogendrasinh Parmar (BAKABHAI),Bharatiya Janata Party,120885,463
+2022,Assembly,GJ,THASRA,119,3,Jiteshkumar Ghanshyambhai Sevak (Jitubhai Sevak),Garvi Gujarat Party,1175,2
+2022,Assembly,GJ,THASRA,119,4,Rathod Natvarsinh Punjabhai,Aam Aadmi Party,3143,70
+2022,Assembly,GJ,THASRA,119,5,Dipak I Sevak (Ram),Independent,290,0
+2022,Assembly,GJ,THASRA,119,6,Majarali Amirali Kazi,Independent,345,1
+2022,Assembly,GJ,THASRA,119,7,Maheshkumar Ramsinh Parmar,Independent,5649,6
+2022,Assembly,GJ,THASRA,119,8,Rafiq Ahmedkhan,Independent,2325,0
+2022,Assembly,GJ,THASRA,119,9,NOTA,None of the Above,2710,4
+2022,Assembly,GJ,KAPADVANJ,120,1,Kalabhai Raijibhai  Dabhi,Indian National Congress,79463,695
+2022,Assembly,GJ,KAPADVANJ,120,2,Zala Rajeshkumar Maganbhai,Bharatiya Janata Party,111240,796
+2022,Assembly,GJ,KAPADVANJ,120,3,Ajaykumar  Pravinsinh Solanki,Garvi Gujarat Party,2426,18
+2022,Assembly,GJ,KAPADVANJ,120,4,Parmar Rahulkumar Hasmukhbhai,Praja Vijay Paksh,814,2
+2022,Assembly,GJ,KAPADVANJ,120,5,Manubhai Ramabhai Patel,Aam Aadmi Party,8644,257
+2022,Assembly,GJ,KAPADVANJ,120,6,NOTA,None of the Above,3215,8
+2022,Assembly,GJ,BALASINOR,121,1,Ajitsinh Parvatsinh Chauhan,Indian National Congress,40620,459
+2022,Assembly,GJ,BALASINOR,121,2,Mansinh Kohyabhai Chauhan,Bharatiya Janata Party,91835,666
+2022,Assembly,GJ,BALASINOR,121,3,Khant Ashvinbhai Ramanbhai (A.K.),Garvi Gujarat Party,3037,12
+2022,Assembly,GJ,BALASINOR,121,4,Udesinh Rayjibhai Chauhan,Aam Aadmi Party,39009,560
+2022,Assembly,GJ,BALASINOR,121,5,Magansinh Bhemsinh Parmar,Jan Sangh Party,633,3
+2022,Assembly,GJ,BALASINOR,121,6,Zala Kiritsinh Prabhatsinh,Independent,598,2
+2022,Assembly,GJ,BALASINOR,121,7,Zala Chandrasinh Fatesinh,Independent,657,1
+2022,Assembly,GJ,BALASINOR,121,8,Chavda Natvarsinh Fulsinh,Independent,1427,0
+2022,Assembly,GJ,BALASINOR,121,9,NOTA,None of the Above,2713,11
+2022,Assembly,GJ,LUNAWADA,122,1,GULABSINH SOMSINH CHAUHAN,Indian National Congress,71326,761
+2022,Assembly,GJ,LUNAWADA,122,2,MAKWANA RAMESHBHAI SUNDARBHAI,Bahujan Samaj Party,1374,2
+2022,Assembly,GJ,LUNAWADA,122,3,SEVAK JIGNESHKUMAR AMBALAL,Bharatiya Janata Party,45071,396
+2022,Assembly,GJ,LUNAWADA,122,4,NAT PARVATIBEN PRABHATBHAI,Praja Vijay Paksh,1004,1
+2022,Assembly,GJ,LUNAWADA,122,5,NATVARSINH MOTISINH SOLANKI,Aam Aadmi Party,5654,263
+2022,Assembly,GJ,LUNAWADA,122,6,KHANT SHAKANBHAI MOTIBHAI,Independent,9548,32
+2022,Assembly,GJ,LUNAWADA,122,7,JAYPRAKASH PURUSHOTTAMBHAI PATEL (J.P.),Independent,42709,1040
+2022,Assembly,GJ,LUNAWADA,122,8,PUSHPA VIKRAMSINH MALIVAD (DAMOR),Independent,1484,7
+2022,Assembly,GJ,LUNAWADA,122,9,NOTA,None of the Above,3281,7
+2022,Assembly,GJ,SANTRAMPUR,123,1,Dr. Kuberbhai Mansukhbhai Dindor,Bharatiya Janata Party,49219,745
+2022,Assembly,GJ,SANTRAMPUR,123,2,Gendalbhai Motibhai Damor,Indian National Congress,34014,373
+2022,Assembly,GJ,SANTRAMPUR,123,3,Parvatbhai Akhamabhai Vagadiya,Aam Aadmi Party,23956,598
+2022,Assembly,GJ,SANTRAMPUR,123,4,Prabhubhai Jagjivan Ganasva,Gujarat Nav Nirman Sena,1044,5
+2022,Assembly,GJ,SANTRAMPUR,123,5,Ramanbhai Punjabhai Khant,Bhartiya Jan Parishad,1181,3
+2022,Assembly,GJ,SANTRAMPUR,123,6,Babubhai Hirabhai Damor,Independent,28302,329
+2022,Assembly,GJ,SANTRAMPUR,123,7,NOTA,None of the Above,3029,10
+2022,Assembly,GJ,SHEHRA,124,1,Ahir(Bharvad) Jethabhai Ghelabhai,Bharatiya Janata Party,107082,693
+2022,Assembly,GJ,SHEHRA,124,2,Khatubhai Gulabbhai Pagi,Indian National Congress,59986,508
+2022,Assembly,GJ,SHEHRA,124,3,Takhatsinh Ravsinh Solanki,Aam Aadmi Party,6115,346
+2022,Assembly,GJ,SHEHRA,124,4,Sureshbhai Mithabhai Parmar,Bhartiya Jan Parishad,1827,8
+2022,Assembly,GJ,SHEHRA,124,5,NOTA,None of the Above,4701,7
+2022,Assembly,GJ,MORVA HADAF,125,1,KHANT SNEHLATTABEN GOVINDKUMAR,Indian National Congress,21952,232
+2022,Assembly,GJ,MORVA HADAF,125,2,SUTHAR NIMISHABEN MANHARSINH,Bharatiya Janata Party,81239,658
+2022,Assembly,GJ,MORVA HADAF,125,3,BHANABHAI MANSUKHBHAI DAMOR,Aam Aadmi Party,32286,734
+2022,Assembly,GJ,MORVA HADAF,125,4,MACHHAR CHANDRAKANTBHAI HIRABHAI,Praja Vijay Paksh,1804,7
+2022,Assembly,GJ,MORVA HADAF,125,5,NOTA,None of the Above,2569,5
+2022,Assembly,GJ,GODHRA,126,1,RASHMITABEN DUSHYANTSINH CHAUHAN,Indian National Congress,60599,426
+2022,Assembly,GJ,GODHRA,126,2,C.K.RAULJI,Bharatiya Janata Party,95561,662
+2022,Assembly,GJ,GODHRA,126,3,RAJESHBHAI SOMABHAI PATEL,Aam Aadmi Party,11200,627
+2022,Assembly,GJ,GODHRA,126,4,RATHOD NARVARSINH HATHISINH,Praja Vijay Paksh,330,0
+2022,Assembly,GJ,GODHRA,126,5,HASAN SHABBIR KACHABA,All India Majlis-E-Ittehadul Muslimeen,9462,46
+2022,Assembly,GJ,GODHRA,126,6,KALANDAR MOHAMMEDHANIF AHMEDSAEED,Independent,218,1
+2022,Assembly,GJ,GODHRA,126,7,PATEL MAYURKUMAR JASHAVANTLAL,Independent,309,2
+2022,Assembly,GJ,GODHRA,126,8,BADAM MO.SAID YUSUF,Independent,312,4
+2022,Assembly,GJ,GODHRA,126,9,SAIYED SAFIKALI RASHIDALI,Independent,702,5
+2022,Assembly,GJ,GODHRA,126,10,HUSNAIN JAKKIUDDIN PRESSWALA,Independent,2289,0
+2022,Assembly,GJ,GODHRA,126,11,NOTA,None of the Above,3547,1
+2022,Assembly,GJ,KALOL,127,1,PRABHATSINH PRATAPSINH CHAUHAN,Indian National Congress,25859,148
+2022,Assembly,GJ,KALOL,127,2,FATESINH VAKHATSINH CHAUHAN,Bharatiya Janata Party,140983,703
+2022,Assembly,GJ,KALOL,127,3,VAGHELA SATISHKUMAR RAMESHBHAI,Bahujan Samaj Party,1505,2
+2022,Assembly,GJ,KALOL,127,4,CHAUHAN VIJAYSINH MAGANSINH,Garvi Gujarat Party,851,7
+2022,Assembly,GJ,KALOL,127,5,JAYESHKUMAR SHANTUBHAI RATHOD,Pachchasi Parivartan Samaj Party,345,3
+2022,Assembly,GJ,KALOL,127,6,JADAV MAHENDRASINH RAMSINH,Lok Janshakti Party(Ram Vilas),408,3
+2022,Assembly,GJ,KALOL,127,7,THAKOR RAMENDRASINH JASHVANTSINH,Praja Vijay Paksh,409,3
+2022,Assembly,GJ,KALOL,127,8,DINESHBHAI KANUBHAI BARIA,Aam Aadmi Party,9192,201
+2022,Assembly,GJ,KALOL,127,9,JADAV DEVENDRASINH VAGHSINH,Independent,870,6
+2022,Assembly,GJ,KALOL,127,10,PUNAMCHAND MADABHAI HARIJAN,Independent,873,3
+2022,Assembly,GJ,KALOL,127,11,VANKAR DAHYABHAI JESINGBHAI,Independent,2475,2
+2022,Assembly,GJ,KALOL,127,12,NOTA,None of the Above,3981,11
+2022,Assembly,GJ,HALOL,128,1,ANISHBHAI GORDHANBHAI BARIA,Indian National Congress,6919,45
+2022,Assembly,GJ,HALOL,128,2,JAYDRATHSINHJI PARMAR,Bharatiya Janata Party,100002,751
+2022,Assembly,GJ,HALOL,128,3,NAYAK SOMABHAI MEGHABHAI,Bahujan Samaj Party,1930,3
+2022,Assembly,GJ,HALOL,128,4,BHARATKUMAR RATHAVA,Aam Aadmi Party,21468,320
+2022,Assembly,GJ,HALOL,128,5,RATHAVA SEVAJIBHAI BHILABHAI,Praja Vijay Paksh,791,5
+2022,Assembly,GJ,HALOL,128,6,JADAV MUKTIBEN RAJENDRASINH,Independent,1237,18
+2022,Assembly,GJ,HALOL,128,7,PARMAR REKHABEN RAJENDRASINH,Independent,980,5
+2022,Assembly,GJ,HALOL,128,8,RAMCHANDRA BARIA,Independent,57770,278
+2022,Assembly,GJ,HALOL,128,9,SOLANKI ISHVARBHAI,Independent,2720,7
+2022,Assembly,GJ,HALOL,128,10,NOTA,None of the Above,3454,6
+2022,Assembly,GJ,FATEPURA,129,1,KATARA RAMESHBHAI BHURABHAI,Bharatiya Janata Party,59231,350
+2022,Assembly,GJ,FATEPURA,129,2,KANUBHAI KUBERBHAI KATARA,Communist Party of India  (Marxist),1710,0
+2022,Assembly,GJ,FATEPURA,129,3,MACHHAR RAGHUBHAI DITABHAI,Indian National Congress,29198,281
+2022,Assembly,GJ,FATEPURA,129,4,ALKESHBHAI FULSINGBHAI KATARA,Bhartiya Tribal Party,1535,11
+2022,Assembly,GJ,FATEPURA,129,5,KISHORI RAKESHBHAI AMBALAL,Gujarat Nav Nirman Sena,1152,8
+2022,Assembly,GJ,FATEPURA,129,6,GOVINDBHAI DALABHAI PARMAR,Aam Aadmi Party,39140,910
+2022,Assembly,GJ,FATEPURA,129,7,MACHHAR VIRABHAI MAKANBHAI,Bhartiya Jan Parishad,1414,0
+2022,Assembly,GJ,FATEPURA,129,8,NOTA,None of the Above,4325,2
+2022,Assembly,GJ,JHALOD,130,1,MAHESHBHAI SOMJIBHAI BHURIYA,Bharatiya Janata Party,82429,316
+2022,Assembly,GJ,JHALOD,130,2,MITESHBHAI KALABHAI GARASIYA,Indian National Congress,21863,133
+2022,Assembly,GJ,JHALOD,130,3,ANILBHAI SOMABHAI GARASIYA,Aam Aadmi Party,46897,626
+2022,Assembly,GJ,JHALOD,130,4,MANSUKHBHAI RATANBHAI KATARA,Bhartiya Tribal Party,1525,0
+2022,Assembly,GJ,JHALOD,130,5,MOHANBHAI PARSINGBHAI SANGADA,Independent,1209,1
+2022,Assembly,GJ,JHALOD,130,6,HARICHANDRA SHASHIKANTBHAI MAHIDA,Independent,1308,0
+2022,Assembly,GJ,JHALOD,130,7,NOTA,None of the Above,4642,4
+2022,Assembly,GJ,LIMKHEDA,131,1,Gondiya Rameshkumar Badiyabhai,Indian National Congress,8059,34
+2022,Assembly,GJ,LIMKHEDA,131,2,Nisarata Nileshbhai Lalsingbhai,Communist Party of India  (Marxist),2027,0
+2022,Assembly,GJ,LIMKHEDA,131,3,Bhabhor Shaileshbhai Sumanbhai,Bharatiya Janata Party,69067,350
+2022,Assembly,GJ,LIMKHEDA,131,4,Baria Nareshbhai Punabhai,Aam Aadmi Party,65039,715
+2022,Assembly,GJ,LIMKHEDA,131,5,Laxmansinh Lalsingbhai Vadkiya,Independent,2839,1
+2022,Assembly,GJ,LIMKHEDA,131,6,NOTA,None of the Above,2355,2
+2022,Assembly,GJ,DAHOD,132,1,Kanaiyalal Bachubhai Kishori,Bharatiya Janata Party,72198,462
+2022,Assembly,GJ,DAHOD,132,2,Harshadbhai Valchandbhai Ninama,Indian National Congress,43130,180
+2022,Assembly,GJ,DAHOD,132,3,Mandod Vinodkumar Pratapsinh (Khannasir),Bahujan Samaj Party,1442,4
+2022,Assembly,GJ,DAHOD,132,4,Meda Devendrabhai Laxmanbhai (Devabhai),Bhartiya Tribal Party,1608,6
+2022,Assembly,GJ,DAHOD,132,5,Pro. Dr. Dineshbhai Bhurabhai Muniya,Aam Aadmi Party,33486,524
+2022,Assembly,GJ,DAHOD,132,6,Kishanbhai Meghjibhai Palas,Independent,10783,25
+2022,Assembly,GJ,DAHOD,132,7,NOTA,None of the Above,3036,10
+2022,Assembly,GJ,GARBADA,133,1,CHANDRIKABEN CHHAGANBHAI BARIYA,Indian National Congress,34391,211
+2022,Assembly,GJ,GARBADA,133,2,BHABHOR DHULABHAI DITABHAI,Bahujan Samaj Party,2214,8
+2022,Assembly,GJ,GARBADA,133,3,BHABHOR MAHENDRABHAI RAMESHBHAI,Bharatiya Janata Party,62276,151
+2022,Assembly,GJ,GARBADA,133,4,JAGDISHBHAI MANILAL MEDA,Bharatiya National Janta Dal,2129,1
+2022,Assembly,GJ,GARBADA,133,5,BHABHOR RAMASUBHAI JOGADABHAI,Bhartiya Tribal Party,1361,1
+2022,Assembly,GJ,GARBADA,133,6,SHAILESHBHAI KANUBHAI BHABHOR,Aam Aadmi Party,33091,504
+2022,Assembly,GJ,GARBADA,133,7,BAMANYA KETANKUMAR KASNABHAI,Independent,6070,149
+2022,Assembly,GJ,GARBADA,133,8,NOTA,None of the Above,4149,3
+2022,Assembly,GJ,DEVGADHBARIA,134,1,Khabad Bachubhai Maganbhai,Bharatiya Janata Party,113038,489
+2022,Assembly,GJ,DEVGADHBARIA,134,2,Chauhan Samatsinh Mansukhbhai,Praja Vijay Paksh,5125,56
+2022,Assembly,GJ,DEVGADHBARIA,134,3,Vakhala Bharatsinh Pratapbhai,Aam Aadmi Party,68704,622
+2022,Assembly,GJ,DEVGADHBARIA,134,4,Patel Bhimsing Maganbhai,Independent,1983,1
+2022,Assembly,GJ,DEVGADHBARIA,134,5,NOTA,None of the Above,4818,3
+2022,Assembly,GJ,SAVLI,135,1,ANILBHAI LALLUBHAI PARMAR,Bahujan Samaj Party,2089,1
+2022,Assembly,GJ,SAVLI,135,2,INAMDAR KETANBHAI MAHENDRABHAI,Bharatiya Janata Party,101717,287
+2022,Assembly,GJ,SAVLI,135,3,KULDIPSINH UDESINH RAULJI(VAKIL),Indian National Congress,64826,252
+2022,Assembly,GJ,SAVLI,135,4,VIJAYKUMAR NARVATSINH CHAVDA,Aam Aadmi Party,2015,17
+2022,Assembly,GJ,SAVLI,135,5,PARMAR RAJESHKUMAR BACHUBHAI,Independent,888,0
+2022,Assembly,GJ,SAVLI,135,6,VIJAYSINH DALPATSINH MAHIDA,Independent,967,0
+2022,Assembly,GJ,SAVLI,135,7,NOTA,None of the Above,1594,0
+2022,Assembly,GJ,VAGHODIA,136,1,ASHVINBHAI NATVARBHAI PATEL (KAKA),Bharatiya Janata Party,63781,118
+2022,Assembly,GJ,VAGHODIA,136,2,MANSUKHBHAI HARJIBHAI CHAUHAN,Bahujan Samaj Party,1082,2
+2022,Assembly,GJ,VAGHODIA,136,3,SATYAJITSINH DULEEPSINH GAEKWAD,Indian National Congress,18827,43
+2022,Assembly,GJ,VAGHODIA,136,4,GAUTAMKUMAR SAMPATBHAI SOLANKI (RAJPUT),Aam Aadmi Party,2960,35
+2022,Assembly,GJ,VAGHODIA,136,5,NIMESHBHAI ARUNKUMAR BENDRE,Log Party,639,0
+2022,Assembly,GJ,VAGHODIA,136,6,DHARMENDRASINH RANUBHA VAGHELA (BAPU),Independent,77667,238
+2022,Assembly,GJ,VAGHODIA,136,7,MADHUBHAI BABUBHAI SHRIVASTAV,Independent,14586,59
+2022,Assembly,GJ,VAGHODIA,136,8,NOTA,None of the Above,2619,3
+2022,Assembly,GJ,CHHOTA UDAIPUR,137,1,RAJENDRASINH MOHANSINH RATHVA,Bharatiya Janata Party,74483,646
+2022,Assembly,GJ,CHHOTA UDAIPUR,137,2,RATHWA SANGRAMSINH NARANBHAI,Indian National Congress,45149,530
+2022,Assembly,GJ,CHHOTA UDAIPUR,137,3,PROF. ARJUN  RATHVA,Aam Aadmi Party,42708,1172
+2022,Assembly,GJ,CHHOTA UDAIPUR,137,4,RATHVA GIRMAABHAI MATHURBHAI,Bhartiya Tribal Party,2012,1
+2022,Assembly,GJ,CHHOTA UDAIPUR,137,5,RATHVA DEVLABHAI BHULABHAI,Praja Vijay Paksh,2004,2
+2022,Assembly,GJ,CHHOTA UDAIPUR,137,6,NOTA,None of the Above,5090,3
+2022,Assembly,GJ,JETPUR,138,1,RATHWA JAYANTIBHAI SAVJIBHAI,Bharatiya Janata Party,85545,496
+2022,Assembly,GJ,JETPUR,138,2,SUKHRAMBHAI HARIYABHAI RATHWA,Indian National Congress,33423,249
+2022,Assembly,GJ,JETPUR,138,3,RATHWA NAMALABHAI (NARENDRABHAI) GURJIBHAI,Bhartiya Tribal Party,4306,20
+2022,Assembly,GJ,JETPUR,138,4,RATHWA NEVSINGBHAI CHHAGANBHAI,Pachchasi Parivartan Samaj Party,1165,0
+2022,Assembly,GJ,JETPUR,138,5,RATHWA RADHIKABEN AMARSINGHBHAI,Aam Aadmi Party,47439,823
+2022,Assembly,GJ,JETPUR,138,6,VARSANBHAI FULJIBHAI RATHWA,Independent,2941,3
+2022,Assembly,GJ,JETPUR,138,7,NOTA,None of the Above,4593,5
+2022,Assembly,GJ,SANKHEDA,139,1,Abhesinh Motibhai Tadvi,Bharatiya Janata Party,99114,273
+2022,Assembly,GJ,SANKHEDA,139,2,Dhirubhai Chunilal Bhil,Indian National Congress,68478,235
+2022,Assembly,GJ,SANKHEDA,139,3,Tadvi Ranjanbhai Kanchanbhai,Aam Aadmi Party,18159,185
+2022,Assembly,GJ,SANKHEDA,139,4,Rathva Furkanbhai Baljibhai,Bhartiya Tribal Party,1099,1
+2022,Assembly,GJ,SANKHEDA,139,5,Rathva Hirubhai Darjibhai,Pachchasi Parivartan Samaj Party,1039,0
+2022,Assembly,GJ,SANKHEDA,139,6,Satishkumar Chandubhai Tadvi,Independent,2015,3
+2022,Assembly,GJ,SANKHEDA,139,7,NOTA,None of the Above,4136,7
+2022,Assembly,GJ,DABHOI,140,1,Balkrishnabhai Naranbhai Patel (Dholar),Indian National Congress,68029,341
+2022,Assembly,GJ,DABHOI,140,2,Shaileshbhai Kanaiyalal Mehta (Shailesh Sotta),Bharatiya Janata Party,88353,493
+2022,Assembly,GJ,DABHOI,140,3,Shaukatali Abdal,Bahujan Samaj Party,775,1
+2022,Assembly,GJ,DABHOI,140,4,Ajitsinh Parsottamdas Thakor,Aam Aadmi Party,7760,151
+2022,Assembly,GJ,DABHOI,140,5,Patel Jayeshbhai Chimanbhai,Bhartiya Tribal Party,317,0
+2022,Assembly,GJ,DABHOI,140,6,Pruthvisinh Ranvirsinh Gohil (Bapu),Rashtriya Samaj Paksha,324,6
+2022,Assembly,GJ,DABHOI,140,7,Yusufbhai Gulamhusen Fatiya (Patrkar),Independent,318,1
+2022,Assembly,GJ,DABHOI,140,8,Rohit Navinbhai Krushnkant,Independent,391,0
+2022,Assembly,GJ,DABHOI,140,9,Hemantkumar Arvindbhai Parmar,Independent,903,3
+2022,Assembly,GJ,DABHOI,140,10,NOTA,None of the Above,2649,6
+2022,Assembly,GJ,VADODARA CITY,141,1,GUNVANTRAY PARMAR,Indian National Congress,31907,201
+2022,Assembly,GJ,VADODARA CITY,141,2,DILIPSINH VALJIBHAI KATARIA,Bahujan Samaj Party,795,1
+2022,Assembly,GJ,VADODARA CITY,141,3,MANISHA VAKIL,Bharatiya Janata Party,130112,593
+2022,Assembly,GJ,VADODARA CITY,141,4,NAYNA KANJIBHAI PARMAR,Rashtriya Samaj Paksha,807,1
+2022,Assembly,GJ,VADODARA CITY,141,5,VASAIKAR NILESH JAGANNATHBHAI,Satyawadi Rakshak Party,382,3
+2022,Assembly,GJ,VADODARA CITY,141,6,SOLANKI JIGARBHAI BHANUPRASAD,Aam Aadmi Party,15619,283
+2022,Assembly,GJ,VADODARA CITY,141,7,RAJWADI ANKITBHAI,Independent,485,0
+2022,Assembly,GJ,VADODARA CITY,141,8,NOTA,None of the Above,3989,33
+2022,Assembly,GJ,SAYAJIGUNJ,142,1,AMI RAVAT,Indian National Congress,37822,231
+2022,Assembly,GJ,SAYAJIGUNJ,142,2,KEYUR NARAYANDAS ROKADIA,Bharatiya Janata Party,121528,538
+2022,Assembly,GJ,SAYAJIGUNJ,142,3,NEHA PARMAR,Bahujan Samaj Party,1244,7
+2022,Assembly,GJ,SAYAJIGUNJ,142,4,SWEJAL BHARATBHAI VYAS,Aam Aadmi Party,12841,239
+2022,Assembly,GJ,SAYAJIGUNJ,142,5,DHAVAL ANIL CHAVAN,Independent,452,2
+2022,Assembly,GJ,SAYAJIGUNJ,142,6,NOTA,None of the Above,3416,16
+2022,Assembly,GJ,AKOTA,143,1,Rutvij Dilipbhai Joshi,Indian National Congress,35369,190
+2022,Assembly,GJ,AKOTA,143,2,Chaitanya  Makarandbhai  Desai,Bharatiya Janata Party,112810,502
+2022,Assembly,GJ,AKOTA,143,3,Narendrabhai  Lalubhai Parmar,Akhil Bharat Hindu Mahasabha,426,3
+2022,Assembly,GJ,AKOTA,143,4,Bharti Parmar,SOCIALIST UNITY CENTRE OF INDIA (COMMUNIST),341,2
+2022,Assembly,GJ,AKOTA,143,5,Mukesh Shivprasad Nayak,Rashtriya Samaj Paksha,324,2
+2022,Assembly,GJ,AKOTA,143,6,Rajeshbhai  Bhikhabhai Mali,Gujarat Nav Nirman Sena,281,2
+2022,Assembly,GJ,AKOTA,143,7,Shashank  Rajesh Khare,Aam Aadmi Party,9744,274
+2022,Assembly,GJ,AKOTA,143,8,Jatin Shah,Independent,915,6
+2022,Assembly,GJ,AKOTA,143,9,Dineshbhai  Vyas,Independent,225,0
+2022,Assembly,GJ,AKOTA,143,10,Deepak Harishchandra  Palkar,Independent,248,0
+2022,Assembly,GJ,AKOTA,143,11,Dr. Rahul Vasudevbhai Vyas,Independent,291,0
+2022,Assembly,GJ,AKOTA,143,12,NOTA,None of the Above,2822,17
+2022,Assembly,GJ,RAOPURA,144,1,PATEL SANJAYBHAI ISHWARBHAI SP(SANJAY PATEL),Indian National Congress,38076,190
+2022,Assembly,GJ,RAOPURA,144,2,BALKRUSHNA KHANDERAO SHUKLA (BALU SHUKLA),Bharatiya Janata Party,118711,590
+2022,Assembly,GJ,RAOPURA,144,3,ROHIT MAHESHKUMAR GOVINDBHAI,Bahujan Samaj Party,691,5
+2022,Assembly,GJ,RAOPURA,144,4,HIREN RAMESHRAORAJE SHIRKE,Aam Aadmi Party,10140,297
+2022,Assembly,GJ,RAOPURA,144,5,HUSENBHAI AEHMADBHAI MULTANI,Rashtriya Samaj Paksha,263,0
+2022,Assembly,GJ,RAOPURA,144,6,IMRAN GULAMMAIYUDEEN MANSURI,Independent,403,0
+2022,Assembly,GJ,RAOPURA,144,7,HARDIK BIPINBHAI DOSHI,Independent,449,1
+2022,Assembly,GJ,RAOPURA,144,8,NOTA,None of the Above,3157,26
+2022,Assembly,GJ,MANJALPUR,145,1,Dr.Tashveen Singh,Indian National Congress,19208,171
+2022,Assembly,GJ,MANJALPUR,145,2,Bharat Rohit (Baba),Bahujan Samaj Party,2223,17
+2022,Assembly,GJ,MANJALPUR,145,3,Yogeshbhai Narandas Patel,Bharatiya Janata Party,119459,674
+2022,Assembly,GJ,MANJALPUR,145,4,Chetan Arunbhai Pandit,Akhil Bharat Hindu Mahasabha,843,2
+2022,Assembly,GJ,MANJALPUR,145,5,Chauhan Vinay Subhash (Fouji),Aam Aadmi Party,10410,611
+2022,Assembly,GJ,MANJALPUR,145,6,Tribhuvan Bhila Patil,Bhartiya Jan Parishad,409,12
+2022,Assembly,GJ,MANJALPUR,145,7,Prakashbhai Somabhai Patel,Rashtriya Samaj Paksha,635,0
+2022,Assembly,GJ,MANJALPUR,145,8,Piyush Patel,Independent,464,3
+2022,Assembly,GJ,MANJALPUR,145,9,NOTA,None of the Above,3210,24
+2022,Assembly,GJ,PADRA,146,1,CHAITANYASINH PRATAPSINH ZALA,Bharatiya Janata Party,66052,174
+2022,Assembly,GJ,PADRA,146,2,JASHPALSINH MAHENDRASINH PADHIYAR,Indian National Congress,59826,222
+2022,Assembly,GJ,PADRA,146,3,MAKWANA SAVITABEN SATISHKUMAR,Bahujan Samaj Party,1171,1
+2022,Assembly,GJ,PADRA,146,4,SANDIPSINH VIKRAMSINH RAJ,Aam Aadmi Party,1970,29
+2022,Assembly,GJ,PADRA,146,5,DINESHBHAI BALUBHAI PATEL (DINUMAMA),Independent,50906,203
+2022,Assembly,GJ,PADRA,146,6,LAXMANBHAI SHANABHAI SOLANKI,Independent,895,1
+2022,Assembly,GJ,PADRA,146,7,NOTA,None of the Above,2067,4
+2022,Assembly,GJ,KARJAN,147,1,AKSHAYKUMAR ISHVARBHAI PATEL,Bharatiya Janata Party,83378,370
+2022,Assembly,GJ,KARJAN,147,2,PRITESHKUMAR JANAKBHAI PATEL (PINTU PATEL VEMARDI),Indian National Congress,57266,176
+2022,Assembly,GJ,KARJAN,147,3,YUSUF VALI HASANALI,Bahujan Samaj Party,805,1
+2022,Assembly,GJ,KARJAN,147,4,GHANSHAM MELSANGBHAI VASAVA,Bhartiya Tribal Party,1491,17
+2022,Assembly,GJ,KARJAN,147,5,PARESH PATEL(VAKIL),Aam Aadmi Party,6475,112
+2022,Assembly,GJ,KARJAN,147,6,RAMANBHAI CHIMANBHAI VASAVA,Independent,773,2
+2022,Assembly,GJ,KARJAN,147,7,NOTA,None of the Above,2289,4
+2022,Assembly,GJ,NANDOD,148,1,Dr. DARSHNA CHANDUBHAI DESHMUKH(VASAVA),Bharatiya Janata Party,70062,481
+2022,Assembly,GJ,NANDOD,148,2,HARESHBHAI  JAYANTIBHAI VASAVA,Indian National Congress,41724,617
+2022,Assembly,GJ,NANDOD,148,3,Dr. PRAFULBHAI DEVJIBHAI VASAVA,Aam Aadmi Party,23467,996
+2022,Assembly,GJ,NANDOD,148,4,MAHESHBHAI SARADBHAI VASAVA (MANABHAI),Bhartiya Tribal Party,1697,7
+2022,Assembly,GJ,NANDOD,148,5,HARSHADBHAI CHUNILAL VASAVA,Independent,34835,527
+2022,Assembly,GJ,NANDOD,148,6,NOTA,None of the Above,3091,13
+2022,Assembly,GJ,DEDIAPADA,149,1,Jermaben Suklal Vasava,Indian National Congress,12552,35
+2022,Assembly,GJ,DEDIAPADA,149,2,Hiteshkumar Devjibhai Vasava,Bharatiya Janata Party,62999,152
+2022,Assembly,GJ,DEDIAPADA,149,3,Chaitarbhai Damjibhai Vasava,Aam Aadmi Party,102402,1031
+2022,Assembly,GJ,DEDIAPADA,149,4,Bahadursing Devjibhai Vasava,Bhartiya Tribal Party,2985,6
+2022,Assembly,GJ,DEDIAPADA,149,5,NOTA,None of the Above,2972,2
+2022,Assembly,GJ,JAMBUSAR,150,1,DEVKISHORDASJI BHAKTISVARUPDASJI SWAMI,Bharatiya Janata Party,90907,626
+2022,Assembly,GJ,JAMBUSAR,150,2,SANJAYBHAI JESANGBHAI SOLANKI,Indian National Congress,63928,225
+2022,Assembly,GJ,JAMBUSAR,150,3,JAMBU PRAMODBHAI BHAGUBHAI,Bahujan Republican  Socialist Party,820,7
+2022,Assembly,GJ,JAMBUSAR,150,4,MANILAL BHOGILAL PANDYA,Bhartiya Tribal Party,517,1
+2022,Assembly,GJ,JAMBUSAR,150,5,SAJIDKHAN HUSENMAHAMMADKHAN REHAN,Aam Aadmi Party,3387,31
+2022,Assembly,GJ,JAMBUSAR,150,6,ISMAIL AHMAD PATEL,Independent,820,1
+2022,Assembly,GJ,JAMBUSAR,150,7,SURESHBHAI DAHYABHAI PARMAR,Independent,662,2
+2022,Assembly,GJ,JAMBUSAR,150,8,NOTA,None of the Above,2269,4
+2022,Assembly,GJ,VAGRA,151,1,ARUNSINH AJITSINH RANA,Bharatiya Janata Party,82790,246
+2022,Assembly,GJ,VAGRA,151,2,SULEMAN PATEL,Indian National Congress,69380,204
+2022,Assembly,GJ,VAGRA,151,3,ILYAS YUSUF MANSURI,Bhartiya Tribal Party,532,1
+2022,Assembly,GJ,VAGRA,151,4,JAYENDRASINH LAXMANSINH RAJ,Aam Aadmi Party,1899,25
+2022,Assembly,GJ,VAGRA,151,5,IKBAL MOHMEDBHAI BHOMLI,Independent,210,0
+2022,Assembly,GJ,VAGRA,151,6,KAMLESHBHAI S. MADHIWALA,Independent,1337,3
+2022,Assembly,GJ,VAGRA,151,7,GOHIL  CHETANBHAI CHHAGANBHAI,Independent,182,3
+2022,Assembly,GJ,VAGRA,151,8,TALATI MUSTAK ISMAIL,Independent,256,1
+2022,Assembly,GJ,VAGRA,151,9,MUBARAK ISMAIL DASHU,Independent,688,2
+2022,Assembly,GJ,VAGRA,151,10,NOTA,None of the Above,2415,6
+2022,Assembly,GJ,JHAGADIA,152,1,FATESINGBHAI CHIMANBHAI VASAVA,Indian National Congress,15128,91
+2022,Assembly,GJ,JHAGADIA,152,2,RITESHKUMAR RAMANBHAI VASAVA (KALABHAI),Bharatiya Janata Party,89552,381
+2022,Assembly,GJ,JHAGADIA,152,3,BHAGAT URMILABEN MUKESHBHAI,Aam Aadmi Party,19197,525
+2022,Assembly,GJ,JHAGADIA,152,4,CHHOTUBHAI AMARSINH VASAVA,Independent,66185,248
+2022,Assembly,GJ,JHAGADIA,152,5,VASAVA RANJITSINH GANPATSINH,Independent,3122,15
+2022,Assembly,GJ,JHAGADIA,152,6,NOTA,None of the Above,3004,8
+2022,Assembly,GJ,BHARUCH,153,1,JAYKANTBHAI BAHECHARBHAI PATEL,Indian National Congress,44087,95
+2022,Assembly,GJ,BHARUCH,153,2,RAMESHBHAI NARANDAS MISTRY,Bharatiya Janata Party,108181,474
+2022,Assembly,GJ,BHARUCH,153,3,MANHARBHAI MAGANBHAI PARMAR,Aam Aadmi Party,14309,205
+2022,Assembly,GJ,BHARUCH,153,4,MANSURI SAHILHUSHEN ISMAILBHAI,Independent,315,0
+2022,Assembly,GJ,BHARUCH,153,5,MIRZA ABIDBEG YASINBEG,Independent,213,0
+2022,Assembly,GJ,BHARUCH,153,6,VASAVA BHAGATSINH JESINGBHAI,Independent,606,5
+2022,Assembly,GJ,BHARUCH,153,7,VASAVA SURESHBHAI GORDHANDAS,Independent,606,1
+2022,Assembly,GJ,BHARUCH,153,8,NOTA,None of the Above,2698,24
+2022,Assembly,GJ,ANKLESHWAR,154,1,Ishwarsinh Thakorbhai Patel,Bharatiya Janata Party,96012,393
+2022,Assembly,GJ,ANKLESHWAR,154,2,Vijaysinh Thakorbhai Patel (Vallabhdas),Indian National Congress,55684,280
+2022,Assembly,GJ,ANKLESHWAR,154,3,Ankurkumar Laxmanbhai  Patel,Aam Aadmi Party,5277,79
+2022,Assembly,GJ,ANKLESHWAR,154,4,Jitendrasingh Rajawat,Praja Vijay Paksh,633,3
+2022,Assembly,GJ,ANKLESHWAR,154,5,NOTA,None of the Above,2319,8
+2022,Assembly,GJ,OLPAD,155,1,DARSHANKUMAR AMRUTLAL NAYAK,Indian National Congress,57103,185
+2022,Assembly,GJ,OLPAD,155,2,DIPAKBHAI PRAVINBHAI RATHOD,Communist Party of India  (Marxist),1015,2
+2022,Assembly,GJ,OLPAD,155,3,BHALIYA KHIMJIBHAI HAKABHAI,Bahujan Samaj Party,1468,1
+2022,Assembly,GJ,OLPAD,155,4,MUKESHBHAI ZINABHAI PATEL,Bharatiya Janata Party,172055,369
+2022,Assembly,GJ,OLPAD,155,5,DHAMELIYA DINESHBHAI CHHAGANBHAI,Real Democracy Party,1375,2
+2022,Assembly,GJ,OLPAD,155,6,DHARMIKBHAI NANUBHAI MALAVIYA,Aam Aadmi Party,52277,173
+2022,Assembly,GJ,OLPAD,155,7,VIJAYBHAI RAMESHBHAI VASAVA,Bhartiya Tribal Party,2264,3
+2022,Assembly,GJ,OLPAD,155,8,KHALIFA ABDULRAZAK AZIZ,Independent,271,0
+2022,Assembly,GJ,OLPAD,155,9,JIGNESHKUMAR MANJIBHAI DHAMELIYA,Independent,896,2
+2022,Assembly,GJ,OLPAD,155,10,DHOLARIYA VIRAL GOVINDBHAI,Independent,243,0
+2022,Assembly,GJ,OLPAD,155,11,NATVARBHAI DAHYABHAI MAHYAVANSHI,Independent,260,2
+2022,Assembly,GJ,OLPAD,155,12,PATEL SARFARAJ ABDULLA,Independent,415,0
+2022,Assembly,GJ,OLPAD,155,13,MALEK ASIFBHAI YUSUFBHAI,Independent,863,0
+2022,Assembly,GJ,OLPAD,155,14,SHEHNAZBIBI KHALIDBHAI SHEKH,Independent,355,0
+2022,Assembly,GJ,OLPAD,155,15,SAJID MEHMUD KOLA,Independent,556,0
+2022,Assembly,GJ,OLPAD,155,16,NOTA,None of the Above,3110,13
+2022,Assembly,GJ,MANGROL,156,1,GANPATSINH VESTABHAI VASAVA,Bharatiya Janata Party,93327,342
+2022,Assembly,GJ,MANGROL,156,2,CHAUDHARI ANILBHAI SUMANBHAI,Indian National Congress,26633,85
+2022,Assembly,GJ,MANGROL,156,3,SAHDEV VASAVA (ADVOCATE),Bahujan Samaj Party,1260,1
+2022,Assembly,GJ,MANGROL,156,4,VASAVA SUBHASHBHAI KANJIBHAI,Bhartiya Tribal Party,1180,2
+2022,Assembly,GJ,MANGROL,156,5,SNEHALKUMAR RAMSING VASAVA,Aam Aadmi Party,41708,538
+2022,Assembly,GJ,MANGROL,156,6,NOTA,None of the Above,3103,8
+2022,Assembly,GJ,MANDVI,157,1,ASHOKBHAI CHHOTUBHAI CHAUDHARY,Bahujan Samaj Party,2290,2
+2022,Assembly,GJ,MANDVI,157,2,ANANDBHAI MOHANBHAI CHAUDHARI,Indian National Congress,56074,319
+2022,Assembly,GJ,MANDVI,157,3,KUNVARJIBHAI NARSINHBHAI HALPATI,Bharatiya Janata Party,74202,300
+2022,Assembly,GJ,MANDVI,157,4,BACHUBHAI GUMANBHAI CHAUDHARI,Bhartiya Tribal Party,1649,2
+2022,Assembly,GJ,MANDVI,157,5,SAYNABEN RUSTAMBHAI GAMIT,Aam Aadmi Party,48301,807
+2022,Assembly,GJ,MANDVI,157,6,CHAUDHARI PRADIPBHAI THAGABHAI,Independent,1720,0
+2022,Assembly,GJ,MANDVI,157,7,SURESHKUMAR JIVANBHAI GAMIT,Independent,1034,0
+2022,Assembly,GJ,MANDVI,157,8,NOTA,None of the Above,2894,8
+2022,Assembly,GJ,KAMREJ,158,1,ARUNBHAI DHANJIBHAI SAKARIYA,Bahujan Samaj Party,1096,1
+2022,Assembly,GJ,KAMREJ,158,2,NILESH KUMBHANI,Indian National Congress,27424,87
+2022,Assembly,GJ,KAMREJ,158,3,PRAFUL PANSHERIYA,Bharatiya Janata Party,185204,381
+2022,Assembly,GJ,KAMREJ,158,4,KHUSHWAH SUMANBEN RAVEEBHAI,Sardar Vallabhbhai Patel Party,901,0
+2022,Assembly,GJ,KAMREJ,158,5,DR. DINESHBHAI CHHAGANBHAI DHAMELIYA,Real Democracy Party,729,2
+2022,Assembly,GJ,KAMREJ,158,6,RAM DHADUK,Aam Aadmi Party,110501,387
+2022,Assembly,GJ,KAMREJ,158,7,HEMENDRASINH RATHOD,Bhartiya Tribal Party,1387,5
+2022,Assembly,GJ,KAMREJ,158,8,VIRADIYA PIYUSH HASMUKHBHAI,Independent,575,0
+2022,Assembly,GJ,KAMREJ,158,9,NOTA,None of the Above,2278,13
+2022,Assembly,GJ,SURAT EAST,159,1,ABDULSAMAD  ABDULMAJID MUNSHI,Bahujan Samaj Party,544,0
+2022,Assembly,GJ,SURAT EAST,159,2,ARVIND SHANTILAL RANA,Bharatiya Janata Party,73014,128
+2022,Assembly,GJ,SURAT EAST,159,3,ASLAM FIROZBHAI CYCLEWALA,Indian National Congress,59072,53
+2022,Assembly,GJ,SURAT EAST,159,4,KARIMKHAN RAHIMKHAN PATHAN,Bharatiya Bahujan Congress,604,0
+2022,Assembly,GJ,SURAT EAST,159,5,MANSUR AHMAD CHASHMAWALA,Samajwadi Party,1015,0
+2022,Assembly,GJ,SURAT EAST,159,6,WASIM IKBALBHAI KHOKAR (KURESHI),All India Majlis-E-Ittehadul Muslimeen,1671,0
+2022,Assembly,GJ,SURAT EAST,159,7,IBRAHIM YAKUB NAGORI,Independent,106,0
+2022,Assembly,GJ,SURAT EAST,159,8,KHER PARESH ANANDBHAI,Independent,667,1
+2022,Assembly,GJ,SURAT EAST,159,9,NURUBHAI SHAKURBHAI SHAIKH,Independent,59,0
+2022,Assembly,GJ,SURAT EAST,159,10,PATEL MINHAJ YUNUSBHAI,Independent,121,1
+2022,Assembly,GJ,SURAT EAST,159,11,PATHAN RIYAZKHAN ABDULKHAN,Independent,67,1
+2022,Assembly,GJ,SURAT EAST,159,12,MOHAMAD FAIZ MOHAMAD FARUQ MULLA,Independent,155,0
+2022,Assembly,GJ,SURAT EAST,159,13,SHAHABUDIN JAINUDIN MALBARI,Independent,476,0
+2022,Assembly,GJ,SURAT EAST,159,14,SAMIR FAKRUDDIN SHAIKH,Independent,211,0
+2022,Assembly,GJ,SURAT EAST,159,15,NOTA,None of the Above,1482,12
+2022,Assembly,GJ,SURAT NORTH,160,1,ACHCHHA SAEEDBHAI YUSUFBHAI,Bahujan Samaj Party,342,0
+2022,Assembly,GJ,SURAT NORTH,160,2,ASHOK PATEL (ADHEVADA),Indian National Congress,14846,8
+2022,Assembly,GJ,SURAT NORTH,160,3,KANTIBHAI HIMMATBHAI BALAR,Bharatiya Janata Party,57048,69
+2022,Assembly,GJ,SURAT NORTH,160,4,ANISH AHMAD MORISWALA,Log Party,231,1
+2022,Assembly,GJ,SURAT NORTH,160,5,MAHENDRA NAVADIYA,Aam Aadmi Party,22786,38
+2022,Assembly,GJ,SURAT NORTH,160,6,AARJUBI RAUF SHAH,Independent,125,0
+2022,Assembly,GJ,SURAT NORTH,160,7,MOHAMMAD JUNED MEMON,Independent,56,0
+2022,Assembly,GJ,SURAT NORTH,160,8,MOHAMMAD IMTIYAZ YUSUF BHAI SHAIKH,Independent,177,0
+2022,Assembly,GJ,SURAT NORTH,160,9,SIRAJKHAN PATHAN,Independent,83,0
+2022,Assembly,GJ,SURAT NORTH,160,10,NOTA,None of the Above,828,3
+2022,Assembly,GJ,VARACHHA ROAD,161,1,KISHOR KANANI (KUMAR),Bharatiya Janata Party,67117,89
+2022,Assembly,GJ,VARACHHA ROAD,161,2,PYARELAL BHARTI,Bahujan Samaj Party,284,0
+2022,Assembly,GJ,VARACHHA ROAD,161,3,PRAFULBHAI TOGADIYA (PAPANBHAI),Indian National Congress,2939,1
+2022,Assembly,GJ,VARACHHA ROAD,161,4,ALPESH KATHIRIYA,Aam Aadmi Party,50285,87
+2022,Assembly,GJ,VARACHHA ROAD,161,5,MAHAJAN PRATIBHABEN PANKAJBHAI,Sardar Vallabhbhai Patel Party,228,0
+2022,Assembly,GJ,VARACHHA ROAD,161,6,NOTA,None of the Above,875,3
+2022,Assembly,GJ,KARANJ,162,1,PRAVINBHAI MANJIBHAI GHOGHARI,Bharatiya Janata Party,60441,52
+2022,Assembly,GJ,KARANJ,162,2,BHARTI PRAKASHBHAI PATEL,Indian National Congress,2950,4
+2022,Assembly,GJ,KARANJ,162,3,MANOJ SORATHIYA,Aam Aadmi Party,24438,81
+2022,Assembly,GJ,KARANJ,162,4,LADUMOR MAHESHBHAI KABABHAI (AHIR),Right to Recall Party,214,4
+2022,Assembly,GJ,KARANJ,162,5,VAGHELA DINESH,National Maha Sabha Party,93,0
+2022,Assembly,GJ,KARANJ,162,6,ANWAR HAMID SHAIKH,Independent,91,0
+2022,Assembly,GJ,KARANJ,162,7,ARUNBHAI MANSUKHLAL PARMAR,Independent,116,0
+2022,Assembly,GJ,KARANJ,162,8,RAMESHBHAI PARSHOTAMBHAI BARAIYA,Independent,149,0
+2022,Assembly,GJ,KARANJ,162,9,NOTA,None of the Above,755,1
+2022,Assembly,GJ,LIMBAYAT,163,1,Ayaz Kazi,Bahujan Samaj Party,971,1
+2022,Assembly,GJ,LIMBAYAT,163,2,Gopal D. Patil,Indian National Congress,29407,29
+2022,Assembly,GJ,LIMBAYAT,163,3,Bharatbhai B. Patel,Communist Party of India  (Marxist),538,2
+2022,Assembly,GJ,LIMBAYAT,163,4,Sangitaben Rajendra Patil,Bharatiya Janata Party,95515,181
+2022,Assembly,GJ,LIMBAYAT,163,5,Abdul Bashir Shaikh,All India Majlis-E-Ittehadul Muslimeen,5215,1
+2022,Assembly,GJ,LIMBAYAT,163,6,Pankajbhai Tayade,Aam Aadmi Party,37545,142
+2022,Assembly,GJ,LIMBAYAT,163,7,Ramzan Mansuri (Varisht Partrakar),Log Party,139,0
+2022,Assembly,GJ,LIMBAYAT,163,8,Rani Aziz Shaikh,Rashtriya Samaj Paksha,136,0
+2022,Assembly,GJ,LIMBAYAT,163,9,Ram Murat Maurya (Comrade),SOCIALIST UNITY CENTRE OF INDIA (COMMUNIST),181,1
+2022,Assembly,GJ,LIMBAYAT,163,10,Shaikh Subhan Abudulla,Samajwadi Party,249,0
+2022,Assembly,GJ,LIMBAYAT,163,11,Akram Vahidulla Ansari,Independent,242,3
+2022,Assembly,GJ,LIMBAYAT,163,12,Azim Saiyad,Independent,153,0
+2022,Assembly,GJ,LIMBAYAT,163,13,Anishaben Kureshi,Independent,868,2
+2022,Assembly,GJ,LIMBAYAT,163,14,Arun Pathak (Gabbar),Independent,139,0
+2022,Assembly,GJ,LIMBAYAT,163,15,Imrankhan Shokat Khan,Independent,279,0
+2022,Assembly,GJ,LIMBAYAT,163,16,IrfanKhan Pathan,Independent,733,0
+2022,Assembly,GJ,LIMBAYAT,163,17,Khalik Yusuf Shaikh,Independent,254,0
+2022,Assembly,GJ,LIMBAYAT,163,18,Javid Shaikh,Independent,244,0
+2022,Assembly,GJ,LIMBAYAT,163,19,Nasrinbano Shaikh,Independent,176,0
+2022,Assembly,GJ,LIMBAYAT,163,20,Nasirshaha Naththushaha,Independent,270,0
+2022,Assembly,GJ,LIMBAYAT,163,21,Patel Aamin Abdul Ghafar,Independent,147,0
+2022,Assembly,GJ,LIMBAYAT,163,22,Pathan BashirKhan,Independent,216,0
+2022,Assembly,GJ,LIMBAYAT,163,23,Faruk Khan,Independent,77,0
+2022,Assembly,GJ,LIMBAYAT,163,24,FARUKHASHA SHABBIRSHA,Independent,84,0
+2022,Assembly,GJ,LIMBAYAT,163,25,Mohammad Nafis Islam Khan,Independent,74,0
+2022,Assembly,GJ,LIMBAYAT,163,26,Mohshin Shah,Independent,60,0
+2022,Assembly,GJ,LIMBAYAT,163,27,Ramjubhai Shaikh,Independent,90,0
+2022,Assembly,GJ,LIMBAYAT,163,28,Rashid Dadamiya Shaikh,Independent,74,0
+2022,Assembly,GJ,LIMBAYAT,163,29,Raybole Panjab,Independent,144,0
+2022,Assembly,GJ,LIMBAYAT,163,30,Rekhaben Satishbhai Patel,Independent,113,0
+2022,Assembly,GJ,LIMBAYAT,163,31,Wasim Karim Shaikh,Independent,950,0
+2022,Assembly,GJ,LIMBAYAT,163,32,Vasim Shaikh,Independent,255,0
+2022,Assembly,GJ,LIMBAYAT,163,33,Sami Akhtar Isaf Mohammad Shaikh,Independent,239,0
+2022,Assembly,GJ,LIMBAYAT,163,34,Shah Aiyub,Independent,183,0
+2022,Assembly,GJ,LIMBAYAT,163,35,Shah Firoj Supadubhai,Independent,128,0
+2022,Assembly,GJ,LIMBAYAT,163,36,SHAH SAMIR SHAIKHLAL,Independent,312,0
+2022,Assembly,GJ,LIMBAYAT,163,37,Shaikh Yusuf,Independent,100,0
+2022,Assembly,GJ,LIMBAYAT,163,38,Shaikh Salman,Independent,159,0
+2022,Assembly,GJ,LIMBAYAT,163,39,Sabirabibi  Mohammad Yusuf Shaikh,Independent,269,0
+2022,Assembly,GJ,LIMBAYAT,163,40,Sayarabanu Hamid Rana,Independent,113,0
+2022,Assembly,GJ,LIMBAYAT,163,41,Saiyad Mehmud,Independent,148,0
+2022,Assembly,GJ,LIMBAYAT,163,42,Saiyad Suraiya Latif,Independent,87,0
+2022,Assembly,GJ,LIMBAYAT,163,43,Hameed Madhavsang Rana,Independent,227,0
+2022,Assembly,GJ,LIMBAYAT,163,44,Hamid Shaikh,Independent,123,0
+2022,Assembly,GJ,LIMBAYAT,163,45,NOTA,None of the Above,1057,12
+2022,Assembly,GJ,UDHNA,164,1,DHANSUKHBHAI  BHAGVATIPRASAD RAJPUT,Indian National Congress,24070,33
+2022,Assembly,GJ,UDHNA,164,2,MANUBHAI M. PATEL (FOGWA),Bharatiya Janata Party,93863,136
+2022,Assembly,GJ,UDHNA,164,3,SURESH MOHAN SONVANE,Bahujan Samaj Party,5420,14
+2022,Assembly,GJ,UDHNA,164,4,PATHAN BADSHAHKHAN ALTAFKHAN,Bharatiya Bahujan Congress,306,0
+2022,Assembly,GJ,UDHNA,164,5,MAHENDRABHAI RAVANBHAI PATIL,Aam Aadmi Party,21634,107
+2022,Assembly,GJ,UDHNA,164,6,ASHABEN VINODBHAI  MANGALE,Independent,475,1
+2022,Assembly,GJ,UDHNA,164,7,EJAZ ASLAMBHAI MISTRY,Independent,183,0
+2022,Assembly,GJ,UDHNA,164,8,FAIMIDA YUNUS SHAIKH,Independent,194,1
+2022,Assembly,GJ,UDHNA,164,9,MOHAMMAD  BALDAR SHAH,Independent,281,0
+2022,Assembly,GJ,UDHNA,164,10,SHAIKH IQBAL HAMID,Independent,292,1
+2022,Assembly,GJ,UDHNA,164,11,NOTA,None of the Above,1815,5
+2022,Assembly,GJ,MAJURA,165,1,BALWANT SHANTILAL JAIN,Indian National Congress,9410,37
+2022,Assembly,GJ,MAJURA,165,2,RAMESHPRASAD KASHIRAM CHAMAR,Bahujan Samaj Party,902,2
+2022,Assembly,GJ,MAJURA,165,3,HARSH RAMESH SANGHVI,Bharatiya Janata Party,132978,357
+2022,Assembly,GJ,MAJURA,165,4,P V S SARMA,Aam Aadmi Party,16399,261
+2022,Assembly,GJ,MAJURA,165,5,NOTA,None of the Above,2297,18
+2022,Assembly,GJ,KATARGAM,166,1,AMITKUMAR BIKARAM SINGH,Bahujan Samaj Party,620,0
+2022,Assembly,GJ,KATARGAM,166,2,VARIYA KALPESH HARJIVANBHAI,Indian National Congress,26807,33
+2022,Assembly,GJ,KATARGAM,166,3,VINODBHAI AMARSHIBHAI MORADIYA,Bharatiya Janata Party,120342,163
+2022,Assembly,GJ,KATARGAM,166,4,AMARKUMAR SURESHBHAI LAVNE,Sarvodaya Bharat Party,588,1
+2022,Assembly,GJ,KATARGAM,166,5,GOPAL ITALIA,Aam Aadmi Party,55713,165
+2022,Assembly,GJ,KATARGAM,166,6,AKBAR LIYAKAT SHAHFAKIR,Independent,302,0
+2022,Assembly,GJ,KATARGAM,166,7,BAPUBHAI NANABHAI KHALANE,Independent,288,0
+2022,Assembly,GJ,KATARGAM,166,8,SARAKAR RAJUBHAI LAKHABHAI,Independent,318,0
+2022,Assembly,GJ,KATARGAM,166,9,NOTA,None of the Above,1521,8
+2022,Assembly,GJ,SURAT WEST,167,1,PURNESH MODI,Bharatiya Janata Party,122464,517
+2022,Assembly,GJ,SURAT WEST,167,2,VIMAL RAJU UTTPURE,Bahujan Samaj Party,452,2
+2022,Assembly,GJ,SURAT WEST,167,3,SANJAY R. SHAH (PATVA),Indian National Congress,18607,62
+2022,Assembly,GJ,SURAT WEST,167,4,MOHAMMED ZAKIR NIZAMUDDIN SHAIKH,Samajwadi Party,300,1
+2022,Assembly,GJ,SURAT WEST,167,5,MOXESH RAMESHCHANDRA SANGHAVI,Aam Aadmi Party,16780,175
+2022,Assembly,GJ,SURAT WEST,167,6,AMISH NARAYANBHAI CHUNAWALA,Independent,141,0
+2022,Assembly,GJ,SURAT WEST,167,7,KAMALSHAH FAKIR,Independent,84,1
+2022,Assembly,GJ,SURAT WEST,167,8,FARZAN ALLARAKHA MEMAN,Independent,115,0
+2022,Assembly,GJ,SURAT WEST,167,9,MOHAMMAD UMARJI KHADAKIWALA,Independent,126,0
+2022,Assembly,GJ,SURAT WEST,167,10,MOHAMAD ASFAQ IQBAL SHEKH,Independent,130,0
+2022,Assembly,GJ,SURAT WEST,167,11,NOTA,None of the Above,2415,26
+2022,Assembly,GJ,CHORYASI,168,1,KANTILAL NANUBHAI PATEL,Indian National Congress,25761,79
+2022,Assembly,GJ,CHORYASI,168,2,MALKHAN RAMKISHOR VARMA,Bahujan Samaj Party,2058,3
+2022,Assembly,GJ,CHORYASI,168,3,SANDIP DESAI,Bharatiya Janata Party,235374,659
+2022,Assembly,GJ,CHORYASI,168,4,CHAVADA HITESHBHAI,Sarvodaya Bharat Party,1060,0
+2022,Assembly,GJ,CHORYASI,168,5,JUBER KASHIM ANSARI,Samajwadi Party,774,0
+2022,Assembly,GJ,CHORYASI,168,6,PRAKASHBHAI VINODBHAI CONTRACTOR,Aam Aadmi Party,49245,370
+2022,Assembly,GJ,CHORYASI,168,7,PRAJAPATI ROSHANLAL PYARELAL,National Maha Sabha Party,621,0
+2022,Assembly,GJ,CHORYASI,168,8,MANSURI AAISHA,Log Party,228,0
+2022,Assembly,GJ,CHORYASI,168,9,RABARI MOTIBHAI VARSHIBHAI,Rashtriya Samaj Paksha,501,0
+2022,Assembly,GJ,CHORYASI,168,10,VASAVA VINODKUMAR,Gana Suraksha Party,538,3
+2022,Assembly,GJ,CHORYASI,168,11,ARUN PATHAK (GABBAR),Independent,315,3
+2022,Assembly,GJ,CHORYASI,168,12,SHEKH SHERU,Independent,514,1
+2022,Assembly,GJ,CHORYASI,168,13,SATTAR PINJARI,Independent,509,0
+2022,Assembly,GJ,CHORYASI,168,14,NOTA,None of the Above,4140,29
+2022,Assembly,GJ,BARDOLI,169,1,ISHVARBHAI ALIAS ANILBHAI RAMANBHAI PARMAR,Bharatiya Janata Party,118140,387
+2022,Assembly,GJ,BARDOLI,169,2,PANNABEN ANILBHAI PATEL,Indian National Congress,28478,101
+2022,Assembly,GJ,BARDOLI,169,3,SUSHILABEN RAMESHBHAI WAGH,Bahujan Samaj Party,1092,1
+2022,Assembly,GJ,BARDOLI,169,4,RAJENDRAPRASAD SOLANKI ALIAS RAJU MORTHANA,Aam Aadmi Party,24445,265
+2022,Assembly,GJ,BARDOLI,169,5,RATHOD DINESHKUMAR LALLUBHAI,Independent,2070,4
+2022,Assembly,GJ,BARDOLI,169,6,NOTA,None of the Above,4203,8
+2022,Assembly,GJ,MAHUVA,170,1,GARASIYA HEMANGINI DIPAKKUMAR,Indian National Congress,49598,277
+2022,Assembly,GJ,MAHUVA,170,2,MOHANBHAI DHANJIBHAI DHODIYA,Bharatiya Janata Party,81143,240
+2022,Assembly,GJ,MAHUVA,170,3,KUNJANKUMAR RAMESHCHANDRA PATEL,Aam Aadmi Party,34924,667
+2022,Assembly,GJ,MAHUVA,170,4,NOTA,None of the Above,3120,11
+2022,Assembly,GJ,VYARA,171,1,KOKANI MOHANBHAI DHEDABHAI,Bharatiya Janata Party,69024,609
+2022,Assembly,GJ,VYARA,171,2,GAMIT PUNABHAI DHEDABHAI,Indian National Congress,45224,680
+2022,Assembly,GJ,VYARA,171,3,RAKESHBHAI SURESHBHAI GAMIT,Bahujan Samaj Party,1281,10
+2022,Assembly,GJ,VYARA,171,4,BIPINCHANDRA KHUSHALBHAI CHAUDHARI,Aam Aadmi Party,46264,1249
+2022,Assembly,GJ,VYARA,171,5,SUNILBHAI NAGAJIBHAI GAMIT,Bhartiya Tribal Party,1113,23
+2022,Assembly,GJ,VYARA,171,6,UMEDBHAI BHIMSINGBHAI GAMIT,Independent,738,12
+2022,Assembly,GJ,VYARA,171,7,JIMIKUMAR RAJENBHAI PATEL,Independent,1196,22
+2022,Assembly,GJ,VYARA,171,8,NOTA,None of the Above,3756,23
+2022,Assembly,GJ,NIZAR,172,1,DR.JAYRAMBHAI CHEMABHAI GAMIT,Bharatiya Janata Party,97109,352
+2022,Assembly,GJ,NIZAR,172,2,SUNILBHAI RATANJIBHAI GAMIT,Indian National Congress,73882,419
+2022,Assembly,GJ,NIZAR,172,3,ARVINDBHAI SINGABHAI GAMIT,Aam Aadmi Party,35025,756
+2022,Assembly,GJ,NIZAR,172,4,SAMIRBHAI JANAKBHAI NAIK,Bhartiya Tribal Party,3592,15
+2022,Assembly,GJ,NIZAR,172,5,MANISHBHAI PRAKASHBHAI VASAVA,Independent,5265,11
+2022,Assembly,GJ,NIZAR,172,6,VINABHAI BABLABHAI GAMIT,Independent,1663,1
+2022,Assembly,GJ,NIZAR,172,7,NOTA,None of the Above,4455,10
+2022,Assembly,GJ,DANGS,173,1,PATEL MUKESHBHAI CHANDARBHAI,Indian National Congress,42436,423
+2022,Assembly,GJ,DANGS,173,2,VIJAYBHAI RAMESHBHAI PATEL,Bharatiya Janata Party,62153,380
+2022,Assembly,GJ,DANGS,173,3,SANGITABEN MAHESHBHAI AHIRE,Bahujan Samaj Party,1459,9
+2022,Assembly,GJ,DANGS,173,4,GAMIT SUNILBHAI CHANDUBHAI,Aam Aadmi Party,20278,544
+2022,Assembly,GJ,DANGS,173,5,NILESHBHAI SHIVAJIBHAI ZAMBARE,Bhartiya Tribal Party,844,3
+2022,Assembly,GJ,DANGS,173,6,AESTARBEN KESHARBHAI PAWAR,Independent,1100,3
+2022,Assembly,GJ,DANGS,173,7,NOTA,None of the Above,1902,8
+2022,Assembly,GJ,JALALPORE,174,1,R.C.PATEL,Bharatiya Janata Party,105921,323
+2022,Assembly,GJ,JALALPORE,174,2,RANJIT (MUNNABHAI) PANCHAL,Indian National Congress,37400,145
+2022,Assembly,GJ,JALALPORE,174,3,NAUSRKA MAHAMMAD SHAUKATALI,SOCIAL DEMOCRATIC PARTY OF INDIA,1241,0
+2022,Assembly,GJ,JALALPORE,174,4,PRADIPKUMAR (BANKWALA),Aam Aadmi Party,10167,229
+2022,Assembly,GJ,JALALPORE,174,5,NOTA,None of the Above,3534,15
+2022,Assembly,GJ,NAVSARI,175,1,Dipak Barot,Indian National Congress,34422,140
+2022,Assembly,GJ,NAVSARI,175,2,Desai Rakesh Gunvantbhai,Bharatiya Janata Party,106559,316
+2022,Assembly,GJ,NAVSARI,175,3,Mahendrakumar Solanki (Rakeshkumar),Bahujan Samaj Party,894,1
+2022,Assembly,GJ,NAVSARI,175,4,Upeshkumar Mohanbhai Patel,Aam Aadmi Party,18131,304
+2022,Assembly,GJ,NAVSARI,175,5,Kalpanaben Percy Munshi,Independent,652,3
+2022,Assembly,GJ,NAVSARI,175,6,Govindbhai Laxmanbhai Rathod,Independent,817,1
+2022,Assembly,GJ,NAVSARI,175,7,NOTA,None of the Above,3048,16
+2022,Assembly,GJ,GANDEVI,176,1,Ashokbhai Lallubhai Patel (Karate),Indian National Congress,37702,248
+2022,Assembly,GJ,GANDEVI,176,2,Nareshbhai  Maganbhai Patel,Bharatiya Janata Party,130531,585
+2022,Assembly,GJ,GANDEVI,176,3,Pankajbhai Lallubhai Patel,Aam Aadmi Party,37248,570
+2022,Assembly,GJ,GANDEVI,176,4,NOTA,None of the Above,3758,17
+2022,Assembly,GJ,BANSDA,177,1,ANANTKUMAR HASMUKHBHAI PATEL,Indian National Congress,122909,1568
+2022,Assembly,GJ,BANSDA,177,2,PIYUSHKUMAR KANTILAL PATEL,Bharatiya Janata Party,88967,477
+2022,Assembly,GJ,BANSDA,177,3,MANAKBHAI JATRUBHAI SANAKAR,Bahujan Samaj Party,1806,1
+2022,Assembly,GJ,BANSDA,177,4,ALPESHKUMAR CHHOTUBHAI PATEL,Bahujan Republican  Socialist Party,1055,3
+2022,Assembly,GJ,BANSDA,177,5,PANKAJBHAI CHANDUBHAI PATEL,Aam Aadmi Party,15848,330
+2022,Assembly,GJ,BANSDA,177,6,NOTA,None of the Above,3795,8
+2022,Assembly,GJ,DHARAMPUR,178,1,Arvind Chhotubhai Patel,Bharatiya Janata Party,83250,294
+2022,Assembly,GJ,DHARAMPUR,178,2,Kishanbhai V. Patel,Indian National Congress,33409,98
+2022,Assembly,GJ,DHARAMPUR,178,3,Ratilal Vajirbhai Thakrya,Bahujan Samaj Party,1459,2
+2022,Assembly,GJ,DHARAMPUR,178,4,Kamleshbhai Ghelabhai Patel,Aam Aadmi Party,49544,673
+2022,Assembly,GJ,DHARAMPUR,178,5,Barat Anandbhai Dubiyabhai,Communist Party of India  (Marxist-Leninist)  (Liberation),890,0
+2022,Assembly,GJ,DHARAMPUR,178,6,Sureshbhai Ballubhai Patel,Bhartiya Tribal Party,881,1
+2022,Assembly,GJ,DHARAMPUR,178,7,Kalpesh  Patel,Independent,19410,80
+2022,Assembly,GJ,DHARAMPUR,178,8,Ganvit Kalpeshbhai Maganbhai,Independent,1674,3
+2022,Assembly,GJ,DHARAMPUR,178,9,Janubhai Dhakalbhai Kakad,Independent,1944,1
+2022,Assembly,GJ,DHARAMPUR,178,10,NOTA,None of the Above,4178,11
+2022,Assembly,GJ,VALSAD,179,1,KAMALBHAI SHANTILAL PATEL,Indian National Congress,21404,118
+2022,Assembly,GJ,VALSAD,179,2,BHARATBHAI KIKUBHAI PATEL,Bharatiya Janata Party,125809,514
+2022,Assembly,GJ,VALSAD,179,3,KAMLESHBHAI  BHARATBHAI  YOGI,Samajwadi Party,804,3
+2022,Assembly,GJ,VALSAD,179,4,MAHESH VINAYAKRAY ACHARYA,Praja Vijay Paksh,781,38
+2022,Assembly,GJ,VALSAD,179,5,RAJESHBHAI THAKORBHAI GOHIL,Bharatiya Republican Paksha,333,2
+2022,Assembly,GJ,VALSAD,179,6,RAJESHBHAI MANGUBHAI PATEL,Aam Aadmi Party,22067,480
+2022,Assembly,GJ,VALSAD,179,7,HEMANTKUMAR GOPALBHAI TANDEL,Rashtriya Samaj Paksha,877,3
+2022,Assembly,GJ,VALSAD,179,8,NOTA,None of the Above,2800,15
+2022,Assembly,GJ,PARDI,180,1,KANUBHAI MOHANLAL DESAI,Bharatiya Janata Party,121743,225
+2022,Assembly,GJ,PARDI,180,2,JAYSHREEBEN PATEL,Indian National Congress,24761,43
+2022,Assembly,GJ,PARDI,180,3,KETANBHAI KISHORBHAI PATEL,Aam Aadmi Party,15173,133
+2022,Assembly,GJ,PARDI,180,4,SANJAYBHAI PARSOTTAMBHAI PARMAR,Rashtriya Samaj Paksha,452,2
+2022,Assembly,GJ,PARDI,180,5,PATEL NAVINKUMAR SHANKARBHAI,Independent,458,2
+2022,Assembly,GJ,PARDI,180,6,PRAVINKUMAR BHOLAPRASAD SINGH,Independent,784,0
+2022,Assembly,GJ,PARDI,180,7,NOTA,None of the Above,2314,2
+2022,Assembly,GJ,KAPRADA,181,1,Jitubhai Harjibhai Chaudhari,Bharatiya Janata Party,90667,332
+2022,Assembly,GJ,KAPRADA,181,2,Vasantbhai Barjulbhai Patel,Indian National Congress,57863,168
+2022,Assembly,GJ,KAPRADA,181,3,Vaichandbhai Lallubhai Patel,Bahujan Samaj Party,2538,7
+2022,Assembly,GJ,KAPRADA,181,4,Gurav Kamleshbhai Shravanbhai,Communist Party of India  (Marxist-Leninist)  (Liberation),1460,4
+2022,Assembly,GJ,KAPRADA,181,5,Jayendrabhai Laxmanbhai Ganvit,Aam Aadmi Party,52611,557
+2022,Assembly,GJ,KAPRADA,181,6,Subhashbhai Radkabhai Patel,Rashtriya Samaj Paksha,1191,8
+2022,Assembly,GJ,KAPRADA,181,7,Gaurangkumar Rameshbhai Patel,Independent,1962,2
+2022,Assembly,GJ,KAPRADA,181,8,NOTA,None of the Above,4016,4
+2022,Assembly,GJ,UMBERGAON,182,1,NARESHBHAI VAJIRBHAI VADVI,Indian National Congress,45230,72
+2022,Assembly,GJ,UMBERGAON,182,2,PATKAR RAMANLAL NANUBHAI,Bharatiya Janata Party,109896,192
+2022,Assembly,GJ,UMBERGAON,182,3,BOCHAL HASMUKHBHAI RAMANBHAI,Communist Party of India  (Marxist),1777,1
+2022,Assembly,GJ,UMBERGAON,182,4,ASHOKBHAI MOHANBHAI  PATEL,Aam Aadmi Party,10553,123
+2022,Assembly,GJ,UMBERGAON,182,5,MOHANBHAI RAVIYABHAI KOHKERIYA,Communist Party of India  (Marxist-Leninist)  (Liberation),762,2
+2022,Assembly,GJ,UMBERGAON,182,6,VAGHAT RAVINDRABHAI SOMABHAI,Bhartiya Tribal Party,1856,2
+2022,Assembly,GJ,UMBERGAON,182,7,NOTA,None of the Above,2768,4
+2022,Assembly,GJ,UNJHA,21,1,PATEL ARVIND AMRUTLAL (BHURO),Indian National Congress,36845,248
+2022,Assembly,GJ,UNJHA,21,2,PATEL KIRITKUMAR KESHAVLAL (K K PATEL),Bharatiya Janata Party,88066,495
+2022,Assembly,GJ,UNJHA,21,3,URVISHKUMAR BABUBHAI PATEL,Aam Aadmi Party,18060,401
+2022,Assembly,GJ,UNJHA,21,4,PARMAR HASMUKHBHAI VIRABHAI,Bhartiya Jan Parishad,530,4
+2022,Assembly,GJ,UNJHA,21,5,RABARI RAMESHBHAI SUKHABHAI,Garvi Gujarat Party,552,4
+2022,Assembly,GJ,UNJHA,21,6,DR. HITESHKUMAR MAHENDRABHAI PARMAR,Nirbhay Bharteey Party,422,4
+2022,Assembly,GJ,UNJHA,21,7,ARVINDJI ALKHAJI THAKOR,Independent,770,42
+2022,Assembly,GJ,UNJHA,21,8,NOTA,None of the Above,1768,7
+2022,Assembly,GJ,GANDHINAGAR SOUTH,35,1,ALPESH KHODAJI THAKOR,Bharatiya Janata Party,133339,712
+2022,Assembly,GJ,GANDHINAGAR SOUTH,35,2,RAJESHKUMAR MANGABHAI PARMAR,Bahujan Samaj Party,1678,15
+2022,Assembly,GJ,GANDHINAGAR SOUTH,35,3,Dr. HIMANSHU PATEL (ADALAJ),Indian National Congress,90017,970
+2022,Assembly,GJ,GANDHINAGAR SOUTH,35,4,CHAUDHARI KISHORSINH SHRICHAND,Jan Sewa Driver Party,583,0
+2022,Assembly,GJ,GANDHINAGAR SOUTH,35,5,DEVENDRABHAI(DOLATBHAI) PRAVINCHANDRA PATEL,Aam Aadmi Party,10733,462
+2022,Assembly,GJ,GANDHINAGAR SOUTH,35,6,RAJENDRA SURESHBHAI PARMAR,Bhartiya Jan Parishad,298,2
+2022,Assembly,GJ,GANDHINAGAR SOUTH,35,7,ACHARYA KEYUR CHIMANBHAI,Independent,304,3
+2022,Assembly,GJ,GANDHINAGAR SOUTH,35,8,KISHORPURI CHANDANPURI GAUSWAMI,Independent,204,3
+2022,Assembly,GJ,GANDHINAGAR SOUTH,35,9,RAJVEER,Independent,435,1
+2022,Assembly,GJ,GANDHINAGAR SOUTH,35,10,SOLANKI DHARMENDRAKUMAR CHIMANBHAI,Independent,577,1
+2022,Assembly,GJ,GANDHINAGAR SOUTH,35,11,SOLANKI VINODKUMAR KACHARABHAI,Independent,799,4
+2022,Assembly,GJ,GANDHINAGAR SOUTH,35,12,NOTA,None of the Above,4416,26
+2022,Assembly,GJ,VEJALPUR,42,1,AMIT THAKER,Bharatiya Janata Party,127674,375
+2022,Assembly,GJ,VEJALPUR,42,2,RAJENDRA PATEL (RAJUBHAI MAKARABA),Indian National Congress,68103,295
+2022,Assembly,GJ,VEJALPUR,42,3,KALPESH  PATEL (BHOLABHAI),Aam Aadmi Party,21917,277
+2022,Assembly,GJ,VEJALPUR,42,4,ZAINAB SHAIKH,All India Majlis-E-Ittehadul Muslimeen,2310,3
+2022,Assembly,GJ,VEJALPUR,42,5,PARTHIV VIJAYKUMAR DAVE,Right to Recall Party,132,0
+2022,Assembly,GJ,VEJALPUR,42,6,MEMAN MUHAMMADHUSEN ABDULLAHBHAI,SOCIAL DEMOCRATIC PARTY OF INDIA,140,0
+2022,Assembly,GJ,VEJALPUR,42,7,SHAH ANKIT,Bharatiya Yuva Jan Ekta Party,205,0
+2022,Assembly,GJ,VEJALPUR,42,8,SHAIKH SHAUKATALI ABDULKARIM,Jan Sewa Driver Party,76,0
+2022,Assembly,GJ,VEJALPUR,42,9,TANVEERUDDIN ILMUDDIN SHAIKH,Independent,96,1
+2022,Assembly,GJ,VEJALPUR,42,10,MANSURI SUHANA AHEMADBHAI,Independent,185,1
+2022,Assembly,GJ,VEJALPUR,42,11,MOHAMAD FARUK SHAIKH,Independent,275,0
+2022,Assembly,GJ,VEJALPUR,42,12,SHAIKH ARIF (FAUJI),Independent,129,0
+2022,Assembly,GJ,VEJALPUR,42,13,SABIRALIKHAN SAHEBDALIKHAN PATHAN,Independent,171,0
+2022,Assembly,GJ,VEJALPUR,42,14,SAIYED PIRHUSEN (YASIN BAPU),Independent,2306,9
+2022,Assembly,GJ,VEJALPUR,42,15,SOLANKI VINODBHAI (SAVAJ),Independent,372,1
+2022,Assembly,GJ,VEJALPUR,42,16,NOTA,None of the Above,2871,19
+2022,Assembly,GJ,CHOTILA,63,1,CHAUHAN SHAMAJIBHAI BHIMAJIBHAI,Bharatiya Janata Party,70565,474
+2022,Assembly,GJ,CHOTILA,63,2,BHIMABHAI POPATBHAI DABHI,Bahujan Samaj Party,1321,11
+2022,Assembly,GJ,CHOTILA,63,3,MAKWANA RUTVIKBHAI LAVJIBHAI,Indian National Congress,42888,444
+2022,Assembly,GJ,CHOTILA,63,4,KARPADA RAJUBHAI MERAMBHAI,Aam Aadmi Party,44862,535
+2022,Assembly,GJ,CHOTILA,63,5,JAYESH HANSRAJBHAI THAKOR(TAMBOLIYA),Independent,912,11
+2022,Assembly,GJ,CHOTILA,63,6,JIGNESHKUMAR MALAKIYA,Independent,479,7
+2022,Assembly,GJ,CHOTILA,63,7,MADHAR VINUBHAI RAMJIBHAI,Independent,725,2
+2022,Assembly,GJ,CHOTILA,63,8,RATHOD VALJIBHAI BECHARBHAI,Independent,518,1
+2022,Assembly,GJ,CHOTILA,63,9,RAYDHANBHAI GANDABHAI KUMARKHANIYA,Independent,741,1
+2022,Assembly,GJ,CHOTILA,63,10,NOTA,None of the Above,2561,21
+2022,Assembly,GJ,PETLAD,113,1,Kamleshbhai Rameshbhai Patel (Master),Bharatiya Janata Party,88787,379
+2022,Assembly,GJ,PETLAD,113,2,Dr. Prakash Budhabhai Parmar (Doctor),Indian National Congress,70804,408
+2022,Assembly,GJ,PETLAD,113,3,Harshadbhai Ishvarbhai Gohel,Bahujan Samaj Party,753,2
+2022,Assembly,GJ,PETLAD,113,4,Arjunbhai Sidhabhai Bharwad,Aam Aadmi Party,4537,59
+2022,Assembly,GJ,PETLAD,113,5,Talpada Somabhai Zenabhai,Right to Recall Party,225,0
+2022,Assembly,GJ,PETLAD,113,6,Shah Yatrikbhai Harishbhai (Maharaj),Rashtriya Hind Ekta Dal,313,0
+2022,Assembly,GJ,PETLAD,113,7,Thakor Sanjaykumar Viththalbhai,Independent,845,0
+2022,Assembly,GJ,PETLAD,113,8,Pathan Riyajkhan Akbarkhan,Independent,928,1
+2022,Assembly,GJ,PETLAD,113,9,NOTA,None of the Above,2432,2
+2022,Assembly,GJ,DEESA,13,1,PRAVINKUMAR GORDHANJI MALI,Bharatiya Janata Party,97330,676
+2022,Assembly,GJ,DEESA,13,2,SANJAYKUMAR GOVABHAI RABARI,Indian National Congress,54977,382
+2022,Assembly,GJ,DEESA,13,3,ASHOKBHAI POPATBHAI PARMAR,Garvi Gujarat Party,944,0
+2022,Assembly,GJ,DEESA,13,4,JASHVANTKUMAR PADHIYAR,National Maha Sabha Party,322,2
+2022,Assembly,GJ,DEESA,13,5,DR.RAMESHBHAI PATEL,Aam Aadmi Party,9003,325
+2022,Assembly,GJ,DEESA,13,6,SONI NITINKUMAR,Praja Vijay Paksh,450,0
+2022,Assembly,GJ,DEESA,13,7,JAYANTIBHAI  NAVABHAI CHAUDHARY,Independent,934,0
+2022,Assembly,GJ,DEESA,13,8,DINESHBHAI SAGTHABHAI PATEL,Independent,329,3
+2022,Assembly,GJ,DEESA,13,9,PATEL JAYANTIBHAI SAGTHABHAI,Independent,534,0
+2022,Assembly,GJ,DEESA,13,10,LEBJIBHAI THAKOR,Independent,44890,168
+2022,Assembly,GJ,DEESA,13,11,VAGHELA GAJUBHA MOHANSING,Independent,1235,1
+2022,Assembly,GJ,DEESA,13,12,NOTA,None of the Above,2845,6

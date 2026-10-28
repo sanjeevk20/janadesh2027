@@ -403,8 +403,14 @@ function stateLsHtml(ls: LsStateResults): string {
     <strong>${ls.nda.share2024}%</strong> (2024 Lok Sabha): <strong>${signed(ls.nda.change!)} pts</strong>.</p>
     <p class="muted small">NDA = ${members('2022')} in 2022; ${members('2024')} in 2024. Measured per Lok Sabha seat,
     because 2024 results by assembly segment aren't available here.</p>
-    ${pcs.length > 1 ? `<div class="two-col"><div><h4>Biggest NDA losses</h4><ol class="closest">${list(sorted.slice(0, 3))}</ol></div>
-    <div><h4>Biggest NDA gains</h4><ol class="closest">${list(sorted.slice(-3).reverse())}</ol></div></div>` : ''}`;
+    ${
+      ls.nda.excluded?.length
+        ? `<p class="callout small">Covers ${ls.nda.pcsCompared} of ${Object.keys(ls.pcs).length} Lok Sabha seats. Left out
+           because some of their assembly seats have no boundary data: ${ls.nda.excluded.map(escapeHtml).join(', ')}.</p>`
+        : ''
+    }
+    ${pcs.length > 1 ? `<div class="two-col"><div><h4>Weakest for NDA</h4><ol class="closest">${list(sorted.slice(0, 3))}</ol></div>
+    <div><h4>Strongest for NDA</h4><ol class="closest">${list(sorted.slice(-3).reverse())}</ol></div></div>` : ''}`;
 }
 
 function selectPc(state: string, pcNo: number) {
@@ -558,7 +564,11 @@ function pcResultHtml(pc: PcResult): string {
       <p class="muted small">— = did not contest. Seat-sharing changes which party stands for an alliance, so compare
       the NDA row rather than single parties where that happens.</p>`
     : '';
-  return `<h3>2024 Lok Sabha · ${escapeHtml(pc.name)}</h3>${outcome}${swing}`;
+  const incomplete = pc.swingIncomplete
+    ? `<p class="muted small">No swing shown: only ${pc.acs.length} of this Lok Sabha seat's assembly seats have
+       boundary data, so a 2022 comparison would be partial.</p>`
+    : '';
+  return `<h3>2024 Lok Sabha · ${escapeHtml(pc.name)}</h3>${outcome}${swing}${incomplete}`;
 }
 
 // Stories tagged to this seat directly, or to the district it sits in.
