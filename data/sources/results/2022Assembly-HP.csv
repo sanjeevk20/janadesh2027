@@ -1,0 +1,481 @@
+election_year,election_type,election_state,constituency,constituency_no,serial_no,candidate,party,evm_votes,postal_votes
+2022,Assembly,HP,CHURAH,1,1,Yashwant Singh,Indian National Congress,28938,515
+2022,Assembly,HP,CHURAH,1,2,Hans Raj,Bharatiya Janata Party,31640,455
+2022,Assembly,HP,CHURAH,1,3,Nand Kumar Jaryal,Aam Aadmi Party,380,5
+2022,Assembly,HP,CHURAH,1,4,NOTA,None of the Above,391,3
+2022,Assembly,HP,BHARMOUR,2,1,Dr. Janak Raj,Bharatiya Janata Party,29957,379
+2022,Assembly,HP,BHARMOUR,2,2,Thakur Singh Bharmouri,Indian National Congress,24845,319
+2022,Assembly,HP,BHARMOUR,2,3,Puja,Himachal Jan Kranti Party,236,6
+2022,Assembly,HP,BHARMOUR,2,4,Parkash Chand,Aam Aadmi Party,234,3
+2022,Assembly,HP,BHARMOUR,2,5,Rasila Ram,Himachal Janta Party,187,0
+2022,Assembly,HP,BHARMOUR,2,6,NOTA,None of the Above,342,1
+2022,Assembly,HP,CHAMBA,3,1,Neeraj Nayar,Indian National Congress,31898,885
+2022,Assembly,HP,CHAMBA,3,2,Neelam Nayyar,Bharatiya Janata Party,24602,399
+2022,Assembly,HP,CHAMBA,3,3,Paras Ram,Bahujan Samaj Party,246,1
+2022,Assembly,HP,CHAMBA,3,4,Uttam Chand,Bhartiya Veer Dal,159,0
+2022,Assembly,HP,CHAMBA,3,5,Shasi Kant,Aam Aadmi Party,346,10
+2022,Assembly,HP,CHAMBA,3,6,Indira,Independent,2416,27
+2022,Assembly,HP,CHAMBA,3,7,NOTA,None of the Above,537,2
+2022,Assembly,HP,DALHOUSIE,4,1,ASHA KUMARI,Indian National Congress,23073,497
+2022,Assembly,HP,DALHOUSIE,4,2,DHAVINDER SINGH,Bharatiya Janata Party,32863,625
+2022,Assembly,HP,DALHOUSIE,4,3,ASHOK KUMAR BAKARIA,Rashtriya Devbhumi Party,353,5
+2022,Assembly,HP,DALHOUSIE,4,4,MANISH SAREEN,Aam Aadmi Party,200,7
+2022,Assembly,HP,DALHOUSIE,4,5,RINKU,Independent,240,1
+2022,Assembly,HP,DALHOUSIE,4,6,NOTA,None of the Above,380,2
+2022,Assembly,HP,BHATTIYAT,5,1,KULDEEP SINGH PATHANIA,Indian National Congress,25235,754
+2022,Assembly,HP,BHATTIYAT,5,2,BIKRAM SINGH,Bharatiya Janata Party,23798,624
+2022,Assembly,HP,BHATTIYAT,5,3,AMRITA CHAUDHRY,Hindu Samaj Party,594,13
+2022,Assembly,HP,BHATTIYAT,5,4,NARESH KUMAR,Aam Aadmi Party,189,8
+2022,Assembly,HP,BHATTIYAT,5,5,NIRMAL SINGH,Independent,7646,95
+2022,Assembly,HP,BHATTIYAT,5,6,NOTA,None of the Above,464,4
+2022,Assembly,HP,NURPUR,6,1,AJAY MAHAJAN,Indian National Congress,24816,564
+2022,Assembly,HP,NURPUR,6,2,RANBIR SINGH,Bharatiya Janata Party,43679,453
+2022,Assembly,HP,NURPUR,6,3,SALI RAM,Bahujan Samaj Party,324,1
+2022,Assembly,HP,NURPUR,6,4,MANISHA KUMARI,Aam Aadmi Party,271,15
+2022,Assembly,HP,NURPUR,6,5,SUBHASH SINGH DHADWAL,Independent,238,1
+2022,Assembly,HP,NURPUR,6,6,NOTA,None of the Above,300,2
+2022,Assembly,HP,INDORA,7,1,MALENDER RAJAN,Indian National Congress,30421,376
+2022,Assembly,HP,INDORA,7,2,REETA DEVI,Bharatiya Janata Party,28179,368
+2022,Assembly,HP,INDORA,7,3,HANS RAJ,Bahujan Samaj Party,258,3
+2022,Assembly,HP,INDORA,7,4,JAGDISH SINGH,Aam Aadmi Party,1455,19
+2022,Assembly,HP,INDORA,7,5,LAXMAN DASS,Hindu Samaj Party,144,1
+2022,Assembly,HP,INDORA,7,6,NIRMAL PARSHAD,Independent,1461,9
+2022,Assembly,HP,INDORA,7,7,MANOHAR LAL,Independent,4394,48
+2022,Assembly,HP,INDORA,7,8,NOTA,None of the Above,478,4
+2022,Assembly,HP,FATEHPUR,8,1,TILAK RAJ,Bahujan Samaj Party,281,17
+2022,Assembly,HP,FATEHPUR,8,2,BHAWANI SINGH PATHANIA,Indian National Congress,32452,786
+2022,Assembly,HP,FATEHPUR,8,3,RAKESH PATHANIA,Bharatiya Janata Party,25462,422
+2022,Assembly,HP,FATEHPUR,8,4,Dr. RAJAN SUSHANT,Aam Aadmi Party,1266,36
+2022,Assembly,HP,FATEHPUR,8,5,Dr. Ashok Kumar Somal,Independent,155,1
+2022,Assembly,HP,FATEHPUR,8,6,KRIPAL SINGH PARMAR,Independent,2794,17
+2022,Assembly,HP,FATEHPUR,8,7,VIJAY KOUNDAL,Independent,117,1
+2022,Assembly,HP,FATEHPUR,8,8,Adv. SANJAY SHARMA,Independent,140,1
+2022,Assembly,HP,FATEHPUR,8,9,NOTA,None of the Above,185,0
+2022,Assembly,HP,JAWALI,9,1,CHANDER KUMAR,Indian National Congress,37220,1023
+2022,Assembly,HP,JAWALI,9,2,BIR SINGH,Bahujan Samaj Party,251,7
+2022,Assembly,HP,JAWALI,9,3,SANJAY GULERIA,Bharatiya Janata Party,34589,623
+2022,Assembly,HP,JAWALI,9,4,ARUN KUMAR,Himachal Jan Kranti Party,300,6
+2022,Assembly,HP,JAWALI,9,5,BALDEV RAJ,Aam Aadmi Party,263,14
+2022,Assembly,HP,JAWALI,9,6,NOTA,None of the Above,370,3
+2022,Assembly,HP,DEHRA,10,1,RAMESH CHAND,Bharatiya Janata Party,16375,355
+2022,Assembly,HP,DEHRA,10,2,DR. RAJESH SHARMA,Indian National Congress,18539,581
+2022,Assembly,HP,DEHRA,10,3,HARBANS SINGH,Bahujan Samaj Party,210,3
+2022,Assembly,HP,DEHRA,10,4,MANISH KUMAR,Aam Aadmi Party,465,18
+2022,Assembly,HP,DEHRA,10,5,VARUN KUMAR,Independent,553,7
+2022,Assembly,HP,DEHRA,10,6,HOSHYAR SINGH,Independent,22563,434
+2022,Assembly,HP,DEHRA,10,7,NOTA,None of the Above,467,5
+2022,Assembly,HP,JASWAN-PRAGPUR,11,1,PREM CHAND,Bahujan Samaj Party,185,4
+2022,Assembly,HP,JASWAN-PRAGPUR,11,2,BIKRAM SINGH,Bharatiya Janata Party,22189,469
+2022,Assembly,HP,JASWAN-PRAGPUR,11,3,SURINDER SINGH MANKOTIA,Indian National Congress,20318,551
+2022,Assembly,HP,JASWAN-PRAGPUR,11,4,SAHIL CHOUHAN,Aam Aadmi Party,158,5
+2022,Assembly,HP,JASWAN-PRAGPUR,11,5,MUKESH KUMAR,Independent,1649,9
+2022,Assembly,HP,JASWAN-PRAGPUR,11,6,SANJAY PRASHAR,Independent,13173,232
+2022,Assembly,HP,JASWAN-PRAGPUR,11,7,NOTA,None of the Above,256,3
+2022,Assembly,HP,JAWALAMUKHI,12,1,RAVINDER SINGH,Bharatiya Janata Party,20850,573
+2022,Assembly,HP,JAWALAMUKHI,12,2,SUSHIL KUMAR,Bahujan Samaj Party,196,5
+2022,Assembly,HP,JAWALAMUKHI,12,3,SANJAY RATTAN,Indian National Congress,26920,907
+2022,Assembly,HP,JAWALAMUKHI,12,4,HOSHIAR SINGH,Aam Aadmi Party,603,13
+2022,Assembly,HP,JAWALAMUKHI,12,5,ATUL KAUSHAL,Independent,9408,103
+2022,Assembly,HP,JAWALAMUKHI,12,6,SUNIL KUMAR,Independent,91,2
+2022,Assembly,HP,JAWALAMUKHI,12,7,NOTA,None of the Above,200,1
+2022,Assembly,HP,JAISINGHPUR,13,1,Yadvinder Goma,Indian National Congress,27464,594
+2022,Assembly,HP,JAISINGHPUR,13,2,Ravinder Kumar Dhiman,Bharatiya Janata Party,24870,492
+2022,Assembly,HP,JAISINGHPUR,13,3,Santosh Kumar,Aam Aadmi Party,680,17
+2022,Assembly,HP,JAISINGHPUR,13,4,Sushil Kumar,Rashtriya Devbhumi Party,931,12
+2022,Assembly,HP,JAISINGHPUR,13,5,Dr. Kehar Singh,Independent,122,2
+2022,Assembly,HP,JAISINGHPUR,13,6,Surender  Singh,Independent,152,3
+2022,Assembly,HP,JAISINGHPUR,13,7,NOTA,None of the Above,289,9
+2022,Assembly,HP,SULLAH,14,1,JAGDISH CHAND SAPEHIA,Indian National Congress,6656,172
+2022,Assembly,HP,SULLAH,14,2,VIPIN SINGH PARMAR,Bharatiya Janata Party,35840,830
+2022,Assembly,HP,SULLAH,14,3,SURESH KUMAR,Bahujan Samaj Party,164,1
+2022,Assembly,HP,SULLAH,14,4,RAVINDER SINGH,Aam Aadmi Party,946,17
+2022,Assembly,HP,SULLAH,14,5,CHANDER BHAN,Independent,756,4
+2022,Assembly,HP,SULLAH,14,6,JAGJIWAN PAUL,Independent,29038,520
+2022,Assembly,HP,SULLAH,14,7,REKHA RANI,Independent,203,8
+2022,Assembly,HP,SULLAH,14,8,DR. SWAROOP SINGH RANA,Independent,62,2
+2022,Assembly,HP,SULLAH,14,9,SUMAN KUMAR,Independent,231,1
+2022,Assembly,HP,SULLAH,14,10,NOTA,None of the Above,390,4
+2022,Assembly,HP,NAGROTA,15,1,ARUN KUMAR,Bharatiya Janata Party,25595,592
+2022,Assembly,HP,NAGROTA,15,2,R.S. BALI,Indian National Congress,41465,614
+2022,Assembly,HP,NAGROTA,15,3,UMA KANT,Aam Aadmi Party,1313,19
+2022,Assembly,HP,NAGROTA,15,4,SIKANDER KUMAR,Independent,288,4
+2022,Assembly,HP,NAGROTA,15,5,NOTA,None of the Above,382,3
+2022,Assembly,HP,KANGRA,16,1,Surinder Kumar,Indian National Congress,14915,490
+2022,Assembly,HP,KANGRA,16,2,Pawan Kumar Kajal,Bharatiya Janata Party,34505,734
+2022,Assembly,HP,KANGRA,16,3,Vijay Kumar,Bahujan Samaj Party,334,4
+2022,Assembly,HP,KANGRA,16,4,Raj Kumar,Aam Aadmi Party,848,18
+2022,Assembly,HP,KANGRA,16,5,Amit Verma,Independent,3010,23
+2022,Assembly,HP,KANGRA,16,6,Kulbhash Chand,Independent,7899,95
+2022,Assembly,HP,KANGRA,16,7,NOTA,None of the Above,457,7
+2022,Assembly,HP,SHAHPUR,17,1,KEWAL SINGH,Indian National Congress,35862,741
+2022,Assembly,HP,SHAHPUR,17,2,BANARSHI DASS DOGRA,Bahujan Samaj Party,304,2
+2022,Assembly,HP,SHAHPUR,17,3,SARVEEN,Bharatiya Janata Party,23931,429
+2022,Assembly,HP,SHAHPUR,17,4,ABHISHEK SINGH,Aam Aadmi Party,1559,17
+2022,Assembly,HP,SHAHPUR,17,5,ASHISH SHARMA,Hindu Samaj Party,96,0
+2022,Assembly,HP,SHAHPUR,17,6,JOGINDER SINGH,Independent,2281,17
+2022,Assembly,HP,SHAHPUR,17,7,RAMESH KUMAR,Independent,325,5
+2022,Assembly,HP,SHAHPUR,17,8,NOTA,None of the Above,516,3
+2022,Assembly,HP,DHARAMSHALA,18,1,RAKESH KUMAR,Bharatiya Janata Party,23563,475
+2022,Assembly,HP,DHARAMSHALA,18,2,SUDHIR SHARMA,Indian National Congress,26689,634
+2022,Assembly,HP,DHARAMSHALA,18,3,KULWANT SINGH RANA,Aam Aadmi Party,512,15
+2022,Assembly,HP,DHARAMSHALA,18,4,ABHAY KUMAR ASHOK,Independent,96,2
+2022,Assembly,HP,DHARAMSHALA,18,5,VIPAN KUMAR NEHRIA,Independent,7332,84
+2022,Assembly,HP,DHARAMSHALA,18,6,SUBHASH CHAND SHUKLA,Independent,169,1
+2022,Assembly,HP,DHARAMSHALA,18,7,NOTA,None of the Above,429,9
+2022,Assembly,HP,PALAMPUR,19,1,Ashish Butail,Indian National Congress,29980,894
+2022,Assembly,HP,PALAMPUR,19,2,Suresh Kumar,Bahujan Samaj Party,230,14
+2022,Assembly,HP,PALAMPUR,19,3,Trilok Kapoor,Bharatiya Janata Party,24843,703
+2022,Assembly,HP,PALAMPUR,19,4,Sanjay Bhardwaj,Aam Aadmi Party,423,7
+2022,Assembly,HP,PALAMPUR,19,5,NOTA,None of the Above,378,4
+2022,Assembly,HP,LAHAUL & SPITI,21,1,RAVI THAKUR,Indian National Congress,9734,214
+2022,Assembly,HP,LAHAUL & SPITI,21,2,DR.RAM LAL MARKANDA,Bharatiya Janata Party,8058,274
+2022,Assembly,HP,LAHAUL & SPITI,21,3,SUDARSHAN JASPA,Aam Aadmi Party,441,13
+2022,Assembly,HP,LAHAUL & SPITI,21,4,NOTA,None of the Above,64,3
+2022,Assembly,HP,MANALI,22,1,Govind Singh Thakur,Bharatiya Janata Party,26468,467
+2022,Assembly,HP,MANALI,22,2,Tara Chand,Bahujan Samaj Party,297,3
+2022,Assembly,HP,MANALI,22,3,Bhuvneshwar Gaur,Indian National Congress,29331,561
+2022,Assembly,HP,MANALI,22,4,Anurag Prarthi,Aam Aadmi Party,720,10
+2022,Assembly,HP,MANALI,22,5,Amar Chand,Rashtriya Devbhumi Party,981,16
+2022,Assembly,HP,MANALI,22,6,Mahinder Singh,Independent,1331,14
+2022,Assembly,HP,MANALI,22,7,NOTA,None of the Above,237,1
+2022,Assembly,HP,KULLU,23,1,NAROTAM SINGH,Bharatiya Janata Party,25493,690
+2022,Assembly,HP,KULLU,23,2,SUNDER SINGH THAKUR,Indian National Congress,29413,873
+2022,Assembly,HP,KULLU,23,3,HOTAM SINGH,Communist Party of India  (Marxist),1093,9
+2022,Assembly,HP,KULLU,23,4,SHER SINGH,Aam Aadmi Party,1101,18
+2022,Assembly,HP,KULLU,23,5,RAM SINGH,Independent,11790,147
+2022,Assembly,HP,KULLU,23,6,LOT RAMA THAKUR,Independent,191,1
+2022,Assembly,HP,KULLU,23,7,NOTA,None of the Above,341,5
+2022,Assembly,HP,BANJAR,24,1,KHIMI RAM,Indian National Congress,19963,741
+2022,Assembly,HP,BANJAR,24,2,JHABE RAM KAUSHAL,Bahujan Samaj Party,259,4
+2022,Assembly,HP,BANJAR,24,3,SURENDER SHOURIE,Bharatiya Janata Party,24241,797
+2022,Assembly,HP,BANJAR,24,4,CHET RAM,Himachal Jan Kranti Party,212,0
+2022,Assembly,HP,BANJAR,24,5,NEERAJ SAINI,Aam Aadmi Party,264,3
+2022,Assembly,HP,BANJAR,24,6,HITESHWAR SINGH,Independent,14568,364
+2022,Assembly,HP,BANJAR,24,7,NOTA,None of the Above,489,3
+2022,Assembly,HP,ANNI,25,1,DEVKI NAND,Communist Party of India  (Marxist),3551,23
+2022,Assembly,HP,ANNI,25,2,BANSI LAL,Indian National Congress,13699,525
+2022,Assembly,HP,ANNI,25,3,LOKENDER KUMAR,Bharatiya Janata Party,23491,642
+2022,Assembly,HP,ANNI,25,4,INDER PAL,Aam Aadmi Party,756,13
+2022,Assembly,HP,ANNI,25,5,KISHORI LAL,Independent,6782,111
+2022,Assembly,HP,ANNI,25,6,PARAS RAM,Independent,16768,587
+2022,Assembly,HP,ANNI,25,7,NOTA,None of the Above,515,5
+2022,Assembly,HP,KARSOG,26,1,KISHORI LAL,Communist Party of India  (Marxist),471,9
+2022,Assembly,HP,KARSOG,26,2,CHAMAN LAL,Bahujan Samaj Party,207,2
+2022,Assembly,HP,KARSOG,26,3,DEEP RAJ,Bharatiya Janata Party,33655,857
+2022,Assembly,HP,KARSOG,26,4,MAHESH RAJ,Indian National Congress,23139,839
+2022,Assembly,HP,KARSOG,26,5,BHAGWANT SINGH,Aam Aadmi Party,468,3
+2022,Assembly,HP,KARSOG,26,6,GHANSHYAM,Independent,156,0
+2022,Assembly,HP,KARSOG,26,7,NOTA,None of the Above,357,6
+2022,Assembly,HP,SUNDERNAGAR,27,1,Narayan Singh,Bahujan Samaj Party,268,7
+2022,Assembly,HP,SUNDERNAGAR,27,2,Rakesh Kumar,Bharatiya Janata Party,28413,1019
+2022,Assembly,HP,SUNDERNAGAR,27,3,Sohan Lal,Indian National Congress,20588,719
+2022,Assembly,HP,SUNDERNAGAR,27,4,Thakur Singh,Sainik Samaj Party,193,2
+2022,Assembly,HP,SUNDERNAGAR,27,5,Pooja Verma,Aam Aadmi Party,134,14
+2022,Assembly,HP,SUNDERNAGAR,27,6,Ran Vijay Singh,Rashtriya Devbhumi Party,89,1
+2022,Assembly,HP,SUNDERNAGAR,27,7,Abhishek Thakur,Independent,14402,302
+2022,Assembly,HP,SUNDERNAGAR,27,8,Tek Chand,Independent,148,1
+2022,Assembly,HP,SUNDERNAGAR,27,9,Het Ram,Independent,138,2
+2022,Assembly,HP,SUNDERNAGAR,27,10,NOTA,None of the Above,207,4
+2022,Assembly,HP,NACHAN,28,1,NAND LAL,Bahujan Samaj Party,313,6
+2022,Assembly,HP,NACHAN,28,2,NARESH KUMAR,Indian National Congress,23361,883
+2022,Assembly,HP,NACHAN,28,3,VINOD KUMAR,Bharatiya Janata Party,32122,1078
+2022,Assembly,HP,NACHAN,28,4,JABNA KUMARI,Aam Aadmi Party,269,21
+2022,Assembly,HP,NACHAN,28,5,JASVEER SINGH,Independent,2622,69
+2022,Assembly,HP,NACHAN,28,6,SAUNU RAM,Independent,221,5
+2022,Assembly,HP,NACHAN,28,7,GIAN CHAND,Independent,9981,152
+2022,Assembly,HP,NACHAN,28,8,NOTA,None of the Above,448,8
+2022,Assembly,HP,SERAJ,29,1,INDRA DEVI,Bahujan Samaj Party,260,4
+2022,Assembly,HP,SERAJ,29,2,CHET RAM,Indian National Congress,15069,310
+2022,Assembly,HP,SERAJ,29,3,JAI RAM THAKUR,Bharatiya Janata Party,52076,1486
+2022,Assembly,HP,SERAJ,29,4,MAHENDER RANA,Communist Party of India  (Marxist),799,19
+2022,Assembly,HP,SERAJ,29,5,GITA NAND,Aam Aadmi Party,338,1
+2022,Assembly,HP,SERAJ,29,6,NARENDER KUMAR,Independent,98,0
+2022,Assembly,HP,SERAJ,29,7,NOTA,None of the Above,289,3
+2022,Assembly,HP,DARANG,30,1,Kaul Singh,Indian National Congress,34856,1098
+2022,Assembly,HP,DARANG,30,2,Puran Chand,Bharatiya Janata Party,35843,729
+2022,Assembly,HP,DARANG,30,3,Ramesh Kumar,Bahujan Samaj Party,380,5
+2022,Assembly,HP,DARANG,30,4,NOTA,None of the Above,570,9
+2022,Assembly,HP,JOGINDERNAGAR,31,1,Kushal Bhardwaj,Communist Party of India  (Marxist),3081,56
+2022,Assembly,HP,JOGINDERNAGAR,31,2,Thakur Surender Paul,Indian National Congress,28354,1089
+2022,Assembly,HP,JOGINDERNAGAR,31,3,Narender Kumar,Bahujan Samaj Party,235,9
+2022,Assembly,HP,JOGINDERNAGAR,31,4,Prakash Prem Kumar,Bharatiya Janata Party,32715,1067
+2022,Assembly,HP,JOGINDERNAGAR,31,5,Kamal Kant,Rashtriya Devbhumi Party,250,9
+2022,Assembly,HP,JOGINDERNAGAR,31,6,Mehar Chand,Rashtriya Lokneeti Party,55,2
+2022,Assembly,HP,JOGINDERNAGAR,31,7,Ravinder Pal Singh,Aam Aadmi Party,365,18
+2022,Assembly,HP,JOGINDERNAGAR,31,8,Kulbhushan Thakur,Independent,80,2
+2022,Assembly,HP,JOGINDERNAGAR,31,9,Surender Singh Thakur,Independent,202,4
+2022,Assembly,HP,JOGINDERNAGAR,31,10,Baba Lal Giri,Independent,95,4
+2022,Assembly,HP,JOGINDERNAGAR,31,11,Sanjeev,Independent,2459,35
+2022,Assembly,HP,JOGINDERNAGAR,31,12,NOTA,None of the Above,369,8
+2022,Assembly,HP,DHARAMPUR,32,1,CHANDER SHEKHAR,Indian National Congress,29621,1442
+2022,Assembly,HP,DHARAMPUR,32,2,PRAKASH CHAND BHARDWAJ,Bahujan Samaj Party,158,12
+2022,Assembly,HP,DHARAMPUR,32,3,RAJAT THAKUR,Bharatiya Janata Party,26814,1223
+2022,Assembly,HP,DHARAMPUR,32,4,RAKESH MANDHOTRA,Aam Aadmi Party,217,13
+2022,Assembly,HP,DHARAMPUR,32,5,CHANDER SHEKHAR,Independent,135,6
+2022,Assembly,HP,DHARAMPUR,32,6,NOTA,None of the Above,210,6
+2022,Assembly,HP,MANDI,33,1,ANIL SHARMA,Bharatiya Janata Party,30204,1099
+2022,Assembly,HP,MANDI,33,2,CHAMPA THAKUR,Indian National Congress,20424,873
+2022,Assembly,HP,MANDI,33,3,CHET RAM,Bahujan Samaj Party,266,6
+2022,Assembly,HP,MANDI,33,4,SHYAM LAL,Aam Aadmi Party,538,21
+2022,Assembly,HP,MANDI,33,5,SANJAY KUMAR,Rashtriya Devbhumi Party,104,5
+2022,Assembly,HP,MANDI,33,6,MAJOR KHEM SINGH  THAKUR,Independent,143,14
+2022,Assembly,HP,MANDI,33,7,PRAVEEN KUMAR,Independent,4040,66
+2022,Assembly,HP,MANDI,33,8,RAJEEV KUMAR,Independent,246,5
+2022,Assembly,HP,MANDI,33,9,LAXMENDER SINGH,Independent,145,3
+2022,Assembly,HP,MANDI,33,10,NOTA,None of the Above,442,6
+2022,Assembly,HP,BALH,34,1,INDER SINGH,Bharatiya Janata Party,30774,1018
+2022,Assembly,HP,BALH,34,2,PRAKASH CHAUDHARY,Indian National Congress,29186,1299
+2022,Assembly,HP,BALH,34,3,PREM KUMAR,Bahujan Samaj Party,286,14
+2022,Assembly,HP,BALH,34,4,JIWAN RAM,Rashtriya Devbhumi Party,235,10
+2022,Assembly,HP,BALH,34,5,TARA CHAND,Aam Aadmi Party,1372,34
+2022,Assembly,HP,BALH,34,6,NOTA,None of the Above,487,11
+2022,Assembly,HP,SARKAGHAT,35,1,DALIP THAKUR,Bharatiya Janata Party,26515,831
+2022,Assembly,HP,SARKAGHAT,35,2,PAWAN KUMAR,Indian National Congress,24534,1005
+2022,Assembly,HP,SARKAGHAT,35,3,RAMESH CHAND,Bahujan Samaj Party,197,5
+2022,Assembly,HP,SARKAGHAT,35,4,KAILASH CHAND,Rashtriya Devbhumi Party,253,9
+2022,Assembly,HP,SARKAGHAT,35,5,DHAMESHWAR RAM,Aam Aadmi Party,200,10
+2022,Assembly,HP,SARKAGHAT,35,6,MUNISH SHARMA,Independent,9687,173
+2022,Assembly,HP,SARKAGHAT,35,7,NOTA,None of the Above,331,11
+2022,Assembly,HP,BHORANJ,36,1,DR. ANIL DHIMAN,Bharatiya Janata Party,23985,734
+2022,Assembly,HP,BHORANJ,36,2,JARNAIL SINGH,Bahujan Samaj Party,295,7
+2022,Assembly,HP,BHORANJ,36,3,SURESH KUMAR,Indian National Congress,23917,862
+2022,Assembly,HP,BHORANJ,36,4,RAJNI KAUSHAL,Aam Aadmi Party,439,24
+2022,Assembly,HP,BHORANJ,36,5,PAWAN KUMAR,Independent,6744,117
+2022,Assembly,HP,BHORANJ,36,6,NOTA,None of the Above,289,4
+2022,Assembly,HP,SUJANPUR,37,1,RAJINDER SINGH,Indian National Congress,26834,845
+2022,Assembly,HP,SUJANPUR,37,2,RANJIT SINGH RANA,Bharatiya Janata Party,26718,562
+2022,Assembly,HP,SUJANPUR,37,3,GIAN CHAND,Bahujan Samaj Party,100,3
+2022,Assembly,HP,SUJANPUR,37,4,ANIL RANA,Aam Aadmi Party,194,18
+2022,Assembly,HP,SUJANPUR,37,5,RAJESH KUMAR,Independent,82,4
+2022,Assembly,HP,SUJANPUR,37,6,NOTA,None of the Above,233,4
+2022,Assembly,HP,HAMIRPUR,38,1,KASHMIR SINGH THAKUR,Communist Party of India  (Marxist),621,6
+2022,Assembly,HP,HAMIRPUR,38,2,NARINDER THAKUR,Bharatiya Janata Party,12480,314
+2022,Assembly,HP,HAMIRPUR,38,3,PUSHPINDER VERMA,Indian National Congress,12482,535
+2022,Assembly,HP,HAMIRPUR,38,4,PRAVEEN KUMAR KAUSHAL,Bahujan Samaj Party,136,0
+2022,Assembly,HP,HAMIRPUR,38,5,ABHINAY BHARDWAJ,Rashtriya Devbhumi Party,225,6
+2022,Assembly,HP,HAMIRPUR,38,6,SUSHIL KUMAR SURROCH,Aam Aadmi Party,293,5
+2022,Assembly,HP,HAMIRPUR,38,7,ASHISH KUMAR,Independent,547,10
+2022,Assembly,HP,HAMIRPUR,38,8,ASHISH SHARMA,Independent,25533,383
+2022,Assembly,HP,HAMIRPUR,38,9,NARESH KUMAR DARJI,Independent,1208,9
+2022,Assembly,HP,HAMIRPUR,38,10,NOTA,None of the Above,244,2
+2022,Assembly,HP,BARSAR,39,1,INDER DUTT LAKHANPAL,Indian National Congress,29105,1188
+2022,Assembly,HP,BARSAR,39,2,MAYA SHARMA,Bharatiya Janata Party,15931,570
+2022,Assembly,HP,BARSAR,39,3,RATTAN CHAND KATOCH,Bahujan Samaj Party,200,8
+2022,Assembly,HP,BARSAR,39,4,GULSHAN,Aam Aadmi Party,148,10
+2022,Assembly,HP,BARSAR,39,5,NARESH KUMAR,Rashtriya Devbhumi Party,63,3
+2022,Assembly,HP,BARSAR,39,6,PARAMJIT SINGH,Himachal Jan Kranti Party,130,2
+2022,Assembly,HP,BARSAR,39,7,SANJEEV KUMAR,Independent,14994,258
+2022,Assembly,HP,BARSAR,39,8,NOTA,None of the Above,294,3
+2022,Assembly,HP,NADAUN,40,1,DESH RAJ,Bahujan Samaj Party,225,0
+2022,Assembly,HP,NADAUN,40,2,VIJAY KUMAR,Bharatiya Janata Party,31954,825
+2022,Assembly,HP,NADAUN,40,3,SUKHVINDER SINGH,Indian National Congress,35011,1131
+2022,Assembly,HP,NADAUN,40,4,SHANKEY THUKRAL,Aam Aadmi Party,1469,18
+2022,Assembly,HP,NADAUN,40,5,RANJIT SINGH,Independent,113,3
+2022,Assembly,HP,NADAUN,40,6,SURENDER KUMAR,Independent,97,1
+2022,Assembly,HP,NADAUN,40,7,NOTA,None of the Above,186,6
+2022,Assembly,HP,GAGRET,42,1,Chaitanya Sharma,Indian National Congress,40001,766
+2022,Assembly,HP,GAGRET,42,2,Rajesh Thakur,Bharatiya Janata Party,24484,598
+2022,Assembly,HP,GAGRET,42,3,Lekh Raj Katnoria,Bahujan Samaj Party,93,4
+2022,Assembly,HP,GAGRET,42,4,Manohar Lal Dadwal,Aam Aadmi Party,139,6
+2022,Assembly,HP,GAGRET,42,5,Raghubir Singh,Himachal Jan Kranti Party,43,2
+2022,Assembly,HP,GAGRET,42,6,Vinod Dadwal (Pintu),Rashtriya Devbhumi Party,121,4
+2022,Assembly,HP,GAGRET,42,7,NOTA,None of the Above,400,4
+2022,Assembly,HP,HAROLI,43,1,NARESH KUMAR,Bahujan Samaj Party,629,7
+2022,Assembly,HP,HAROLI,43,2,MUKESH AGNIHOTRI,Indian National Congress,37756,896
+2022,Assembly,HP,HAROLI,43,3,RAM KUMAR,Bharatiya Janata Party,29008,496
+2022,Assembly,HP,HAROLI,43,4,ASHHWANI KUMAR RANA,Rashtriya Devbhumi Party,286,4
+2022,Assembly,HP,HAROLI,43,5,RAVINDER PAL SINGH MANN,Aam Aadmi Party,588,13
+2022,Assembly,HP,HAROLI,43,6,NOTA,None of the Above,174,1
+2022,Assembly,HP,UNA,44,1,Ramesh Chand,Bahujan Samaj Party,339,2
+2022,Assembly,HP,UNA,44,2,Satpal Singh Raizada,Indian National Congress,31867,371
+2022,Assembly,HP,UNA,44,3,Satpal Singh Satti,Bharatiya Janata Party,33423,551
+2022,Assembly,HP,UNA,44,4,Rajiv Gautam,Aam Aadmi Party,724,13
+2022,Assembly,HP,UNA,44,5,Kamal Kumar,Independent,160,2
+2022,Assembly,HP,UNA,44,6,Chander Mohan,Independent,185,0
+2022,Assembly,HP,UNA,44,7,NOTA,None of the Above,234,6
+2022,Assembly,HP,KUTLEHAR,45,1,Davinder Kumar,Indian National Congress,35956,680
+2022,Assembly,HP,KUTLEHAR,45,2,VIRENDER  KANWAR,Bharatiya Janata Party,28503,554
+2022,Assembly,HP,KUTLEHAR,45,3,Anil Kumar Mankotia,Aam Aadmi Party,570,26
+2022,Assembly,HP,KUTLEHAR,45,4,Capt. Jaidayal Singh Pal,Independent,139,2
+2022,Assembly,HP,KUTLEHAR,45,5,NOTA,None of the Above,377,1
+2022,Assembly,HP,JHANDUTA,46,1,AMAR NATH,Bahujan Samaj Party,241,4
+2022,Assembly,HP,JHANDUTA,46,2,JEET RAM KATWAL,Bharatiya Janata Party,27433,835
+2022,Assembly,HP,JHANDUTA,46,3,VIVEK KUMAR,Indian National Congress,21940,529
+2022,Assembly,HP,JHANDUTA,46,4,MANOJ KUMAR,Rashtriya Devbhumi Party,280,2
+2022,Assembly,HP,JHANDUTA,46,5,SUDHIR KUMAR,Aam Aadmi Party,402,25
+2022,Assembly,HP,JHANDUTA,46,6,JITENDER PAL,Independent,204,2
+2022,Assembly,HP,JHANDUTA,46,7,RAJ KUMAR,Independent,8180,178
+2022,Assembly,HP,JHANDUTA,46,8,NOTA,None of the Above,242,4
+2022,Assembly,HP,GHUMARWIN,47,1,PREM LAL BANGA,Bahujan Samaj Party,315,4
+2022,Assembly,HP,GHUMARWIN,47,2,RAJINDER GARG,Bharatiya Janata Party,28843,924
+2022,Assembly,HP,GHUMARWIN,47,3,RAJESH DHARMANI,Indian National Congress,34019,1359
+2022,Assembly,HP,GHUMARWIN,47,4,YOGESH THAKUR,Rashtriya Devbhumi Party,456,11
+2022,Assembly,HP,GHUMARWIN,47,5,RAKESH KUMAR CHOPRA,Aam Aadmi Party,1595,38
+2022,Assembly,HP,GHUMARWIN,47,6,NAND LAL,Independent,66,3
+2022,Assembly,HP,GHUMARWIN,47,7,MANOHAR LAL,Independent,123,5
+2022,Assembly,HP,GHUMARWIN,47,8,VARUN KUMAR THAKUR,Independent,88,1
+2022,Assembly,HP,GHUMARWIN,47,9,NOTA,None of the Above,235,7
+2022,Assembly,HP,BILASPUR,48,1,AMAR NATH,Bahujan Samaj Party,302,4
+2022,Assembly,HP,BILASPUR,48,2,BUMBER THAKUR,Indian National Congress,29977,735
+2022,Assembly,HP,BILASPUR,48,3,TRILOK JAMWAL,Bharatiya Janata Party,30373,615
+2022,Assembly,HP,BILASPUR,48,4,AMAR SINGH,Aam Aadmi Party,380,8
+2022,Assembly,HP,BILASPUR,48,5,PUJA PAL,Rashtriya Devbhumi Party,361,6
+2022,Assembly,HP,BILASPUR,48,6,BAL RAM,Swabhiman Party,154,0
+2022,Assembly,HP,BILASPUR,48,7,PIYUSH KANGA,Independent,81,2
+2022,Assembly,HP,BILASPUR,48,8,LATA CHANDEL,Independent,108,2
+2022,Assembly,HP,BILASPUR,48,9,Subhash Sharma,Independent,1470,29
+2022,Assembly,HP,BILASPUR,48,10,NOTA,None of the Above,269,1
+2022,Assembly,HP,SRI NAINA DEVIJI,49,1,BHAG SINGH,Communist Party of India,622,5
+2022,Assembly,HP,SRI NAINA DEVIJI,49,2,RANDHIR SHARMA,Bharatiya Janata Party,28878,525
+2022,Assembly,HP,SRI NAINA DEVIJI,49,3,RAM LAL THAKUR,Indian National Congress,28733,499
+2022,Assembly,HP,SRI NAINA DEVIJI,49,4,DEEPAK KUMAR,Rashtriya Devbhumi Party,2099,15
+2022,Assembly,HP,SRI NAINA DEVIJI,49,5,NARINDER SINGH,Aam Aadmi Party,648,5
+2022,Assembly,HP,SRI NAINA DEVIJI,49,6,NOTA,None of the Above,221,4
+2022,Assembly,HP,ARKI,50,1,Kamlesh,Bahujan Samaj Party,299,7
+2022,Assembly,HP,ARKI,50,2,Govind Ram,Bharatiya Janata Party,13031,413
+2022,Assembly,HP,ARKI,50,3,Sanjay,Indian National Congress,29804,1093
+2022,Assembly,HP,ARKI,50,4,Jai Dev Singh,Rashtriya Devbhumi Party,1722,25
+2022,Assembly,HP,ARKI,50,5,Jeet Ram,Aam Aadmi Party,307,9
+2022,Assembly,HP,ARKI,50,6,Rajender,Independent,25547,528
+2022,Assembly,HP,ARKI,50,7,Sanjay Kumar,Independent,282,3
+2022,Assembly,HP,ARKI,50,8,NOTA,None of the Above,464,2
+2022,Assembly,HP,NALAGARH,51,1,PARAS BAINS,Bahujan Samaj Party,552,3
+2022,Assembly,HP,NALAGARH,51,2,LAKHWINDER SINGH RANA,Bharatiya Janata Party,17008,265
+2022,Assembly,HP,NALAGARH,51,3,HARDEEP SINGH BAWA,Indian National Congress,19783,380
+2022,Assembly,HP,NALAGARH,51,4,KISHORI LAL,Swabhiman Party,304,1
+2022,Assembly,HP,NALAGARH,51,5,JAGDISH CHAND,Rashtriya Devbhumi Party,1140,6
+2022,Assembly,HP,NALAGARH,51,6,DHARAM PAL,Aam Aadmi Party,1101,7
+2022,Assembly,HP,NALAGARH,51,7,JAGPAL SINGH RANA,Independent,531,3
+2022,Assembly,HP,NALAGARH,51,8,K. L. THAKUR,Independent,33053,374
+2022,Assembly,HP,NALAGARH,51,9,NOTA,None of the Above,590,0
+2022,Assembly,HP,DOON,52,1,NAGENDER CHAND,Bahujan Samaj Party,273,3
+2022,Assembly,HP,DOON,52,2,PARAMJEET SINGH PAMMI,Bharatiya Janata Party,24931,296
+2022,Assembly,HP,DOON,52,3,RAM KUMAR,Indian National Congress,31630,408
+2022,Assembly,HP,DOON,52,4,BALWANT SINGH,Rashtriya Devbhumi Party,1421,4
+2022,Assembly,HP,DOON,52,5,SWARN SINGH SAINI,Aam Aadmi Party,655,4
+2022,Assembly,HP,DOON,52,6,DES RAJ CHAUHAN,Independent,1871,24
+2022,Assembly,HP,DOON,52,7,NOTA,None of the Above,222,2
+2022,Assembly,HP,SOLAN,53,1,DHANI RAM SHANDIL,Indian National Congress,29523,566
+2022,Assembly,HP,SOLAN,53,2,RAJINDER,Bahujan Samaj Party,317,6
+2022,Assembly,HP,SOLAN,53,3,RAJESH KASHYAP,Bharatiya Janata Party,25887,344
+2022,Assembly,HP,SOLAN,53,4,ANJU,Aam Aadmi Party,1094,14
+2022,Assembly,HP,SOLAN,53,5,NOTA,None of the Above,632,2
+2022,Assembly,HP,KASAULI,54,1,RAJIV SAIZAL,Bharatiya Janata Party,21225,207
+2022,Assembly,HP,KASAULI,54,2,RAM RATTAN,Bahujan Samaj Party,116,1
+2022,Assembly,HP,KASAULI,54,3,VINOD SULTANPURI,Indian National Congress,27908,292
+2022,Assembly,HP,KASAULI,54,4,RAJINDER,Himachal Jan Kranti Party,211,0
+2022,Assembly,HP,KASAULI,54,5,RAJEEV KUMAR KAUNDEL,Rashtriya Devbhumi Party,1666,11
+2022,Assembly,HP,KASAULI,54,6,HARMEL SINGH,Aam Aadmi Party,1796,13
+2022,Assembly,HP,KASAULI,54,7,OM PRAKASH,Independent,327,4
+2022,Assembly,HP,KASAULI,54,8,NOTA,None of the Above,347,1
+2022,Assembly,HP,PACHHAD,55,1,Ashish Kumar,Communist Party of India  (Marxist),537,6
+2022,Assembly,HP,PACHHAD,55,2,Dayal Pyari,Indian National Congress,16837,521
+2022,Assembly,HP,PACHHAD,55,3,Reena,Bharatiya Janata Party,20630,585
+2022,Assembly,HP,PACHHAD,55,4,Ajay Singh,Aam Aadmi Party,552,16
+2022,Assembly,HP,PACHHAD,55,5,Susheel Kumar Bhrigu,Rashtriya Devbhumi Party,8013,100
+2022,Assembly,HP,PACHHAD,55,6,Gangu Ram Musafir,Independent,12946,241
+2022,Assembly,HP,PACHHAD,55,7,NOTA,None of the Above,464,2
+2022,Assembly,HP,NAHAN,56,1,Ajay Solanki,Indian National Congress,34545,746
+2022,Assembly,HP,NAHAN,56,2,Ayodhya Prasad Verma,Bahujan Samaj Party,258,2
+2022,Assembly,HP,NAHAN,56,3,Dr. Rajeev Bindal,Bharatiya Janata Party,33057,595
+2022,Assembly,HP,NAHAN,56,4,Salender Singh,Rashtriya Devbhumi Party,295,2
+2022,Assembly,HP,NAHAN,56,5,Sunil Sharma,Aam Aadmi Party,381,6
+2022,Assembly,HP,NAHAN,56,6,Ramjan,Independent,117,1
+2022,Assembly,HP,NAHAN,56,7,NOTA,None of the Above,468,2
+2022,Assembly,HP,SRI RENUKAJI,57,1,Narain Singh,Bharatiya Janata Party,27126,656
+2022,Assembly,HP,SRI RENUKAJI,57,2,Vinay Kumar,Indian National Congress,27846,796
+2022,Assembly,HP,SRI RENUKAJI,57,3,Jagmohan Singh,Rashtriya Devbhumi Party,2074,18
+2022,Assembly,HP,SRI RENUKAJI,57,4,Ram Kishan,Aam Aadmi Party,674,12
+2022,Assembly,HP,SRI RENUKAJI,57,5,NOTA,None of the Above,482,3
+2022,Assembly,HP,PAONTA SAHIB,58,1,Kirnesh Jung,Indian National Congress,22104,308
+2022,Assembly,HP,PAONTA SAHIB,58,2,Seema,Bahujan Samaj Party,194,9
+2022,Assembly,HP,PAONTA SAHIB,58,3,Sukh Ram,Bharatiya Janata Party,30585,423
+2022,Assembly,HP,PAONTA SAHIB,58,4,Ashwani Verma,Rashtriya Devbhumi Party,366,1
+2022,Assembly,HP,PAONTA SAHIB,58,5,Manish Kumar Thakur,Aam Aadmi Party,5058,32
+2022,Assembly,HP,PAONTA SAHIB,58,6,Manish Tomar,Independent,3384,33
+2022,Assembly,HP,PAONTA SAHIB,58,7,Rameshwar,Independent,314,1
+2022,Assembly,HP,PAONTA SAHIB,58,8,Roshan Lal Chaudhary,Independent,1860,12
+2022,Assembly,HP,PAONTA SAHIB,58,9,Sunil Kumar,Independent,891,5
+2022,Assembly,HP,PAONTA SAHIB,58,10,NOTA,None of the Above,493,2
+2022,Assembly,HP,SHILLAI,59,1,Baldev Singh,Bharatiya Janata Party,31019,692
+2022,Assembly,HP,SHILLAI,59,2,Harshwardhan Chauhan,Indian National Congress,31430,663
+2022,Assembly,HP,SHILLAI,59,3,Naathu Ram Chauhan,Aam Aadmi Party,479,9
+2022,Assembly,HP,SHILLAI,59,4,Suresh Kumar,Rashtriya Devbhumi Party,452,2
+2022,Assembly,HP,SHILLAI,59,5,NOTA,None of the Above,523,2
+2022,Assembly,HP,CHOPAL,60,1,Sh. Balbir Singh Verma,Bharatiya Janata Party,25493,380
+2022,Assembly,HP,CHOPAL,60,2,Bhagat Lal,Bahujan Samaj Party,382,0
+2022,Assembly,HP,CHOPAL,60,3,Sh. Rajneesh Kimta,Indian National Congress,20351,489
+2022,Assembly,HP,CHOPAL,60,4,SH.UDAY SINGHTA,Aam Aadmi Party,406,7
+2022,Assembly,HP,CHOPAL,60,5,SH. ASHOK KUMAR,Independent,459,4
+2022,Assembly,HP,CHOPAL,60,6,Dr.Subhash Chand Manglate,Independent,13452,254
+2022,Assembly,HP,CHOPAL,60,7,NOTA,None of the Above,548,2
+2022,Assembly,HP,THEOG,61,1,AJAY SHYAM,Bharatiya Janata Party,13809,369
+2022,Assembly,HP,THEOG,61,2,KULDEEP SINGH RATHORE,Indian National Congress,18709,738
+2022,Assembly,HP,THEOG,61,3,JIA LAL SADHAK,Bahujan Samaj Party,298,6
+2022,Assembly,HP,THEOG,61,4,RAKESH SINGHA,Communist Party of India  (Marxist),12003,207
+2022,Assembly,HP,THEOG,61,5,ATTAR SINGH CHANDEL,Aam Aadmi Party,473,14
+2022,Assembly,HP,THEOG,61,6,AMIT MEHTA,Independent,573,8
+2022,Assembly,HP,THEOG,61,7,INDU VARMA,Independent,13635,213
+2022,Assembly,HP,THEOG,61,8,VIJAY PAL KHACHI,Independent,4408,168
+2022,Assembly,HP,THEOG,61,9,NOTA,None of the Above,347,2
+2022,Assembly,HP,KASUMPTI,62,1,Anirudh Singh,Indian National Congress,25251,508
+2022,Assembly,HP,KASUMPTI,62,2,Kameshwar,Bahujan Samaj Party,155,4
+2022,Assembly,HP,KASUMPTI,62,3,Kuldip Singh Tanwar,Communist Party of India  (Marxist),2635,35
+2022,Assembly,HP,KASUMPTI,62,4,Suresh Bhardwaj,Bharatiya Janata Party,16820,284
+2022,Assembly,HP,KASUMPTI,62,5,Dr. Rajesh Chanana,Aam Aadmi Party,306,1
+2022,Assembly,HP,KASUMPTI,62,6,Ram Prakash,Rashtriya Devbhumi Party,133,3
+2022,Assembly,HP,KASUMPTI,62,7,NOTA,None of the Above,332,3
+2022,Assembly,HP,SHIMLA,63,1,TIKENDER SINGH PANWAR,Communist Party of India  (Marxist),1386,14
+2022,Assembly,HP,SHIMLA,63,2,RAJESH KUMAR GILL,Bahujan Samaj Party,44,2
+2022,Assembly,HP,SHIMLA,63,3,SANJAY SOOD,Bharatiya Janata Party,12566,200
+2022,Assembly,HP,SHIMLA,63,4,HARISH JANARTHA,Indian National Congress,15576,227
+2022,Assembly,HP,SHIMLA,63,5,KALYAN SINGH,Rashtriya Devbhumi Party,74,4
+2022,Assembly,HP,SHIMLA,63,6,CHAMAN RAKESH,Aam Aadmi Party,327,1
+2022,Assembly,HP,SHIMLA,63,7,ABHISHEK BAROWALIA,Independent,120,0
+2022,Assembly,HP,SHIMLA,63,8,NOTA,None of the Above,236,1
+2022,Assembly,HP,SHIMLA RURAL,64,1,Balvinder Kumar Singh,Bahujan Samaj Party,266,5
+2022,Assembly,HP,SHIMLA RURAL,64,2,Ravi Kumar Mehta,Bharatiya Janata Party,20915,494
+2022,Assembly,HP,SHIMLA RURAL,64,3,Vikramaditya Singh,Indian National Congress,34334,935
+2022,Assembly,HP,SHIMLA RURAL,64,4,Puran Dutt,Rashtriya Devbhumi Party,904,11
+2022,Assembly,HP,SHIMLA RURAL,64,5,Prem Kumar,Aam Aadmi Party,240,4
+2022,Assembly,HP,SHIMLA RURAL,64,6,Praveen Kumar,Independent,195,1
+2022,Assembly,HP,SHIMLA RURAL,64,7,NOTA,None of the Above,288,5
+2022,Assembly,HP,JUBBAL-KOTKHAI,65,1,CHETAN SINGH BRAGTA,Bharatiya Janata Party,25796,528
+2022,Assembly,HP,JUBBAL-KOTKHAI,65,2,RAM PAL,Bahujan Samaj Party,237,2
+2022,Assembly,HP,JUBBAL-KOTKHAI,65,3,ROHIT THAKUR,Indian National Congress,30362,1031
+2022,Assembly,HP,JUBBAL-KOTKHAI,65,4,VISHAL SHANKTA,Communist Party of India  (Marxist),1215,41
+2022,Assembly,HP,JUBBAL-KOTKHAI,65,5,SHRIKANT CHAUHAN,Aam Aadmi Party,161,2
+2022,Assembly,HP,JUBBAL-KOTKHAI,65,6,SUMAN KADAM,Independent,64,1
+2022,Assembly,HP,JUBBAL-KOTKHAI,65,7,NOTA,None of the Above,186,1
+2022,Assembly,HP,RAMPUR,66,1,KAUL SINGH,Bharatiya Janata Party,27315,515
+2022,Assembly,HP,RAMPUR,66,2,DESH RAJ,Bahujan Samaj Party,439,5
+2022,Assembly,HP,RAMPUR,66,3,NAND LAL,Indian National Congress,27458,939
+2022,Assembly,HP,RAMPUR,66,4,UDAY SINGH,Aam Aadmi Party,690,16
+2022,Assembly,HP,RAMPUR,66,5,PRITAM DEV,Independent,116,1
+2022,Assembly,HP,RAMPUR,66,6,NOTA,None of the Above,371,6
+2022,Assembly,HP,ROHRU,67,1,Prakash Andta,Bahujan Samaj Party,510,10
+2022,Assembly,HP,ROHRU,67,2,Mohan Lal Brakta,Indian National Congress,33344,983
+2022,Assembly,HP,ROHRU,67,3,Shashi Bala,Bharatiya Janata Party,14676,312
+2022,Assembly,HP,ROHRU,67,4,Ashwani Kumar,Aam Aadmi Party,1379,21
+2022,Assembly,HP,ROHRU,67,5,Narender Singh,Rashtriya Devbhumi Party,207,2
+2022,Assembly,HP,ROHRU,67,6,Rajender Singh,Independent,3510,87
+2022,Assembly,HP,ROHRU,67,7,NOTA,None of the Above,410,3
+2022,Assembly,HP,KINNAUR,68,1,Anil Kapoor,Bahujan Samaj Party,277,3
+2022,Assembly,HP,KINNAUR,68,2,Jagat Singh Negi,Indian National Congress,20208,488
+2022,Assembly,HP,KINNAUR,68,3,Surat Negi,Bharatiya Janata Party,13515,217
+2022,Assembly,HP,KINNAUR,68,4,Tersem Singh,Aam Aadmi Party,567,13
+2022,Assembly,HP,KINNAUR,68,5,Tejwant Singh Negi,Independent,8412,162
+2022,Assembly,HP,KINNAUR,68,6,NOTA,None of the Above,218,5
+2022,Assembly,HP,BAIJNATH,20,1,Ajay Kumar,Bahujan Samaj Party,523,13
+2022,Assembly,HP,BAIJNATH,20,2,Kishori Lal,Indian National Congress,28605,733
+2022,Assembly,HP,BAIJNATH,20,3,Mulkh Raj,Bharatiya Janata Party,25395,497
+2022,Assembly,HP,BAIJNATH,20,4,Parmodh Chand,Aam Aadmi Party,1086,23
+2022,Assembly,HP,BAIJNATH,20,5,Vishesh,Swabhiman Party,223,3
+2022,Assembly,HP,BAIJNATH,20,6,Gurdas Ram,Independent,528,3
+2022,Assembly,HP,BAIJNATH,20,7,NOTA,None of the Above,661,8
+2022,Assembly,HP,CHINTPURNI,41,1,BALBIR SINGH,Bharatiya Janata Party,27239,615
+2022,Assembly,HP,CHINTPURNI,41,2,VIRENDER KUMAR,Bahujan Samaj Party,220,6
+2022,Assembly,HP,CHINTPURNI,41,3,SUDARSHAN SINGH BABLOO,Indian National Congress,31816,896
+2022,Assembly,HP,CHINTPURNI,41,4,RAM PAUL,Aam Aadmi Party,755,12
+2022,Assembly,HP,CHINTPURNI,41,5,KEWAL KUMAR,Independent,152,6
+2022,Assembly,HP,CHINTPURNI,41,6,NOTA,None of the Above,353,2
