@@ -1,0 +1,121 @@
+name: Import election results
+
+# Scrapes candidate-level assembly results from archive.org copies of ECI result pages,
+# using the india-votes-data scraper (pinned), then rebuilds the site data and pushes it to
+# a new branch for review. Run it by hand from the Actions tab.
+on:
+  workflow_dispatch:
+    inputs:
+      state:
+        description: Two-letter state code used in this repo (e.g. GJ, HP)
+        required: true
+        default: GJ
+      archive_url:
+        description: archive.org URL of the ECI results page for constituency 1
+        required: true
+        default: https://web.archive.org/web/2023/https://results.eci.gov.in/ResultAcGenDec2022/ConstituencywiseS061.htm?ac=1
+      election_id:
+        description: Election ID in AC-YYYY-MM format (the count date)
+        required: true
+        default: AC-2022-12
+
+permissions:
+  contents: write
+
+env:
+  SCRAPER_REPO: https://github.com/thecont1/india-votes-data
+  SCRAPER_COMMIT: 7d8cf637f83d223b178d11659103a1f52647367a
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch the pinned scraper
+        run: |
+          git init -q "$RUNNER_TEMP/scraper"
+          cd "$RUNNER_TEMP/scraper"
+          git fetch -q --depth 1 "$SCRAPER_REPO" "$SCRAPER_COMMIT"
+          git checkout -q FETCH_HEAD
+          pip install -q beautifulsoup4
+
+      - name: Scrape results
+        working-directory: ${{ runner.temp }}/scraper
+        run: |
+          rm -f data/csv/*Assembly-${{ inputs.state }}.csv data/json/*Assembly-${{ inputs.state }}.json
+          python3 scripts/eci-archive-scraper.py "${{ inputs.archive_url }}" \
+            --state-code "${{ inputs.state }}" --election-id "${{ inputs.election_id }}"
+
+      - name: Check every seat was scraped
+        id: check
+        run: |
+          csv=$(ls "$RUNNER_TEMP"/scraper/data/csv/*Assembly-${{ inputs.state }}.csv)
+          year=$(basename "$csv" | cut -c1-4)
+          echo "csv=$csv" >> "$GITHUB_OUTPUT"
+          echo "year=$year" >> "$GITHUB_OUTPUT"
+          python3 - "$csv" "${{ inputs.state }}" <<'EOF'
+          import csv, json, sys
+          path, state = sys.argv[1], sys.argv[2]
+          seats = next(s['seats'] for s in json.load(open('data/states.json'))['states'] if s['id'] == state)
+          rows = list(csv.DictReader(open(path)))
+          acs = {int(r['constituency_no']) for r in rows}
+          missing = sorted(set(range(1, seats + 1)) - acs)
+          bad = [r for r in rows if not r['evm_votes'].isdigit() or not r['postal_votes'].isdigit()]
+          print(f"{len(acs)}/{seats} constituencies, {len(rows)} candidate rows, {len(bad)} rows with non-numeric votes")
+          if missing:
+              print(f"::error::Missing constituencies: {missing}")
+              sys.exit(1)
+          if bad:
+              print(f"::error::Non-numeric vote counts, e.g. {bad[:3]}")
+              sys.exit(1)
+          EOF
+
+      - name: Commit the source CSV
+        run: |
+          mkdir -p data/sources/results
+          file="${{ steps.check.outputs.year }}Assembly-${{ inputs.state }}.csv"
+          cp "${{ steps.check.outputs.csv }}" "data/sources/results/$file"
+          node - <<'EOF'
+          const fs = require('fs');
+          const p = 'data/sources/results/sources.json';
+          const sources = fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : {};
+          sources[process.env.STATE] = {
+            name: 'ECI results via archive.org (india-votes-data scraper)',
+            url: process.env.ARCHIVE_URL,
+            commit: process.env.SCRAPER_COMMIT,
+            license: 'ECI public results; scraper MIT',
+            scrapedAt: new Date().toISOString(),
+          };
+          fs.writeFileSync(p, JSON.stringify(sources, null, 2) + '\n');
+          EOF
+        env:
+          STATE: ${{ inputs.state }}
+          ARCHIVE_URL: ${{ inputs.archive_url }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Rebuild site data
+        run: |
+          npm ci
+          npm run data:fetch
+          npm run data:build
+
+      - name: Push to a review branch
+        run: |
+          branch="import/${{ inputs.state }}-${{ steps.check.outputs.year }}-${{ github.run_id }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add data/sources/results public/data
+          git commit -m "Import ${{ steps.check.outputs.year }} assembly results for ${{ inputs.state }}"
+          git push origin "$branch"
+          echo "Pushed $branch" >> "$GITHUB_STEP_SUMMARY"
