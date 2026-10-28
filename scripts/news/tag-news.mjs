@@ -15,13 +15,11 @@ import Anthropic from '@anthropic-ai/sdk';
 import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod';
 import { z } from 'zod';
 import { loadGazetteer, cleanName } from './gazetteer.mjs';
-import { loadRules, tagByRules, STATE_IDS, TOPICS } from './rules.mjs';
+import { loadRules, tagByRules, STATE_IDS, TOPICS, TAGGER_VERSION } from './rules.mjs';
 import { similarity } from '../lib.mjs';
 
 const STORE = 'data/news/items.json';
 const OUT = 'public/data/news.json';
-// Bump when tagging logic changes so existing items are re-tagged.
-const TAGGER_VERSION = 4;
 const MODEL = 'claude-opus-5-5';
 const PUBLISH_DAYS = 180;
 const RESOLVE_THRESHOLD = 0.85;
@@ -59,6 +57,8 @@ let tagged = 0;
 let llmCalls = 0;
 let rejected = 0;
 for (const item of items) {
+  // Community tips keep their moderator-approved tags.
+  if (item.tags?.tagger === 'crowd') continue;
   if (item.tags?.version === TAGGER_VERSION && (item.tags.tagger === 'claude' || !client)) continue;
   const text = [item.title, item.summary].filter(Boolean).join('. ');
   const ruleTags = tagByRules(rules, gazetteer, item.title, text);
@@ -177,7 +177,7 @@ async function publish(all) {
     .filter((i) => i.tags?.relevant && dateOf(i) >= cutoff)
     // Newest first; stories without a publish date go last rather than taking their collection date.
     .sort((a, b) => (b.published ? Date.parse(b.published) : 0) - (a.published ? Date.parse(a.published) : 0))
-    .map(({ id, url, title, source, published, collectedAt, collectedBy, tags }) => ({
+    .map(({ id, url, title, source, published, collectedAt, collectedBy, contributor, crowdIssue, tags }) => ({
       id,
       url,
       title,
@@ -185,6 +185,8 @@ async function publish(all) {
       published,
       collectedAt,
       collectedBy,
+      contributor: contributor ?? null,
+      crowdIssue: crowdIssue ?? null,
       tagger: tags.tagger,
       states: tags.states,
       places: tags.places.map(({ kind, state, name, ac, acs, confidence, via }) => ({ kind, state, name, ac, acs, confidence, via })),

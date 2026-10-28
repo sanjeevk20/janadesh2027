@@ -1,0 +1,76 @@
+name: Submit a news tip
+description: Share a published news story about the 2027 assembly elections. A moderator reviews every tip before it appears on Janadesh 2027.
+title: "News tip: "
+labels: ["news-tip"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping track the 2027 assembly elections. Please share **stories that have been published** by a news outlet or an official source (Election Commission, a party's official channel). We can't publish rumours, unsourced claims or social-media posts on their own.
+
+        A moderator reviews every tip. Approved tips are published with the next daily refresh (06:17 IST) and credited as a community tip.
+  - type: input
+    id: url
+    attributes:
+      label: Link to the story
+      description: The full web address (starting with https://).
+      placeholder: https://www.example.com/news/...
+    validations:
+      required: true
+  - type: input
+    id: headline
+    attributes:
+      label: Headline
+      description: As published.
+    validations:
+      required: true
+  - type: dropdown
+    id: state
+    attributes:
+      label: State
+      options:
+        - Uttar Pradesh
+        - Punjab
+        - Uttarakhand
+        - Goa
+        - Manipur
+        - Gujarat
+        - Himachal Pradesh
+    validations:
+      required: true
+  - type: input
+    id: constituency
+    attributes:
+      label: Assembly constituency (optional)
+      description: If the story is about a specific seat. Use the seat name as on the map.
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      options:
+        - Schedule & Election Commission
+        - Alliances
+        - Candidates
+        - Campaign
+        - Opinion polls
+        - By-polls & local polls
+        - Defections
+        - Governance
+        - Security
+        - Legal
+        - Analysis
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: One-line summary (optional)
+      description: Neutral and factual, in your own words.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: This story was published by a news outlet or official source, and I'm sharing the link to it.
+          required: true

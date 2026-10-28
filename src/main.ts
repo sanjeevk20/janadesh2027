@@ -67,6 +67,8 @@ const TOSSUP_COLOR = '#ffd166';
 const RATING_OPACITY: Record<Rating, number> = { safe: 0.9, likely: 0.7, lean: 0.45, tossup: 0.9 };
 const RATING_LABELS: Record<Rating, string> = { safe: 'Safe', likely: 'Likely', lean: 'Lean', tossup: 'Toss-up' };
 const SWING_SLIDER_LIMIT = 15;
+// GitHub issue form for community news tips (moderated before publishing).
+const NEWS_TIP_URL = 'https://github.com/sanjeevk20/janadesh2027/issues/new?template=news-tip.yml';
 const BASEMAP_URL = 'https://tiles.openfreemap.org/styles/positron';
 // Used when the basemap is unreachable, so the constituency layers still render.
 const FALLBACK_STYLE: maplibregl.StyleSpecification = {
@@ -799,7 +801,7 @@ function renderConstituency(p: ConstituencyProps) {
     ${seatBattlegroundHtml(p)}
     ${seat ? seatResultHtml(seat) : results.has(p.state) ? '' : `<p class="muted">2022 results for ${s.name} are not loaded yet.</p>`}
     ${pcResult(p) ? pcResultHtml(pcResult(p)!) : ''}
-    ${newsHtml(seatNews(p), 'News for this seat', 'No news tagged to this seat or its district yet.')}`;
+    ${seatNewsHtml(p, s)}`;
   document.getElementById('back')!.addEventListener('click', () => selectState(p.state));
 }
 
@@ -876,6 +878,20 @@ function seatNews(p: ConstituencyProps): NewsItem[] {
   );
 }
 
+// Stories naming the seat or its district; when there are none, the latest from the state so
+// the seat view is never a dead end.
+function seatNewsHtml(p: ConstituencyProps, s: StateInfo): string {
+  const direct = seatNews(p);
+  if (direct.length) return newsHtml(direct, 'News for this seat', '');
+  const stateNews = news.filter((n) => n.states.includes(p.state)).slice(0, 4);
+  return newsHtml(
+    stateNews,
+    'News for this seat',
+    `No news for ${escapeHtml(s.name)} yet.`,
+    `No stories name this seat or its district yet. Latest from ${escapeHtml(s.name)}:`,
+  );
+}
+
 const TOPIC_LABELS: Record<string, string> = {
   schedule: 'Schedule & EC',
   alliances: 'Alliances',
@@ -891,8 +907,10 @@ const TOPIC_LABELS: Record<string, string> = {
   other: 'Other',
 };
 
-function newsHtml(items: NewsItem[], heading: string, empty: string): string {
-  if (!items.length) return `<h3>${heading}</h3><p class="muted small">${empty}</p>`;
+function newsHtml(items: NewsItem[], heading: string, empty: string, intro = ''): string {
+  const submit = `<p class="small"><a href="${NEWS_TIP_URL}" target="_blank" rel="noopener noreferrer">Submit a news tip</a>
+    <span class="muted">· reviewed by a moderator before it appears</span></p>`;
+  if (!items.length) return `<h3>${heading}</h3><p class="muted small">${empty}</p>${submit}`;
   const date = (n: NewsItem) =>
     n.published
       ? new Date(n.published).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })
@@ -913,13 +931,21 @@ function newsHtml(items: NewsItem[], heading: string, empty: string): string {
           <span class="topic">${TOPIC_LABELS[n.topic] ?? escapeHtml(n.topic)}</span></div>
         ${n.summary ? `<div class="small">${escapeHtml(n.summary)}</div>` : ''}
         ${places ? `<div class="tags">${places}</div>` : ''}
+        ${
+          n.tagger === 'crowd'
+            ? `<div class="small crowd">Community tip${n.contributor ? ` by @${escapeHtml(n.contributor)}` : ''}${
+                n.crowdIssue ? ` · <a href="${escapeHtml(n.crowdIssue)}" target="_blank" rel="noopener noreferrer">reviewed submission</a>` : ''
+              }</div>`
+            : ''
+        }
       </li>`;
     })
     .join('');
-  const tagger = items.some((n) => n.tagger === 'rules')
-    ? 'Refreshed daily. States, places and topics are tagged by keyword rules maintained by the analyst; tags can occasionally be wrong.'
-    : 'Tagged by Claude; constituency tags are checked against the official seat list.';
-  return `<h3>${heading}</h3><ul class="news">${rows}</ul><p class="muted small">${tagger}</p>`;
+  const tagger = items.some((n) => n.tagger === 'claude')
+    ? 'Tagged by Claude; constituency tags are checked against the official seat list.'
+    : 'Refreshed daily. States, places and topics are tagged by keyword rules maintained by the analyst; tags can occasionally be wrong.';
+  return `<h3>${heading}</h3>${intro ? `<p class="muted small">${intro}</p>` : ''}<ul class="news">${rows}</ul>
+    <p class="muted small">${tagger}</p>${submit}`;
 }
 
 function signed(n: number): string {

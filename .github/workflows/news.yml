@@ -9,6 +9,8 @@ on:
 
 permissions:
   contents: write
+  # Read approved community tips and comment on / close them.
+  issues: write
 
 jobs:
   news:
@@ -25,6 +27,11 @@ jobs:
 
       - name: Collect stories from RSS feeds
         run: npm run news:fetch
+
+      - name: Publish approved community tips
+        run: node scripts/news/crowd-ingest.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Tag stories (Claude when ANTHROPIC_API_KEY is set, keyword rules otherwise)
         run: npm run news:tag
