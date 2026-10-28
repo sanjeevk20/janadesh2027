@@ -1,9 +1,10 @@
-name: Weekly news
+name: Daily news
 
 on:
   schedule:
-    # Mondays 02:23 UTC (07:53 IST)
-    - cron: '23 2 * * 1'
+    # Every day at 00:47 UTC = 06:17 IST, so the morning's stories are tagged and live by ~06:20.
+    # Cron is in UTC; change the time here.
+    - cron: '47 0 * * *'
   workflow_dispatch:
 
 permissions:

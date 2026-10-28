@@ -481,6 +481,67 @@ td.down {
   border-style: dashed;
 }
 
+.bg-controls {
+  display: grid;
+  gap: 6px;
+  margin: 8px 0 10px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+}
+
+.bg-controls select {
+  margin-left: 6px;
+  font: inherit;
+}
+
+.small-seg,
+#bg-reset {
+  justify-self: start;
+}
+
+.bg-slider {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(90px, 1.2fr) 44px;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.bg-slider span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bg-slider input {
+  width: 100%;
+}
+
+.bg-slider output {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.seat-bar {
+  position: relative;
+}
+
+.majority-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--text);
+  flex: none;
+}
+
+.chip.majority {
+  font-weight: 700;
+}
+
 .closest {
   margin: 0;
   padding-left: 20px;
