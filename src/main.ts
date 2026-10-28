@@ -877,7 +877,7 @@ function seatNews(p: ConstituencyProps): NewsItem[] {
 }
 
 const TOPIC_LABELS: Record<string, string> = {
-  schedule: 'Schedule',
+  schedule: 'Schedule & EC',
   alliances: 'Alliances',
   candidates: 'Candidates',
   campaign: 'Campaign',
@@ -886,6 +886,8 @@ const TOPIC_LABELS: Record<string, string> = {
   governance: 'Governance',
   security: 'Security',
   legal: 'Legal',
+  other_polls: 'By-polls & local polls',
+  analysis: 'Analysis',
   other: 'Other',
 };
 
@@ -915,7 +917,7 @@ function newsHtml(items: NewsItem[], heading: string, empty: string): string {
     })
     .join('');
   const tagger = items.some((n) => n.tagger === 'rules')
-    ? 'Some stories are tagged by keyword rules only; AI tagging runs when the daily job has API credentials.'
+    ? 'Refreshed daily. States, places and topics are tagged by keyword rules maintained by the analyst; tags can occasionally be wrong.'
     : 'Tagged by Claude; constituency tags are checked against the official seat list.';
   return `<h3>${heading}</h3><ul class="news">${rows}</ul><p class="muted small">${tagger}</p>`;
 }

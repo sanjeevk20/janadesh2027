@@ -1,0 +1,620 @@
+{
+  "_meta": {
+    "description": "Held-out labelled stories: NOT used when writing the cues. Report scores on this set as the honest estimate; do not tune cues against it (add new examples to eval.json instead).",
+    "labelledFrom": "Daily news run of 2026-10-28, random sample of 45 excluding eval.json (seed 4242)",
+    "labeller": "engineering; analyst to review"
+  },
+  "items": [
+    {
+      "id": "aa13cfd4be01",
+      "title": "810 polling booths put BJP, Congress on booth-building drive ahead of 2027 Uttarakhand polls",
+      "summary": "810 polling booths put BJP, Congress on booth-building drive ahead of 2027 Uttarakhand polls The New Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UK"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "b8bed2c3efdd",
+      "title": "AIMIM eyes 200-seat fight in UP, keeps BSP alliance option open",
+      "summary": "AIMIM eyes 200-seat fight in UP, keeps BSP alliance option open India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "alliances",
+          "campaign",
+          "candidates"
+        ]
+      }
+    },
+    {
+      "id": "9fbaa088fc8e",
+      "title": "Akash Anand reaffirms loyalty to Mayawati, gears up for 2027 UP polls",
+      "summary": "Akash Anand reaffirms loyalty to Mayawati, gears up for 2027 UP polls India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "f3e9fa251ff0",
+      "title": "Kangpokpi Election 2027: Kangpokpi Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Kangpokpi Election 2027: Kangpokpi Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "7f3f68b2a3f8",
+      "title": "Kapkot Assembly election results",
+      "summary": "Kapkot Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "2bed9c9733ea",
+      "title": "Purola Assembly election results",
+      "summary": "Purola Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "769262478acc",
+      "title": "Rishikesh Assembly election results",
+      "summary": "Rishikesh Assembly election results News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "863624e67a40",
+      "title": "Punjab's Unresolved Sacrilege Cases Push Religion Back to the Centre of 2027 Election Politics",
+      "summary": "Punjab's Unresolved Sacrilege Cases Push Religion Back to the Centre of 2027 Election Politics Frontline Magazine",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "analysis",
+          "other"
+        ]
+      }
+    },
+    {
+      "id": "8c34201c7f88",
+      "title": "Congress hopes for calm in Punjab unit but storm clouds remain ahead of 2027 Assembly election",
+      "summary": "Congress hopes for calm in Punjab unit but storm clouds remain ahead of 2027 Assembly election The Hindu",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "analysis",
+          "campaign",
+          "other"
+        ]
+      }
+    },
+    {
+      "id": "7677c8a29f9b",
+      "title": "Goa District Council Polls: BJP Holds On as Opposition Gains",
+      "summary": "Goa District Council Polls: BJP Holds On as Opposition Gains Frontline Magazine",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GA"
+        ],
+        "topics": [
+          "other_polls"
+        ]
+      }
+    },
+    {
+      "id": "6ac7f41dd821",
+      "title": "Benaulim Election 2027: Benaulim Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Benaulim Election 2027: Benaulim Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "GA"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "cbca5a04d284",
+      "title": "Manipur appoints 11 Nodal officers ahead of 2027 Assembly Elections",
+      "summary": "Manipur appoints 11 Nodal officers ahead of 2027 Assembly Elections The Statesman",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "MN"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    },
+    {
+      "id": "573b9e118e2d",
+      "title": "With eyes on Himachal panchayat polls before 2027 litmus test, AAP makes fresh start",
+      "summary": "With eyes on Himachal panchayat polls before 2027 litmus test, AAP makes fresh start The Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "other_polls",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "a10431de4338",
+      "title": "Panaji Election 2027: Panaji Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Panaji Election 2027: Panaji Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "GA"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "9ca9a70fd46a",
+      "title": "Rahul Gandhi to Launch Congress' Mission 2027 from Bhagwant Mann's Home Turf",
+      "summary": "Rahul Gandhi to Launch Congress' Mission 2027 from Bhagwant Mann's Home Turf NDTV",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "2439adc323f4",
+      "title": "Rahul Gandhi to sound bugle for 2027 Punjab polls from Sangrur on Nov 4: Pargat Singh",
+      "summary": "Rahul Gandhi to sound bugle for 2027 Punjab polls from Sangrur on Nov 4: Pargat Singh ANI News",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "8dfb99ca1a53",
+      "title": "Thanga Election 2027: Thanga Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Thanga Election 2027: Thanga Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "a1e42fb49d90",
+      "title": "Mission Punjab 2027: AAP under pressure, Congress adrift; can BJP spring a Bengal-style surprise?",
+      "summary": "Mission Punjab 2027: AAP under pressure, Congress adrift; can BJP spring a Bengal-style surprise? The Times of India",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "b6dd4ffe1015",
+      "title": "In 1st election after SIR, local bodies to test ground for 2027 Gujarat Assembly polls",
+      "summary": "In 1st election after SIR, local bodies to test ground for 2027 Gujarat Assembly polls The Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GJ"
+        ],
+        "topics": [
+          "other_polls"
+        ]
+      }
+    },
+    {
+      "id": "6d32cf01896e",
+      "title": "Dabolim Election 2027: Dabolim Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Dabolim Election 2027: Dabolim Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "GA"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "41b9510652e7",
+      "title": "How BJP is building its UP pitch well before 2027 election battle",
+      "summary": "How BJP is building its UP pitch well before 2027 election battle The Times of India",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "analysis",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "bd7883452ecf",
+      "title": "Former BJP MP Dharmendra Kashyap Joins Samajwadi Party Ahead of Uttar Pradesh Elections",
+      "summary": "Former BJP MP Dharmendra Kashyap Joins Samajwadi Party Ahead of Uttar Pradesh Elections www.nationpathindia.com",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "defections"
+        ]
+      }
+    },
+    {
+      "id": "a3d84e7315c7",
+      "title": "Speculation rises over early UP Assembly polls ahead of Census 2027, political circles say",
+      "summary": "Speculation rises over early UP Assembly polls ahead of Census 2027, political circles say The New Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "schedule"
+        ]
+      }
+    },
+    {
+      "id": "76d800b591bc",
+      "title": "Fatorda Election 2027: Fatorda Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Fatorda Election 2027: Fatorda Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "GA"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "6543c8005b8c",
+      "title": "UP CEO orders voter roll audit after SIR glitches exposed: Can the 2027 election be fair without public scrutiny?",
+      "summary": "UP CEO orders voter roll audit after SIR glitches exposed: Can the 2027 election be fair without public scrutiny? SabrangIndia",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "schedule",
+          "legal"
+        ]
+      }
+    },
+    {
+      "id": "2ef759cf79a9",
+      "title": "The Battle Over ‘Panthic Politics’ Ahead of the 2027 Punjab Polls",
+      "summary": "The Battle Over ‘Panthic Politics’ Ahead of the 2027 Punjab Polls TheWire.in",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "b249675607f9",
+      "title": "SubscriberWrites: Uttarakhand’s political rhetoric’s and unanswered questions: State assembly elections 2027",
+      "summary": "SubscriberWrites: Uttarakhand’s political rhetoric’s and unanswered questions: State assembly elections 2027 ThePrint",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UK"
+        ],
+        "topics": [
+          "analysis",
+          "other"
+        ]
+      }
+    },
+    {
+      "id": "5707a947bc83",
+      "title": "3 elections, 0 victories: BJP's 2027 Uttar Pradesh election plan includes a tough challenge",
+      "summary": "3 elections, 0 victories: BJP's 2027 Uttar Pradesh election plan includes a tough challenge Moneycontrol.com",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "analysis",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "c52136340ad1",
+      "title": "BJP-Akali Dal Alliance Buzz Grows Ahead of 2027 Punjab Assembly Polls - India Today",
+      "summary": "BJP-Akali Dal Alliance Buzz Grows Ahead of 2027 Punjab Assembly Polls - India Today India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "alliances"
+        ]
+      }
+    },
+    {
+      "id": "1f4c1d1cce3e",
+      "title": "BJP honours elected representatives in Theog, predicts two-thirds majority in Himachal in 2027",
+      "summary": "BJP honours elected representatives in Theog, predicts two-thirds majority in Himachal in 2027 Devdiscourse",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "HP"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "b6b45daac062",
+      "title": "Punjab: Decoding the great BJP disconnect",
+      "summary": "Punjab: Decoding the great BJP disconnect India Today",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "70f822897aca",
+      "title": "Congress Fears Targeted Deletion Of Its Voters During Gujarat SIR",
+      "summary": "Congress Fears Targeted Deletion Of Its Voters During Gujarat SIR ETV Bharat",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GJ"
+        ],
+        "topics": [
+          "schedule",
+          "legal"
+        ]
+      }
+    },
+    {
+      "id": "88c46f78ae79",
+      "title": "Manipur Has A New Party: PRP Promises ‘Action Over Rhetoric’ for 2027; ECI Officially Lists Party as Registered",
+      "summary": "Manipur Has A New Party: PRP Promises ‘Action Over Rhetoric’ for 2027; ECI Officially Lists Party as Registered The Frontier Manipur",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "MN"
+        ],
+        "topics": [
+          "alliances",
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "3dfa835655d9",
+      "title": "Opinion: Why BJP Win In Gujarat Local Body Polls Has Worried Congress And AAP",
+      "summary": "Opinion: Why BJP Win In Gujarat Local Body Polls Has Worried Congress And AAP NDTV",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "GJ"
+        ],
+        "topics": [
+          "other_polls",
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "9476bb06789f",
+      "title": "Sugnoo Election 2027: Sugnoo Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Sugnoo Election 2027: Sugnoo Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "24395315cf77",
+      "title": "Waris Punjab De, ECI And The 2027 Punjab Polls: What Happens If Registration Is Denied?",
+      "summary": "Waris Punjab De, ECI And The 2027 Punjab Polls: What Happens If Registration Is Denied? Outlook India",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "schedule",
+          "legal",
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "03629d5efc2f",
+      "title": "BATTLE 2027: THE ALLIANCE ARITHMETIC",
+      "summary": "BATTLE 2027: THE ALLIANCE ARITHMETIC The Goan",
+      "expected": {
+        "relevant": false,
+        "states": [],
+        "topics": []
+      }
+    },
+    {
+      "id": "be6e59cd008e",
+      "title": "UP polls 2027: BJP-led NDA, SP-led opposition firm up election strategies",
+      "summary": "UP polls 2027: BJP-led NDA, SP-led opposition firm up election strategies The New Indian Express",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "campaign",
+          "alliances"
+        ]
+      }
+    },
+    {
+      "id": "ab9bfafb37c0",
+      "title": "BJP to Discuss Yogi Government’s Record and 2027 Poll Strategy at October 30–31 Meeting",
+      "summary": "BJP to Discuss Yogi Government’s Record and 2027 Poll Strategy at October 30–31 Meeting www.nationpathindia.com",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UP"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "14977db90121",
+      "title": "Haridwar Rural",
+      "summary": "Haridwar Rural News18",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "UK"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "cba201b9eb8e",
+      "title": "Rahul Gandhi set to address Sangrur rally on Nov 4",
+      "summary": "Rahul Gandhi set to address Sangrur rally on Nov 4 The Times of India",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "PB"
+        ],
+        "topics": [
+          "campaign"
+        ]
+      }
+    },
+    {
+      "id": "64636c1b3345",
+      "title": "NCP to contest 2027 assembly elections independently",
+      "summary": "NCP to contest 2027 assembly elections independently The Times of India",
+      "expected": {
+        "relevant": false,
+        "states": [],
+        "topics": []
+      }
+    },
+    {
+      "id": "35334bcb18d5",
+      "title": "2027 Assembly elections: BJP to go with incumbent CMs in states it rules",
+      "summary": "2027 Assembly elections: BJP to go with incumbent CMs in states it rules The Statesman",
+      "expected": {
+        "relevant": false,
+        "states": [],
+        "topics": []
+      }
+    },
+    {
+      "id": "d5ea928fa841",
+      "title": "Wangkhem Election 2027: Wangkhem Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share",
+      "summary": "Wangkhem Election 2027: Wangkhem Assembly Election Date, MLA's, Seat, Results, Candidates, Vote Share India Today",
+      "expected": {
+        "relevant": false,
+        "states": [
+          "MN"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "id": "69d6faeef739",
+      "title": "Uttarakhand Elections 2027: Dhami Govt Faces Tough Questions As Voters Weigh Their Options | News18",
+      "summary": "Uttarakhand Elections 2027: Dhami Govt Faces Tough Questions As Voters Weigh Their Options | News18 News18",
+      "expected": {
+        "relevant": true,
+        "states": [
+          "UK"
+        ],
+        "topics": [
+          "analysis",
+          "campaign"
+        ]
+      }
+    }
+  ]
+}

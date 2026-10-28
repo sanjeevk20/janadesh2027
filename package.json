@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "typecheck": "tsc",
     "news:fetch": "node scripts/news/fetch-news.mjs",
-    "news:tag": "node scripts/news/tag-news.mjs"
+    "news:tag": "node scripts/news/tag-news.mjs",
+    "news:eval": "node scripts/news/eval-rules.mjs"
   },
   "repository": {
     "type": "git",
