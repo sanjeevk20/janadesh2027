@@ -7,6 +7,8 @@ import { readFile } from 'node:fs/promises';
 import { matchPlaces } from './gazetteer.mjs';
 
 export const STATE_IDS = ['UP', 'PB', 'UK', 'GA', 'MN', 'GJ', 'HP'];
+// Bump when tagging logic changes so existing items are re-tagged.
+export const TAGGER_VERSION = 4;
 export const TOPICS = [
   'schedule',
   'alliances',

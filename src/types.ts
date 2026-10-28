@@ -133,7 +133,10 @@ export interface NewsItem {
   published: string | null;
   collectedAt: string;
   collectedBy: string;
-  tagger: 'claude' | 'rules';
+  tagger: 'claude' | 'rules' | 'crowd';
+  // Community tips: GitHub user who submitted it and the reviewed issue.
+  contributor?: string | null;
+  crowdIssue?: string | null;
   states: string[];
   places: NewsPlace[];
   parties: string[];

@@ -72,7 +72,20 @@ Your call on a specific seat. It overrides the model in the seat view, the map c
 - **`bloc`** is required unless the rating is `tossup`.
 - Date your calls. Ratings go stale, and the date is shown on the page.
 
-## 4. News cues: `news-cues.json`
+## 4. Moderating community news tips
+
+Readers submit stories through the **Submit a news tip** form. Each one arrives as a GitHub issue labelled `news-tip`. Nothing is published until you approve it:
+
+1. Open the [tips awaiting review](https://github.com/sanjeevk20/janadesh2027/issues?q=is%3Aopen+label%3Anews-tip+-label%3Aapproved).
+2. Open the link and check that it's a published story from a news outlet or official source, and that the state, seat and topic are right. You can edit the issue to correct them.
+3. **Approve:** add the `approved` label. The next daily refresh (06:17 IST) publishes it, credits the contributor, comments and closes the issue. To publish sooner, run "Daily news" from the Actions tab.
+4. **Reject:** add `rejected`, comment briefly with the reason, and close the issue.
+
+If an approved tip can't be published (bad link, unknown state), the job comments with the problems and removes `approved`. Fix the issue and re-add the label.
+
+Things to reject: rumours or unsourced claims, social-media posts with no outlet behind them, paywalled pages nobody can verify, and anything targeting a private individual.
+
+## 5. News cues: `news-cues.json`
 
 The daily news tagger runs on keyword rules (no AI key is configured). The domain knowledge behind it is yours to maintain:
 

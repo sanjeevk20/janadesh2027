@@ -459,6 +459,11 @@ td.down {
   text-decoration: underline;
 }
 
+.crowd {
+  margin-top: 2px;
+  color: var(--ok);
+}
+
 .topic {
   color: var(--accent);
 }

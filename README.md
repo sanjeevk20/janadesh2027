@@ -68,6 +68,7 @@ After the fixes every Punjab Lok Sabha seat has 9 assembly seats, and UP has 77 
 ### News tagging
 
 1. **Collect** (`npm run news:fetch`): polls the Google News RSS searches in [`data/news-feeds.json`](data/news-feeds.json) and deduplicates by URL and title into `data/news/items.json`.
+1. **Community tips:** anyone can submit a published story through the [**Submit a news tip**](https://github.com/sanjeevk20/janadesh2027/issues/new?template=news-tip.yml) form (a GitHub issue form, linked under every news list on the site). Tips are **moderated**: the daily job only publishes issues a moderator has labelled `approved`. It checks the link, matches the seat name against the official seat list, publishes the tip with its approved state, seat and topic, credits the contributor ("Community tip by @user"), then comments on and closes the issue. Malformed tips are sent back with the problems listed; duplicates are closed. Script: [`scripts/news/crowd-ingest.mjs`](scripts/news/crowd-ingest.mjs).
 2. **Tag** (`npm run news:tag`):
    - A **gazetteer** built from the boundary and results data finds seat and district names in each story. It's conservative: names shared by several states need the state in the text, and a seat name that is also a district (e.g. Sangrur) only counts as the seat when the story mentions a seat or constituency.
    - **Claude** (`claude-opus-5-5`, structured output, low effort, refusal fallbacks on) reads each story with the gazetteer's candidates as hints. It returns states, constituencies, parties, a topic, a one-line summary and the key claims.
@@ -78,7 +79,7 @@ After the fixes every Punjab Lok Sabha seat has 9 assembly seats, and UP has 77 
 **Measuring the tagger.** `npm run news:eval` scores the rules against hand-labelled stories: [`data/news/eval.json`](data/news/eval.json) (used while writing the cues) and [`data/news/eval-holdout.json`](data/news/eval-holdout.json) (never tuned against, so it gives the honest number). On the held-out set the rule rewrite moved relevance from 60% to 98%, exact states from 73% to 100% and topic from 30% to 77%, with no place tagged to the wrong state. When you change the cues, add new examples to `eval.json` and check that the held-out score doesn't drop.
 3. **Publish:** writes `public/data/news.json` (the last 180 days).
 
-The [daily workflow](.github/workflows/news.yml) runs collect + tag every day at 06:17 IST (00:47 UTC), commits the result, and the site redeploys automatically. **To turn on AI tagging, add an `ANTHROPIC_API_KEY` repository secret**; without it the workflow still runs using rules.
+The [daily workflow](.github/workflows/news.yml) runs collect → community tips → tag every day at 06:17 IST (00:47 UTC), commits the result, and the site redeploys automatically. Run it on demand from the Actions tab ("Daily news" → Run workflow), e.g. right after approving tips. **To turn on AI tagging, add an `ANTHROPIC_API_KEY` repository secret**; without it the workflow still runs using rules.
 
 The first 7 stories were added by hand from research on 27 Oct 2026 (`collectedBy: "manual"`), because the feeds couldn't be reached from the build environment.
 
