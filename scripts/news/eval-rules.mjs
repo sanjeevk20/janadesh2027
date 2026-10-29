@@ -1,10 +1,11 @@
 // Measures the keyword tagger against the hand-labelled stories in data/news/eval.json and,
-// for comparison, the tags those stories currently have in data/news/items.json.
+// for comparison, the tags those stories currently have in the news archive.
 //
 // Usage: npm run news:eval [-- --verbose]
 import { readFile } from 'node:fs/promises';
 import { loadGazetteer } from './gazetteer.mjs';
 import { loadRules, tagByRules } from './rules.mjs';
+import { loadItems } from './store.mjs';
 
 // eval.json was used while writing the cues (tuning set); eval-holdout.json was not, so its
 // scores are the honest estimate. Add new examples to eval.json; keep the holdout untouched.
@@ -13,7 +14,7 @@ const SETS = [
   ['held-out', 'data/news/eval-holdout.json'],
 ];
 const verbose = process.argv.includes('--verbose');
-const stored = new Map(JSON.parse(await readFile('data/news/items.json', 'utf8')).map((i) => [i.id, i.tags]));
+const stored = new Map((await loadItems()).map((i) => [i.id, i.tags]));
 const rules = await loadRules();
 const gazetteer = await loadGazetteer();
 

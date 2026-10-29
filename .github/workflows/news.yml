@@ -40,7 +40,8 @@ jobs:
 
       - name: Commit updated news
         run: |
-          if git diff --quiet -- data/news public/data/news.json; then
+          # git status (not git diff) so a new month's archive file counts as a change.
+          if [ -z "$(git status --porcelain -- data/news public/data/news.json)" ]; then
             echo "No news changes."
             exit 0
           fi

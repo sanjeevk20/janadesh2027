@@ -67,7 +67,7 @@ After the fixes every Punjab Lok Sabha seat has 9 assembly seats, and UP has 77 
 
 ### News tagging
 
-1. **Collect** (`npm run news:fetch`): polls the Google News RSS searches in [`data/news-feeds.json`](data/news-feeds.json) and deduplicates by URL and title into `data/news/items.json`.
+1. **Collect** (`npm run news:fetch`): polls the Google News RSS searches in [`data/news-feeds.json`](data/news-feeds.json) and deduplicates by URL and title into the news archive.
 1. **Community tips:** anyone can submit a published story through the [**Submit a news tip**](https://github.com/sanjeevk20/janadesh2027/issues/new?template=news-tip.yml) form (a GitHub issue form, linked under every news list on the site). Tips are **moderated**: the daily job only publishes issues a moderator has labelled `approved`. It checks the link, matches the seat name against the official seat list, publishes the tip with its approved state, seat and topic, credits the contributor ("Community tip by @user"), then comments on and closes the issue. Malformed tips are sent back with the problems listed; duplicates are closed. Script: [`scripts/news/crowd-ingest.mjs`](scripts/news/crowd-ingest.mjs).
 2. **Tag** (`npm run news:tag`):
    - A **gazetteer** built from the boundary and results data finds seat and district names in each story. It's conservative: names shared by several states need the state in the text, and a seat name that is also a district (e.g. Sangrur) only counts as the seat when the story mentions a seat or constituency.
@@ -146,7 +146,8 @@ data/parties.json            Party abbreviations and map colours
 data/alliances.json          NDA membership per state and election (for swing)
 data/repairs.json            Documented fixes to source data errors
 data/news-feeds.json         RSS feeds for news collection
-data/news/items.json         Collected stories with their tags (the news archive)
+data/news/archive/YYYY-MM.json  The news archive: every collected story with its tags, one file per month
+                             (by publish date), one story per line; read/written via scripts/news/store.mjs
 scripts/fetch-boundaries.mjs Downloads the source shapefile
 scripts/build-boundaries.mjs Filters, simplifies and validates boundaries
 scripts/fetch-results.mjs    Downloads 2022 candidate-level results (pinned commit)

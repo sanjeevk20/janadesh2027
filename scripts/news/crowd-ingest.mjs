@@ -2,19 +2,19 @@
 //
 // Moderation: only open issues labelled both `news-tip` and `approved` are ingested; a
 // moderator (the analyst) adds `approved` after checking the link. Unapproved tips are never
-// read. Each ingested tip is added to data/news/items.json with the moderator-approved state,
+// read. Each ingested tip is added to the news archive (store.mjs) with the moderator-approved state,
 // seat and topic, credited to the contributor, then the issue is commented on, labelled
 // `published` and closed.
 //
 // Runs in the Daily news workflow before tagging. Needs GITHUB_TOKEN (issues: write) and
 // GITHUB_REPOSITORY (owner/repo), both provided by GitHub Actions.
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 import { cleanName } from './gazetteer.mjs';
 import { loadRules, tagByRules, STATE_IDS, TAGGER_VERSION } from './rules.mjs';
 import { loadGazetteer } from './gazetteer.mjs';
 import { similarity } from '../lib.mjs';
+import { loadItems, saveItems } from './store.mjs';
 
-const STORE = 'data/news/items.json';
 const SEAT_MATCH_THRESHOLD = 0.85;
 const LABELS = {
   'news-tip': { color: '1f5fa8', description: 'Community news tip (awaiting moderation)' },
@@ -64,7 +64,7 @@ async function main() {
     return;
   }
 
-  const items = JSON.parse(await readFile(STORE, 'utf8'));
+  const items = await loadItems();
   const urls = new Set(items.map((i) => normaliseUrl(i.url)));
   const seats = await loadSeats();
   const rules = await loadRules();
@@ -130,7 +130,7 @@ async function main() {
     await close(issue, `Published on Janadesh 2027 as a community tip.${seatNote} Thank you!`);
   }
 
-  await writeFile(STORE, JSON.stringify(items, null, 2) + '\n');
+  await saveItems(items);
   console.log(`Community tips: ${added} published, ${issues.length - added} closed or returned.`);
 }
 
