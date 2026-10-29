@@ -10,15 +10,15 @@
 // analyst-owned data/analyst/news-cues.json) and items are marked `tagger: "rules"`.
 // Either way, places are only kept for states the story is about, and reference pages
 // (seat profiles, old results) are archived but not published.
-import { readFile, writeFile } from 'node:fs/promises';
+import { writeFile } from 'node:fs/promises';
 import Anthropic from '@anthropic-ai/sdk';
 import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod';
 import { z } from 'zod';
 import { loadGazetteer, cleanName } from './gazetteer.mjs';
 import { loadRules, tagByRules, STATE_IDS, TOPICS, TAGGER_VERSION } from './rules.mjs';
 import { similarity } from '../lib.mjs';
+import { loadItems, saveItems } from './store.mjs';
 
-const STORE = 'data/news/items.json';
 const OUT = 'public/data/news.json';
 const MODEL = 'claude-opus-5-5';
 const PUBLISH_DAYS = 180;
@@ -51,7 +51,7 @@ Work only from the story text you are given; you only see a headline and a short
 const client = await makeClient();
 const gazetteer = await loadGazetteer();
 const rules = await loadRules();
-const items = JSON.parse(await readFile(STORE, 'utf8'));
+const items = await loadItems();
 
 let tagged = 0;
 let llmCalls = 0;
@@ -77,11 +77,11 @@ for (const item of items) {
   tagged++;
 }
 
-await writeFile(STORE, JSON.stringify(items, null, 2) + '\n');
+const { months, written } = await saveItems(items);
 await publish(items);
 console.log(
   `Tagged ${tagged} item(s) (${llmCalls} with Claude${client ? '' : ': no credentials, rules only'}); ` +
-    `${rejected} unverifiable constituency tag(s) rejected.`,
+    `${rejected} unverifiable constituency tag(s) rejected. Archive: ${months} month file(s), ${written} updated.`,
 );
 
 async function makeClient() {

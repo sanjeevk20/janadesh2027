@@ -1,13 +1,13 @@
-// Polls the RSS feeds in data/news-feeds.json and appends new stories to data/news/items.json.
+// Polls the RSS feeds in data/news-feeds.json and appends new stories to the monthly news
+// archive (data/news/archive/, see store.mjs).
 // Stories are deduplicated by URL and by normalised title (the same story often appears in
 // several state feeds). Tagging happens separately in tag-news.mjs.
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { exists } from '../lib.mjs';
+import { loadItems, saveItems } from './store.mjs';
 
-const STORE = 'data/news/items.json';
 const { feeds } = JSON.parse(await readFile('data/news-feeds.json', 'utf8'));
-const items = (await exists(STORE)) ? JSON.parse(await readFile(STORE, 'utf8')) : [];
+const items = await loadItems();
 
 const seenUrls = new Set(items.map((i) => i.url));
 const seenTitles = new Set(items.map((i) => titleKey(i.title)));
@@ -51,7 +51,7 @@ for (const feed of feeds) {
   console.log(`OK   ${feed.id}: ${feedAdded} new`);
 }
 
-await writeFile(STORE, JSON.stringify(items, null, 2) + '\n');
+await saveItems(items);
 console.log(`\n${added} new stories (${items.length} total)${failed ? `; ${failed} feed(s) failed` : ''}`);
 if (failed === feeds.length) process.exitCode = 1;
 
